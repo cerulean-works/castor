@@ -1,0 +1,90 @@
+{
+ "file": "data/directions/extraction_v1.jsonl",
+ "sha256": "f7680f92823b5d4043b72127cc0b31fdff6d369871c918f697c5bd682841c3f9",
+ "counts": {
+  "harmful_train": 256,
+  "harmful_val": 32,
+  "harmless_train": 256,
+  "harmless_val": 32
+ },
+ "by_source": {
+  "harmful_train": {
+   "advbench": 194,
+   "malicious_instruct": 42,
+   "tdc2023": 20
+  },
+  "harmful_val": {
+   "advbench": 27,
+   "tdc2023": 4,
+   "malicious_instruct": 1
+  },
+  "harmless_train": {
+   "alpaca/harmless_train": 256
+  },
+  "harmless_val": {
+   "alpaca/harmless_val": 32
+  }
+ },
+ "pools": {
+  "harmful": {
+   "n_raw": 720,
+   "n_dedup": 720,
+   "n_removed": 143,
+   "n_pool": 577,
+   "removed_forward": 102,
+   "removed_reverse": 138,
+   "removed_exact": 82,
+   "pool_by_source": {
+    "advbench": 441,
+    "malicious_instruct": 84,
+    "tdc2023": 52
+   }
+  },
+  "harmless_train": {
+   "n_raw": 18793,
+   "n_dedup": 18793,
+   "n_removed": 10,
+   "n_pool": 18783,
+   "removed_forward": 0,
+   "removed_reverse": 10,
+   "removed_exact": 0
+  },
+  "harmless_val": {
+   "n_raw": 6264,
+   "n_dedup": 6264,
+   "n_removed": 0,
+   "n_pool": 6264,
+   "removed_forward": 0,
+   "removed_reverse": 0,
+   "removed_exact": 0
+  }
+ },
+ "source": {
+  "repo": "https://github.com/andyrdt/refusal_direction",
+  "commit": "9d852fae1a9121c78b29142de733cb1340770cc3",
+  "harmful": [
+   "dataset/processed/advbench.json",
+   "dataset/processed/malicious_instruct.json",
+   "dataset/processed/tdc2023.json"
+  ],
+  "harmless_train": "dataset/splits/harmless_train.json",
+  "harmless_val": "dataset/splits/harmless_val.json",
+  "licenses": {
+   "advbench": "MIT",
+   "malicious_instruct": "see source",
+   "tdc2023": "MIT",
+   "alpaca": "CC BY-NC 4.0"
+  }
+ },
+ "decontamination": {
+  "panel": "data/panel/panel_v1.jsonl",
+  "panel_sha256": "7b7c4fac5e285e5dfc3aa3b4bdd22397bfd3e645ebb6e7ee476c9e2a951578d7",
+  "rule": "D007 forward (castor.decontam, > 0.5) or exact, or reverse coverage > 0.5"
+ },
+ "draw": {
+  "rng": "numpy.random.default_rng(2027)",
+  "order": "harmful permutation (train = first 256, val = next 32); harmless_train choice(256); harmless_val choice(32)"
+ },
+ "git_commit": "082e103f49b1bc28339888f9bc55c26164b4bc1e",
+ "command": "uv run --frozen python scripts/prep_007.py"
+}

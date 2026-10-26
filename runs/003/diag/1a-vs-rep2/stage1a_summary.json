@@ -1,0 +1,31 @@
+{
+ "n_steps_compared": 6,
+ "n_values": 66,
+ "released_steps_not_in_ours": [],
+ "max_abs_rel_diff": 0.15612139917695478,
+ "worst": {
+  "step": 3750,
+  "set": "ice",
+  "ours": 44.95,
+  "released": 38.88,
+  "rel_diff": 0.15612139917695478
+ },
+ "per_step_max_abs_rel": {
+  "1250": 0.03106125970664364,
+  "2500": 0.028277634961439535,
+  "3750": 0.15612139917695478,
+  "5000": 0.07411141920846975,
+  "6250": 0.045466155810983455,
+  "7500": 0.02582368655387346
+ },
+ "tolerance": 0.01,
+ "pass": false,
+ "logs": [
+  "logs/nchc/003-1a-150M-s6198-443698.out"
+ ],
+ "reference": [
+  "logs/nchc/003-diag-1a-rep2-443879.out"
+ ],
+ "git_commit": "cc36213ba3151222738ab0026db2465c05e595f8",
+ "command": "uv run --frozen python scripts/stage1a_compare.py --logs logs/nchc/003-1a-150M-s6198-443698.out --reference-logs logs/nchc/003-diag-1a-rep2-443879.out --out /work/harrychang08/castor/runs/003/diag/1a-vs-rep2"
+}

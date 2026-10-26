@@ -1,0 +1,30 @@
+{
+ "steps_compared": 28,
+ "last_common_step": 69369,
+ "released_seed_abs_dev_max_after_10k": 0.008290016232171293,
+ "ours_abs_dev_max_after_10k": {
+  "castor-init-default-data-aux2": 0.010111892994637106,
+  "castor-init-aux2-data-default": 0.009737247741600896
+ },
+ "at_final": {
+  "default": 2.656082797329023,
+  "large aux 2": 2.6549947165508616,
+  "large aux 3": 2.654371505631796,
+  "castor-init-default-data-aux2": 2.6540514822448737,
+  "castor-init-aux2-data-default": 2.6479852910581574
+ },
+ "logs": {
+  "castor-init-default-data-aux2": [
+   "003-s2-i6198-d4-seg1-444667.out",
+   "003-s2-i6198-d4-seg2-444668.out",
+   "003-s2-i6198-d4-seg3-444670.out"
+  ],
+  "castor-init-aux2-data-default": [
+   "003-s2-i4-d6198-seg1-444672.out",
+   "003-s2-i4-d6198-seg2-444673.out",
+   "003-s2-i4-d6198-seg3-444674.out"
+  ]
+ },
+ "git_commit": "1fe8bd032c8aafc7ec0232311a9a241d7b11db58",
+ "command": "uv run --frozen python scripts/trajectory_009.py --out /work/harrychang08/castor/runs/009/trajectory"
+}

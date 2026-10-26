@@ -1,0 +1,67 @@
+442348|smoke_generate|FAILED|15|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn007
+442479|judge-smoke|FAILED|99|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn022
+442496|smoke-sft-olmo2|FAILED|35|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn022
+442497|smoke-dpo-olmo2|FAILED|32|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn026
+442498|smoke-sft-dd|FAILED|12|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn026
+442499|smoke-sft-dd_eosbos|FAILED|12|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn026
+442506|smoke-gen|COMPLETED|178|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn026
+442513|smoke-sft-olmo2|FAILED|39|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn026
+442514|smoke-dpo-olmo2|FAILED|15|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn033
+442515|smoke-sft-dd|FAILED|35|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn033
+442516|smoke-sft-dd_eosbos|FAILED|11|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn033
+442519|smoke-dpo-olmo2|FAILED|36|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn014
+442520|smoke-sft-dd_eosbos|FAILED|35|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn014
+442521|smoke-sft-olmo2|COMPLETED|77|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn014
+442522|smoke-dpo-olmo2|COMPLETED|259|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn014
+442523|smoke-sft-dd|COMPLETED|70|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn014
+442524|smoke-sft-dd_eosbos|COMPLETED|67|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn014
+442530|smoke-dpo-dd|COMPLETED|197|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn005
+442531|smoke-dpo-dd_eosbos|COMPLETED|164|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn014
+444525|006-smoke-train-default-s1|COMPLETED|1553|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn177
+457357|008-smoke-train-c4-1B-default-s1|COMPLETED|1326|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn049
+457358|008-smoke-train-fineweb-edu-1B-large-aux-2-s2|COMPLETED|1330|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn050
+464023|008-smoke-gj-c4-1B-default-s1|COMPLETED|233|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn018
+464060|008-smoke-gj-fineweb-edu-1B-large-aux-2-s2|COMPLETED|233|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn002
+464106|008-mock-analyze|COMPLETED|179|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn002
+464251|007-smoke|FAILED|97|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn012
+464284|007-smoke|COMPLETED|168|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn002
+465345|008-smoke-train-c4-1B-default-s2|CANCELLED by 44970|39|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn008
+465365|008-mock-analyze-ABC|FAILED|10|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn009
+465366|008-mock-analyze-AB|FAILED|10|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn009
+465850|008-probe-term-plain|CANCELLED by 44970|9|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn007
+465852|008-probe-term-termwait|CANCELLED by 44970|10|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn007
+465856|008-mock-analyze-ABC|COMPLETED|171|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn009
+465857|008-mock-analyze-AB|COMPLETED|121|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn009
+465878|008-probe-timeout-plain|FAILED|0|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn005
+465879|008-probe-timeout-termwait|FAILED|0|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn005
+465887|008-probe-timeout-plain|TIMEOUT|80|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn007
+465890|008-probe-timeout-termwait|TIMEOUT|77|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn038
+465952|008-probe-fwd-timeout|TIMEOUT|70|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn002
+465954|008-probe-fwd-scancel|CANCELLED by 44970|3|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn038
+466012|008-smoke-train-fineweb-edu-1B-large-aux-2-s1|CANCELLED by 44970|41|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn008
+466030|008-refill|COMPLETED|11|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn020
+466053|008-smoke-train-fineweb-edu-1B-large-aux-2-s1|CANCELLED by 44970|107|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn037
+466090|008-refill|COMPLETED|6|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn007
+476542|008-smoke-train-falcon-1B-default-s1|CANCELLED by 44970|4|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn088
+476544|008-refill|COMPLETED|10|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn001
+476545|008-smoke-train-falcon-1B-default-s1|CANCELLED by 44970|4|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn099
+476546|008-refill|COMPLETED|6|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn001
+476637|016-smoke-train-150M-default-s1|FAILED|3|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn024
+476638|016-smoke-train-300M-default-s1|FAILED|3|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn024
+476639|016-smoke-train-150M-default-s1|COMPLETED|512|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn024
+476641|016-smoke-train-300M-default-s1|COMPLETED|695|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn045
+484981|008-smoke-train-c4-1B-large-aux-2-s1|CANCELLED by 44970|5|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn005
+484982|008-refill|COMPLETED|12|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn028
+484983|008-smoke-train-c4-1B-large-aux-2-s1|CANCELLED by 44970|9|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn031
+484984|008-refill|COMPLETED|11|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn028
+485601|008-smoke-train-dclm-baseline-1B-default-s1|CANCELLED by 44970|17|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn014
+485603|008-refill|COMPLETED|13|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn001
+485608|008-smoke-train-dclm-baseline-1B-default-s1|COMPLETED|1346|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn015
+514593|016-smoke-train-150M-default-s1|COMPLETED|452|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn029
+514594|016-smoke-train-300M-default-s1|COMPLETED|651|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn173
+517189|027-smoke|FAILED|68|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn025
+517205|027-smoke|COMPLETED|286|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn001
+519361|040-smoke|COMPLETED|396|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn014
+525675|021-smoke-007|COMPLETED|903|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn020
+527501|046-smoke|FAILED|8|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn051
+527502|046-smoke|COMPLETED|160|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn027

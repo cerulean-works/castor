@@ -1,0 +1,585 @@
+{
+ "prompt": "007",
+ "filtered": false,
+ "models": [
+  "dd-dclm-1b-default-dpo-seed1",
+  "dd-dclm-1b-default-dpo-seed2",
+  "dd-dclm-1b-default-dpo-seed3",
+  "dd-dclm-1b-default-dpo-seed4",
+  "dd-dclm-1b-large-aux-2-dpo-seed1",
+  "dd-dclm-1b-large-aux-2-dpo-seed2",
+  "dd-dclm-1b-large-aux-2-dpo-seed3",
+  "dd-dclm-1b-large-aux-2-dpo-seed4",
+  "dd-dclm-1b-large-aux-3-dpo-seed1",
+  "dd-dclm-1b-large-aux-3-dpo-seed2",
+  "dd-dclm-1b-large-aux-3-dpo-seed3",
+  "dd-dclm-1b-large-aux-3-dpo-seed4"
+ ],
+ "missing": [],
+ "common": {
+  "layer": 11,
+  "pos_index": 5,
+  "n_models_passing": 5,
+  "n_models": 12,
+  "all_pass": false,
+  "mean_bypass": -1.866180844128093,
+  "n_candidates_all_pass": 0,
+  "per_model_pass": {
+   "dd-dclm-1b-default-dpo-seed1": false,
+   "dd-dclm-1b-default-dpo-seed2": false,
+   "dd-dclm-1b-default-dpo-seed3": false,
+   "dd-dclm-1b-default-dpo-seed4": false,
+   "dd-dclm-1b-large-aux-2-dpo-seed1": false,
+   "dd-dclm-1b-large-aux-2-dpo-seed2": true,
+   "dd-dclm-1b-large-aux-2-dpo-seed3": false,
+   "dd-dclm-1b-large-aux-2-dpo-seed4": true,
+   "dd-dclm-1b-large-aux-3-dpo-seed1": false,
+   "dd-dclm-1b-large-aux-3-dpo-seed2": true,
+   "dd-dclm-1b-large-aux-3-dpo-seed3": true,
+   "dd-dclm-1b-large-aux-3-dpo-seed4": true
+  },
+  "position": -2
+ },
+ "own": {
+  "dd-dclm-1b-default-dpo-seed1": {
+   "layer": 9,
+   "pos_index": 0,
+   "position": -7,
+   "bypass": -4.6714665189788445,
+   "kl_filter_dropped": true
+  },
+  "dd-dclm-1b-default-dpo-seed2": {
+   "layer": 9,
+   "pos_index": 0,
+   "position": -7,
+   "bypass": -4.983885458791198,
+   "kl_filter_dropped": true
+  },
+  "dd-dclm-1b-default-dpo-seed3": {
+   "layer": 9,
+   "pos_index": 0,
+   "position": -7,
+   "bypass": -5.1302337848299615,
+   "kl_filter_dropped": true
+  },
+  "dd-dclm-1b-default-dpo-seed4": {
+   "layer": 10,
+   "pos_index": 6,
+   "position": -1,
+   "bypass": -4.821387359053943,
+   "kl_filter_dropped": true
+  },
+  "dd-dclm-1b-large-aux-2-dpo-seed1": {
+   "layer": 9,
+   "pos_index": 1,
+   "position": -6,
+   "bypass": -1.1813378313075926,
+   "kl_filter_dropped": false
+  },
+  "dd-dclm-1b-large-aux-2-dpo-seed2": {
+   "layer": 11,
+   "pos_index": 5,
+   "position": -2,
+   "bypass": -4.307099952309528,
+   "kl_filter_dropped": false
+  },
+  "dd-dclm-1b-large-aux-2-dpo-seed3": {
+   "layer": 9,
+   "pos_index": 6,
+   "position": -1,
+   "bypass": -5.729828155481258,
+   "kl_filter_dropped": true
+  },
+  "dd-dclm-1b-large-aux-2-dpo-seed4": {
+   "layer": 11,
+   "pos_index": 5,
+   "position": -2,
+   "bypass": -3.3095831288694733,
+   "kl_filter_dropped": false
+  },
+  "dd-dclm-1b-large-aux-3-dpo-seed1": {
+   "layer": 10,
+   "pos_index": 0,
+   "position": -7,
+   "bypass": -5.790913558161312,
+   "kl_filter_dropped": false
+  },
+  "dd-dclm-1b-large-aux-3-dpo-seed2": {
+   "layer": 11,
+   "pos_index": 0,
+   "position": -7,
+   "bypass": -2.1491769330769515,
+   "kl_filter_dropped": false
+  },
+  "dd-dclm-1b-large-aux-3-dpo-seed3": {
+   "layer": 10,
+   "pos_index": 0,
+   "position": -7,
+   "bypass": -5.724820899054984,
+   "kl_filter_dropped": false
+  },
+  "dd-dclm-1b-large-aux-3-dpo-seed4": {
+   "layer": 10,
+   "pos_index": 0,
+   "position": -7,
+   "bypass": -5.489134707679484,
+   "kl_filter_dropped": false
+  }
+ },
+ "n_pass": [
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   3,
+   0,
+   0,
+   0,
+   0,
+   5,
+   4
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ ],
+ "n_sites_passing": {
+  "dd-dclm-1b-default-dpo-seed1": 0,
+  "dd-dclm-1b-default-dpo-seed2": 0,
+  "dd-dclm-1b-default-dpo-seed3": 0,
+  "dd-dclm-1b-default-dpo-seed4": 0,
+  "dd-dclm-1b-large-aux-2-dpo-seed1": 1,
+  "dd-dclm-1b-large-aux-2-dpo-seed2": 1,
+  "dd-dclm-1b-large-aux-2-dpo-seed3": 0,
+  "dd-dclm-1b-large-aux-2-dpo-seed4": 1,
+  "dd-dclm-1b-large-aux-3-dpo-seed1": 2,
+  "dd-dclm-1b-large-aux-3-dpo-seed2": 3,
+  "dd-dclm-1b-large-aux-3-dpo-seed3": 4,
+  "dd-dclm-1b-large-aux-3-dpo-seed4": 5
+ },
+ "mean_bypass": [
+  [
+   NaN,
+   NaN,
+   NaN,
+   NaN,
+   NaN,
+   NaN,
+   NaN
+  ],
+  [
+   -2.3822860804240733,
+   1.9299535489850597,
+   2.4552585797761837,
+   1.960102167989838,
+   2.688949643736402,
+   2.64485444883115,
+   -0.8374361310592301
+  ],
+  [
+   -0.05315580020940499,
+   2.3468298469899724,
+   2.711676313441259,
+   2.2437921564913497,
+   2.413463171930583,
+   2.519234781676536,
+   -6.088287773861379
+  ],
+  [
+   0.7299843280823063,
+   1.8503948215700368,
+   2.5317149869081406,
+   2.306085400576879,
+   2.406884148152217,
+   2.374984816081461,
+   2.7580724681460076
+  ],
+  [
+   0.7608011787795066,
+   1.938640704340372,
+   3.0494301941493354,
+   2.2911425278990607,
+   2.31982206047785,
+   2.5637310564398796,
+   2.843565671899052
+  ],
+  [
+   -1.097032404037398,
+   2.79157725936734,
+   3.1239816830549643,
+   2.795977476559569,
+   2.687030516748831,
+   2.5312356950363513,
+   2.958707174850805
+  ],
+  [
+   -1.136263299321666,
+   1.784665970080627,
+   2.984280774828596,
+   2.673464728927852,
+   2.0259251148903172,
+   2.0802639807268215,
+   2.1484403294728107
+  ],
+  [
+   -2.9481282372053066,
+   0.6697211458433228,
+   2.938380650711405,
+   2.6815096202585376,
+   2.8775282597365517,
+   2.4701050564190172,
+   -0.2079040155961088
+  ],
+  [
+   -5.299541308800452,
+   -1.3491603782677348,
+   2.943548858159435,
+   2.6387019107110063,
+   2.8288889494801044,
+   2.32532305994211,
+   -2.8576356890811563
+  ],
+  [
+   -5.531675707124532,
+   -0.8779719459705272,
+   2.7874570002096415,
+   2.7639120728929814,
+   2.793816118344846,
+   0.48317932725859586,
+   -2.9467624136741573
+  ],
+  [
+   -4.994693143887726,
+   -0.9939241315075504,
+   2.606416657337676,
+   2.548239994764257,
+   2.6526677408713377,
+   -1.3525342230613147,
+   -4.600725946626959
+  ],
+  [
+   -2.507678301295497,
+   0.15864289512803076,
+   2.3479278684909346,
+   2.0969412817065995,
+   2.235051999339711,
+   -1.866180844128093,
+   -2.9747244537474615
+  ],
+  [
+   -1.3335090541005987,
+   1.4015448985588366,
+   2.194798228899919,
+   2.374225720588194,
+   2.413977055128418,
+   -1.3026612980144978,
+   -2.8483056154167534
+  ],
+  [
+   -1.0992060926521658,
+   1.2563978695614686,
+   2.5744273260996215,
+   2.5702209188639453,
+   2.6033423282322463,
+   -1.2303532098765293,
+   -2.8920517129600776
+  ],
+  [
+   -1.4084970270679884,
+   1.6400005915669327,
+   2.659626871767122,
+   2.7318877123005354,
+   2.744878847533453,
+   -0.9553352524007602,
+   -2.8341752289552473
+  ],
+  [
+   -2.1695674616073144,
+   1.3251434608072374,
+   2.9238095808727915,
+   2.841826616227411,
+   2.958845112761013,
+   -0.3491507177183332,
+   -2.7952249566069214
+  ]
+ ],
+ "n_kept": null,
+ "rule": "lowest mean bypass among candidates passing in all models; else most models passing, ties by mean bypass (D047 b); filters: Arditi filter_fn",
+ "sources": {
+  "dd-dclm-1b-default-dpo-seed1": {
+   "path": "/work/harrychang08/castor/activations/007/dd-dclm-1b-default-dpo-seed1/scores.json",
+   "sha256": "306076a8388efdefa703b4893371496cae7f115950cc9167716142a9fc1b3d01",
+   "git_commit": "d168379743b11a676f5e69c352c161c47dea1219",
+   "tail_mismatch": {
+    "harmful_train": 0,
+    "harmful_val": 0,
+    "harmless_train": 0,
+    "harmless_val": 0
+   },
+   "panel_tail_mismatch": 0
+  },
+  "dd-dclm-1b-default-dpo-seed2": {
+   "path": "/work/harrychang08/castor/activations/007/dd-dclm-1b-default-dpo-seed2/scores.json",
+   "sha256": "8a51ecf067f7bd73d7dade871af6965094d429a102f478c3914cac7aa935f61e",
+   "git_commit": "d168379743b11a676f5e69c352c161c47dea1219",
+   "tail_mismatch": {
+    "harmful_train": 0,
+    "harmful_val": 0,
+    "harmless_train": 0,
+    "harmless_val": 0
+   },
+   "panel_tail_mismatch": 0
+  },
+  "dd-dclm-1b-default-dpo-seed3": {
+   "path": "/work/harrychang08/castor/activations/007/dd-dclm-1b-default-dpo-seed3/scores.json",
+   "sha256": "289534282318e39a562d4a47c213d65e1c424dbf36bd1a187e27cd21f1228abf",
+   "git_commit": "d168379743b11a676f5e69c352c161c47dea1219",
+   "tail_mismatch": {
+    "harmful_train": 0,
+    "harmful_val": 0,
+    "harmless_train": 0,
+    "harmless_val": 0
+   },
+   "panel_tail_mismatch": 0
+  },
+  "dd-dclm-1b-default-dpo-seed4": {
+   "path": "/work/harrychang08/castor/activations/007/dd-dclm-1b-default-dpo-seed4/scores.json",
+   "sha256": "ed69b5972119596ccef51950e176aed6ec9191fe6b1e77bb3f2483532520b94e",
+   "git_commit": "d168379743b11a676f5e69c352c161c47dea1219",
+   "tail_mismatch": {
+    "harmful_train": 0,
+    "harmful_val": 0,
+    "harmless_train": 0,
+    "harmless_val": 0
+   },
+   "panel_tail_mismatch": 0
+  },
+  "dd-dclm-1b-large-aux-2-dpo-seed1": {
+   "path": "/work/harrychang08/castor/activations/007/dd-dclm-1b-large-aux-2-dpo-seed1/scores.json",
+   "sha256": "07d31869ad234102fa49851434be11358173a5b6652317bbbb045f6dad0cb305",
+   "git_commit": "d168379743b11a676f5e69c352c161c47dea1219",
+   "tail_mismatch": {
+    "harmful_train": 0,
+    "harmful_val": 0,
+    "harmless_train": 0,
+    "harmless_val": 0
+   },
+   "panel_tail_mismatch": 0
+  },
+  "dd-dclm-1b-large-aux-2-dpo-seed2": {
+   "path": "/work/harrychang08/castor/activations/007/dd-dclm-1b-large-aux-2-dpo-seed2/scores.json",
+   "sha256": "50168f8197fea1eca109b4025eadc08379717dd46a5569f1bde337db9168ae96",
+   "git_commit": "d168379743b11a676f5e69c352c161c47dea1219",
+   "tail_mismatch": {
+    "harmful_train": 0,
+    "harmful_val": 0,
+    "harmless_train": 0,
+    "harmless_val": 0
+   },
+   "panel_tail_mismatch": 0
+  },
+  "dd-dclm-1b-large-aux-2-dpo-seed3": {
+   "path": "/work/harrychang08/castor/activations/007/dd-dclm-1b-large-aux-2-dpo-seed3/scores.json",
+   "sha256": "855e240a4a497a8bf45c1de527ad02d29db7cce9bfa93ae1e16c7ae895f378c8",
+   "git_commit": "d168379743b11a676f5e69c352c161c47dea1219",
+   "tail_mismatch": {
+    "harmful_train": 0,
+    "harmful_val": 0,
+    "harmless_train": 0,
+    "harmless_val": 0
+   },
+   "panel_tail_mismatch": 0
+  },
+  "dd-dclm-1b-large-aux-2-dpo-seed4": {
+   "path": "/work/harrychang08/castor/activations/007/dd-dclm-1b-large-aux-2-dpo-seed4/scores.json",
+   "sha256": "f3cc75da69b288f34ad9f58cdccfd025d8ca85376a35230743d3dcf3a2105db1",
+   "git_commit": "d168379743b11a676f5e69c352c161c47dea1219",
+   "tail_mismatch": {
+    "harmful_train": 0,
+    "harmful_val": 0,
+    "harmless_train": 0,
+    "harmless_val": 0
+   },
+   "panel_tail_mismatch": 0
+  },
+  "dd-dclm-1b-large-aux-3-dpo-seed1": {
+   "path": "/work/harrychang08/castor/activations/007/dd-dclm-1b-large-aux-3-dpo-seed1/scores.json",
+   "sha256": "488482151fcc1dcdca80994bfac9c23921a5f2e7fd4fa0a57e77e3ee821cb482",
+   "git_commit": "d168379743b11a676f5e69c352c161c47dea1219",
+   "tail_mismatch": {
+    "harmful_train": 0,
+    "harmful_val": 0,
+    "harmless_train": 0,
+    "harmless_val": 0
+   },
+   "panel_tail_mismatch": 0
+  },
+  "dd-dclm-1b-large-aux-3-dpo-seed2": {
+   "path": "/work/harrychang08/castor/activations/007/dd-dclm-1b-large-aux-3-dpo-seed2/scores.json",
+   "sha256": "cf2c95fc49741cdb807e2c78a47d3a30212b61b9a53bcabc9994072bef4c26fc",
+   "git_commit": "d168379743b11a676f5e69c352c161c47dea1219",
+   "tail_mismatch": {
+    "harmful_train": 0,
+    "harmful_val": 0,
+    "harmless_train": 0,
+    "harmless_val": 0
+   },
+   "panel_tail_mismatch": 0
+  },
+  "dd-dclm-1b-large-aux-3-dpo-seed3": {
+   "path": "/work/harrychang08/castor/activations/007/dd-dclm-1b-large-aux-3-dpo-seed3/scores.json",
+   "sha256": "8a0a4e5a4463ecc88b2a7df00c3608c941f8ad4e6e6eb56466192e8715e19942",
+   "git_commit": "d168379743b11a676f5e69c352c161c47dea1219",
+   "tail_mismatch": {
+    "harmful_train": 0,
+    "harmful_val": 0,
+    "harmless_train": 0,
+    "harmless_val": 0
+   },
+   "panel_tail_mismatch": 0
+  },
+  "dd-dclm-1b-large-aux-3-dpo-seed4": {
+   "path": "/work/harrychang08/castor/activations/007/dd-dclm-1b-large-aux-3-dpo-seed4/scores.json",
+   "sha256": "4334f838ae589ffd948d1e3f1dc702940218a424937f18f90b7dc03b04aecfb1",
+   "git_commit": "d168379743b11a676f5e69c352c161c47dea1219",
+   "tail_mismatch": {
+    "harmful_train": 0,
+    "harmful_val": 0,
+    "harmless_train": 0,
+    "harmless_val": 0
+   },
+   "panel_tail_mismatch": 0
+  }
+ },
+ "git_commit": "67de283495c911ba7a1e688eef77b454f12bd3b7",
+ "command": "uv run --frozen python scripts/select_007.py --models data/manifests/mech_007.json --acts-root /work/harrychang08/castor/activations/007 --out /home/harrychang08/castor/runs/007/selection.json"
+}

@@ -1,0 +1,16 @@
+575623|091-smoke|COMPLETED|220|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn005
+575635|091-tp-la2-s1|COMPLETED|5683|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn005
+575636|091-tp-la3-s1|COMPLETED|5498|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn017
+575637|091-tp-def-s1|COMPLETED|5551|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn017
+575639|091-tp-def-s3|COMPLETED|5578|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn017
+575642|091-tp-la2-s3|COMPLETED|5645|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn017
+575644|091-tp-la3-s3|COMPLETED|5507|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn017
+575647|091-id-def-s3|COMPLETED|5568|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn017
+575649|091-id-la2-s3|COMPLETED|5637|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn017
+575650|091-id-la3-s3|COMPLETED|5592|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn021
+575651|091-tp-def-s4|COMPLETED|5566|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn021
+575652|091-tp-la2-s4|COMPLETED|5666|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn021
+575653|091-tp-la3-s4|COMPLETED|5501|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn026
+575654|091-id-def-s4|COMPLETED|5512|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn026
+575655|091-id-la2-s4|COMPLETED|5573|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn026
+575656|091-id-la3-s4|COMPLETED|5519|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn026

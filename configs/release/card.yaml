@@ -1,0 +1,70 @@
+# Model card and dataset README text. DRAFT: approved by the authors at the release review gate.
+tags: [castor, safety, refusal, jailbreak, seed-twins, datadecide]
+
+summary: |
+  Part of CASTOR, a set of seed-twinned language models: DataDecide base models that differ only
+  in their pretraining seed, each given the same safety post-training (SFT then DPO, the OLMo 2
+  1B Instruct recipe) under several post-training seeds. The set is built to measure how much
+  of a model's per-prompt jailbreak vulnerability its pretraining seed determines.
+
+castor_base_note: |
+  This base is not on the Hub.
+
+evaluation: |
+  Each model answered {n_prompts} public benchmark prompts (HarmBench, HarmBench human jailbreaks,
+  WildJailbreak, StrongREJECT, SORRY-Bench, XSTest, OR-Bench), {n_samples} sampled responses and one greedy
+  response per prompt. Every response was labelled by WildGuard and Qwen3Guard. The per-response
+  labels for every model are in [`{labels_repo}`](https://huggingface.co/datasets/{labels_repo}),
+  keyed by benchmark prompt id. Generations are not released.
+
+intended_use: |
+  Research on how pretraining and post-training randomness shape safety behaviour, refusal and
+  jailbreak robustness. These are small research models; they are not assistants and are not
+  suitable for deployment.
+
+safety: |
+  The models were safety-tuned on public data, and their bases are public. They can still produce
+  harmful text when prompted, as the released labels show. Model outputs on harmful prompts are
+  not released.
+
+license:
+  weights: apache-2.0
+  labels: odc-by
+  text: |
+    Apache 2.0, as the DataDecide base models. The post-training data are released by Ai2 under
+    ODC-BY 1.0, with some subsets under other licences.
+
+# Hugging Face collection; the description takes the arXiv id at the flip (150 characters at most).
+collection_title: CASTOR
+collection_description: Seed-twinned DataDecide models under one safety post-training recipe, with per-prompt judge labels.
+
+# Every card, the labels README and the code README read these. ARXIV_ID in any text below is
+# replaced by arxiv_id; while arxiv_id is TBD the cards say the link follows and the BibTeX drops
+# its arXiv lines (the release goes public before the listing, D134 add. 1).
+arxiv_id: TBD
+
+title: Identically Trained Language Models Break on Different Jailbreaks
+
+authors: |
+  Chi-Wei Chang, Mu-Tien Kuo, Kuan-Wei Lee, Meng-Hsun Tsai
+
+bibtex: |
+  @misc{castor2026,
+    title         = {Identically Trained Language Models Break on Different Jailbreaks},
+    author        = {Chang, Chi-Wei and Kuo, Mu-Tien and Lee, Kuan-Wei and Tsai, Meng-Hsun},
+    year          = {2026},
+    eprint        = {ARXIV_ID},
+    archivePrefix = {arXiv},
+    url           = {https://arxiv.org/abs/ARXIV_ID}
+  }
+
+labels_summary: |
+  Per-response judge labels for every CASTOR model on {n_prompts} public benchmark prompts ({n_samples} samples
+  and one greedy response each, `sample` = -1 is the greedy response). Prompts are referenced by
+  benchmark id only; no prompt text and no model generations are included.
+
+labels_truncated: |
+  One response was cut to fit the judges' context: the greedy response (`sample` = -1) of
+  `dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed1` to `wildjailbreak-00287`. WildGuard returned
+  no label for it (`JUDGE-ERROR`); Qwen3Guard labelled the cut response. Every other label is on
+  the full response.

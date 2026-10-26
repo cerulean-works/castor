@@ -1,0 +1,45 @@
+{
+ "size": "1B",
+ "step": 69369,
+ "sigma_seed": {
+  "mean_ce": 0.01249819530283836,
+  "olmes10": 0.00577216281911714
+ },
+ "dof": {
+  "mean_ce": 50,
+  "olmes10": 50
+ },
+ "sigma_seed_from_ai2_table": {
+  "mean_ce": 0.01253308233426038,
+  "olmes10": 0.00577203684834824
+ },
+ "mbar_recipe": {
+  "mean_ce": 2.655146699963194,
+  "olmes10": 0.5788817814143085
+ },
+ "ztable": [
+  {
+   "run": "i6198-d6198",
+   "label": "castor-dclm-1B-i6198-d6198__step69369",
+   "mean_ce": 2.6489262147383257,
+   "mean_ce_mbar": 2.655146699963194,
+   "mean_ce_sigma": 0.01249819530283836,
+   "z_mean_ce": 0.4310300885903247,
+   "pass_mean_ce": true,
+   "olmes10": 0.5812828136654397,
+   "olmes10_mbar": 0.5788817814143085,
+   "olmes10_sigma": 0.00577216281911714,
+   "z_olmes10": 0.3602384392031745,
+   "pass_olmes10": true,
+   "pass": true
+  }
+ ],
+ "instrument_vs_ai2": {
+  "max_abs_d_olmes10": 5.4406964091313625e-05,
+  "max_abs_d_mean_ce": 0.0002864335662380313,
+  "mean_d_olmes10": -1.7297986844836781e-07,
+  "mean_d_mean_ce": 1.9213382224390804e-05
+ },
+ "git_commit": "44c8d373e0287b4c1cfd3475f4cc6977a394613a",
+ "command": "uv run --frozen python scripts/stage1_ztable.py --size 1B --step 69369 --released-list configs/eval/released-1B-step69369.tsv --released-dir /work/harrychang08/castor/runs/003/eval/released-1B --ours castor-dclm-1B-i6198-d6198__step69369=i6198-d6198 --ours-dir /work/harrychang08/castor/runs/003/eval/ours-1B --out /work/harrychang08/castor/runs/011/ztable"
+}

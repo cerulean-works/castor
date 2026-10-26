@@ -1,0 +1,16 @@
+{
+  "decision": "D035 (2026-09-27), list committed by /direct 2026-09-28 (D039) before any 006 result exists",
+  "rule": "If 006 reports raw r_MZ >= mean pair ceiling - 0.02 for all 18 pairs, 008 runs post-training seed 1 on every base and seed 2 only on the 3 bases of these 8 recipes (plus the main recipe, which has 4 seeds from 006).",
+  "population": "the 24 non-main 1B recipes of data/manifests/datadecide_1B.json, i.e. every distinct repo except allenai/DataDecide-dclm-baseline-1B, in sorted (lexicographic) repo-name order",
+  "draw": "numpy.random.default_rng(2027).choice(24, size=8, replace=False), indices mapped to the sorted list; numpy 2.x as pinned in uv.lock",
+  "recipes": [
+    "allenai/DataDecide-c4-1B",
+    "allenai/DataDecide-dclm-baseline-25p-dolma1.7-75p-1B",
+    "allenai/DataDecide-dclm-baseline-50p-dolma1.7-50p-1B",
+    "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+    "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+    "allenai/DataDecide-dolma1_6plus-1B",
+    "allenai/DataDecide-dolma1_7-1B",
+    "allenai/DataDecide-fineweb-edu-1B"
+  ]
+}

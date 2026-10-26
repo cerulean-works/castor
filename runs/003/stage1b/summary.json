@@ -1,0 +1,58 @@
+{
+ "sigma_seed": {
+  "mean_ce": 0.009761099344145412,
+  "olmes10": 0.006300024698015076
+ },
+ "dof": {
+  "mean_ce": 50,
+  "olmes10": 50
+ },
+ "sigma_seed_from_ai2_table": {
+  "mean_ce": 0.009791326895356368,
+  "olmes10": 0.006300259985986298
+ },
+ "mbar_recipe": {
+  "mean_ce": 3.1773151990139126,
+  "olmes10": 0.4341511387092701
+ },
+ "ztable": [
+  {
+   "run": "1b",
+   "label": "castor-dclm-150M-s1001__step37500",
+   "mean_ce": 3.176771944219416,
+   "mean_ce_mbar": 3.1773151990139126,
+   "mean_ce_sigma": 0.009761099344145412,
+   "z_mean_ce": 0.04819871575673596,
+   "pass_mean_ce": true,
+   "olmes10": 0.4380026851587206,
+   "olmes10_mbar": 0.4341511387092701,
+   "olmes10_sigma": 0.006300024698015076,
+   "z_olmes10": 0.5294482528188849,
+   "pass_olmes10": true,
+   "pass": true
+  },
+  {
+   "run": "1a",
+   "label": "castor-dclm-150M-s6198__step37500",
+   "mean_ce": 3.1792599721388384,
+   "mean_ce_mbar": 3.1773151990139126,
+   "mean_ce_sigma": 0.009761099344145412,
+   "z_mean_ce": 0.17254438986866463,
+   "pass_mean_ce": true,
+   "olmes10": 0.43047679254960414,
+   "olmes10_mbar": 0.4341511387092701,
+   "olmes10_sigma": 0.006300024698015076,
+   "z_olmes10": 0.5050896256916364,
+   "pass_olmes10": true,
+   "pass": true
+  }
+ ],
+ "instrument_vs_ai2": {
+  "max_abs_d_olmes10": 4.208754208750998e-05,
+  "max_abs_d_mean_ce": 0.00028751216483424713,
+  "mean_d_olmes10": -9.427783208182383e-07,
+  "mean_d_mean_ce": 6.755286327120302e-06
+ },
+ "git_commit": "30794298ccfd4f37810fbc5fd24042aa9290517d",
+ "command": "uv run --frozen python scripts/stage1_ztable.py --released-dir /work/harrychang08/castor/runs/003/eval/released-150M --ours castor-dclm-150M-s1001__step37500=1b castor-dclm-150M-s6198__step37500=1a --ours-dir /work/harrychang08/castor/runs/003/eval/ours-150M --out /work/harrychang08/castor/runs/003/stage1b"
+}

@@ -1,0 +1,28 @@
+# DPO for DataDecide twins, variant A (D020): no BOS.
+# Identical to dpo_olmo2_1b.yaml except the tokenizer/BOS (max_seq_length is 2048 in both).
+# Launch: as dpo_olmo2_1b.yaml (stage 2, 8 GPUs). model_name_or_path = the twin's SFT.
+add_bos: false               # D020: the NeoX tokenizer has no BOS
+# tokenizer = the checkpoint's own (converted DataDecide tokenizer, or the SFT twin's)
+use_slow_tokenizer: false
+dataset_mixer_list: [/work/harrychang08/castor/data/tulu3/jsonl/olmo-2-0425-1b-preference-mix@c6454f3d3646.jsonl, "1.0"]
+use_flash_attn: true
+max_seq_length: 2048
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 2
+learning_rate: 2.5e-06
+lr_scheduler_type: linear
+warmup_ratio: 0.1
+weight_decay: 0.0
+num_train_epochs: 1
+gradient_checkpointing: true
+use_lora: false
+dpo_loss_type: dpo_norm
+dpo_beta: 5.0
+logging_steps: 1
+# --- castor I/O and logging (no effect on training; see notes/004 "config diff") ---
+with_tracking: false          # Ai2: true + wandb. Loss is logged to stdout every step regardless (finetune.py:838-840); curves parsed from the Slurm log
+push_to_hub: false            # Ai2 default true (uploads to their HF org)
+try_launch_beaker_eval_jobs: false
+try_auto_save_to_beaker: false
+dataset_local_cache_dir: /work/harrychang08/castor/cache/open_instruct_datasets
+# model_name_or_path, seed, output_dir, exp_name: filled per run by shell/posttrain/train.sh

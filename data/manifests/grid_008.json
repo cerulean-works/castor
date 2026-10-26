@@ -1,0 +1,340 @@
+{
+ "prompt_id": "008",
+ "sft_config": "configs/posttrain/sft_datadecide_eosbos.yaml",
+ "dpo_config": "configs/posttrain/dpo_datadecide_eosbos.yaml",
+ "posttrain_seeds": [
+  1,
+  2
+ ],
+ "bases": [
+  {
+   "repo": "allenai/DataDecide-c4-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-c4-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-c4-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-1B",
+   "revision": "step69369-seed-default",
+   "posttrain_seeds": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-1B",
+   "revision": "step69369-seed-large-aux-2",
+   "posttrain_seeds": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-1B",
+   "revision": "step69369-seed-large-aux-3",
+   "posttrain_seeds": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-25p-dolma1.7-75p-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-25p-dolma1.7-75p-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-25p-dolma1.7-75p-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-50p-dolma1.7-50p-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-50p-dolma1.7-50p-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-50p-dolma1.7-50p-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-75p-dolma1.7-25p-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-75p-dolma1.7-25p-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-75p-dolma1.7-25p-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-10p-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-10p-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-10p-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw2-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw2-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw2-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-fw-10p-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-fw-10p-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-fw-10p-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-fw-3p-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-fw-3p-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-fw-3p-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_6plus-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_6plus-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_6plus-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-code-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-code-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-code-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-flan-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-flan-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-flan-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-math-code-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-math-code-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-math-code-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-reddit-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-reddit-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-reddit-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-10p-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-10p-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-10p-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-20p-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-20p-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-20p-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-orig-10p-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-orig-10p-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-orig-10p-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-tulu-10p-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-tulu-10p-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-tulu-10p-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-fineweb-edu-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-fineweb-edu-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-fineweb-edu-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-fineweb-pro-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-fineweb-pro-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-fineweb-pro-1B",
+   "revision": "step69369-seed-large-aux-3"
+  }
+ ],
+ "source": "data/manifests/datadecide_1B.json",
+ "dropped_recipes": [],
+ "seeds_for": {
+  "dclm-baseline": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "command": "uv run --frozen python scripts/grid.py manifest --prompt-id 008 --source data/manifests/datadecide_1B.json --seeds 1 2 --seeds-for dclm-baseline=1,2,3,4 --out data/manifests/grid_008.json"
+}

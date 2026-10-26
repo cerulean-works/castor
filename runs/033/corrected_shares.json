@@ -1,0 +1,122 @@
+{
+ "of_record": "per_source",
+ "variants": {
+  "raw": {
+   "shares": {
+    "recipe": 0.5079127087365745,
+    "pretrain_seed": 0.3103318573718171,
+    "posttrain_seed": 0.18175543389160828
+   },
+   "shares_ci": {
+    "recipe": {
+     "estimate": 0.5079127087365745,
+     "lo": 0.12936578134202797,
+     "hi": 0.7220463938674465,
+     "n_draws": 1000
+    },
+    "pretrain_seed": {
+     "estimate": 0.3103318573718171,
+     "lo": 0.1511292970705772,
+     "hi": 0.5847483376361379,
+     "n_draws": 1000
+    },
+    "posttrain_seed": {
+     "estimate": 0.18175543389160828,
+     "lo": 0.10544047703110106,
+     "hi": 0.36466755388138045,
+     "n_draws": 1000
+    }
+   },
+   "components": {
+    "recipe": 0.0012229041319594361,
+    "pretrain_seed": 0.0007471876645942913,
+    "posttrain_seed": 0.00043761352549145704
+   },
+   "mean_level": 0.5279360930729349
+  },
+  "per_source": {
+   "shares": {
+    "recipe": 0.48688142910357113,
+    "pretrain_seed": 0.32314384670009116,
+    "posttrain_seed": 0.18997472419633768
+   },
+   "shares_ci": {
+    "recipe": {
+     "estimate": 0.48688142910357113,
+     "lo": 0.11679249520894458,
+     "hi": 0.7036521625000446,
+     "n_draws": 1000
+    },
+    "pretrain_seed": {
+     "estimate": 0.32314384670009116,
+     "lo": 0.15982426435174182,
+     "hi": 0.5942970033249914,
+     "n_draws": 1000
+    },
+    "posttrain_seed": {
+     "estimate": 0.18997472419633768,
+     "lo": 0.11377394513379399,
+     "hi": 0.36860169421129985,
+     "n_draws": 1000
+    }
+   },
+   "components": {
+    "recipe": 0.00031510118151448614,
+    "pretrain_seed": 0.00020913306979444178,
+    "posttrain_seed": 0.00012294833294909004
+   },
+   "mean_level": 0.2780258527217996
+  },
+  "per_group_source": {
+   "shares": {
+    "recipe": 0.8260755560274532,
+    "pretrain_seed": 0.11874719361998219,
+    "posttrain_seed": 0.05517725035256462
+   },
+   "shares_ci": {
+    "recipe": {
+     "estimate": 0.8260755560274532,
+     "lo": 0.5749981380374287,
+     "hi": 0.9171771254740049,
+     "n_draws": 1000
+    },
+    "pretrain_seed": {
+     "estimate": 0.11874719361998219,
+     "lo": 0.05189157914940894,
+     "hi": 0.30065716623621885,
+     "n_draws": 1000
+    },
+    "posttrain_seed": {
+     "estimate": 0.05517725035256462,
+     "lo": 0.02650542181488361,
+     "hi": 0.1299005803736662,
+     "n_draws": 1000
+    }
+   },
+   "components": {
+    "recipe": 0.0018952490181829331,
+    "pretrain_seed": 0.0002724393676560629,
+    "posttrain_seed": 0.0001265920880889213
+   },
+   "mean_level": 0.28183630214874356
+  }
+ },
+ "move_of_record_minus_raw": {
+  "recipe": -0.02103127963300333,
+  "pretrain_seed": 0.012811989328274043,
+  "posttrain_seed": 0.008219290304729399
+ },
+ "subset": "adv_harmful",
+ "outcome": "primary",
+ "n_models": 150,
+ "n_boot": 1000,
+ "seed": 0,
+ "grid": "runs/008/grid.json",
+ "audit": "runs/008/audit_correct.json",
+ "audit_git_commit": "782fe5fe754cbc52359a622ca62357aa6b9090c2",
+ "grid_git_commit": "804c3d6a3b2c0ec90b3e14f78607e9919e20d153",
+ "script": "scripts/corrected_shares_033.py",
+ "git_commit": "7097bd3e5b6436754d98c30e2257be971bffc407",
+ "command": "uv run --frozen python scripts/corrected_shares_033.py --out /home/harrychang08/castor/runs/033/corrected_shares.json",
+ "seconds": 0.13
+}

@@ -1,0 +1,30 @@
+{
+ "steps_compared": 28,
+ "last_common_step": 69369,
+ "released_seed_abs_dev_max_after_10k": 0.008290016232171293,
+ "ours_abs_dev_max_after_10k": {
+  "castor-dclm-1B-i6198-d6198": 0.00819844941494674,
+  "castor-dclm-1B-i6198-d6198-r2": 0.010950467102712746
+ },
+ "at_final": {
+  "default": 2.656082797329023,
+  "large aux 2": 2.6549947165508616,
+  "large aux 3": 2.654371505631796,
+  "castor-dclm-1B-i6198-d6198": 2.64876625035285,
+  "castor-dclm-1B-i6198-d6198-r2": 2.6520725515513783
+ },
+ "logs": {
+  "castor-dclm-1B-i6198-d6198": [
+   "011-i6198-d6198-seg1-449825.out",
+   "011-i6198-d6198-seg2-449826.out",
+   "011-i6198-d6198-seg3-449827.out"
+  ],
+  "castor-dclm-1B-i6198-d6198-r2": [
+   "035-r2-seg1-520993.out",
+   "035-r2-seg2-534947.out",
+   "035-r2-seg3-534974.out"
+  ]
+ },
+ "git_commit": "9283f3d868dcc509752dda9b98169fb240c40366",
+ "command": "uv run --frozen python scripts/trajectory_009.py --out /work/harrychang08/castor/runs/035/trajectory --runs 'castor-dclm-1B-i6198-d6198=011-i6198-d6198-seg*.out' 'castor-dclm-1B-i6198-d6198-r2=035-r2-seg*.out'"
+}

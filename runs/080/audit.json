@@ -1,0 +1,245 @@
+{
+ "placeholder": false,
+ "n_items": 200,
+ "unresolved": 0,
+ "partial_from_adjudication": 53,
+ "partial_from_sheets_or": 147,
+ "agreed_label_overridden": 0,
+ "pooled": {
+  "judge_rate": {
+   "point": 0.2223832650389864,
+   "lo": 0.14658523909635723,
+   "hi": 0.3102633530701137,
+   "frac_undefined": 0.0
+  },
+  "precision": {
+   "point": 0.7587309278190583,
+   "lo": 0.5831141584705376,
+   "hi": 0.8682814268285007,
+   "frac_undefined": 0.0
+  },
+  "human_rate": {
+   "point": 0.18996795543530598,
+   "lo": 0.11628172161303736,
+   "hi": 0.27919014953073173,
+   "frac_undefined": 0.0
+  },
+  "recall": {
+   "point": 0.8881974890334742,
+   "lo": 0.7512208779388592,
+   "hi": 0.9799964875988514,
+   "frac_undefined": 0.0
+  },
+  "fp_share": {
+   "point": 0.05365420402452469,
+   "lo": 0.029689882515559617,
+   "hi": 0.08463259331923366,
+   "frac_undefined": 0.0
+  },
+  "fn_share": {
+   "point": 0.02123889442084428,
+   "lo": 0.003711207946881001,
+   "hi": 0.04350814120042408,
+   "frac_undefined": 0.0
+  }
+ },
+ "per_source": {
+  "wildjailbreak": {
+   "judge_rate": {
+    "point": 0.13963557863731374,
+    "lo": 0.053207303170251935,
+    "hi": 0.25972399983623506,
+    "frac_undefined": 0.0
+   },
+   "precision": {
+    "point": 0.8851538384611953,
+    "lo": 0.6687004312077508,
+    "hi": 0.9456927343884501,
+    "frac_undefined": 0.0
+   },
+   "human_rate": {
+    "point": 0.15286647771343953,
+    "lo": 0.0547394910503851,
+    "hi": 0.27820599528437245,
+    "frac_undefined": 0.0
+   },
+   "recall": {
+    "point": 0.8085420051887668,
+    "lo": 0.4804042987085654,
+    "hi": 0.9892337053131085,
+    "frac_undefined": 0.0
+   },
+   "fp_share": {
+    "point": 0.01603661022074541,
+    "lo": 0.0109390926861804,
+    "hi": 0.02113128266584365,
+    "frac_undefined": 0.0
+   },
+   "fn_share": {
+    "point": 0.029267509296871202,
+    "lo": 0.0013887348108890304,
+    "hi": 0.06451427822507352,
+    "frac_undefined": 0.0
+   },
+   "counts": {
+    "n": 95,
+    "n_judge_vulnerable": 40,
+    "judge_rate": 0.13963557863731374,
+    "precision": 0.8851538384611953,
+    "human_rate": 0.15286647771343953,
+    "recall": 0.8085420051887668,
+    "fp_share": 0.01603661022074541,
+    "fn_share": 0.029267509296871202
+   }
+  },
+  "harmbench_humanjb": {
+   "judge_rate": {
+    "point": 0.35745665941212945,
+    "lo": 0.23760802319055974,
+    "hi": 0.4897495361144215,
+    "frac_undefined": 0.0
+   },
+   "precision": {
+    "point": 0.6781165631841841,
+    "lo": 0.4609624224216555,
+    "hi": 0.8439581296357284,
+    "frac_undefined": 0.0
+   },
+   "human_rate": {
+    "point": 0.25053064606843944,
+    "lo": 0.1408446982483614,
+    "hi": 0.37385896601507285,
+    "frac_undefined": 0.0
+   },
+   "recall": {
+    "point": 0.9675354499410626,
+    "lo": 0.8799515584594562,
+    "hi": 0.9999898209613851,
+    "frac_undefined": 0.0
+   },
+   "fp_share": {
+    "point": 0.11505937804427678,
+    "lo": 0.05268790121622182,
+    "hi": 0.19629364877413358,
+    "frac_undefined": 0.0
+   },
+   "fn_share": {
+    "point": 0.008133364700586794,
+    "lo": 3.3382261591009886e-06,
+    "hi": 0.025892499493419846,
+    "frac_undefined": 0.0
+   },
+   "counts": {
+    "n": 94,
+    "n_judge_vulnerable": 56,
+    "judge_rate": 0.35745665941212945,
+    "precision": 0.6781165631841841,
+    "human_rate": 0.25053064606843944,
+    "recall": 0.9675354499410626,
+    "fp_share": 0.11505937804427678,
+    "fn_share": 0.008133364700586794
+   }
+  }
+ },
+ "counts": {
+  "n": 189,
+  "n_judge_vulnerable": 96,
+  "judge_rate": 0.2223832650389864,
+  "precision": 0.7587309278190583,
+  "human_rate": 0.18996795543530598,
+  "recall": 0.8881974890334742,
+  "fp_share": 0.05365420402452469,
+  "fn_share": 0.02123889442084428
+ },
+ "n_gold": 200,
+ "n_population": 189,
+ "n_greedy_excluded": 11,
+ "recipes": [
+  "dclm-baseline"
+ ],
+ "models": [
+  "dd-dclm-baseline-1b-default-dpo-seed1-swap080",
+  "dd-dclm-baseline-1b-default-dpo-seed2-swap080",
+  "dd-dclm-baseline-1b-large-aux-2-dpo-seed1-swap080",
+  "dd-dclm-baseline-1b-large-aux-2-dpo-seed2-swap080",
+  "dd-dclm-baseline-1b-large-aux-3-dpo-seed1-swap080",
+  "dd-dclm-baseline-1b-large-aux-3-dpo-seed2-swap080"
+ ],
+ "comparator_051": {
+  "path": "runs/008/audit_correct.json",
+  "git_commit": "782fe5fe754cbc52359a622ca62357aa6b9090c2",
+  "judge_rate": {
+   "point": 0.5494932233856941,
+   "lo": 0.48818222504951286,
+   "hi": 0.6143243065633175,
+   "frac_undefined": 0.0
+  },
+  "precision": {
+   "point": 0.5280892490494393,
+   "lo": 0.43582386359609515,
+   "hi": 0.615380571467816,
+   "frac_undefined": 0.0
+  },
+  "human_rate": {
+   "point": 0.29709502364102014,
+   "lo": 0.2365032753225401,
+   "hi": 0.35726514831856704,
+   "frac_undefined": 0.0
+  },
+  "recall": {
+   "point": 0.9767294656747034,
+   "lo": 0.9555612841164906,
+   "hi": 0.993780465494712,
+   "frac_undefined": 0.0
+  },
+  "fp_share": {
+   "point": 0.25931175969018705,
+   "lo": 0.2032917243259942,
+   "hi": 0.3154899720604265,
+   "frac_undefined": 0.0
+  },
+  "fn_share": {
+   "point": 0.0069135599455131674,
+   "lo": 0.0019064937628433677,
+   "hi": 0.01272745486428463,
+   "frac_undefined": 0.0
+  },
+  "recall:wildjailbreak": {
+   "point": 0.9735916978013505,
+   "lo": 0.9477257513789356,
+   "hi": 0.9940486003568083,
+   "frac_undefined": 0.0
+  },
+  "recall:harmbench_humanjb": {
+   "point": 0.9830299085126405,
+   "lo": 0.9477148404513297,
+   "hi": 0.9999990867991141,
+   "frac_undefined": 0.0
+  },
+  "precision_per_source": {
+   "wildjailbreak": {
+    "point": 0.5531363439256018,
+    "lo": 0.4275278805082551,
+    "hi": 0.6749485448743097,
+    "frac_undefined": 0.0
+   },
+   "harmbench_humanjb": {
+    "point": 0.4844631566614268,
+    "lo": 0.36286445790699406,
+    "hi": 0.6010428008222349,
+    "frac_undefined": 0.0
+   }
+  }
+ },
+ "n_boot": 2000,
+ "seed": 0,
+ "sheets": [
+  "/work/harrychang08/castor/runs/080/audit/sheet_harry.csv",
+  "/work/harrychang08/castor/runs/080/audit/sheet_coauthor.csv"
+ ],
+ "adjudicated": "/work/harrychang08/castor/runs/080/audit/sheet_adjudicate.csv",
+ "script": "scripts/audit_score_080.py",
+ "git_commit": "bf17d701130103261e94190cace2ef74334b70e6",
+ "command": "uv run --frozen python scripts/audit_score_080.py --audit /work/harrychang08/castor/runs/080/audit --sheets /work/harrychang08/castor/runs/080/audit/sheet_harry.csv /work/harrychang08/castor/runs/080/audit/sheet_coauthor.csv --adjudicated /work/harrychang08/castor/runs/080/audit/sheet_adjudicate.csv --out /work/harrychang08/castor/runs/080/audit/092/score_080.json",
+ "seconds": 0.6440913677215576
+}

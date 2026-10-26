@@ -1,0 +1,125 @@
+{
+ "version": "v1",
+ "panel": {
+  "path": "data/panel/panel_v1.jsonl",
+  "sha256": "7b7c4fac5e285e5dfc3aa3b4bdd22397bfd3e645ebb6e7ee476c9e2a951578d7",
+  "n": 6290
+ },
+ "rule": "keep iff chat-formatted prompt tokens + 512 <= 2048 (D021 b, D017)",
+ "tokenizer": "/work/harrychang08/castor/models/datadecide-llama/DataDecide-dclm-baseline-1B/step69369-seed-default with bos_token=eos_token, tulu template from allenai/OLMo-2-0425-1B-SFT@0d85a3d037876ce6ac7d4311d994400fc66ac27f, generation prompt",
+ "eval": {
+  "path": "data/panel/panel_v1_eval.jsonl",
+  "sha256": "9d6508b26706497a0aab5291f0923e64275c38e78c1f928bbe6c2c27c31acc94",
+  "n": 6226,
+  "n_harmful": 4452
+ },
+ "per_source": {
+  "harmbench": {
+   "panel": 300,
+   "eval": 300,
+   "dropped": 0
+  },
+  "harmbench_humanjb": {
+   "panel": 1276,
+   "eval": 1212,
+   "dropped": 64
+  },
+  "sorrybench": {
+   "panel": 435,
+   "eval": 435,
+   "dropped": 0
+  },
+  "strongreject": {
+   "panel": 307,
+   "eval": 307,
+   "dropped": 0
+  },
+  "xstest": {
+   "panel": 446,
+   "eval": 446,
+   "dropped": 0
+  },
+  "orbench": {
+   "panel": 1317,
+   "eval": 1317,
+   "dropped": 0
+  },
+  "wildjailbreak": {
+   "panel": 2209,
+   "eval": 2209,
+   "dropped": 0
+  }
+ },
+ "dropped_ids": [
+  "harmbench_humanjb-00003",
+  "harmbench_humanjb-00042",
+  "harmbench_humanjb-00055",
+  "harmbench_humanjb-00071",
+  "harmbench_humanjb-00085",
+  "harmbench_humanjb-00088",
+  "harmbench_humanjb-00090",
+  "harmbench_humanjb-00099",
+  "harmbench_humanjb-00105",
+  "harmbench_humanjb-00121",
+  "harmbench_humanjb-00153",
+  "harmbench_humanjb-00171",
+  "harmbench_humanjb-00195",
+  "harmbench_humanjb-00201",
+  "harmbench_humanjb-00239",
+  "harmbench_humanjb-00249",
+  "harmbench_humanjb-00286",
+  "harmbench_humanjb-00305",
+  "harmbench_humanjb-00360",
+  "harmbench_humanjb-00379",
+  "harmbench_humanjb-00384",
+  "harmbench_humanjb-00389",
+  "harmbench_humanjb-00421",
+  "harmbench_humanjb-00468",
+  "harmbench_humanjb-00474",
+  "harmbench_humanjb-00489",
+  "harmbench_humanjb-00524",
+  "harmbench_humanjb-00608",
+  "harmbench_humanjb-00611",
+  "harmbench_humanjb-00691",
+  "harmbench_humanjb-00692",
+  "harmbench_humanjb-00728",
+  "harmbench_humanjb-00734",
+  "harmbench_humanjb-00741",
+  "harmbench_humanjb-00779",
+  "harmbench_humanjb-00800",
+  "harmbench_humanjb-00806",
+  "harmbench_humanjb-00808",
+  "harmbench_humanjb-00818",
+  "harmbench_humanjb-00820",
+  "harmbench_humanjb-00843",
+  "harmbench_humanjb-00856",
+  "harmbench_humanjb-00869",
+  "harmbench_humanjb-00875",
+  "harmbench_humanjb-00894",
+  "harmbench_humanjb-00904",
+  "harmbench_humanjb-00919",
+  "harmbench_humanjb-00932",
+  "harmbench_humanjb-00943",
+  "harmbench_humanjb-00974",
+  "harmbench_humanjb-00976",
+  "harmbench_humanjb-01000",
+  "harmbench_humanjb-01030",
+  "harmbench_humanjb-01070",
+  "harmbench_humanjb-01086",
+  "harmbench_humanjb-01105",
+  "harmbench_humanjb-01121",
+  "harmbench_humanjb-01134",
+  "harmbench_humanjb-01143",
+  "harmbench_humanjb-01159",
+  "harmbench_humanjb-01162",
+  "harmbench_humanjb-01175",
+  "harmbench_humanjb-01198",
+  "harmbench_humanjb-01260"
+ ],
+ "max_prompt_tokens": {
+  "datadecide_eosbos": 1530,
+  "olmo2": 1535
+ },
+ "git_commit": "d25c330b302d7d1070a0c80b0fdb9db7dfbb9e10",
+ "command": "uv run --frozen python scripts/build_eval_subset.py"
+}

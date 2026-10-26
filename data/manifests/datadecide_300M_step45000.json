@@ -1,0 +1,1288 @@
+{
+ "created": "2026-09-26T20:37:21+0800",
+ "size": "300M",
+ "seeds": [
+  "default",
+  "small-aux-2",
+  "small-aux-3"
+ ],
+ "n": 75,
+ "total_bytes": 111719050575,
+ "entries": [
+  {
+   "repo": "allenai/DataDecide-c4-300M",
+   "revision": "step45000-seed-default",
+   "sha": "20c69e5f69524ed87b7a959a9a5430be6ed845e0",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-c4-300M/snapshots/20c69e5f69524ed87b7a959a9a5430be6ed845e0"
+  },
+  {
+   "repo": "allenai/DataDecide-c4-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "34776da45a046d92671d287a7814fc12ba7c4aa5",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-c4-300M/snapshots/34776da45a046d92671d287a7814fc12ba7c4aa5"
+  },
+  {
+   "repo": "allenai/DataDecide-c4-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "748d03d740e8c6a8cc9b397e2f0bdf5f9f8a0005",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-c4-300M/snapshots/748d03d740e8c6a8cc9b397e2f0bdf5f9f8a0005"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-25p-dolma1.7-75p-300M",
+   "revision": "step45000-seed-default",
+   "sha": "a7eb8d84a9974d74d9ce9cea9770e51a72ce95f8",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-25p-dolma1.7-75p-300M/snapshots/a7eb8d84a9974d74d9ce9cea9770e51a72ce95f8"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-25p-dolma1.7-75p-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "4fed7c24b1e8a52a8d8c27a885c8392736b994d9",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-25p-dolma1.7-75p-300M/snapshots/4fed7c24b1e8a52a8d8c27a885c8392736b994d9"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-25p-dolma1.7-75p-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "6f80983ffbbfce2f440b170075d6f249f25e1478",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-25p-dolma1.7-75p-300M/snapshots/6f80983ffbbfce2f440b170075d6f249f25e1478"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-300M",
+   "revision": "step45000-seed-default",
+   "sha": "4dbc7b92baa4a25323c1bf674dca619f0e9dfd80",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-300M/snapshots/4dbc7b92baa4a25323c1bf674dca619f0e9dfd80"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "383cae4e152d0d0017738e9dfa6b6fb565e11743",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-300M/snapshots/383cae4e152d0d0017738e9dfa6b6fb565e11743"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "e2b6e9f4aebd3b756cd26323ac0a810dec35f6c1",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-300M/snapshots/e2b6e9f4aebd3b756cd26323ac0a810dec35f6c1"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-50p-dolma1.7-50p-300M",
+   "revision": "step45000-seed-default",
+   "sha": "f5b08c72ed771cb59a300d6e871e483025b8b898",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-50p-dolma1.7-50p-300M/snapshots/f5b08c72ed771cb59a300d6e871e483025b8b898"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-50p-dolma1.7-50p-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "60c25475c35edc51394ebf8b45d8fe8b01c11869",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-50p-dolma1.7-50p-300M/snapshots/60c25475c35edc51394ebf8b45d8fe8b01c11869"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-50p-dolma1.7-50p-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "38df455282e679897b7a1fbb01c20cd508c0a587",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-50p-dolma1.7-50p-300M/snapshots/38df455282e679897b7a1fbb01c20cd508c0a587"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-75p-dolma1.7-25p-300M",
+   "revision": "step45000-seed-default",
+   "sha": "abc371f2b941a20234a78f8a8b4a2c601f1ffe1c",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-75p-dolma1.7-25p-300M/snapshots/abc371f2b941a20234a78f8a8b4a2c601f1ffe1c"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-75p-dolma1.7-25p-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "2369ac68f3aa0d2b0575a7a6925331f019123335",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-75p-dolma1.7-25p-300M/snapshots/2369ac68f3aa0d2b0575a7a6925331f019123335"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-75p-dolma1.7-25p-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "5120aad8aa154ecaf0f0fdfd2e9c83a287bd2eb6",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-75p-dolma1.7-25p-300M/snapshots/5120aad8aa154ecaf0f0fdfd2e9c83a287bd2eb6"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-10p-300M",
+   "revision": "step45000-seed-default",
+   "sha": "374bbff4fac4758a233dd758e73b0522de670b6e",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-10p-300M/snapshots/374bbff4fac4758a233dd758e73b0522de670b6e"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-10p-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "efa9ba1490d557429621778f77e0b7aab5a6f839",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-10p-300M/snapshots/efa9ba1490d557429621778f77e0b7aab5a6f839"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-10p-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "76ad381ff3cb5dd45d2b37a6aa8ca0653168147d",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-10p-300M/snapshots/76ad381ff3cb5dd45d2b37a6aa8ca0653168147d"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-20p-300M",
+   "revision": "step45000-seed-default",
+   "sha": "88dbf11b1c6e8a0f8c8f8ace13ab713e1595c30f",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-20p-300M/snapshots/88dbf11b1c6e8a0f8c8f8ace13ab713e1595c30f"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-20p-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "1ff9d827091b413bf037bceea5dcb6eb02cfbce4",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-20p-300M/snapshots/1ff9d827091b413bf037bceea5dcb6eb02cfbce4"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-20p-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "14d07c2f871e222073e898139ddc73e18773809f",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-20p-300M/snapshots/14d07c2f871e222073e898139ddc73e18773809f"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw2-300M",
+   "revision": "step45000-seed-default",
+   "sha": "6e014fe1c60d67db3b6067cfde68f2bf2e136ed2",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-7p-fw2-300M/snapshots/6e014fe1c60d67db3b6067cfde68f2bf2e136ed2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw2-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "b537db7216607486e28223d48ae0f4c8e633571d",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-7p-fw2-300M/snapshots/b537db7216607486e28223d48ae0f4c8e633571d"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw2-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "76f8327eb5bd5dc47ff07bdcc320455f48874cac",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-7p-fw2-300M/snapshots/76f8327eb5bd5dc47ff07bdcc320455f48874cac"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-300M",
+   "revision": "step45000-seed-default",
+   "sha": "dfc8b861b072e91fea8cb615a870274c1cb08564",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-7p-fw3-300M/snapshots/dfc8b861b072e91fea8cb615a870274c1cb08564"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "1082ee23b509cf64601effb5ea5661ffbc54f6f7",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-7p-fw3-300M/snapshots/1082ee23b509cf64601effb5ea5661ffbc54f6f7"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "8e8773ccca775d5c884b1a332dd0fc81e31acfd2",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-7p-fw3-300M/snapshots/8e8773ccca775d5c884b1a332dd0fc81e31acfd2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-fw-10p-300M",
+   "revision": "step45000-seed-default",
+   "sha": "d48241d35e77851c117ca47004af092f888ca43b",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-fw-10p-300M/snapshots/d48241d35e77851c117ca47004af092f888ca43b"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-fw-10p-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "3970f38035a168ddc71303435a80f055f0859eb2",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-fw-10p-300M/snapshots/3970f38035a168ddc71303435a80f055f0859eb2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-fw-10p-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "39354f311e9e9670a4b06d10b92706f35f6d0d56",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-fw-10p-300M/snapshots/39354f311e9e9670a4b06d10b92706f35f6d0d56"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-fw-3p-300M",
+   "revision": "step45000-seed-default",
+   "sha": "5ec9cc62aef93fd997d9b97228473db9580e40a5",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-fw-3p-300M/snapshots/5ec9cc62aef93fd997d9b97228473db9580e40a5"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-fw-3p-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "c1a977a4566d54d2788b7a469d74c2957c42f2a1",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-fw-3p-300M/snapshots/c1a977a4566d54d2788b7a469d74c2957c42f2a1"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-qc-fw-3p-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "69122198d2feb6fd1ab93be3e5ed4986050ce388",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dclm-baseline-qc-fw-3p-300M/snapshots/69122198d2feb6fd1ab93be3e5ed4986050ce388"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_6plus-300M",
+   "revision": "step45000-seed-default",
+   "sha": "cb106ea3589800d2ccb1932398c608a126235990",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_6plus-300M/snapshots/cb106ea3589800d2ccb1932398c608a126235990"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_6plus-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "c6745b9889aedfef541e7569cbf7c293413ac2a8",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_6plus-300M/snapshots/c6745b9889aedfef541e7569cbf7c293413ac2a8"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_6plus-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "559c3e02da085571a085196d358ba7e612fb48de",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_6plus-300M/snapshots/559c3e02da085571a085196d358ba7e612fb48de"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-300M",
+   "revision": "step45000-seed-default",
+   "sha": "29a66f2f9ab329cbc2cf68a8e0df9d7807c240ed",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-300M/snapshots/29a66f2f9ab329cbc2cf68a8e0df9d7807c240ed"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "ad1e071c53720985af4ffd6f6375326c9ca19777",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-300M/snapshots/ad1e071c53720985af4ffd6f6375326c9ca19777"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "ef69ceaa9ab992a278ae61e00865ad73b1bddebc",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-300M/snapshots/ef69ceaa9ab992a278ae61e00865ad73b1bddebc"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-code-300M",
+   "revision": "step45000-seed-default",
+   "sha": "a547759d05750f941de0843af9f8347723fc821e",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-no-code-300M/snapshots/a547759d05750f941de0843af9f8347723fc821e"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-code-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "818913cf143ce8a28ef39bad31ec155367221aa5",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-no-code-300M/snapshots/818913cf143ce8a28ef39bad31ec155367221aa5"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-code-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "c211b82e997fbaaa653dce19a1483f99f889f259",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-no-code-300M/snapshots/c211b82e997fbaaa653dce19a1483f99f889f259"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-flan-300M",
+   "revision": "step45000-seed-default",
+   "sha": "3982db897271bd3948c18fcf027f846c5ca52c6c",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-no-flan-300M/snapshots/3982db897271bd3948c18fcf027f846c5ca52c6c"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-flan-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "bb14ae0fc3ba51a42518ba81162459b57fb430c1",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-no-flan-300M/snapshots/bb14ae0fc3ba51a42518ba81162459b57fb430c1"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-flan-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "de01d0d84079266366ae226d63c72f91155019ee",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-no-flan-300M/snapshots/de01d0d84079266366ae226d63c72f91155019ee"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-math-code-300M",
+   "revision": "step45000-seed-default",
+   "sha": "e74372e6fe273c1fa0036293dc4395811f27e709",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-no-math-code-300M/snapshots/e74372e6fe273c1fa0036293dc4395811f27e709"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-math-code-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "cb6182f9779e3695a7bba391296071f84b225d3f",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-no-math-code-300M/snapshots/cb6182f9779e3695a7bba391296071f84b225d3f"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-math-code-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "826d5a999f9d6ecf12cbce6672a8d7707f8a8890",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-no-math-code-300M/snapshots/826d5a999f9d6ecf12cbce6672a8d7707f8a8890"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-reddit-300M",
+   "revision": "step45000-seed-default",
+   "sha": "2f342e98917fdce15f4a96a584f54005abcf3641",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-no-reddit-300M/snapshots/2f342e98917fdce15f4a96a584f54005abcf3641"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-reddit-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "57d05613dc734467d1248acca1376521e7585c0e",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-no-reddit-300M/snapshots/57d05613dc734467d1248acca1376521e7585c0e"
+  },
+  {
+   "repo": "allenai/DataDecide-dolma1_7-no-reddit-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "29dda7ff48b1b763aab03bdc39fcab47327825c5",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-dolma1_7-no-reddit-300M/snapshots/29dda7ff48b1b763aab03bdc39fcab47327825c5"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-300M",
+   "revision": "step45000-seed-default",
+   "sha": "aafa4e2cc43f5e78b57c0228735fec8ccc6b0ce6",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-300M/snapshots/aafa4e2cc43f5e78b57c0228735fec8ccc6b0ce6"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "220d6ab8d4206bfa59bf45dc1c19700dbdcf651e",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-300M/snapshots/220d6ab8d4206bfa59bf45dc1c19700dbdcf651e"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "50f0b7cc3e36e654fc2f1381a61bd04f0be1084a",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-300M/snapshots/50f0b7cc3e36e654fc2f1381a61bd04f0be1084a"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-300M",
+   "revision": "step45000-seed-default",
+   "sha": "da30f4c0e10c51b41bf20ca6b965a23da57b3e4f",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-300M/snapshots/da30f4c0e10c51b41bf20ca6b965a23da57b3e4f"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "81f1312ffb10a26041c10094a7e8cc6bb806274c",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-300M/snapshots/81f1312ffb10a26041c10094a7e8cc6bb806274c"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "2e888431b657fad4f3ba5c0f4f3477f205ffa993",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-300M/snapshots/2e888431b657fad4f3ba5c0f4f3477f205ffa993"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-10p-300M",
+   "revision": "step45000-seed-default",
+   "sha": "0d2ba73aae98209687dee52eadb841c9049f5c1b",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-qc-10p-300M/snapshots/0d2ba73aae98209687dee52eadb841c9049f5c1b"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-10p-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "6314c2e2c483bc3b93c659f7d5807f461413345d",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-qc-10p-300M/snapshots/6314c2e2c483bc3b93c659f7d5807f461413345d"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-10p-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "90315ef0bfa64a7ea3673536a0689724e2ae8c93",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-qc-10p-300M/snapshots/90315ef0bfa64a7ea3673536a0689724e2ae8c93"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-20p-300M",
+   "revision": "step45000-seed-default",
+   "sha": "a0407dad12f51ceb6159108b7d2e84dd504e1433",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-qc-20p-300M/snapshots/a0407dad12f51ceb6159108b7d2e84dd504e1433"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-20p-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "dd173a06e92a64c91c0ff9e5d1ed72758f99f6d2",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-qc-20p-300M/snapshots/dd173a06e92a64c91c0ff9e5d1ed72758f99f6d2"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-20p-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "a4045bf21e70fe6311a7904449757c441a1dd253",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-qc-20p-300M/snapshots/a4045bf21e70fe6311a7904449757c441a1dd253"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-orig-10p-300M",
+   "revision": "step45000-seed-default",
+   "sha": "fd9b084e69695bf22027932cbaca2f8cb6458d56",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-qc-orig-10p-300M/snapshots/fd9b084e69695bf22027932cbaca2f8cb6458d56"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-orig-10p-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "787409b3eee2ced0040a00937eea0f34ced6a6ff",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-qc-orig-10p-300M/snapshots/787409b3eee2ced0040a00937eea0f34ced6a6ff"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-orig-10p-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "bec3c94b2969a26ddb57440990334c7b2d1d03e3",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-qc-orig-10p-300M/snapshots/bec3c94b2969a26ddb57440990334c7b2d1d03e3"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-tulu-10p-300M",
+   "revision": "step45000-seed-default",
+   "sha": "50d61e81057bc80c19b95a1f8c6d82fb1fc5938b",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-qc-tulu-10p-300M/snapshots/50d61e81057bc80c19b95a1f8c6d82fb1fc5938b"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-tulu-10p-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "7eafa34551625a6a0a1c629e364c8d4276ca08f3",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-qc-tulu-10p-300M/snapshots/7eafa34551625a6a0a1c629e364c8d4276ca08f3"
+  },
+  {
+   "repo": "allenai/DataDecide-falcon-and-cc-qc-tulu-10p-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "3f22fd59b4a1511a3fecfcaa264f2dc448db71f9",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-falcon-and-cc-qc-tulu-10p-300M/snapshots/3f22fd59b4a1511a3fecfcaa264f2dc448db71f9"
+  },
+  {
+   "repo": "allenai/DataDecide-fineweb-edu-300M",
+   "revision": "step45000-seed-default",
+   "sha": "f9334e7c56e7aeb8b44c7ab5c92afc2642f208de",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-fineweb-edu-300M/snapshots/f9334e7c56e7aeb8b44c7ab5c92afc2642f208de"
+  },
+  {
+   "repo": "allenai/DataDecide-fineweb-edu-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "e08017d66583d1b732814b237892f092b09c2b84",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-fineweb-edu-300M/snapshots/e08017d66583d1b732814b237892f092b09c2b84"
+  },
+  {
+   "repo": "allenai/DataDecide-fineweb-edu-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "361f480eb3bcca4f046c6ac2716dc4f946ece95a",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-fineweb-edu-300M/snapshots/361f480eb3bcca4f046c6ac2716dc4f946ece95a"
+  },
+  {
+   "repo": "allenai/DataDecide-fineweb-pro-300M",
+   "revision": "step45000-seed-default",
+   "sha": "e88c978cc31e6e1394d1679802b3b9cf96d5c665",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-fineweb-pro-300M/snapshots/e88c978cc31e6e1394d1679802b3b9cf96d5c665"
+  },
+  {
+   "repo": "allenai/DataDecide-fineweb-pro-300M",
+   "revision": "step45000-seed-small-aux-2",
+   "sha": "c8d3a79742abb46f62409baf5f63de7e92854520",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-fineweb-pro-300M/snapshots/c8d3a79742abb46f62409baf5f63de7e92854520"
+  },
+  {
+   "repo": "allenai/DataDecide-fineweb-pro-300M",
+   "revision": "step45000-seed-small-aux-3",
+   "sha": "a08ffaea9f78da433484a066b4bde90e91c82e9c",
+   "bytes": 1489587341,
+   "files": {
+    ".gitattributes": 1519,
+    "README.md": 34546,
+    "config.json": 1278,
+    "generation_config.json": 115,
+    "model.safetensors": 1485978864,
+    "special_tokens_map.json": 293,
+    "tokenizer.json": 3565402,
+    "tokenizer_config.json": 5324
+   },
+   "local_path": "/work/harrychang08/hf/hub/models--allenai--DataDecide-fineweb-pro-300M/snapshots/a08ffaea9f78da433484a066b4bde90e91c82e9c"
+  }
+ ]
+}

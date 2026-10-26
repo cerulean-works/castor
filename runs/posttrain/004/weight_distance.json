@@ -1,0 +1,58 @@
+{
+ "distance": {
+  "base|sft_ai2": 4954.907452741324,
+  "base|dpo_ai2": 4954.908903785087,
+  "base|sft1": 81.05428818074355,
+  "base|sft2": 81.02564435990455,
+  "base|dpo1": 81.11093876764649,
+  "base|dpo2": 81.08336276255646,
+  "sft_ai2|dpo_ai2": 2.8044571649225842,
+  "sft_ai2|sft1": 4955.237238648511,
+  "sft_ai2|sft2": 4955.2350124681625,
+  "sft_ai2|dpo1": 4955.238383140076,
+  "sft_ai2|dpo2": 4955.236181858429,
+  "dpo_ai2|sft1": 4955.238687336002,
+  "dpo_ai2|sft2": 4955.236662368418,
+  "dpo_ai2|dpo1": 4955.2400432347295,
+  "dpo_ai2|dpo2": 4955.237833710839,
+  "sft1|sft2": 42.60018448071484,
+  "sft1|dpo1": 2.723613805726063,
+  "sft1|dpo2": 42.68757005069128,
+  "sft2|dpo1": 42.686964551558525,
+  "sft2|dpo2": 2.736350119567837,
+  "dpo1|dpo2": 42.70887844419483
+ },
+ "param_norm": {
+  "base": 3740.3430995513363,
+  "sft_ai2": 3291.7132313464467,
+  "dpo_ai2": 3291.715481014424,
+  "sft1": 3740.798541809476,
+  "sft2": 3740.793524619383,
+  "dpo1": 3740.8000372227384,
+  "dpo2": 3740.7950459135027
+ },
+ "update_from_parent": {
+  "sft1": 81.05428818074355,
+  "sft2": 81.02564435990455,
+  "sft_ai2": 4954.907452741324,
+  "dpo1": 2.723613805726063,
+  "dpo2": 2.736350119567837,
+  "dpo_ai2": 2.8044571649225842
+ },
+ "paths": {
+  "base": "/work/harrychang08/hf/hub/models--allenai--OLMo-2-0425-1B/snapshots/a1847dff35000b4271fa70afc5db10fd29fedbdf",
+  "sft_ai2": "/work/harrychang08/hf/hub/models--allenai--OLMo-2-0425-1B-SFT/snapshots/0d85a3d037876ce6ac7d4311d994400fc66ac27f",
+  "dpo_ai2": "/work/harrychang08/hf/hub/models--allenai--OLMo-2-0425-1B-DPO/snapshots/c4b0485961ab24c2433b090f3b922f0913a9290f",
+  "sft1": "/work/harrychang08/castor/models/posttrain/olmo2-1b/sft/seed1/oi/olmo2-1b_sft_seed1__1__1790444948",
+  "sft2": "/work/harrychang08/castor/models/posttrain/olmo2-1b/sft/seed2/oi/olmo2-1b_sft_seed2__2__1790445243",
+  "dpo1": "/work/harrychang08/castor/models/posttrain/olmo2-1b/dpo/seed1/oi/olmo2-1b_dpo_seed1__111__1790474149",
+  "dpo2": "/work/harrychang08/castor/models/posttrain/olmo2-1b/dpo/seed2/oi/olmo2-1b_dpo_seed2__112__1790474299"
+ },
+ "revisions": {
+  "base": "a1847dff35000b4271fa70afc5db10fd29fedbdf",
+  "sft_ai2": "0d85a3d037876ce6ac7d4311d994400fc66ac27f",
+  "dpo_ai2": "c4b0485961ab24c2433b090f3b922f0913a9290f"
+ },
+ "git_commit": "4708f4c90ab417911a76279c4122cb42d5bceb2f",
+ "command": "uv run --frozen python scripts/weight_distance_004.py --out /home/harrychang08/castor/runs/posttrain/004/weight_distance.json"
+}

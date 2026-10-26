@@ -1,0 +1,18 @@
+517666|035-smoke-r2|COMPLETED|1025|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn088
+517723|035-floor-dryrun|COMPLETED|59|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn088
+520993|035-r2-seg1|CANCELLED by 44970|35693|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn044
+521000|035-r2-seg2|CANCELLED by 44970|0||None assigned
+534947|035-r2-seg2|TIMEOUT|172850|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn120
+534974|035-r2-seg3|COMPLETED|125662|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn084
+560417|035-identity|COMPLETED|21|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn010
+560418|035-after|COMPLETED|4029|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn010
+560419|035-divergence|COMPLETED|845|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn025
+561064|035-train-dclm-baseline-1B-replicate2-i6198-d6198-s1|COMPLETED|13415|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn084
+561065|035-gj-dclm-baseline-1B-replicate2-i6198-d6198-s1|COMPLETED|6619|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn009
+561066|035-train-dclm-baseline-1B-replicate2-i6198-d6198-s2|COMPLETED|13409|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn031
+561067|035-gj-dclm-baseline-1B-replicate2-i6198-d6198-s2|COMPLETED|6761|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn009
+561069|035-train-dclm-baseline-1B-replicate2-i6198-d6198-s3|COMPLETED|13343|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn032
+561070|035-gj-dclm-baseline-1B-replicate2-i6198-d6198-s3|COMPLETED|6798|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn009
+561071|035-train-dclm-baseline-1B-replicate2-i6198-d6198-s4|COMPLETED|13408|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn086
+561072|035-gj-dclm-baseline-1B-replicate2-i6198-d6198-s4|COMPLETED|6662|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn009
+561663|035-floor|COMPLETED|1317|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn002

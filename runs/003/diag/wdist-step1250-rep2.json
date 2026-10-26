@@ -1,0 +1,12 @@
+{
+ "ckpts": {
+  "ours1a": "/work/harrychang08/castor/runs/003/castor-dclm-150M-s6198/ckpt/step1250-unsharded/model.pt",
+  "rep2": "/work/harrychang08/castor/runs/003/diag-150M-s6198-rep2/ckpt/step1250-unsharded/model.pt",
+  "default": "allenai/DataDecide-dclm-baseline-150M@step1250-seed-default"
+ },
+ "rel_l2": {
+  "ours1a~rep2": 1.1159407844522806,
+  "ours1a~default": 1.1464684302668826,
+  "rep2~default": 1.1431249672031325
+ }
+}

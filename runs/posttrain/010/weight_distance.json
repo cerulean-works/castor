@@ -1,0 +1,76 @@
+{
+ "distance": {
+  "base|sft_ai2": 76.06272896917643,
+  "base|dpo_ai2": 76.12359809758648,
+  "base|sft1": 76.0529375159791,
+  "base|sft2": 76.08149925034728,
+  "base|dpo1": 76.11297928388126,
+  "base|dpo2": 76.14234997623689,
+  "sft_ai2|dpo_ai2": 2.8044571649225842,
+  "sft_ai2|sft1": 15.594545204071679,
+  "sft_ai2|sft2": 47.93995190670273,
+  "sft_ai2|dpo1": 15.844334820240402,
+  "sft_ai2|dpo2": 48.02228670615469,
+  "dpo_ai2|sft1": 15.845213834784175,
+  "dpo_ai2|sft2": 48.02148655373917,
+  "dpo_ai2|dpo1": 15.73283742859062,
+  "dpo_ai2|dpo2": 48.046870317195385,
+  "sft1|sft2": 47.896297373057294,
+  "sft1|dpo1": 2.795674662486939,
+  "sft1|dpo2": 47.978454565358255,
+  "sft2|dpo1": 47.97708276523294,
+  "sft2|dpo2": 2.797883231524646,
+  "dpo1|dpo2": 48.002415386234794
+ },
+ "param_norm": {
+  "base": 3291.0999664997,
+  "sft_ai2": 3291.7132313464467,
+  "dpo_ai2": 3291.715481014424,
+  "sft1": 3291.713936428187,
+  "sft2": 3291.710709346693,
+  "dpo1": 3291.716144303212,
+  "dpo2": 3291.7127845814766
+ },
+ "update_from_parent": {
+  "sft1": 76.0529375159791,
+  "sft2": 76.08149925034728,
+  "sft_ai2": 76.06272896917643,
+  "dpo1": 2.795674662486939,
+  "dpo2": 2.797883231524646,
+  "dpo_ai2": 2.8044571649225842
+ },
+ "paths": {
+  "base": "/work/harrychang08/hf/hub/models--allenai--OLMo-2-0425-1B/snapshots/f83cd641d4f00954eb25c781e0ac360debb3239e",
+  "sft_ai2": "/work/harrychang08/hf/hub/models--allenai--OLMo-2-0425-1B-SFT/snapshots/0d85a3d037876ce6ac7d4311d994400fc66ac27f",
+  "dpo_ai2": "/work/harrychang08/hf/hub/models--allenai--OLMo-2-0425-1B-DPO/snapshots/c4b0485961ab24c2433b090f3b922f0913a9290f",
+  "sft1": "/work/harrychang08/castor/models/posttrain/olmo2-1b-ingr3/sft/seed1/oi/olmo2-1b-ingr3_sft_seed1__1__1790507817",
+  "sft2": "/work/harrychang08/castor/models/posttrain/olmo2-1b-ingr3/sft/seed2/oi/olmo2-1b-ingr3_sft_seed2__2__1790508079",
+  "dpo1": "/work/harrychang08/castor/models/posttrain/olmo2-1b-ingr3/dpo/seed1/oi/olmo2-1b-ingr3_dpo_seed1__111__1790536720",
+  "dpo2": "/work/harrychang08/castor/models/posttrain/olmo2-1b-ingr3/dpo/seed2/oi/olmo2-1b-ingr3_dpo_seed2__112__1790536710"
+ },
+ "trained_from": {
+  "sft1": [
+   "allenai/OLMo-2-0425-1B",
+   "f83cd641d4f00954eb25c781e0ac360debb3239e"
+  ],
+  "sft2": [
+   "allenai/OLMo-2-0425-1B",
+   "f83cd641d4f00954eb25c781e0ac360debb3239e"
+  ],
+  "dpo1": [
+   "/work/harrychang08/castor/models/posttrain/olmo2-1b-ingr3/sft/seed1/oi/olmo2-1b-ingr3_sft_seed1__1__1790507817",
+   "main"
+  ],
+  "dpo2": [
+   "/work/harrychang08/castor/models/posttrain/olmo2-1b-ingr3/sft/seed2/oi/olmo2-1b-ingr3_sft_seed2__2__1790508079",
+   "main"
+  ]
+ },
+ "revisions": {
+  "base": "f83cd641d4f00954eb25c781e0ac360debb3239e",
+  "sft_ai2": "0d85a3d037876ce6ac7d4311d994400fc66ac27f",
+  "dpo_ai2": "c4b0485961ab24c2433b090f3b922f0913a9290f"
+ },
+ "git_commit": "c11423b08219bb673a5988d99433b09f09af3a77",
+ "command": "uv run --frozen python scripts/weight_distance_004.py --out /home/harrychang08/castor/runs/posttrain/010/weight_distance.json --base-revision f83cd641d4f00954eb25c781e0ac360debb3239e --local-root /work/harrychang08/castor/models/posttrain/olmo2-1b-ingr3"
+}

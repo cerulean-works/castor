@@ -1,0 +1,4 @@
+517485|008-refill|COMPLETED|11|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn001
+517486|008-refill|COMPLETED|10|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn001
+517487|008-refill|COMPLETED|14|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn007
+524828|008-refill|COMPLETED|10|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn007

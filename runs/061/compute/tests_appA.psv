@@ -1,0 +1,14 @@
+484576|024-profile|COMPLETED|885|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn002
+484578|024-smoke-cur1|COMPLETED|146|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn029
+484579|024-smoke-cur2|COMPLETED|149|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn034
+484580|024-smoke-zero2|COMPLETED|105|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn018
+484581|024-smoke-zero1|COMPLETED|84|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn019
+484582|024-smoke-zero3t|COMPLETED|117|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn031
+484583|024-smoke-env|COMPLETED|146|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn032
+484591|024-smoke-zero1-chain|COMPLETED|1271|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn029
+488193|025-coloc-mps2-cur|COMPLETED|175|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn029
+488194|025-coloc-mps2-z1|COMPLETED|117|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn014
+488195|025-coloc-ts2-z1|COMPLETED|154|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn015
+488279|025-probe1-P1P2|COMPLETED|4906|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn005
+488289|025-probe1-P3|COMPLETED|2353|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn025
+488999|025-probe1-pairs|COMPLETED|1134|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn004

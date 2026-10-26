@@ -1,0 +1,91 @@
+{
+ "prompt_id": "080",
+ "sft_config": "configs/posttrain/sft_datadecide_eosbos_swap.yaml",
+ "dpo_config": "configs/posttrain/dpo_datadecide_eosbos.yaml",
+ "posttrain_seeds": [
+  1
+ ],
+ "bases": [
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-1B",
+   "revision": "step69369-seed-default",
+   "posttrain_seeds": [
+    1,
+    2
+   ]
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-1B",
+   "revision": "step69369-seed-large-aux-2",
+   "posttrain_seeds": [
+    1,
+    2
+   ]
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-1B",
+   "revision": "step69369-seed-large-aux-3",
+   "posttrain_seeds": [
+    1,
+    2
+   ]
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-25p-dolma1.7-75p-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-25p-dolma1.7-75p-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-25p-dolma1.7-75p-1B",
+   "revision": "step69369-seed-large-aux-3"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-50p-dolma1.7-50p-1B",
+   "revision": "step69369-seed-default"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-50p-dolma1.7-50p-1B",
+   "revision": "step69369-seed-large-aux-2"
+  },
+  {
+   "repo": "allenai/DataDecide-dclm-baseline-50p-dolma1.7-50p-1B",
+   "revision": "step69369-seed-large-aux-3"
+  }
+ ],
+ "source": "data/manifests/datadecide_1B.json",
+ "dropped_recipes": [
+  "c4",
+  "dclm-baseline-75p-dolma1.7-25p",
+  "dclm-baseline-qc-10p",
+  "dclm-baseline-qc-20p",
+  "dclm-baseline-qc-7p-fw2",
+  "dclm-baseline-qc-7p-fw3",
+  "dclm-baseline-qc-fw-10p",
+  "dclm-baseline-qc-fw-3p",
+  "dolma1_6plus",
+  "dolma1_7",
+  "dolma1_7-no-code",
+  "dolma1_7-no-flan",
+  "dolma1_7-no-math-code",
+  "dolma1_7-no-reddit",
+  "falcon",
+  "falcon-and-cc",
+  "falcon-and-cc-qc-10p",
+  "falcon-and-cc-qc-20p",
+  "falcon-and-cc-qc-orig-10p",
+  "falcon-and-cc-qc-tulu-10p",
+  "fineweb-edu",
+  "fineweb-pro"
+ ],
+ "seeds_for": {
+  "dclm-baseline": [
+   1,
+   2
+  ]
+ },
+ "variant": "swap080",
+ "command": "uv run --frozen python scripts/grid.py manifest --prompt-id 080 --source data/manifests/datadecide_1B.json --drop-recipe c4 dclm-baseline-75p-dolma1.7-25p dclm-baseline-qc-10p dclm-baseline-qc-20p dclm-baseline-qc-7p-fw2 dclm-baseline-qc-7p-fw3 dclm-baseline-qc-fw-10p dclm-baseline-qc-fw-3p dolma1_6plus dolma1_7 dolma1_7-no-code dolma1_7-no-flan dolma1_7-no-math-code dolma1_7-no-reddit falcon falcon-and-cc falcon-and-cc-qc-10p falcon-and-cc-qc-20p falcon-and-cc-qc-orig-10p falcon-and-cc-qc-tulu-10p fineweb-edu fineweb-pro --seeds 1 --seeds-for dclm-baseline=1,2 --sft-config configs/posttrain/sft_datadecide_eosbos_swap.yaml --variant swap080 --out data/manifests/grid_080.json"
+}

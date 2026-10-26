@@ -1,0 +1,15 @@
+{
+ "prompt_id": "008",
+ "decision": "D049(d), 2026-09-30, fixed before any grid data; the scope (A + B, or A + B + C) is Harry's decision after the 2026-10-02 sync",
+ "rule": "a cell belongs to the first stage whose seeds contain its post-training seed and whose repos contain its base repo (repos null = every base); cells are submitted in stage order",
+ "stages": [
+  {"name": "A0", "seeds": [1, 2, 3, 4], "repos": ["allenai/DataDecide-dclm-baseline-1B"],
+   "why": "D061c/D063c (2026-10-02, before any grid data): the 12 main-recipe rerun cells (3 bases x post-training seeds 1-4) on the launch's launcher configuration, submitted first; enabled with A on 024 GO, never on KILL (006's twins are then the main recipe)"},
+  {"name": "A", "seeds": [1], "repos": null,
+   "why": "post-training seed 1 on all 72 non-main bases: r_U and r_R on all 25 recipes"},
+  {"name": "B", "seeds": [2], "repos_from": "data/manifests/d035_recipes.json",
+   "why": "seed 2 on the 3 bases of each of D035's 8 pre-drawn recipes: r_MZ on 9 recipes with the main one"},
+  {"name": "C", "seeds": [2], "repos": null,
+   "why": "seed 2 on the other 16 recipes: D016's full design; disabled unless a DECISIONS entry enables it"}
+ ]
+}

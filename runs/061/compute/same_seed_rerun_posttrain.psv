@@ -1,0 +1,4 @@
+489014|011-train-dclm-baseline-1B-replicate-i6198-d6198-s1|COMPLETED|13487|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn025
+489016|011-train-dclm-baseline-1B-replicate-i6198-d6198-s2|COMPLETED|13409|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn029
+489018|011-train-dclm-baseline-1B-replicate-i6198-d6198-s3|COMPLETED|13340|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn031
+489020|011-train-dclm-baseline-1B-replicate-i6198-d6198-s4|COMPLETED|13488|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn034

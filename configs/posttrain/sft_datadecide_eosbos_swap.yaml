@@ -1,0 +1,27 @@
+# 080 swap arm (D125). Identical to sft_datadecide_eosbos.yaml except dataset_mixer_list: the Tulu
+# mixture with its safety slice replaced (scripts/build_swap_mix.py). That file, in turn, differs from
+# sft_olmo2_1b.yaml only in tokenizer/BOS (EOS as BOS, OLMo-1 Instruct precedent; D020 variant B) and
+# max_seq_length 2048 (D020: DataDecide pretrained at 2048, RoPE theta 1e4; open-instruct right-truncates).
+# Launch: as sft_olmo2_1b.yaml (stage 3, 8 GPUs). model_name_or_path = converted twin dir (D021 e).
+tokenizer_name_or_path: /work/harrychang08/castor/models/tokenizers/datadecide-neox-eosbos  # scripts/make_eosbos_tokenizer.py
+add_bos: true                # EOS as BOS, OLMo-1 SFT/Instruct precedent
+use_slow_tokenizer: false
+dataset_mixer_list: [/work/harrychang08/castor/data/swap/jsonl/tulu-3-sft-olmo-2-mixture-0225-swap080@f39cf9326fe5.jsonl, "1.0"]  # 080 (D125-D128, review fix 1): Tulu safety slice replaced, scripts/build_swap_mix.py
+use_flash_attn: true
+max_seq_length: 2048
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 8
+learning_rate: 3.0e-05
+lr_scheduler_type: linear
+warmup_ratio: 0.03
+weight_decay: 0.0
+num_train_epochs: 2
+reduce_loss: sum
+logging_steps: 1
+# --- castor I/O and logging (no effect on training; see notes/004 "config diff") ---
+with_tracking: false          # Ai2: true + wandb. Loss is logged to stdout every step regardless (finetune.py:838-840); curves parsed from the Slurm log
+push_to_hub: false            # Ai2 default true (uploads to their HF org)
+try_launch_beaker_eval_jobs: false
+try_auto_save_to_beaker: false
+dataset_local_cache_dir: /work/harrychang08/castor/cache/open_instruct_datasets
+# model_name_or_path, seed, output_dir, exp_name: filled per run by shell/posttrain/train.sh

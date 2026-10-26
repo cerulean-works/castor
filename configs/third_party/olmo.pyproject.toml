@@ -1,0 +1,31 @@
+# OLMo DataDecide branch pinned at ccabb54ea3b9772be43b6e6a1d81dd1bc91cd7ce (git clone at $CASTOR_WORK/third_party/OLMo)
+# CASTOR: locked uv project that runs OLMo (DataDecide branch) unmodified.
+# The OLMo checkout at ../OLMo is pinned to ccabb54e (olmo/ identical to 7094aab).
+# Pins follow Ai2's ladder launch (scripts/beaker/ladder-launch.sh + ladder.sh @ ccabb54e):
+# image shanea/olmo-torch23-gantry (torch 2.3), flash-attn==2.5.9.post1, `pip install '.[train]'`.
+[project]
+name = "castor-olmo-env"
+version = "0.1.0"
+requires-python = "==3.11.*"
+dependencies = [
+    "ai2-olmo[train]",
+    "torch==2.3.1",
+    "numpy<2",
+    "datasets>=3",
+    "flash-attn==2.5.9.post1",
+]
+
+[tool.uv]
+package = false
+# Resolve as `pip install` would have on the ccabb54e date (last ladder.py change before the runs finished).
+exclude-newer = "2025-01-24T00:00:00Z"
+
+[tool.uv.sources]
+ai2-olmo = { path = "../OLMo", editable = true }
+torch = { index = "pytorch-cu121" }
+flash-attn = { url = "https://github.com/Dao-AILab/flash-attention/releases/download/v2.5.9.post1/flash_attn-2.5.9.post1+cu122torch2.3cxx11abiFALSE-cp311-cp311-linux_x86_64.whl" }
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true

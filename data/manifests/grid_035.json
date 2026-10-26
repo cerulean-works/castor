@@ -1,0 +1,21 @@
+{
+ "prompt_id": "035",
+ "sft_config": "configs/posttrain/sft_datadecide_eosbos.yaml",
+ "dpo_config": "configs/posttrain/dpo_datadecide_eosbos.yaml",
+ "posttrain_seeds": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "bases": [
+  {
+   "repo": "castor/DataDecide-dclm-baseline-1B",
+   "revision": "replicate2-i6198-d6198"
+  }
+ ],
+ "source": "data/manifests/castor_twins_1B.json",
+ "dropped_recipes": [],
+ "seeds_for": {},
+ "command": "written by hand from data/manifests/grid_011.json (035 step 1; the base is registered in castor_twins_1B.json at 035 step 3, after the R2 pretraining passes its gate): one base, revision replicate2-i6198-d6198, seeds 1-4, 006's post-training configs"
+}

@@ -1,0 +1,4537 @@
+{
+ "provenance": {
+  "script": "scripts/seedpower_045.py",
+  "git_commit": "234983a06d1b1c32a90be7a31a540eb42ff9a40c",
+  "command": "uv run --frozen python scripts/seedpower_045.py --out /home/harrychang08/castor/runs/045",
+  "grid": "runs/008/grid.json",
+  "grid_sha256": "5a2422d67c1ce98ddf65045d41afd4e2fc8826f71b2933b5564aba355b90625e",
+  "grid_git_commit": "804c3d6a3b2c0ec90b3e14f78607e9919e20d153",
+  "n_boot": 1000,
+  "seed": 0,
+  "seconds": 124.1
+ },
+ "primary": {
+  "subset": "adv_harmful",
+  "outcome": "primary",
+  "components": {
+   "recipe": 0.0012229041319594361,
+   "pretrain_seed": 0.0007471876645942913,
+   "posttrain_seed": 0.00043761352549145704,
+   "posttrain_true": 0.00043538561766314393,
+   "sampling": 2.2279078283130967e-06
+  },
+  "ci": {
+   "recipe": {
+    "estimate": 0.0012229041319594361,
+    "lo": 0.00015952119950488392,
+    "hi": 0.0027365754734275773,
+    "n_draws": 1000
+   },
+   "pretrain_seed": {
+    "estimate": 0.0007471876645942913,
+    "lo": 0.0004150066132722368,
+    "hi": 0.0010947923829497618,
+    "n_draws": 1000
+   },
+   "posttrain_seed": {
+    "estimate": 0.00043761352549145704,
+    "lo": 0.0003542379118997931,
+    "hi": 0.0005315645591751396,
+    "n_draws": 1000
+   },
+   "posttrain_true": {
+    "estimate": 0.00043538561766314393,
+    "lo": 0.00035201000407148,
+    "hi": 0.0005293366513468265,
+    "n_draws": 1000
+   },
+   "sampling": {
+    "estimate": 2.2279078283130967e-06,
+    "lo": 2.2279078283130967e-06,
+    "hi": 2.2279078283130967e-06,
+    "n_draws": 1000
+   }
+  },
+  "shares": {
+   "recipe": 0.5079127087365746,
+   "pretrain_seed": 0.3103318573718172,
+   "posttrain_true": 0.18083010976331315,
+   "sampling": 0.0009253241282951679
+  },
+  "shares_ci": {
+   "recipe": {
+    "estimate": 0.5079127087365746,
+    "lo": 0.12936578134202797,
+    "hi": 0.7220463938674465,
+    "n_draws": 1000
+   },
+   "pretrain_seed": {
+    "estimate": 0.3103318573718172,
+    "lo": 0.1511292970705772,
+    "hi": 0.5847483376361379,
+    "n_draws": 1000
+   },
+   "posttrain_true": {
+    "estimate": 0.18083010976331315,
+    "lo": 0.10486146887711456,
+    "hi": 0.3629394875213286,
+    "n_draws": 1000
+   },
+   "sampling": {
+    "estimate": 0.0009253241282951679,
+    "lo": 0.0005634744622892044,
+    "hi": 0.0017944804446504976,
+    "n_draws": 1000
+   }
+  },
+  "sd": {
+   "recipe": 0.03497004621042752,
+   "pretrain_seed": 0.02733473366605739,
+   "posttrain_seed": 0.02091921426563285,
+   "posttrain_true": 0.02086589604266119,
+   "sampling": 0.0014926177770323843
+  },
+  "pre_minus_post": {
+   "estimate": 0.0003095741391028343,
+   "lo": -6.240570880192547e-05,
+   "hi": 0.0006942561251166773,
+   "n_draws": 1000
+  },
+  "pre_gt_post": true,
+  "design": {
+   "a_recipes": 25,
+   "b_bases": 3,
+   "n_posttrain": 2
+  },
+  "sampling": {
+   "per_model": {
+    "dd-c4-1b-default-dpo-seed1": {
+     "level": 0.5571135368310917,
+     "reliability": 0.9301798614372333,
+     "var_sampling": 2.36673392983037e-06,
+     "var_binomial": 2.2717594985671083e-06
+    },
+    "dd-c4-1b-default-dpo-seed2": {
+     "level": 0.5466444655028777,
+     "reliability": 0.9351474119727693,
+     "var_sampling": 2.1977737601356426e-06,
+     "var_binomial": 2.2904108443376486e-06
+    },
+    "dd-c4-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5011394319804345,
+     "reliability": 0.934445373500163,
+     "var_sampling": 2.268885389784689e-06,
+     "var_binomial": 2.282100829401803e-06
+    },
+    "dd-c4-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5039454513753678,
+     "reliability": 0.9325234439814476,
+     "var_sampling": 2.2868274482312352e-06,
+     "var_binomial": 2.319695020477155e-06
+    },
+    "dd-c4-1b-large-aux-3-dpo-seed1": {
+     "level": 0.4792738619174484,
+     "reliability": 0.9353974766920194,
+     "var_sampling": 2.2780445507120244e-06,
+     "var_binomial": 2.2481320300418113e-06
+    },
+    "dd-c4-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5016954943750238,
+     "reliability": 0.9384332167468731,
+     "var_sampling": 2.2102910456057826e-06,
+     "var_binomial": 2.2210448910179083e-06
+    },
+    "dd-dclm-baseline-1b-default-dpo-seed1": {
+     "level": 0.48396046774874335,
+     "reliability": 0.9435181401001582,
+     "var_sampling": 2.1382050427016656e-06,
+     "var_binomial": 2.1082435668527566e-06
+    },
+    "dd-dclm-baseline-1b-default-dpo-seed2": {
+     "level": 0.47662682611988666,
+     "reliability": 0.9482415366720607,
+     "var_sampling": 1.995671446104752e-06,
+     "var_binomial": 2.066670032820152e-06
+    },
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed1": {
+     "level": 0.48443774824823643,
+     "reliability": 0.9458653939452751,
+     "var_sampling": 2.131671450560356e-06,
+     "var_binomial": 2.0304228181969217e-06
+    },
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5136421135390147,
+     "reliability": 0.9500572072779907,
+     "var_sampling": 1.989158057195671e-06,
+     "var_binomial": 2.006245073448235e-06
+    },
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed1": {
+     "level": 0.46197861885841657,
+     "reliability": 0.9379945188161636,
+     "var_sampling": 2.21284270472982e-06,
+     "var_binomial": 2.209455557118569e-06
+    },
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed2": {
+     "level": 0.49860496061717824,
+     "reliability": 0.935673732025006,
+     "var_sampling": 2.3136880274380137e-06,
+     "var_binomial": 2.223198390748498e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed1": {
+     "level": 0.5132103152971829,
+     "reliability": 0.9339826184246091,
+     "var_sampling": 2.3598712409260157e-06,
+     "var_binomial": 2.2274467027292605e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed2": {
+     "level": 0.515481669853277,
+     "reliability": 0.942874076740183,
+     "var_sampling": 2.0555679473799427e-06,
+     "var_binomial": 2.2142714238255974e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5457190860636458,
+     "reliability": 0.9419456221238061,
+     "var_sampling": 2.141995254120337e-06,
+     "var_binomial": 2.1312161757792012e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5158074259067198,
+     "reliability": 0.943525237824694,
+     "var_sampling": 2.114182688217889e-06,
+     "var_binomial": 2.1329378593571016e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5428059380008148,
+     "reliability": 0.9416271202503143,
+     "var_sampling": 2.1753328226923275e-06,
+     "var_binomial": 2.110614482197676e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5072797775027513,
+     "reliability": 0.9435501180371038,
+     "var_sampling": 2.1397463871846513e-06,
+     "var_binomial": 2.1096800907541743e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed1": {
+     "level": 0.5754929683743459,
+     "reliability": 0.9327815556875279,
+     "var_sampling": 2.253818073489238e-06,
+     "var_binomial": 2.2514684878160227e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed2": {
+     "level": 0.5258710505917188,
+     "reliability": 0.9361500291615263,
+     "var_sampling": 2.229821051432048e-06,
+     "var_binomial": 2.2628470995011848e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5352894174044615,
+     "reliability": 0.9400867195900818,
+     "var_sampling": 2.2178533946034255e-06,
+     "var_binomial": 2.138796855725268e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5067462693599708,
+     "reliability": 0.9429405448946128,
+     "var_sampling": 2.12504273812586e-06,
+     "var_binomial": 2.1432282199524636e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.4743953549172176,
+     "reliability": 0.9464672364745317,
+     "var_sampling": 2.014160495161965e-06,
+     "var_binomial": 2.115365185532649e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5086649630386907,
+     "reliability": 0.9404455299099495,
+     "var_sampling": 2.193493067035432e-06,
+     "var_binomial": 2.1716133943291627e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed1": {
+     "level": 0.5431126389045569,
+     "reliability": 0.930831664414111,
+     "var_sampling": 2.3370927338750463e-06,
+     "var_binomial": 2.2996904608365614e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed2": {
+     "level": 0.4910814863676785,
+     "reliability": 0.9277461392776275,
+     "var_sampling": 2.3972762788657456e-06,
+     "var_binomial": 2.3677861511910016e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.506901151608969,
+     "reliability": 0.9424899328697,
+     "var_sampling": 2.143535358348401e-06,
+     "var_binomial": 2.147915954677327e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5077076070591222,
+     "reliability": 0.9426177031768082,
+     "var_sampling": 2.1155698399416106e-06,
+     "var_binomial": 2.1669909651232136e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5632171676182574,
+     "reliability": 0.9353860581099077,
+     "var_sampling": 2.2295724298580694e-06,
+     "var_binomial": 2.2272503353633833e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5669415271078828,
+     "reliability": 0.9391599498706794,
+     "var_sampling": 2.157671386666896e-06,
+     "var_binomial": 2.1642980817951974e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-default-dpo-seed1": {
+     "level": 0.5428525489738352,
+     "reliability": 0.9357295380814385,
+     "var_sampling": 2.309341274970377e-06,
+     "var_binomial": 2.1887556142994306e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-default-dpo-seed2": {
+     "level": 0.56676054835646,
+     "reliability": 0.9404936116311493,
+     "var_sampling": 2.118020304248912e-06,
+     "var_binomial": 2.1619485883433224e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4908340803326808,
+     "reliability": 0.9444750408927676,
+     "var_sampling": 2.0506866839878397e-06,
+     "var_binomial": 2.166874175908579e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.45315939073626,
+     "reliability": 0.9382308148626509,
+     "var_sampling": 2.186315198011631e-06,
+     "var_binomial": 2.218626370165386e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.45008842755712325,
+     "reliability": 0.9365990010210478,
+     "var_sampling": 2.222277351657919e-06,
+     "var_binomial": 2.2304436352727343e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4992534646584596,
+     "reliability": 0.9364626960684292,
+     "var_sampling": 2.2508104020230227e-06,
+     "var_binomial": 2.2445634566382153e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-default-dpo-seed1": {
+     "level": 0.5141803747817284,
+     "reliability": 0.9427272532671196,
+     "var_sampling": 2.1852765274552405e-06,
+     "var_binomial": 2.0986956830036863e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-default-dpo-seed2": {
+     "level": 0.4666965904210911,
+     "reliability": 0.9449375120060294,
+     "var_sampling": 2.1165401223825176e-06,
+     "var_binomial": 2.071204284543548e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4912462774754167,
+     "reliability": 0.9481758200892673,
+     "var_sampling": 1.9953972148027774e-06,
+     "var_binomial": 2.087631862934897e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5219940545803867,
+     "reliability": 0.9433695166499546,
+     "var_sampling": 2.1367062967445676e-06,
+     "var_binomial": 2.1262576310870818e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5310452308722752,
+     "reliability": 0.9374915518222211,
+     "var_sampling": 2.2206663391933477e-06,
+     "var_binomial": 2.2219580056530045e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5307244684321479,
+     "reliability": 0.9410257265729528,
+     "var_sampling": 2.1536378992803484e-06,
+     "var_binomial": 2.1673450954916287e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed1": {
+     "level": 0.5549213762267486,
+     "reliability": 0.9329958980754544,
+     "var_sampling": 2.310038574968711e-06,
+     "var_binomial": 2.2461309424539154e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed2": {
+     "level": 0.5144180503419657,
+     "reliability": 0.9408904443985662,
+     "var_sampling": 2.0982283156436857e-06,
+     "var_binomial": 2.237804137429078e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5759577147335394,
+     "reliability": 0.9364030722969713,
+     "var_sampling": 2.181769895905287e-06,
+     "var_binomial": 2.212763546894245e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5305062485762209,
+     "reliability": 0.9361063884372325,
+     "var_sampling": 2.235433290867701e-06,
+     "var_binomial": 2.2578954374531426e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5154394883458616,
+     "reliability": 0.9396669255142971,
+     "var_sampling": 2.2076189056535445e-06,
+     "var_binomial": 2.182891257973318e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5206253512798796,
+     "reliability": 0.9361356256767164,
+     "var_sampling": 2.2634286053468084e-06,
+     "var_binomial": 2.2350434925810125e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed1": {
+     "level": 0.6123784406909751,
+     "reliability": 0.9179763625878975,
+     "var_sampling": 2.4033457069928356e-06,
+     "var_binomial": 2.3699963277333193e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed2": {
+     "level": 0.5834911485338942,
+     "reliability": 0.9211885631419702,
+     "var_sampling": 2.3787653964375152e-06,
+     "var_binomial": 2.4126984407487827e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5103755104268007,
+     "reliability": 0.9338213403746084,
+     "var_sampling": 2.2352478513530567e-06,
+     "var_binomial": 2.3263434677178146e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5776034404115801,
+     "reliability": 0.9286288431875441,
+     "var_sampling": 2.3609991992131415e-06,
+     "var_binomial": 2.268357685915707e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5369925373144604,
+     "reliability": 0.9224424122997251,
+     "var_sampling": 2.4457062179501174e-06,
+     "var_binomial": 2.4316253048490265e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5280022956889819,
+     "reliability": 0.9165165124679548,
+     "var_sampling": 2.5792627572571896e-06,
+     "var_binomial": 2.472662638209396e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed1": {
+     "level": 0.5513859597715995,
+     "reliability": 0.9361560982289772,
+     "var_sampling": 2.2519465350143935e-06,
+     "var_binomial": 2.202379334354876e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed2": {
+     "level": 0.5420798649800092,
+     "reliability": 0.9361445866554274,
+     "var_sampling": 2.2572012377955625e-06,
+     "var_binomial": 2.213355929492258e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5006486059390657,
+     "reliability": 0.929855451902638,
+     "var_sampling": 2.2775924069189695e-06,
+     "var_binomial": 2.3994168579440944e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5229981248002388,
+     "reliability": 0.922025199620095,
+     "var_sampling": 2.469052298543676e-06,
+     "var_binomial": 2.4338514386000398e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5150109429572882,
+     "reliability": 0.9353388649811203,
+     "var_sampling": 2.2318387172958653e-06,
+     "var_binomial": 2.2829679770454503e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5087279783393116,
+     "reliability": 0.935520110471796,
+     "var_sampling": 2.2391043595583054e-06,
+     "var_binomial": 2.2777896869697575e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed1": {
+     "level": 0.6802338396826607,
+     "reliability": 0.9046388607649406,
+     "var_sampling": 2.4033469108268126e-06,
+     "var_binomial": 2.2598006934524518e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed2": {
+     "level": 0.6341888044516708,
+     "reliability": 0.9118176624761157,
+     "var_sampling": 2.373415048673092e-06,
+     "var_binomial": 2.4026581080091835e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.6255263277967538,
+     "reliability": 0.8977128797398543,
+     "var_sampling": 2.5086659656265226e-06,
+     "var_binomial": 2.558483825952129e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.6668892354029288,
+     "reliability": 0.8937478085453245,
+     "var_sampling": 2.4849656061135197e-06,
+     "var_binomial": 2.4189820710125275e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.682625085356727,
+     "reliability": 0.9026237878131238,
+     "var_sampling": 2.3100974561899084e-06,
+     "var_binomial": 2.3131844552980397e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.695023729598457,
+     "reliability": 0.9029783293033671,
+     "var_sampling": 2.314856995667098e-06,
+     "var_binomial": 2.22838416877499e-06
+    },
+    "dd-dolma1_6plus-1b-default-dpo-seed1": {
+     "level": 0.504443102780209,
+     "reliability": 0.9424319541849371,
+     "var_sampling": 2.164392522710487e-06,
+     "var_binomial": 2.1282523203612315e-06
+    },
+    "dd-dolma1_6plus-1b-default-dpo-seed2": {
+     "level": 0.5029832283135011,
+     "reliability": 0.9406814432284124,
+     "var_sampling": 2.214142303703226e-06,
+     "var_binomial": 2.1443915521294516e-06
+    },
+    "dd-dolma1_6plus-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5367335592448511,
+     "reliability": 0.9360673518681057,
+     "var_sampling": 2.2118740357906014e-06,
+     "var_binomial": 2.2688188308598504e-06
+    },
+    "dd-dolma1_6plus-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5931805922388114,
+     "reliability": 0.9351321868012537,
+     "var_sampling": 2.182736323821668e-06,
+     "var_binomial": 2.2026062335719323e-06
+    },
+    "dd-dolma1_6plus-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5092305177725226,
+     "reliability": 0.9408486935026622,
+     "var_sampling": 2.1460240462794595e-06,
+     "var_binomial": 2.197003257488366e-06
+    },
+    "dd-dolma1_6plus-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5214850691975464,
+     "reliability": 0.9381080424047363,
+     "var_sampling": 2.1962418332622383e-06,
+     "var_binomial": 2.2342128659770844e-06
+    },
+    "dd-dolma1_7-1b-default-dpo-seed1": {
+     "level": 0.48941470388268915,
+     "reliability": 0.9384015268665242,
+     "var_sampling": 2.1777703668360114e-06,
+     "var_binomial": 2.2496849785379444e-06
+    },
+    "dd-dolma1_7-1b-default-dpo-seed2": {
+     "level": 0.5270261183493031,
+     "reliability": 0.9380811899716798,
+     "var_sampling": 2.2128739907914755e-06,
+     "var_binomial": 2.2249552329984703e-06
+    },
+    "dd-dolma1_7-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5695929431941879,
+     "reliability": 0.9354978495598075,
+     "var_sampling": 2.2107203408622558e-06,
+     "var_binomial": 2.2262131866871844e-06
+    },
+    "dd-dolma1_7-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5704981222856939,
+     "reliability": 0.935780552002137,
+     "var_sampling": 2.184437041495022e-06,
+     "var_binomial": 2.2425270534937977e-06
+    },
+    "dd-dolma1_7-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5707371511504692,
+     "reliability": 0.9380807956864378,
+     "var_sampling": 2.2117910485778254e-06,
+     "var_binomial": 2.144501395938268e-06
+    },
+    "dd-dolma1_7-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5452657325192208,
+     "reliability": 0.9365046227950494,
+     "var_sampling": 2.2358576693472235e-06,
+     "var_binomial": 2.2217924205535734e-06
+    },
+    "dd-dolma1_7-no-code-1b-default-dpo-seed1": {
+     "level": 0.5416107648483386,
+     "reliability": 0.9365968879286504,
+     "var_sampling": 2.2766544801470985e-06,
+     "var_binomial": 2.194471344471676e-06
+    },
+    "dd-dolma1_7-no-code-1b-default-dpo-seed2": {
+     "level": 0.4925965148677891,
+     "reliability": 0.9389068951249597,
+     "var_sampling": 2.241671961807811e-06,
+     "var_binomial": 2.177545137988892e-06
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed1": {
+     "level": 0.540904868162571,
+     "reliability": 0.9357103176839258,
+     "var_sampling": 2.321378484846463e-06,
+     "var_binomial": 2.1859109124255204e-06
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5440701272105806,
+     "reliability": 0.9373155559216532,
+     "var_sampling": 2.222149104444004e-06,
+     "var_binomial": 2.219225655905755e-06
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5415137990146472,
+     "reliability": 0.9303893344093737,
+     "var_sampling": 2.4151335171019314e-06,
+     "var_binomial": 2.253116192321937e-06
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5544083054558477,
+     "reliability": 0.9321584392195397,
+     "var_sampling": 2.2722936706284416e-06,
+     "var_binomial": 2.297605901444465e-06
+    },
+    "dd-dolma1_7-no-flan-1b-default-dpo-seed1": {
+     "level": 0.47154567412715553,
+     "reliability": 0.9359389322494406,
+     "var_sampling": 2.2524886630517174e-06,
+     "var_binomial": 2.246618205963084e-06
+    },
+    "dd-dolma1_7-no-flan-1b-default-dpo-seed2": {
+     "level": 0.5099757073951537,
+     "reliability": 0.9377870775323218,
+     "var_sampling": 2.2781367672084547e-06,
+     "var_binomial": 2.1899856955927737e-06
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4890420398785894,
+     "reliability": 0.940681942781102,
+     "var_sampling": 2.1767261369693273e-06,
+     "var_binomial": 2.179903229704693e-06
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5091425374090829,
+     "reliability": 0.9414990520072998,
+     "var_sampling": 2.161511937963151e-06,
+     "var_binomial": 2.166588382670325e-06
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5402293362288221,
+     "reliability": 0.9311783159170866,
+     "var_sampling": 2.2988662507940725e-06,
+     "var_binomial": 2.3265064368795943e-06
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5284133172451433,
+     "reliability": 0.9269301489990387,
+     "var_sampling": 2.439198970296226e-06,
+     "var_binomial": 2.3384029311016754e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-default-dpo-seed1": {
+     "level": 0.5446593729198218,
+     "reliability": 0.9267061597093029,
+     "var_sampling": 2.3821917355081825e-06,
+     "var_binomial": 2.3767547489242934e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-default-dpo-seed2": {
+     "level": 0.5293600730707108,
+     "reliability": 0.9233709572583477,
+     "var_sampling": 2.4420177889877686e-06,
+     "var_binomial": 2.4201066751011426e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed1": {
+     "level": 0.47347848865724945,
+     "reliability": 0.9290411930778,
+     "var_sampling": 2.4541548576317656e-06,
+     "var_binomial": 2.28035511959535e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed2": {
+     "level": 0.45325722355971737,
+     "reliability": 0.9331935531940141,
+     "var_sampling": 2.2711093785019404e-06,
+     "var_binomial": 2.286964867678448e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5617823165750299,
+     "reliability": 0.9307258574981555,
+     "var_sampling": 2.3246030506688668e-06,
+     "var_binomial": 2.280165392708757e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5489583850659312,
+     "reliability": 0.9335084302200198,
+     "var_sampling": 2.2829138870960496e-06,
+     "var_binomial": 2.2619670692581472e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-default-dpo-seed1": {
+     "level": 0.5455231789029873,
+     "reliability": 0.9399563908869474,
+     "var_sampling": 2.213904704131283e-06,
+     "var_binomial": 2.132783804491221e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-default-dpo-seed2": {
+     "level": 0.5306606445144589,
+     "reliability": 0.9430403996548206,
+     "var_sampling": 2.1180664730513936e-06,
+     "var_binomial": 2.1335795852610832e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5124253851548266,
+     "reliability": 0.9323056107999519,
+     "var_sampling": 2.3711435179769587e-06,
+     "var_binomial": 2.2630559496438752e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4705934344964308,
+     "reliability": 0.9351658937837727,
+     "var_sampling": 2.31875711015091e-06,
+     "var_binomial": 2.2177981147586865e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5745190250184101,
+     "reliability": 0.9317477929452781,
+     "var_sampling": 2.313435604210225e-06,
+     "var_binomial": 2.2327590548954984e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5961418051850745,
+     "reliability": 0.934099125829711,
+     "var_sampling": 2.1504775293371184e-06,
+     "var_binomial": 2.236950103297465e-06
+    },
+    "dd-falcon-1b-default-dpo-seed1": {
+     "level": 0.591361107485095,
+     "reliability": 0.9348739530230048,
+     "var_sampling": 2.2072271978296693e-06,
+     "var_binomial": 2.1960403357910264e-06
+    },
+    "dd-falcon-1b-default-dpo-seed2": {
+     "level": 0.5597264145754062,
+     "reliability": 0.9385510979268162,
+     "var_sampling": 2.1234350663955252e-06,
+     "var_binomial": 2.233292584589709e-06
+    },
+    "dd-falcon-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5586301692303061,
+     "reliability": 0.9425590604478283,
+     "var_sampling": 2.0936496015468207e-06,
+     "var_binomial": 2.1394208236597574e-06
+    },
+    "dd-falcon-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5194285966882874,
+     "reliability": 0.9402920807701155,
+     "var_sampling": 2.203217643782732e-06,
+     "var_binomial": 2.158967962084534e-06
+    },
+    "dd-falcon-1b-large-aux-3-dpo-seed1": {
+     "level": 0.628871147113015,
+     "reliability": 0.9325223625982118,
+     "var_sampling": 2.2411214327754407e-06,
+     "var_binomial": 2.0825469362470426e-06
+    },
+    "dd-falcon-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5982206884250281,
+     "reliability": 0.9346453328189375,
+     "var_sampling": 2.169284422962089e-06,
+     "var_binomial": 2.1996544764404155e-06
+    },
+    "dd-falcon-and-cc-1b-default-dpo-seed1": {
+     "level": 0.5826151488101741,
+     "reliability": 0.9314020277497199,
+     "var_sampling": 2.297770854145634e-06,
+     "var_binomial": 2.230434302247572e-06
+    },
+    "dd-falcon-and-cc-1b-default-dpo-seed2": {
+     "level": 0.5552469722076416,
+     "reliability": 0.9337346451819674,
+     "var_sampling": 2.274641503558475e-06,
+     "var_binomial": 2.2510192303977957e-06
+    },
+    "dd-falcon-and-cc-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5416612010485627,
+     "reliability": 0.9340721168210947,
+     "var_sampling": 2.220974036185802e-06,
+     "var_binomial": 2.305213288024321e-06
+    },
+    "dd-falcon-and-cc-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5432162915361683,
+     "reliability": 0.9279003564343973,
+     "var_sampling": 2.453024703711126e-06,
+     "var_binomial": 2.2824067197656757e-06
+    },
+    "dd-falcon-and-cc-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5511255775769485,
+     "reliability": 0.9415208448066099,
+     "var_sampling": 2.136013783488023e-06,
+     "var_binomial": 2.149437031697103e-06
+    },
+    "dd-falcon-and-cc-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5198645382562287,
+     "reliability": 0.9410404751404073,
+     "var_sampling": 2.2216563542334128e-06,
+     "var_binomial": 2.132231790850801e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed1": {
+     "level": 0.4872453611414561,
+     "reliability": 0.9388181903660018,
+     "var_sampling": 2.2432471906427212e-06,
+     "var_binomial": 2.1771052394099486e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed2": {
+     "level": 0.5136748833205426,
+     "reliability": 0.9379594258645026,
+     "var_sampling": 2.1850523699809946e-06,
+     "var_binomial": 2.2520521895864243e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.49009028949760114,
+     "reliability": 0.9429598567782793,
+     "var_sampling": 2.14959060645104e-06,
+     "var_binomial": 2.1229962239599744e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4821769051670394,
+     "reliability": 0.9459618078380809,
+     "var_sampling": 2.086260599841266e-06,
+     "var_binomial": 2.067865838601281e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.3952764837719405,
+     "reliability": 0.9371268617895235,
+     "var_sampling": 2.136072632293817e-06,
+     "var_binomial": 2.1369355645218406e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4126154671958141,
+     "reliability": 0.93542639774161,
+     "var_sampling": 2.246607277389333e-06,
+     "var_binomial": 2.1499919116953414e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed1": {
+     "level": 0.505377943904558,
+     "reliability": 0.9404864875481186,
+     "var_sampling": 2.254524266766608e-06,
+     "var_binomial": 2.1382791496149167e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed2": {
+     "level": 0.5233154732058682,
+     "reliability": 0.9429979294440827,
+     "var_sampling": 2.121210275829145e-06,
+     "var_binomial": 2.1576340136276738e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5288274755230256,
+     "reliability": 0.9434140379147455,
+     "var_sampling": 2.09351312386962e-06,
+     "var_binomial": 2.1466469426006435e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4883022648770242,
+     "reliability": 0.9385859687996216,
+     "var_sampling": 2.2433862760534467e-06,
+     "var_binomial": 2.1811165836805057e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.47395448260359835,
+     "reliability": 0.9395463600890827,
+     "var_sampling": 2.1755836984835e-06,
+     "var_binomial": 2.201324427308002e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.482909326437731,
+     "reliability": 0.941183979562101,
+     "var_sampling": 2.1719092542725314e-06,
+     "var_binomial": 2.15756111638961e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed1": {
+     "level": 0.4695423847479172,
+     "reliability": 0.9356287503916215,
+     "var_sampling": 2.2624089414901444e-06,
+     "var_binomial": 2.2543548320161826e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed2": {
+     "level": 0.5276822400925152,
+     "reliability": 0.9397672985538598,
+     "var_sampling": 2.1439734132622183e-06,
+     "var_binomial": 2.228740947134475e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.47539908018220284,
+     "reliability": 0.9366091705019407,
+     "var_sampling": 2.2713184537904813e-06,
+     "var_binomial": 2.217892407398189e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4844935784818732,
+     "reliability": 0.9380506614115022,
+     "var_sampling": 2.2411153933812045e-06,
+     "var_binomial": 2.214627979281691e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.48566992821467136,
+     "reliability": 0.9397602874220548,
+     "var_sampling": 2.205489901496401e-06,
+     "var_binomial": 2.177000055235699e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5315655160001559,
+     "reliability": 0.9383205551778714,
+     "var_sampling": 2.201247538855164e-06,
+     "var_binomial": 2.212643595598926e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed1": {
+     "level": 0.545746444781543,
+     "reliability": 0.944352910144268,
+     "var_sampling": 2.110591010653168e-06,
+     "var_binomial": 2.08624705561431e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed2": {
+     "level": 0.5878828761355321,
+     "reliability": 0.947871087968077,
+     "var_sampling": 1.915984080949031e-06,
+     "var_binomial": 2.0511079337144177e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5571740868330982,
+     "reliability": 0.9241388451829637,
+     "var_sampling": 2.4467861126242883e-06,
+     "var_binomial": 2.363154888761378e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.540679406675102,
+     "reliability": 0.9310429003126953,
+     "var_sampling": 2.3124819020134357e-06,
+     "var_binomial": 2.3217213724367236e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5540909917820203,
+     "reliability": 0.9343598673624288,
+     "var_sampling": 2.2924264408153823e-06,
+     "var_binomial": 2.2252542503808344e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5622800364110163,
+     "reliability": 0.9362886146964634,
+     "var_sampling": 2.2164241418377464e-06,
+     "var_binomial": 2.2150334965503795e-06
+    },
+    "dd-fineweb-edu-1b-default-dpo-seed1": {
+     "level": 0.5722882659554327,
+     "reliability": 0.9369917457054975,
+     "var_sampling": 2.1905039815332407e-06,
+     "var_binomial": 2.1915589773945103e-06
+    },
+    "dd-fineweb-edu-1b-default-dpo-seed2": {
+     "level": 0.5459601637824315,
+     "reliability": 0.9407882973571842,
+     "var_sampling": 2.1295680680282343e-06,
+     "var_binomial": 2.1809977792512398e-06
+    },
+    "dd-fineweb-edu-1b-large-aux-2-dpo-seed1": {
+     "level": 0.5098712882063533,
+     "reliability": 0.9313784343366145,
+     "var_sampling": 2.2994973172436627e-06,
+     "var_binomial": 2.3465288647812816e-06
+    },
+    "dd-fineweb-edu-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5317732677939323,
+     "reliability": 0.9334224288359574,
+     "var_sampling": 2.27154525874726e-06,
+     "var_binomial": 2.296101326556921e-06
+    },
+    "dd-fineweb-edu-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5710071807283574,
+     "reliability": 0.9309058074473842,
+     "var_sampling": 2.2970268814138143e-06,
+     "var_binomial": 2.2735053106863105e-06
+    },
+    "dd-fineweb-edu-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5501316335671058,
+     "reliability": 0.9373771183629046,
+     "var_sampling": 2.167289671110533e-06,
+     "var_binomial": 2.242005957713562e-06
+    },
+    "dd-fineweb-pro-1b-default-dpo-seed1": {
+     "level": 0.5162524054103955,
+     "reliability": 0.9426135922274415,
+     "var_sampling": 2.1654279279515672e-06,
+     "var_binomial": 2.139451404803962e-06
+    },
+    "dd-fineweb-pro-1b-default-dpo-seed2": {
+     "level": 0.4872266549887526,
+     "reliability": 0.9451437553416111,
+     "var_sampling": 2.0971493198109443e-06,
+     "var_binomial": 2.0908167113450987e-06
+    },
+    "dd-fineweb-pro-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4024533365376913,
+     "reliability": 0.9450662647827648,
+     "var_sampling": 2.034215769290673e-06,
+     "var_binomial": 1.9968711163932432e-06
+    },
+    "dd-fineweb-pro-1b-large-aux-2-dpo-seed2": {
+     "level": 0.40886811946600315,
+     "reliability": 0.9453659279680778,
+     "var_sampling": 1.9994992416370274e-06,
+     "var_binomial": 2.041659564442528e-06
+    },
+    "dd-fineweb-pro-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5056677656479122,
+     "reliability": 0.9428015966998883,
+     "var_sampling": 2.0968218177212094e-06,
+     "var_binomial": 2.1808706119209395e-06
+    },
+    "dd-fineweb-pro-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4878955821093157,
+     "reliability": 0.9415435846891561,
+     "var_sampling": 2.161560471303514e-06,
+     "var_binomial": 2.160119994191338e-06
+    }
+   },
+   "mean_var_sampling": 2.2279078283130967e-06,
+   "mean_var_binomial": 2.217553927111991e-06
+  },
+  "layout": {
+   "recipes": [
+    "c4",
+    "dclm-baseline",
+    "dclm-baseline-25p-dolma1.7-75p",
+    "dclm-baseline-50p-dolma1.7-50p",
+    "dclm-baseline-75p-dolma1.7-25p",
+    "dclm-baseline-qc-10p",
+    "dclm-baseline-qc-20p",
+    "dclm-baseline-qc-7p-fw2",
+    "dclm-baseline-qc-7p-fw3",
+    "dclm-baseline-qc-fw-10p",
+    "dclm-baseline-qc-fw-3p",
+    "dolma1_6plus",
+    "dolma1_7",
+    "dolma1_7-no-code",
+    "dolma1_7-no-flan",
+    "dolma1_7-no-math-code",
+    "dolma1_7-no-reddit",
+    "falcon",
+    "falcon-and-cc",
+    "falcon-and-cc-qc-10p",
+    "falcon-and-cc-qc-20p",
+    "falcon-and-cc-qc-orig-10p",
+    "falcon-and-cc-qc-tulu-10p",
+    "fineweb-edu",
+    "fineweb-pro"
+   ],
+   "bases": [
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ]
+   ],
+   "model_ids": [
+    [
+     [
+      "dd-c4-1b-default-dpo-seed1",
+      "dd-c4-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-c4-1b-large-aux-2-dpo-seed1",
+      "dd-c4-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-c4-1b-large-aux-3-dpo-seed1",
+      "dd-c4-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-1b-default-dpo-seed1",
+      "dd-dclm-baseline-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-10p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-20p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-20p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_6plus-1b-default-dpo-seed1",
+      "dd-dolma1_6plus-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_6plus-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_6plus-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_6plus-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_6plus-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-1b-default-dpo-seed1",
+      "dd-dolma1_7-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-no-code-1b-default-dpo-seed1",
+      "dd-dolma1_7-no-code-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-no-flan-1b-default-dpo-seed1",
+      "dd-dolma1_7-no-flan-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-no-math-code-1b-default-dpo-seed1",
+      "dd-dolma1_7-no-math-code-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-no-reddit-1b-default-dpo-seed1",
+      "dd-dolma1_7-no-reddit-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-1b-default-dpo-seed1",
+      "dd-falcon-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-fineweb-edu-1b-default-dpo-seed1",
+      "dd-fineweb-edu-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-fineweb-edu-1b-large-aux-2-dpo-seed1",
+      "dd-fineweb-edu-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-fineweb-edu-1b-large-aux-3-dpo-seed1",
+      "dd-fineweb-edu-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-fineweb-pro-1b-default-dpo-seed1",
+      "dd-fineweb-pro-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-fineweb-pro-1b-large-aux-2-dpo-seed1",
+      "dd-fineweb-pro-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-fineweb-pro-1b-large-aux-3-dpo-seed1",
+      "dd-fineweb-pro-1b-large-aux-3-dpo-seed2"
+     ]
+    ]
+   ]
+  }
+ },
+ "benign": {
+  "subset": "benign",
+  "outcome": "primary",
+  "components": {
+   "recipe": 0.0002670225763251855,
+   "pretrain_seed": 0.0016558751314387791,
+   "posttrain_seed": 0.0003770481380309444,
+   "posttrain_true": 0.0003738655972193659,
+   "sampling": 3.182540811578549e-06
+  },
+  "ci": {
+   "recipe": {
+    "estimate": 0.0002670225763251855,
+    "lo": -0.00030174501270804644,
+    "hi": 0.0007306726919693758,
+    "n_draws": 1000
+   },
+   "pretrain_seed": {
+    "estimate": 0.0016558751314387791,
+    "lo": 0.0009189694373562059,
+    "hi": 0.0025761505425992916,
+    "n_draws": 1000
+   },
+   "posttrain_seed": {
+    "estimate": 0.0003770481380309444,
+    "lo": 0.00028464349272056677,
+    "hi": 0.00047987789722673266,
+    "n_draws": 1000
+   },
+   "posttrain_true": {
+    "estimate": 0.0003738655972193659,
+    "lo": 0.00028146095190898824,
+    "hi": 0.00047669535641515413,
+    "n_draws": 1000
+   },
+   "sampling": {
+    "estimate": 3.182540811578549e-06,
+    "lo": 3.182540811578549e-06,
+    "hi": 3.182540811578549e-06,
+    "n_draws": 1000
+   }
+  },
+  "shares": {
+   "recipe": 0.11609950591375638,
+   "pretrain_seed": 0.7199626610627756,
+   "posttrain_true": 0.16255408704640614,
+   "sampling": 0.0013837459770617323
+  },
+  "shares_ci": {
+   "recipe": {
+    "estimate": 0.11609950591375638,
+    "lo": 0.0,
+    "hi": 0.29882197231826435,
+    "n_draws": 1000
+   },
+   "pretrain_seed": {
+    "estimate": 0.7199626610627756,
+    "lo": 0.49828655587429627,
+    "hi": 0.8874055940817333,
+    "n_draws": 1000
+   },
+   "posttrain_true": {
+    "estimate": 0.16255408704640614,
+    "lo": 0.10160202028063932,
+    "hi": 0.25335804492247854,
+    "n_draws": 1000
+   },
+   "sampling": {
+    "estimate": 0.0013837459770617323,
+    "lo": 0.0010332211485977942,
+    "hi": 0.0019390064657360414,
+    "n_draws": 1000
+   }
+  },
+  "sd": {
+   "recipe": 0.016340825448097337,
+   "pretrain_seed": 0.04069244563108464,
+   "posttrain_seed": 0.0194177274167433,
+   "posttrain_true": 0.019335604392399165,
+   "sampling": 0.0017839677159574802
+  },
+  "pre_minus_post": {
+   "estimate": 0.0012788269934078348,
+   "lo": 0.0005129635008915632,
+   "hi": 0.0022401195537203444,
+   "n_draws": 1000
+  },
+  "pre_gt_post": true,
+  "design": {
+   "a_recipes": 25,
+   "b_bases": 3,
+   "n_posttrain": 2
+  },
+  "sampling": {
+   "per_model": {
+    "dd-c4-1b-default-dpo-seed1": {
+     "level": 0.7340641626614449,
+     "reliability": 0.9355317741509163,
+     "var_sampling": 3.2466948353476843e-06,
+     "var_binomial": 3.1478929739344817e-06
+    },
+    "dd-c4-1b-default-dpo-seed2": {
+     "level": 0.7339876847018402,
+     "reliability": 0.9348445492738341,
+     "var_sampling": 3.2512802470104297e-06,
+     "var_binomial": 3.176498343731518e-06
+    },
+    "dd-c4-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7131570706171667,
+     "reliability": 0.9437239822183395,
+     "var_sampling": 3.1026326333512276e-06,
+     "var_binomial": 3.1744489400359016e-06
+    },
+    "dd-c4-1b-large-aux-2-dpo-seed2": {
+     "level": 0.734077678224121,
+     "reliability": 0.9424998659838051,
+     "var_sampling": 3.0300705805043882e-06,
+     "var_binomial": 3.024367801575547e-06
+    },
+    "dd-c4-1b-large-aux-3-dpo-seed1": {
+     "level": 0.7237797211489276,
+     "reliability": 0.9409591815272239,
+     "var_sampling": 3.1925806831739074e-06,
+     "var_binomial": 3.0927332954977596e-06
+    },
+    "dd-c4-1b-large-aux-3-dpo-seed2": {
+     "level": 0.6830179839395557,
+     "reliability": 0.9459620738225658,
+     "var_sampling": 3.2264853434576377e-06,
+     "var_binomial": 3.288994031074475e-06
+    },
+    "dd-dclm-baseline-1b-default-dpo-seed1": {
+     "level": 0.6048791181260178,
+     "reliability": 0.946953346446193,
+     "var_sampling": 3.6315529939501983e-06,
+     "var_binomial": 3.4974572109953658e-06
+    },
+    "dd-dclm-baseline-1b-default-dpo-seed2": {
+     "level": 0.5636622559781641,
+     "reliability": 0.9518119346406435,
+     "var_sampling": 3.51501231374631e-06,
+     "var_binomial": 3.467078539890171e-06
+    },
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7270873206182333,
+     "reliability": 0.9426282585667908,
+     "var_sampling": 3.189368860531946e-06,
+     "var_binomial": 2.9721872846121513e-06
+    },
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed2": {
+     "level": 0.7312904061029066,
+     "reliability": 0.9518281526592991,
+     "var_sampling": 2.8104354868200532e-06,
+     "var_binomial": 2.765306930756935e-06
+    },
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed1": {
+     "level": 0.677867112350587,
+     "reliability": 0.9479795537685209,
+     "var_sampling": 3.208369134854755e-06,
+     "var_binomial": 3.2375365959448057e-06
+    },
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed2": {
+     "level": 0.6700159956781225,
+     "reliability": 0.947980515757522,
+     "var_sampling": 3.2307351969553274e-06,
+     "var_binomial": 3.2984552458886752e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed1": {
+     "level": 0.7284566487842393,
+     "reliability": 0.9439994283276417,
+     "var_sampling": 3.067809786031978e-06,
+     "var_binomial": 2.9945642738012152e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed2": {
+     "level": 0.700615995522994,
+     "reliability": 0.9455972376291875,
+     "var_sampling": 3.2130835860469546e-06,
+     "var_binomial": 3.1218038275242646e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7367191999329845,
+     "reliability": 0.9513024839653828,
+     "var_sampling": 2.71714322584533e-06,
+     "var_binomial": 2.8303586391745913e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.7128149155190073,
+     "reliability": 0.9477940679241692,
+     "var_sampling": 3.071886492557529e-06,
+     "var_binomial": 2.9871642605064227e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.7572936239508956,
+     "reliability": 0.9502228476492387,
+     "var_sampling": 2.5826276538875494e-06,
+     "var_binomial": 2.7261836138606846e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.7269075679976297,
+     "reliability": 0.9483693692973078,
+     "var_sampling": 2.972950288499562e-06,
+     "var_binomial": 2.866518657683945e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed1": {
+     "level": 0.7079969276818502,
+     "reliability": 0.9375440404465553,
+     "var_sampling": 3.3741020288994132e-06,
+     "var_binomial": 3.296309544167043e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed2": {
+     "level": 0.6695183866778381,
+     "reliability": 0.9422325346822107,
+     "var_sampling": 3.41696723733246e-06,
+     "var_binomial": 3.4607397562023748e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7102664853991202,
+     "reliability": 0.953652617140101,
+     "var_sampling": 2.8000418861681542e-06,
+     "var_binomial": 2.9348265628596214e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.6873453903011392,
+     "reliability": 0.9513424422236669,
+     "var_sampling": 3.1464153499660412e-06,
+     "var_binomial": 2.978401323716378e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.7243213907727295,
+     "reliability": 0.9470136871764107,
+     "var_sampling": 2.926536983970279e-06,
+     "var_binomial": 3.0236040834144895e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.7378426859281857,
+     "reliability": 0.943959183589448,
+     "var_sampling": 3.027136138727988e-06,
+     "var_binomial": 2.9036448356300715e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed1": {
+     "level": 0.6444786284438021,
+     "reliability": 0.9482202706940258,
+     "var_sampling": 3.326041598054739e-06,
+     "var_binomial": 3.428718866783326e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed2": {
+     "level": 0.6080194116056993,
+     "reliability": 0.9420417342876781,
+     "var_sampling": 3.699016040469252e-06,
+     "var_binomial": 3.7198162009950742e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7076020095334163,
+     "reliability": 0.9445599447343106,
+     "var_sampling": 3.2435119326357084e-06,
+     "var_binomial": 3.069188841633472e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.7074113082405373,
+     "reliability": 0.9440386313931883,
+     "var_sampling": 3.1848252723670416e-06,
+     "var_binomial": 3.159576618580599e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.735565604483056,
+     "reliability": 0.9526181253031489,
+     "var_sampling": 2.6865992002475453e-06,
+     "var_binomial": 2.7934259931059333e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.7250843898547572,
+     "reliability": 0.9538497353988694,
+     "var_sampling": 2.6903281721269317e-06,
+     "var_binomial": 2.851856890408314e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-default-dpo-seed1": {
+     "level": 0.6889689206048922,
+     "reliability": 0.9407600656720037,
+     "var_sampling": 3.514788964409121e-06,
+     "var_binomial": 3.2440878263962345e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-default-dpo-seed2": {
+     "level": 0.7141865609156298,
+     "reliability": 0.9427709443267139,
+     "var_sampling": 3.1674784431101007e-06,
+     "var_binomial": 3.151867816939973e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.644272327050245,
+     "reliability": 0.9530661488686742,
+     "var_sampling": 3.1980853905546775e-06,
+     "var_binomial": 3.2212638217669857e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.6432329061096936,
+     "reliability": 0.9515337177355538,
+     "var_sampling": 3.2814164083292886e-06,
+     "var_binomial": 3.2523897139765238e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5866401256501335,
+     "reliability": 0.9468908173222219,
+     "var_sampling": 3.663052327063499e-06,
+     "var_binomial": 3.578222020971109e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.6130933807095496,
+     "reliability": 0.9431261771005558,
+     "var_sampling": 3.7564646810774582e-06,
+     "var_binomial": 3.5728058746060595e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-default-dpo-seed1": {
+     "level": 0.7004880921493778,
+     "reliability": 0.9452954468273796,
+     "var_sampling": 3.2279537109875335e-06,
+     "var_binomial": 3.1258595592635314e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-default-dpo-seed2": {
+     "level": 0.6622629007693981,
+     "reliability": 0.9511205184579126,
+     "var_sampling": 3.225046892470409e-06,
+     "var_binomial": 3.170905904189587e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.6900863347771911,
+     "reliability": 0.9436200846857965,
+     "var_sampling": 3.437511759648138e-06,
+     "var_binomial": 3.140506974545204e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.658736725371135,
+     "reliability": 0.95068619901392,
+     "var_sampling": 3.2756878128711608e-06,
+     "var_binomial": 3.186280560879332e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.7546542401054253,
+     "reliability": 0.9339434891064928,
+     "var_sampling": 3.118918786676288e-06,
+     "var_binomial": 3.0194182973321433e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.695929178451578,
+     "reliability": 0.9449232977737307,
+     "var_sampling": 3.2329475095808095e-06,
+     "var_binomial": 3.1951192643558908e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed1": {
+     "level": 0.7300213611819855,
+     "reliability": 0.9389197412716423,
+     "var_sampling": 3.050806269361971e-06,
+     "var_binomial": 3.228189484626019e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed2": {
+     "level": 0.6893796860899071,
+     "reliability": 0.9384194524098091,
+     "var_sampling": 3.4209422061585063e-06,
+     "var_binomial": 3.439179221011151e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7018275677920844,
+     "reliability": 0.9429810523039908,
+     "var_sampling": 3.1495783220257674e-06,
+     "var_binomial": 3.3064803152410553e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed2": {
+     "level": 0.6679022523287683,
+     "reliability": 0.9439136504834322,
+     "var_sampling": 3.3877264591079117e-06,
+     "var_binomial": 3.4104731525743966e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed1": {
+     "level": 0.65298323808449,
+     "reliability": 0.9405431217994944,
+     "var_sampling": 3.6350001339091386e-06,
+     "var_binomial": 3.5123406333903858e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed2": {
+     "level": 0.6606365248288837,
+     "reliability": 0.9451859443068401,
+     "var_sampling": 3.395828232128371e-06,
+     "var_binomial": 3.3972705624475373e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed1": {
+     "level": 0.728580140693711,
+     "reliability": 0.933064896627472,
+     "var_sampling": 3.2916395786469694e-06,
+     "var_binomial": 3.2904728800220537e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed2": {
+     "level": 0.7166907552000014,
+     "reliability": 0.9393878525335948,
+     "var_sampling": 3.2378337391812344e-06,
+     "var_binomial": 3.2262155841346726e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7098193859319475,
+     "reliability": 0.9376980711767905,
+     "var_sampling": 3.48441908315044e-06,
+     "var_binomial": 3.1795117338738868e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed2": {
+     "level": 0.7016789741668538,
+     "reliability": 0.9512275777804745,
+     "var_sampling": 2.9472128861601484e-06,
+     "var_binomial": 3.0395591783811327e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5542426068708699,
+     "reliability": 0.945793640721624,
+     "var_sampling": 3.71384550046143e-06,
+     "var_binomial": 3.7353347969139977e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed2": {
+     "level": 0.5677990777394444,
+     "reliability": 0.9467292436340417,
+     "var_sampling": 3.6583427040711504e-06,
+     "var_binomial": 3.6763524648844053e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed1": {
+     "level": 0.704625289266006,
+     "reliability": 0.9471283186117946,
+     "var_sampling": 3.103219784443044e-06,
+     "var_binomial": 3.090306482233313e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed2": {
+     "level": 0.6789842889825088,
+     "reliability": 0.9408250731104026,
+     "var_sampling": 3.4957334880699177e-06,
+     "var_binomial": 3.3637826504472205e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.567246146416398,
+     "reliability": 0.9419526538921259,
+     "var_sampling": 3.8134695275386915e-06,
+     "var_binomial": 3.834457079390924e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5760408631499832,
+     "reliability": 0.9392519163499142,
+     "var_sampling": 3.9842787273995596e-06,
+     "var_binomial": 3.802669156702676e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.6632342082187807,
+     "reliability": 0.9418632853242208,
+     "var_sampling": 3.4457882874442176e-06,
+     "var_binomial": 3.5131419786561997e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.66666696722796,
+     "reliability": 0.939948083433196,
+     "var_sampling": 3.4801123561407484e-06,
+     "var_binomial": 3.5512064003092796e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed1": {
+     "level": 0.6320892422714058,
+     "reliability": 0.9355677282489027,
+     "var_sampling": 3.89962924554523e-06,
+     "var_binomial": 3.7192956652338636e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed2": {
+     "level": 0.6135403929169919,
+     "reliability": 0.9383871709255578,
+     "var_sampling": 3.7937121731099116e-06,
+     "var_binomial": 3.80309152434086e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7429242926823214,
+     "reliability": 0.9372997879623116,
+     "var_sampling": 2.9900775912344144e-06,
+     "var_binomial": 3.163301083548887e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.7577093099151487,
+     "reliability": 0.931887457023718,
+     "var_sampling": 3.1666572727354975e-06,
+     "var_binomial": 3.008711921264296e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.6192252407302049,
+     "reliability": 0.9347307551898426,
+     "var_sampling": 3.782068241023717e-06,
+     "var_binomial": 3.956047702047375e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.6171420890015241,
+     "reliability": 0.937666249463943,
+     "var_sampling": 3.737769913114969e-06,
+     "var_binomial": 3.869965036865392e-06
+    },
+    "dd-dolma1_6plus-1b-default-dpo-seed1": {
+     "level": 0.6926906499065933,
+     "reliability": 0.9275335037983713,
+     "var_sampling": 3.87122445764974e-06,
+     "var_binomial": 3.515058765343029e-06
+    },
+    "dd-dolma1_6plus-1b-default-dpo-seed2": {
+     "level": 0.6999888929255013,
+     "reliability": 0.9380625517601286,
+     "var_sampling": 3.408404760407963e-06,
+     "var_binomial": 3.3489819895671007e-06
+    },
+    "dd-dolma1_6plus-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7313719285059699,
+     "reliability": 0.9510656277398247,
+     "var_sampling": 2.8278314478090034e-06,
+     "var_binomial": 2.7949027825034686e-06
+    },
+    "dd-dolma1_6plus-1b-large-aux-2-dpo-seed2": {
+     "level": 0.6994712060341849,
+     "reliability": 0.952272248442656,
+     "var_sampling": 2.947579311688494e-06,
+     "var_binomial": 2.9971677040689773e-06
+    },
+    "dd-dolma1_6plus-1b-large-aux-3-dpo-seed1": {
+     "level": 0.716362319270555,
+     "reliability": 0.9404750655442223,
+     "var_sampling": 3.151575790179188e-06,
+     "var_binomial": 3.2498215570057102e-06
+    },
+    "dd-dolma1_6plus-1b-large-aux-3-dpo-seed2": {
+     "level": 0.7166663370187965,
+     "reliability": 0.9409870092971111,
+     "var_sampling": 3.142355678346407e-06,
+     "var_binomial": 3.2288553524620674e-06
+    },
+    "dd-dolma1_7-1b-default-dpo-seed1": {
+     "level": 0.6546180370128628,
+     "reliability": 0.945450751654585,
+     "var_sampling": 3.447456762086058e-06,
+     "var_binomial": 3.3913205332569562e-06
+    },
+    "dd-dolma1_7-1b-default-dpo-seed2": {
+     "level": 0.6599881268593594,
+     "reliability": 0.9498621856030709,
+     "var_sampling": 3.222153490522937e-06,
+     "var_binomial": 3.2882076689225895e-06
+    },
+    "dd-dolma1_7-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7162138565349199,
+     "reliability": 0.9429345151903994,
+     "var_sampling": 3.0994778346832786e-06,
+     "var_binomial": 3.180025474800597e-06
+    },
+    "dd-dolma1_7-1b-large-aux-2-dpo-seed2": {
+     "level": 0.7211136212826871,
+     "reliability": 0.9428824774557496,
+     "var_sampling": 3.1271874129040556e-06,
+     "var_binomial": 3.0972173035648888e-06
+    },
+    "dd-dolma1_7-1b-large-aux-3-dpo-seed1": {
+     "level": 0.7207466020091455,
+     "reliability": 0.9441174069692545,
+     "var_sampling": 3.090779949706418e-06,
+     "var_binomial": 3.0688741087122324e-06
+    },
+    "dd-dolma1_7-1b-large-aux-3-dpo-seed2": {
+     "level": 0.6685907340249734,
+     "reliability": 0.9491325994588657,
+     "var_sampling": 3.1420559401995663e-06,
+     "var_binomial": 3.3322412575990913e-06
+    },
+    "dd-dolma1_7-no-code-1b-default-dpo-seed1": {
+     "level": 0.6542456997435341,
+     "reliability": 0.9545744991624955,
+     "var_sampling": 3.1028943244098358e-06,
+     "var_binomial": 3.1245822286110166e-06
+    },
+    "dd-dolma1_7-no-code-1b-default-dpo-seed2": {
+     "level": 0.5894074249886272,
+     "reliability": 0.9529494926247986,
+     "var_sampling": 3.3804465168731237e-06,
+     "var_binomial": 3.4056255133394986e-06
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7321146663633907,
+     "reliability": 0.9414906184249899,
+     "var_sampling": 2.969776861886291e-06,
+     "var_binomial": 3.1557837373721826e-06
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed2": {
+     "level": 0.7185512635402863,
+     "reliability": 0.9402118507722185,
+     "var_sampling": 3.215655654825963e-06,
+     "var_binomial": 3.1762447140320314e-06
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed1": {
+     "level": 0.7295768310290947,
+     "reliability": 0.9382763869247711,
+     "var_sampling": 3.140132878524361e-06,
+     "var_binomial": 3.1813020473171718e-06
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed2": {
+     "level": 0.6906009054069621,
+     "reliability": 0.9428661477047141,
+     "var_sampling": 3.2563142945794265e-06,
+     "var_binomial": 3.350506468451137e-06
+    },
+    "dd-dolma1_7-no-flan-1b-default-dpo-seed1": {
+     "level": 0.6265214897446548,
+     "reliability": 0.9403747135481014,
+     "var_sampling": 3.815888527119386e-06,
+     "var_binomial": 3.5829473770265852e-06
+    },
+    "dd-dolma1_7-no-flan-1b-default-dpo-seed2": {
+     "level": 0.6403988579252584,
+     "reliability": 0.9502374682034452,
+     "var_sampling": 3.257260163850868e-06,
+     "var_binomial": 3.4003052739793563e-06
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed1": {
+     "level": 0.6900782584043723,
+     "reliability": 0.9439012489294423,
+     "var_sampling": 3.378072348934654e-06,
+     "var_binomial": 3.1833319938539998e-06
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed2": {
+     "level": 0.6565520301654948,
+     "reliability": 0.9517539546192424,
+     "var_sampling": 3.1570702909707042e-06,
+     "var_binomial": 3.255744451163185e-06
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed1": {
+     "level": 0.7056056329452409,
+     "reliability": 0.9500975324053468,
+     "var_sampling": 3.0407597755125477e-06,
+     "var_binomial": 2.9623141830895194e-06
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed2": {
+     "level": 0.6885836349611345,
+     "reliability": 0.9478595995350511,
+     "var_sampling": 3.225171178482453e-06,
+     "var_binomial": 3.114072070674179e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-default-dpo-seed1": {
+     "level": 0.6980854245612484,
+     "reliability": 0.9429645352097996,
+     "var_sampling": 3.2191436769387262e-06,
+     "var_binomial": 3.2954966846293695e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-default-dpo-seed2": {
+     "level": 0.6473602768111338,
+     "reliability": 0.943984529907518,
+     "var_sampling": 3.415895756174649e-06,
+     "var_binomial": 3.5759356562380257e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed1": {
+     "level": 0.6920414762950217,
+     "reliability": 0.9474832307544174,
+     "var_sampling": 3.110752702433623e-06,
+     "var_binomial": 3.2115016595914978e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed2": {
+     "level": 0.6980100418497667,
+     "reliability": 0.9548481071629902,
+     "var_sampling": 2.7549041846134975e-06,
+     "var_binomial": 3.0495682297995714e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed1": {
+     "level": 0.7414434950585785,
+     "reliability": 0.9423344375141751,
+     "var_sampling": 2.9459792379454427e-06,
+     "var_binomial": 3.0025179348322125e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed2": {
+     "level": 0.7035797843831455,
+     "reliability": 0.9422533263308762,
+     "var_sampling": 3.2455278274994106e-06,
+     "var_binomial": 3.2360422766394485e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-default-dpo-seed1": {
+     "level": 0.765886797370108,
+     "reliability": 0.9463561455737033,
+     "var_sampling": 2.69553768547136e-06,
+     "var_binomial": 2.6800505251034367e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-default-dpo-seed2": {
+     "level": 0.7423078317740989,
+     "reliability": 0.9468002432697752,
+     "var_sampling": 2.760406352945665e-06,
+     "var_binomial": 2.94788477282934e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7309484279480893,
+     "reliability": 0.9437367921506984,
+     "var_sampling": 3.1606738125724794e-06,
+     "var_binomial": 2.8857791532948467e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed2": {
+     "level": 0.7355134013493845,
+     "reliability": 0.948247135908995,
+     "var_sampling": 2.8698924001662635e-06,
+     "var_binomial": 2.866831797043964e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed1": {
+     "level": 0.6816596266070265,
+     "reliability": 0.9512790146159185,
+     "var_sampling": 3.014458026719464e-06,
+     "var_binomial": 3.195856491775551e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed2": {
+     "level": 0.7335966277964736,
+     "reliability": 0.9428269303512459,
+     "var_sampling": 3.016904734087458e-06,
+     "var_binomial": 3.0335956036685727e-06
+    },
+    "dd-falcon-1b-default-dpo-seed1": {
+     "level": 0.7319034566100021,
+     "reliability": 0.942546890342883,
+     "var_sampling": 3.0098315465583923e-06,
+     "var_binomial": 3.0724151311036526e-06
+    },
+    "dd-falcon-1b-default-dpo-seed2": {
+     "level": 0.7184011089354351,
+     "reliability": 0.9430728889567415,
+     "var_sampling": 3.2023533961165386e-06,
+     "var_binomial": 3.0520575756016974e-06
+    },
+    "dd-falcon-1b-large-aux-2-dpo-seed1": {
+     "level": 0.781142920191475,
+     "reliability": 0.9516542275925428,
+     "var_sampling": 2.370842236156872e-06,
+     "var_binomial": 2.497982842852332e-06
+    },
+    "dd-falcon-1b-large-aux-2-dpo-seed2": {
+     "level": 0.7217060760695425,
+     "reliability": 0.9491507494607511,
+     "var_sampling": 2.8462200895457864e-06,
+     "var_binomial": 3.018608589604815e-06
+    },
+    "dd-falcon-1b-large-aux-3-dpo-seed1": {
+     "level": 0.818432590307034,
+     "reliability": 0.9334149114089677,
+     "var_sampling": 2.476307159909248e-06,
+     "var_binomial": 2.4561304803710056e-06
+    },
+    "dd-falcon-1b-large-aux-3-dpo-seed2": {
+     "level": 0.7890606257337089,
+     "reliability": 0.9397622468908462,
+     "var_sampling": 2.6664156981928643e-06,
+     "var_binomial": 2.615197032872784e-06
+    },
+    "dd-falcon-and-cc-1b-default-dpo-seed1": {
+     "level": 0.765143034210856,
+     "reliability": 0.9445681364726047,
+     "var_sampling": 2.7468142278416985e-06,
+     "var_binomial": 2.7283600508739882e-06
+    },
+    "dd-falcon-and-cc-1b-default-dpo-seed2": {
+     "level": 0.7724956651305076,
+     "reliability": 0.9430530549490755,
+     "var_sampling": 2.692837969562464e-06,
+     "var_binomial": 2.731399312766633e-06
+    },
+    "dd-falcon-and-cc-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7138479959320899,
+     "reliability": 0.9429379622287456,
+     "var_sampling": 3.1892249126247826e-06,
+     "var_binomial": 3.134253497325765e-06
+    },
+    "dd-falcon-and-cc-1b-large-aux-2-dpo-seed2": {
+     "level": 0.7095639985161969,
+     "reliability": 0.9410430982523945,
+     "var_sampling": 3.3438293881539135e-06,
+     "var_binomial": 3.137424060989088e-06
+    },
+    "dd-falcon-and-cc-1b-large-aux-3-dpo-seed1": {
+     "level": 0.7589320320386703,
+     "reliability": 0.9413906359509863,
+     "var_sampling": 2.759572410660674e-06,
+     "var_binomial": 2.964233898352556e-06
+    },
+    "dd-falcon-and-cc-1b-large-aux-3-dpo-seed2": {
+     "level": 0.7725623291406003,
+     "reliability": 0.9468241505728434,
+     "var_sampling": 2.594312342409404e-06,
+     "var_binomial": 2.6584545679663783e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed1": {
+     "level": 0.6940386891222795,
+     "reliability": 0.9479286316536186,
+     "var_sampling": 3.192062136215157e-06,
+     "var_binomial": 3.0830947140515926e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed2": {
+     "level": 0.70794335822488,
+     "reliability": 0.9495216991814636,
+     "var_sampling": 2.892320812294126e-06,
+     "var_binomial": 3.1312008886083094e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.7307499605392107,
+     "reliability": 0.9395694318974342,
+     "var_sampling": 3.1640921824271555e-06,
+     "var_binomial": 3.090438998943647e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.7010372370234117,
+     "reliability": 0.951247261539376,
+     "var_sampling": 2.8053772204265347e-06,
+     "var_binomial": 3.194396398703544e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.6742399968353804,
+     "reliability": 0.9425371793519924,
+     "var_sampling": 3.516493110810435e-06,
+     "var_binomial": 3.3015495430924675e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.6867527803858742,
+     "reliability": 0.951167338197332,
+     "var_sampling": 2.909919401473814e-06,
+     "var_binomial": 3.2536441635646168e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed1": {
+     "level": 0.7306482406249947,
+     "reliability": 0.9452742592436768,
+     "var_sampling": 2.9882525929900996e-06,
+     "var_binomial": 2.9813419096576004e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed2": {
+     "level": 0.7424360002830497,
+     "reliability": 0.9526930888492637,
+     "var_sampling": 2.6238662090180373e-06,
+     "var_binomial": 2.765688555634593e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.6677428506163834,
+     "reliability": 0.9483576019934044,
+     "var_sampling": 3.3077056898571053e-06,
+     "var_binomial": 3.217296022839646e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.6533135913041218,
+     "reliability": 0.9495062958557088,
+     "var_sampling": 3.2204050806722993e-06,
+     "var_binomial": 3.3680919048192903e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.6276877257360746,
+     "reliability": 0.9531563804189529,
+     "var_sampling": 3.2640832282974635e-06,
+     "var_binomial": 3.2725660026765595e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.6480309550984698,
+     "reliability": 0.9553585498554283,
+     "var_sampling": 3.1209487100139794e-06,
+     "var_binomial": 3.0964007677259225e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed1": {
+     "level": 0.6440759794188752,
+     "reliability": 0.9521330008285298,
+     "var_sampling": 3.2015223940151893e-06,
+     "var_binomial": 3.2942826507456663e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed2": {
+     "level": 0.6748892881783343,
+     "reliability": 0.9446436937982273,
+     "var_sampling": 3.480385111024189e-06,
+     "var_binomial": 3.211168904818665e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.6856065559592773,
+     "reliability": 0.95104217207168,
+     "var_sampling": 3.0320373881268767e-06,
+     "var_binomial": 3.1496305704679485e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.6733977659182108,
+     "reliability": 0.9509949337718702,
+     "var_sampling": 3.076558082057712e-06,
+     "var_binomial": 3.2351269990874553e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.6922339227825072,
+     "reliability": 0.9478851665477166,
+     "var_sampling": 3.1194131025618624e-06,
+     "var_binomial": 3.178364786810716e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.6679560843107393,
+     "reliability": 0.9515015247727415,
+     "var_sampling": 3.062299988453564e-06,
+     "var_binomial": 3.2670645250621006e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed1": {
+     "level": 0.7125867507152389,
+     "reliability": 0.9477465224780034,
+     "var_sampling": 3.021103302173365e-06,
+     "var_binomial": 3.041401629580419e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed2": {
+     "level": 0.708925710555984,
+     "reliability": 0.9484501352028546,
+     "var_sampling": 3.01609649687522e-06,
+     "var_binomial": 3.0482852812328273e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.6417981695041591,
+     "reliability": 0.9432848158418414,
+     "var_sampling": 3.6229076320298285e-06,
+     "var_binomial": 3.4666990403566823e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.5980302400534573,
+     "reliability": 0.9460892428580459,
+     "var_sampling": 3.7073624895059273e-06,
+     "var_binomial": 3.5226237376031095e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.6913710985689792,
+     "reliability": 0.953514828324913,
+     "var_sampling": 2.8966523242698325e-06,
+     "var_binomial": 3.0615836396217223e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.6646906749210493,
+     "reliability": 0.9518448152142032,
+     "var_sampling": 3.1593872075390196e-06,
+     "var_binomial": 3.1721053357161232e-06
+    },
+    "dd-fineweb-edu-1b-default-dpo-seed1": {
+     "level": 0.7316530890526268,
+     "reliability": 0.9487051902316065,
+     "var_sampling": 2.8338126054430746e-06,
+     "var_binomial": 2.9243364666192366e-06
+    },
+    "dd-fineweb-edu-1b-default-dpo-seed2": {
+     "level": 0.6989842579568271,
+     "reliability": 0.9529814858713059,
+     "var_sampling": 2.9110762611742996e-06,
+     "var_binomial": 2.9974657585635295e-06
+    },
+    "dd-fineweb-edu-1b-large-aux-2-dpo-seed1": {
+     "level": 0.6756624273950566,
+     "reliability": 0.9428849127078824,
+     "var_sampling": 3.503460189696651e-06,
+     "var_binomial": 3.2814744094441613e-06
+    },
+    "dd-fineweb-edu-1b-large-aux-2-dpo-seed2": {
+     "level": 0.6904474640189349,
+     "reliability": 0.9396651415262914,
+     "var_sampling": 3.472195564922111e-06,
+     "var_binomial": 3.320184893395602e-06
+    },
+    "dd-fineweb-edu-1b-large-aux-3-dpo-seed1": {
+     "level": 0.6859388604034347,
+     "reliability": 0.9479716364752763,
+     "var_sampling": 3.1879310800317075e-06,
+     "var_binomial": 3.1800245503729663e-06
+    },
+    "dd-fineweb-edu-1b-large-aux-3-dpo-seed2": {
+     "level": 0.691516667190225,
+     "reliability": 0.9546331638237611,
+     "var_sampling": 2.860710857603577e-06,
+     "var_binomial": 3.023621531069497e-06
+    },
+    "dd-fineweb-pro-1b-default-dpo-seed1": {
+     "level": 0.709475233555516,
+     "reliability": 0.9475145258037224,
+     "var_sampling": 2.968185900316085e-06,
+     "var_binomial": 3.1508130337323804e-06
+    },
+    "dd-fineweb-pro-1b-default-dpo-seed2": {
+     "level": 0.6606617719775265,
+     "reliability": 0.9537325823096461,
+     "var_sampling": 3.028872970760434e-06,
+     "var_binomial": 3.2180972204322822e-06
+    },
+    "dd-fineweb-pro-1b-large-aux-2-dpo-seed1": {
+     "level": 0.625013515562676,
+     "reliability": 0.9467305210515039,
+     "var_sampling": 3.6274008491624747e-06,
+     "var_binomial": 3.37660222751762e-06
+    },
+    "dd-fineweb-pro-1b-large-aux-2-dpo-seed2": {
+     "level": 0.6508069731383523,
+     "reliability": 0.9540006186729906,
+     "var_sampling": 3.1085142356120394e-06,
+     "var_binomial": 3.1938684749710392e-06
+    },
+    "dd-fineweb-pro-1b-large-aux-3-dpo-seed1": {
+     "level": 0.6970260737486681,
+     "reliability": 0.9487414463216709,
+     "var_sampling": 3.170707899403914e-06,
+     "var_binomial": 3.026806095391832e-06
+    },
+    "dd-fineweb-pro-1b-large-aux-3-dpo-seed2": {
+     "level": 0.6689400444210202,
+     "reliability": 0.9577207420050173,
+     "var_sampling": 2.8335524095939818e-06,
+     "var_binomial": 3.0559676136357526e-06
+    }
+   },
+   "mean_var_sampling": 3.182540811578549e-06,
+   "mean_var_binomial": 3.1856804395810626e-06
+  },
+  "layout": {
+   "recipes": [
+    "c4",
+    "dclm-baseline",
+    "dclm-baseline-25p-dolma1.7-75p",
+    "dclm-baseline-50p-dolma1.7-50p",
+    "dclm-baseline-75p-dolma1.7-25p",
+    "dclm-baseline-qc-10p",
+    "dclm-baseline-qc-20p",
+    "dclm-baseline-qc-7p-fw2",
+    "dclm-baseline-qc-7p-fw3",
+    "dclm-baseline-qc-fw-10p",
+    "dclm-baseline-qc-fw-3p",
+    "dolma1_6plus",
+    "dolma1_7",
+    "dolma1_7-no-code",
+    "dolma1_7-no-flan",
+    "dolma1_7-no-math-code",
+    "dolma1_7-no-reddit",
+    "falcon",
+    "falcon-and-cc",
+    "falcon-and-cc-qc-10p",
+    "falcon-and-cc-qc-20p",
+    "falcon-and-cc-qc-orig-10p",
+    "falcon-and-cc-qc-tulu-10p",
+    "fineweb-edu",
+    "fineweb-pro"
+   ],
+   "bases": [
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ]
+   ],
+   "model_ids": [
+    [
+     [
+      "dd-c4-1b-default-dpo-seed1",
+      "dd-c4-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-c4-1b-large-aux-2-dpo-seed1",
+      "dd-c4-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-c4-1b-large-aux-3-dpo-seed1",
+      "dd-c4-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-1b-default-dpo-seed1",
+      "dd-dclm-baseline-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-10p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-20p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-20p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_6plus-1b-default-dpo-seed1",
+      "dd-dolma1_6plus-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_6plus-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_6plus-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_6plus-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_6plus-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-1b-default-dpo-seed1",
+      "dd-dolma1_7-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-no-code-1b-default-dpo-seed1",
+      "dd-dolma1_7-no-code-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-no-flan-1b-default-dpo-seed1",
+      "dd-dolma1_7-no-flan-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-no-math-code-1b-default-dpo-seed1",
+      "dd-dolma1_7-no-math-code-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-no-reddit-1b-default-dpo-seed1",
+      "dd-dolma1_7-no-reddit-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-1b-default-dpo-seed1",
+      "dd-falcon-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-fineweb-edu-1b-default-dpo-seed1",
+      "dd-fineweb-edu-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-fineweb-edu-1b-large-aux-2-dpo-seed1",
+      "dd-fineweb-edu-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-fineweb-edu-1b-large-aux-3-dpo-seed1",
+      "dd-fineweb-edu-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-fineweb-pro-1b-default-dpo-seed1",
+      "dd-fineweb-pro-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-fineweb-pro-1b-large-aux-2-dpo-seed1",
+      "dd-fineweb-pro-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-fineweb-pro-1b-large-aux-3-dpo-seed1",
+      "dd-fineweb-pro-1b-large-aux-3-dpo-seed2"
+     ]
+    ]
+   ]
+  }
+ },
+ "q3g": {
+  "subset": "adv_harmful",
+  "outcome": "q3g",
+  "components": {
+   "recipe": 0.00027517454358154695,
+   "pretrain_seed": 0.0005788036432968765,
+   "posttrain_seed": 0.00033426690909707274,
+   "posttrain_true": 0.0003320098483465342,
+   "sampling": 2.2570607505385076e-06
+  },
+  "ci": {
+   "recipe": {
+    "estimate": 0.00027517454358154695,
+    "lo": 4.0801656056164944e-05,
+    "hi": 0.0005248946911552082,
+    "n_draws": 1000
+   },
+   "pretrain_seed": {
+    "estimate": 0.0005788036432968765,
+    "lo": 0.000338522022374766,
+    "hi": 0.0008313420231445891,
+    "n_draws": 1000
+   },
+   "posttrain_seed": {
+    "estimate": 0.00033426690909707274,
+    "lo": 0.0002656255498307297,
+    "hi": 0.00041361401426238123,
+    "n_draws": 1000
+   },
+   "posttrain_true": {
+    "estimate": 0.0003320098483465342,
+    "lo": 0.00026336848908019116,
+    "hi": 0.0004113569535118427,
+    "n_draws": 1000
+   },
+   "sampling": {
+    "estimate": 2.2570607505385076e-06,
+    "lo": 2.2570607505385076e-06,
+    "hi": 2.2570607505385076e-06,
+    "n_draws": 1000
+   }
+  },
+  "shares": {
+   "recipe": 0.2315806263485068,
+   "pretrain_seed": 0.4871079588354662,
+   "posttrain_true": 0.2794119239128599,
+   "sampling": 0.0018994909031672137
+  },
+  "shares_ci": {
+   "recipe": {
+    "estimate": 0.2315806263485068,
+    "lo": 0.040762992221854796,
+    "hi": 0.3694801719440092,
+    "n_draws": 1000
+   },
+   "pretrain_seed": {
+    "estimate": 0.4871079588354662,
+    "lo": 0.346083803603658,
+    "hi": 0.6420123219772471,
+    "n_draws": 1000
+   },
+   "posttrain_true": {
+    "estimate": 0.2794119239128599,
+    "lo": 0.19684202263982953,
+    "hi": 0.41126748855846895,
+    "n_draws": 1000
+   },
+   "sampling": {
+    "estimate": 0.0018994909031672137,
+    "lo": 0.0014734022588557118,
+    "hi": 0.0025857932544759037,
+    "n_draws": 1000
+   }
+  },
+  "sd": {
+   "recipe": 0.016588385803975834,
+   "pretrain_seed": 0.024058338331997838,
+   "posttrain_seed": 0.018282967732211112,
+   "posttrain_true": 0.018221137405401842,
+   "sampling": 0.0015023517399525676
+  },
+  "pre_minus_post": {
+   "estimate": 0.00024453673419980377,
+   "lo": -4.2189509333316055e-05,
+   "hi": 0.0005123979258878251,
+   "n_draws": 1000
+  },
+  "pre_gt_post": true,
+  "design": {
+   "a_recipes": 25,
+   "b_bases": 3,
+   "n_posttrain": 2
+  },
+  "sampling": {
+   "per_model": {
+    "dd-c4-1b-default-dpo-seed1": {
+     "level": 0.4452131013881358,
+     "reliability": 0.9265786856780598,
+     "var_sampling": 2.390468464100809e-06,
+     "var_binomial": 2.343864586644321e-06
+    },
+    "dd-c4-1b-default-dpo-seed2": {
+     "level": 0.4328520133447186,
+     "reliability": 0.9255236032720181,
+     "var_sampling": 2.34322823189791e-06,
+     "var_binomial": 2.3781622003038126e-06
+    },
+    "dd-c4-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4006170852252111,
+     "reliability": 0.932148086579828,
+     "var_sampling": 2.248332894439885e-06,
+     "var_binomial": 2.197373964138757e-06
+    },
+    "dd-c4-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4092571083839798,
+     "reliability": 0.9339718197493426,
+     "var_sampling": 2.1455588912093297e-06,
+     "var_binomial": 2.2582789778293278e-06
+    },
+    "dd-c4-1b-large-aux-3-dpo-seed1": {
+     "level": 0.3768213192401559,
+     "reliability": 0.9299108342808649,
+     "var_sampling": 2.2118684844704095e-06,
+     "var_binomial": 2.198020226020004e-06
+    },
+    "dd-c4-1b-large-aux-3-dpo-seed2": {
+     "level": 0.39470200461933047,
+     "reliability": 0.9337126652941802,
+     "var_sampling": 2.1457929951795074e-06,
+     "var_binomial": 2.222428188358129e-06
+    },
+    "dd-dclm-baseline-1b-default-dpo-seed1": {
+     "level": 0.41647975949353766,
+     "reliability": 0.939649920467172,
+     "var_sampling": 2.1465407746775938e-06,
+     "var_binomial": 2.116713419615065e-06
+    },
+    "dd-dclm-baseline-1b-default-dpo-seed2": {
+     "level": 0.41085883619904884,
+     "reliability": 0.9416331466149418,
+     "var_sampling": 2.089358004811019e-06,
+     "var_binomial": 2.089541207961779e-06
+    },
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed1": {
+     "level": 0.42622934035207666,
+     "reliability": 0.9446936245412872,
+     "var_sampling": 2.0652679424676044e-06,
+     "var_binomial": 2.048327636668108e-06
+    },
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed2": {
+     "level": 0.45066221806917495,
+     "reliability": 0.9457642609992079,
+     "var_sampling": 2.04227332356469e-06,
+     "var_binomial": 2.081351088974214e-06
+    },
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed1": {
+     "level": 0.3854354863791226,
+     "reliability": 0.9380055546069814,
+     "var_sampling": 2.0831500109204363e-06,
+     "var_binomial": 2.1170227345584445e-06
+    },
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4109158781660121,
+     "reliability": 0.936014340318829,
+     "var_sampling": 2.180835226775708e-06,
+     "var_binomial": 2.1804049326631082e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed1": {
+     "level": 0.4143813822092163,
+     "reliability": 0.9300916864180081,
+     "var_sampling": 2.343696799449806e-06,
+     "var_binomial": 2.2207688422659135e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed2": {
+     "level": 0.4189631990416057,
+     "reliability": 0.9366279309141485,
+     "var_sampling": 2.144254636681062e-06,
+     "var_binomial": 2.2170181856561197e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4536292331655791,
+     "reliability": 0.9377092965236725,
+     "var_sampling": 2.2202468205090024e-06,
+     "var_binomial": 2.192784855732091e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4335742974081114,
+     "reliability": 0.9411818368528682,
+     "var_sampling": 2.1127052041696204e-06,
+     "var_binomial": 2.1416663898276818e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.46227321563743806,
+     "reliability": 0.9398097910983257,
+     "var_sampling": 2.194862437564623e-06,
+     "var_binomial": 2.159012315665424e-06
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.43178500166643746,
+     "reliability": 0.9421605398813824,
+     "var_sampling": 2.1124814787003858e-06,
+     "var_binomial": 2.106541458836072e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed1": {
+     "level": 0.48060312445093395,
+     "reliability": 0.9309439989703464,
+     "var_sampling": 2.3175617572968674e-06,
+     "var_binomial": 2.3331940739006187e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed2": {
+     "level": 0.43168716687836656,
+     "reliability": 0.9316793727825888,
+     "var_sampling": 2.253236636160954e-06,
+     "var_binomial": 2.294124538332071e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.449051849552825,
+     "reliability": 0.9381638593351521,
+     "var_sampling": 2.2293746104362544e-06,
+     "var_binomial": 2.1667399603611923e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.42772754185848316,
+     "reliability": 0.9400869172388284,
+     "var_sampling": 2.1198213952955067e-06,
+     "var_binomial": 2.15573694897586e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.3933505074923286,
+     "reliability": 0.940071014613336,
+     "var_sampling": 2.084007762543434e-06,
+     "var_binomial": 2.0870591476403104e-06
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4179367740002998,
+     "reliability": 0.937928067417964,
+     "var_sampling": 2.144158615765542e-06,
+     "var_binomial": 2.1791609313445002e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed1": {
+     "level": 0.45902310218453785,
+     "reliability": 0.9289505872052307,
+     "var_sampling": 2.343421702892864e-06,
+     "var_binomial": 2.343375802672968e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed2": {
+     "level": 0.41599364975939473,
+     "reliability": 0.9276978834512289,
+     "var_sampling": 2.2867505585454967e-06,
+     "var_binomial": 2.3337513334790195e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.43308816835816494,
+     "reliability": 0.9402327979009035,
+     "var_sampling": 2.1130211785096295e-06,
+     "var_binomial": 2.172638914468353e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4373779355966895,
+     "reliability": 0.9380733120386913,
+     "var_sampling": 2.1785318117155335e-06,
+     "var_binomial": 2.188715796862904e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.47753682149191057,
+     "reliability": 0.9317162660758037,
+     "var_sampling": 2.367260218865563e-06,
+     "var_binomial": 2.2736735341592183e-06
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.48825414863679845,
+     "reliability": 0.937638109341868,
+     "var_sampling": 2.2219746864919605e-06,
+     "var_binomial": 2.225637748279583e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-default-dpo-seed1": {
+     "level": 0.46246466451057927,
+     "reliability": 0.9386102260799879,
+     "var_sampling": 2.191984684777047e-06,
+     "var_binomial": 2.2038953315700048e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-default-dpo-seed2": {
+     "level": 0.4864395470888536,
+     "reliability": 0.9402265058000985,
+     "var_sampling": 2.172676532881342e-06,
+     "var_binomial": 2.1910632141974474e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4081257214283424,
+     "reliability": 0.9350113269432881,
+     "var_sampling": 2.20296460574488e-06,
+     "var_binomial": 2.1847879699485207e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.37095510733758746,
+     "reliability": 0.9325363041237189,
+     "var_sampling": 2.133083026143663e-06,
+     "var_binomial": 2.1712241231304575e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.38120480006360985,
+     "reliability": 0.9310429876673098,
+     "var_sampling": 2.2203969492578176e-06,
+     "var_binomial": 2.1844648632129065e-06
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4236967141622768,
+     "reliability": 0.9352640507149795,
+     "var_sampling": 2.1895513186527147e-06,
+     "var_binomial": 2.2316088787646338e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-default-dpo-seed1": {
+     "level": 0.43772317383727427,
+     "reliability": 0.940762468848775,
+     "var_sampling": 2.18861827147308e-06,
+     "var_binomial": 2.097151497653423e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-default-dpo-seed2": {
+     "level": 0.39335300286464464,
+     "reliability": 0.9457232978400778,
+     "var_sampling": 1.951406026705155e-06,
+     "var_binomial": 2.025984443021063e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4248820189987383,
+     "reliability": 0.9445369752447184,
+     "var_sampling": 2.017410434416904e-06,
+     "var_binomial": 2.101414958238606e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4530614135223904,
+     "reliability": 0.9439310063494205,
+     "var_sampling": 2.077632626746912e-06,
+     "var_binomial": 2.1318317488500662e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.4569807183759218,
+     "reliability": 0.9346662955756815,
+     "var_sampling": 2.2782205763377037e-06,
+     "var_binomial": 2.2418281502368335e-06
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4612689956201397,
+     "reliability": 0.9363161217311811,
+     "var_sampling": 2.273978397218731e-06,
+     "var_binomial": 2.2024536328785748e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed1": {
+     "level": 0.46383286885137043,
+     "reliability": 0.9341892682360468,
+     "var_sampling": 2.244129547139149e-06,
+     "var_binomial": 2.2901360692888067e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed2": {
+     "level": 0.4295591951578211,
+     "reliability": 0.9354981481218162,
+     "var_sampling": 2.1705111070216353e-06,
+     "var_binomial": 2.2553359505651023e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed1": {
+     "level": 0.49537389432515916,
+     "reliability": 0.9309164109719912,
+     "var_sampling": 2.3403840221469292e-06,
+     "var_binomial": 2.3215227037857908e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4573330022948857,
+     "reliability": 0.9320344263915711,
+     "var_sampling": 2.310352546215545e-06,
+     "var_binomial": 2.287041843592452e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed1": {
+     "level": 0.44482386553734465,
+     "reliability": 0.9363766866067251,
+     "var_sampling": 2.2597573108662922e-06,
+     "var_binomial": 2.1922081979515656e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4432866773678513,
+     "reliability": 0.9399170759122323,
+     "var_sampling": 2.087211412809048e-06,
+     "var_binomial": 2.2255177407346915e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed1": {
+     "level": 0.4824256533193776,
+     "reliability": 0.9119234487229911,
+     "var_sampling": 2.574733388122651e-06,
+     "var_binomial": 2.5644478195876447e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed2": {
+     "level": 0.4556334432304575,
+     "reliability": 0.9134144248388101,
+     "var_sampling": 2.534300283905981e-06,
+     "var_binomial": 2.536360200194159e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed1": {
+     "level": 0.40253228883259845,
+     "reliability": 0.9298905470728934,
+     "var_sampling": 2.1593288278811035e-06,
+     "var_binomial": 2.3268440626300276e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed2": {
+     "level": 0.45582950165165803,
+     "reliability": 0.9222079696225641,
+     "var_sampling": 2.486249236225308e-06,
+     "var_binomial": 2.391845675426388e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed1": {
+     "level": 0.42027038992280835,
+     "reliability": 0.9166303698739685,
+     "var_sampling": 2.507371827188951e-06,
+     "var_binomial": 2.421669227049861e-06
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed2": {
+     "level": 0.41167060999751104,
+     "reliability": 0.9142738058039204,
+     "var_sampling": 2.494068042912563e-06,
+     "var_binomial": 2.4476923724800925e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed1": {
+     "level": 0.4520583220452542,
+     "reliability": 0.929235907910493,
+     "var_sampling": 2.36647667521864e-06,
+     "var_binomial": 2.3038555209260684e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed2": {
+     "level": 0.44387193856371937,
+     "reliability": 0.9314820939983548,
+     "var_sampling": 2.254037575964646e-06,
+     "var_binomial": 2.3187609593080948e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.39575479814503417,
+     "reliability": 0.9179515093095013,
+     "var_sampling": 2.344238896514855e-06,
+     "var_binomial": 2.422830376892523e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4162802534441492,
+     "reliability": 0.9171752734796867,
+     "var_sampling": 2.3949830619593934e-06,
+     "var_binomial": 2.4675779046912413e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.4187910049646129,
+     "reliability": 0.9267654870678702,
+     "var_sampling": 2.356897081631601e-06,
+     "var_binomial": 2.2999732268942776e-06
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.40590185540034984,
+     "reliability": 0.9268702950615347,
+     "var_sampling": 2.3066620120098054e-06,
+     "var_binomial": 2.3009295673706964e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed1": {
+     "level": 0.46878443988637386,
+     "reliability": 0.9019783919919364,
+     "var_sampling": 2.7247451430527764e-06,
+     "var_binomial": 2.6220283667475466e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed2": {
+     "level": 0.42476824229615373,
+     "reliability": 0.900523552112153,
+     "var_sampling": 2.6285439240066873e-06,
+     "var_binomial": 2.6186954089445187e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4398921142379304,
+     "reliability": 0.896686409350889,
+     "var_sampling": 2.5834093202398353e-06,
+     "var_binomial": 2.730792621496714e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4687190340895704,
+     "reliability": 0.8931627720807568,
+     "var_sampling": 2.7493823215363125e-06,
+     "var_binomial": 2.7340972026652635e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.4926470708720009,
+     "reliability": 0.9022659932733965,
+     "var_sampling": 2.6404906473987954e-06,
+     "var_binomial": 2.685689285493733e-06
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.49344171174401463,
+     "reliability": 0.900181371516697,
+     "var_sampling": 2.7176044396893897e-06,
+     "var_binomial": 2.6738550594847253e-06
+    },
+    "dd-dolma1_6plus-1b-default-dpo-seed1": {
+     "level": 0.40547366744976376,
+     "reliability": 0.9351975373932829,
+     "var_sampling": 2.195832475690781e-06,
+     "var_binomial": 2.1756512827375144e-06
+    },
+    "dd-dolma1_6plus-1b-default-dpo-seed2": {
+     "level": 0.4062347640384505,
+     "reliability": 0.9339502691371839,
+     "var_sampling": 2.246467360320323e-06,
+     "var_binomial": 2.173546667814128e-06
+    },
+    "dd-dolma1_6plus-1b-large-aux-2-dpo-seed1": {
+     "level": 0.42708591572238774,
+     "reliability": 0.9303562097523196,
+     "var_sampling": 2.2718824846799733e-06,
+     "var_binomial": 2.2995511546925295e-06
+    },
+    "dd-dolma1_6plus-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4757790273916912,
+     "reliability": 0.9285924365057505,
+     "var_sampling": 2.383282032885156e-06,
+     "var_binomial": 2.3397125083577315e-06
+    },
+    "dd-dolma1_6plus-1b-large-aux-3-dpo-seed1": {
+     "level": 0.41235951141486304,
+     "reliability": 0.9312639315698641,
+     "var_sampling": 2.2838254117433824e-06,
+     "var_binomial": 2.228378451631206e-06
+    },
+    "dd-dolma1_6plus-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4230896064101724,
+     "reliability": 0.9330501970630934,
+     "var_sampling": 2.205037464757961e-06,
+     "var_binomial": 2.272049387249578e-06
+    },
+    "dd-dolma1_7-1b-default-dpo-seed1": {
+     "level": 0.39715499175134866,
+     "reliability": 0.9330160537545181,
+     "var_sampling": 2.1694501452760294e-06,
+     "var_binomial": 2.2252955049047234e-06
+    },
+    "dd-dolma1_7-1b-default-dpo-seed2": {
+     "level": 0.43428493270328167,
+     "reliability": 0.9328855183850042,
+     "var_sampling": 2.289516252004847e-06,
+     "var_binomial": 2.239826323930693e-06
+    },
+    "dd-dolma1_7-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4527659327915913,
+     "reliability": 0.935043227735175,
+     "var_sampling": 2.196885189577443e-06,
+     "var_binomial": 2.2899105104641737e-06
+    },
+    "dd-dolma1_7-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4509778189302101,
+     "reliability": 0.933578012895203,
+     "var_sampling": 2.252711064605942e-06,
+     "var_binomial": 2.2874450408509647e-06
+    },
+    "dd-dolma1_7-1b-large-aux-3-dpo-seed1": {
+     "level": 0.462879032290638,
+     "reliability": 0.9355071365776342,
+     "var_sampling": 2.286423442336977e-06,
+     "var_binomial": 2.2166036910722075e-06
+    },
+    "dd-dolma1_7-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4394133066424883,
+     "reliability": 0.9348681441505142,
+     "var_sampling": 2.2211273092966035e-06,
+     "var_binomial": 2.251877434939319e-06
+    },
+    "dd-dolma1_7-no-code-1b-default-dpo-seed1": {
+     "level": 0.4327217336786233,
+     "reliability": 0.9314231558588767,
+     "var_sampling": 2.3437669278324465e-06,
+     "var_binomial": 2.2354773222386784e-06
+    },
+    "dd-dolma1_7-no-code-1b-default-dpo-seed2": {
+     "level": 0.38965749836890473,
+     "reliability": 0.9368618299933241,
+     "var_sampling": 2.132474160859978e-06,
+     "var_binomial": 2.128491231236734e-06
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4464567105380965,
+     "reliability": 0.9328249002592913,
+     "var_sampling": 2.3213201177121414e-06,
+     "var_binomial": 2.2426405897708848e-06
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed2": {
+     "level": 0.43888992314498065,
+     "reliability": 0.9298859739662257,
+     "var_sampling": 2.341593059567583e-06,
+     "var_binomial": 2.291525452957937e-06
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed1": {
+     "level": 0.45029995339115747,
+     "reliability": 0.9273266495475486,
+     "var_sampling": 2.414394165952978e-06,
+     "var_binomial": 2.316501537910924e-06
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4600723615132623,
+     "reliability": 0.9300420494847949,
+     "var_sampling": 2.291626697811215e-06,
+     "var_binomial": 2.3570488856639894e-06
+    },
+    "dd-dolma1_7-no-flan-1b-default-dpo-seed1": {
+     "level": 0.38689877591813643,
+     "reliability": 0.9357928684734239,
+     "var_sampling": 2.112880772542443e-06,
+     "var_binomial": 2.1604845873152606e-06
+    },
+    "dd-dolma1_7-no-flan-1b-default-dpo-seed2": {
+     "level": 0.4178584674828685,
+     "reliability": 0.9327896807489596,
+     "var_sampling": 2.2973451501892057e-06,
+     "var_binomial": 2.198933810771447e-06
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed1": {
+     "level": 0.39664135461402095,
+     "reliability": 0.9345650131164683,
+     "var_sampling": 2.208489539775323e-06,
+     "var_binomial": 2.1538716150577286e-06
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4194027460233619,
+     "reliability": 0.939721332133394,
+     "var_sampling": 2.076638240702358e-06,
+     "var_binomial": 2.185174878972022e-06
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed1": {
+     "level": 0.44253238414939505,
+     "reliability": 0.9237732427689815,
+     "var_sampling": 2.4525943326336643e-06,
+     "var_binomial": 2.358906938017122e-06
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed2": {
+     "level": 0.43376090948931184,
+     "reliability": 0.9220402893329686,
+     "var_sampling": 2.469995509892799e-06,
+     "var_binomial": 2.3655294794164018e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-default-dpo-seed1": {
+     "level": 0.4321110453532312,
+     "reliability": 0.9246642776799925,
+     "var_sampling": 2.3850307867602672e-06,
+     "var_binomial": 2.3720814861104096e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-default-dpo-seed2": {
+     "level": 0.41241436615829613,
+     "reliability": 0.9195915658141941,
+     "var_sampling": 2.4224260877130694e-06,
+     "var_binomial": 2.3958337282441737e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed1": {
+     "level": 0.3792896179198609,
+     "reliability": 0.9264932046990726,
+     "var_sampling": 2.333208177604499e-06,
+     "var_binomial": 2.1965301494306507e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed2": {
+     "level": 0.3603285211967726,
+     "reliability": 0.9285413796627578,
+     "var_sampling": 2.2006784508386972e-06,
+     "var_binomial": 2.1678664732622946e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed1": {
+     "level": 0.46014286734285315,
+     "reliability": 0.9275621996965776,
+     "var_sampling": 2.391784090843713e-06,
+     "var_binomial": 2.3384594444745193e-06
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed2": {
+     "level": 0.45083631179786654,
+     "reliability": 0.9285639048248459,
+     "var_sampling": 2.3667536407592286e-06,
+     "var_binomial": 2.3205650438080366e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-default-dpo-seed1": {
+     "level": 0.4548653387858825,
+     "reliability": 0.9386421629934134,
+     "var_sampling": 2.1985035015782233e-06,
+     "var_binomial": 2.1846962579409133e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-default-dpo-seed2": {
+     "level": 0.4402995640916566,
+     "reliability": 0.9408254711297375,
+     "var_sampling": 2.1050954434766403e-06,
+     "var_binomial": 2.1731057253698674e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4165620645146919,
+     "reliability": 0.928209751770757,
+     "var_sampling": 2.3461192886323774e-06,
+     "var_binomial": 2.272714028601693e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed2": {
+     "level": 0.38268619271789467,
+     "reliability": 0.9302898134048948,
+     "var_sampling": 2.2366387372220507e-06,
+     "var_binomial": 2.1980477632142978e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed1": {
+     "level": 0.4660809556611965,
+     "reliability": 0.9287299475401142,
+     "var_sampling": 2.3957002181896455e-06,
+     "var_binomial": 2.3185466759967036e-06
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4892153873576697,
+     "reliability": 0.9294946312215931,
+     "var_sampling": 2.3399807415071215e-06,
+     "var_binomial": 2.356296684326094e-06
+    },
+    "dd-falcon-1b-default-dpo-seed1": {
+     "level": 0.493548198812417,
+     "reliability": 0.932689256280336,
+     "var_sampling": 2.3293287428280337e-06,
+     "var_binomial": 2.2822811381943806e-06
+    },
+    "dd-falcon-1b-default-dpo-seed2": {
+     "level": 0.45906358851246243,
+     "reliability": 0.9350946711483734,
+     "var_sampling": 2.2169654619530477e-06,
+     "var_binomial": 2.279928023331552e-06
+    },
+    "dd-falcon-1b-large-aux-2-dpo-seed1": {
+     "level": 0.475592447439748,
+     "reliability": 0.9422625598087552,
+     "var_sampling": 2.0958689450383456e-06,
+     "var_binomial": 2.1844103775549443e-06
+    },
+    "dd-falcon-1b-large-aux-2-dpo-seed2": {
+     "level": 0.43671341687797016,
+     "reliability": 0.9362489295941151,
+     "var_sampling": 2.2529228375706107e-06,
+     "var_binomial": 2.1765997275189974e-06
+    },
+    "dd-falcon-1b-large-aux-3-dpo-seed1": {
+     "level": 0.5206500680497669,
+     "reliability": 0.9340879057678444,
+     "var_sampling": 2.3093991602979267e-06,
+     "var_binomial": 2.2513481380044286e-06
+    },
+    "dd-falcon-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4928865248716864,
+     "reliability": 0.9336027176802819,
+     "var_sampling": 2.257590967329719e-06,
+     "var_binomial": 2.3140261385126688e-06
+    },
+    "dd-falcon-and-cc-1b-default-dpo-seed1": {
+     "level": 0.477785697639699,
+     "reliability": 0.9286049737025162,
+     "var_sampling": 2.3597558633258162e-06,
+     "var_binomial": 2.3547647423052013e-06
+    },
+    "dd-falcon-and-cc-1b-default-dpo-seed2": {
+     "level": 0.45710823538193757,
+     "reliability": 0.9269659396014787,
+     "var_sampling": 2.4228792594188467e-06,
+     "var_binomial": 2.325850173712004e-06
+    },
+    "dd-falcon-and-cc-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4497926309300861,
+     "reliability": 0.9281610123642926,
+     "var_sampling": 2.3134818613506726e-06,
+     "var_binomial": 2.369058727543832e-06
+    },
+    "dd-falcon-and-cc-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4558576428648845,
+     "reliability": 0.9259941032033211,
+     "var_sampling": 2.441092160172978e-06,
+     "var_binomial": 2.334888189960166e-06
+    },
+    "dd-falcon-and-cc-1b-large-aux-3-dpo-seed1": {
+     "level": 0.4545789144894811,
+     "reliability": 0.9363883786330647,
+     "var_sampling": 2.252119406283164e-06,
+     "var_binomial": 2.2130375470136387e-06
+    },
+    "dd-falcon-and-cc-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4258941170687322,
+     "reliability": 0.940700193996952,
+     "var_sampling": 2.1192080585837207e-06,
+     "var_binomial": 2.1359541051145957e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed1": {
+     "level": 0.4136955453163732,
+     "reliability": 0.9387234789930273,
+     "var_sampling": 2.142686363596239e-06,
+     "var_binomial": 2.1405900286407183e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed2": {
+     "level": 0.4311659150562412,
+     "reliability": 0.9376746267548333,
+     "var_sampling": 2.1439317358026793e-06,
+     "var_binomial": 2.217379630432149e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4114572247709785,
+     "reliability": 0.9402146099660088,
+     "var_sampling": 2.1144203044782136e-06,
+     "var_binomial": 2.1158823740642116e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.40149921157862545,
+     "reliability": 0.9391393188030899,
+     "var_sampling": 2.167243039469857e-06,
+     "var_binomial": 2.0700774590824895e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.32983908382780264,
+     "reliability": 0.9339784922391631,
+     "var_sampling": 2.019470370433193e-06,
+     "var_binomial": 2.0186704830215866e-06
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.3482550439721015,
+     "reliability": 0.9336907424684426,
+     "var_sampling": 2.1167838055388068e-06,
+     "var_binomial": 2.0469609996773817e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed1": {
+     "level": 0.4295931557827737,
+     "reliability": 0.9367002646366438,
+     "var_sampling": 2.2758478901548907e-06,
+     "var_binomial": 2.133419500293863e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed2": {
+     "level": 0.44324878779372184,
+     "reliability": 0.9374750614661213,
+     "var_sampling": 2.2470748450354472e-06,
+     "var_binomial": 2.1651412783079196e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.438609640126615,
+     "reliability": 0.9389693895497593,
+     "var_sampling": 2.1202818082045397e-06,
+     "var_binomial": 2.2151836675626566e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4029154543226917,
+     "reliability": 0.9343424357712333,
+     "var_sampling": 2.1897800901259243e-06,
+     "var_binomial": 2.1945861054675935e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.39886894591464866,
+     "reliability": 0.9379628043328441,
+     "var_sampling": 2.1068330221174395e-06,
+     "var_binomial": 2.1492281179955597e-06
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.40732540843312076,
+     "reliability": 0.94059557086814,
+     "var_sampling": 2.0842164548519716e-06,
+     "var_binomial": 2.116361686827178e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed1": {
+     "level": 0.3956010120287655,
+     "reliability": 0.9343746026539187,
+     "var_sampling": 2.1853522612467947e-06,
+     "var_binomial": 2.1755363831706747e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed2": {
+     "level": 0.4490615284915828,
+     "reliability": 0.9385629582528154,
+     "var_sampling": 2.1218077465217364e-06,
+     "var_binomial": 2.249048389881465e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4088805575047305,
+     "reliability": 0.9380868327966151,
+     "var_sampling": 2.1395288567329614e-06,
+     "var_binomial": 2.1552473310362805e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4131554066318581,
+     "reliability": 0.9351790715245661,
+     "var_sampling": 2.248685225675651e-06,
+     "var_binomial": 2.1677095143092674e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.3985832858355813,
+     "reliability": 0.9361817048601904,
+     "var_sampling": 2.142779555903909e-06,
+     "var_binomial": 2.168830884336142e-06
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4435248274551786,
+     "reliability": 0.9325867640516827,
+     "var_sampling": 2.2975601798673676e-06,
+     "var_binomial": 2.2588525054860543e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed1": {
+     "level": 0.4641111836437921,
+     "reliability": 0.9394888445142048,
+     "var_sampling": 2.210778908096937e-06,
+     "var_binomial": 2.170293568971873e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed2": {
+     "level": 0.4941061981422313,
+     "reliability": 0.9406175292651063,
+     "var_sampling": 2.1433873769808333e-06,
+     "var_binomial": 2.209110609164137e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed1": {
+     "level": 0.44977571636463015,
+     "reliability": 0.9199238441053325,
+     "var_sampling": 2.5251221659894908e-06,
+     "var_binomial": 2.406145234289884e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4448763205660233,
+     "reliability": 0.9294571775389752,
+     "var_sampling": 2.2926657650286186e-06,
+     "var_binomial": 2.3460080669424054e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed1": {
+     "level": 0.47137713137495296,
+     "reliability": 0.9330689086966789,
+     "var_sampling": 2.346317269413922e-06,
+     "var_binomial": 2.24940606130544e-06
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed2": {
+     "level": 0.4809644458709834,
+     "reliability": 0.9317599308201082,
+     "var_sampling": 2.392481194737091e-06,
+     "var_binomial": 2.2546813826207597e-06
+    },
+    "dd-fineweb-edu-1b-default-dpo-seed1": {
+     "level": 0.48347416122289943,
+     "reliability": 0.9350668791957191,
+     "var_sampling": 2.2528611009570333e-06,
+     "var_binomial": 2.2738604663862723e-06
+    },
+    "dd-fineweb-edu-1b-default-dpo-seed2": {
+     "level": 0.46096501000719275,
+     "reliability": 0.9334627583911302,
+     "var_sampling": 2.30437361994098e-06,
+     "var_binomial": 2.257092317993875e-06
+    },
+    "dd-fineweb-edu-1b-large-aux-2-dpo-seed1": {
+     "level": 0.4349007966342247,
+     "reliability": 0.9280269986943362,
+     "var_sampling": 2.305305484417286e-06,
+     "var_binomial": 2.351331176219066e-06
+    },
+    "dd-fineweb-edu-1b-large-aux-2-dpo-seed2": {
+     "level": 0.4485900236085782,
+     "reliability": 0.9313795711439555,
+     "var_sampling": 2.249073050991854e-06,
+     "var_binomial": 2.336875736215758e-06
+    },
+    "dd-fineweb-edu-1b-large-aux-3-dpo-seed1": {
+     "level": 0.48312192817525956,
+     "reliability": 0.925115373685521,
+     "var_sampling": 2.462339674619029e-06,
+     "var_binomial": 2.37062562338928e-06
+    },
+    "dd-fineweb-edu-1b-large-aux-3-dpo-seed2": {
+     "level": 0.46638401335059376,
+     "reliability": 0.9295861459402344,
+     "var_sampling": 2.3571246344844203e-06,
+     "var_binomial": 2.3243117667411966e-06
+    },
+    "dd-fineweb-pro-1b-default-dpo-seed1": {
+     "level": 0.43036112535508175,
+     "reliability": 0.9373520862439475,
+     "var_sampling": 2.1923016255022287e-06,
+     "var_binomial": 2.2076365347656195e-06
+    },
+    "dd-fineweb-pro-1b-default-dpo-seed2": {
+     "level": 0.41049427890380114,
+     "reliability": 0.9406492277952181,
+     "var_sampling": 2.088988626645584e-06,
+     "var_binomial": 2.121436192912943e-06
+    },
+    "dd-fineweb-pro-1b-large-aux-2-dpo-seed1": {
+     "level": 0.33576982878532985,
+     "reliability": 0.9425176422680888,
+     "var_sampling": 1.8796569986097304e-06,
+     "var_binomial": 1.9380712725591346e-06
+    },
+    "dd-fineweb-pro-1b-large-aux-2-dpo-seed2": {
+     "level": 0.34046443269798793,
+     "reliability": 0.9427358886603269,
+     "var_sampling": 1.875902377561128e-06,
+     "var_binomial": 1.9617270099415472e-06
+    },
+    "dd-fineweb-pro-1b-large-aux-3-dpo-seed1": {
+     "level": 0.4190382221960905,
+     "reliability": 0.9389285765345209,
+     "var_sampling": 2.1158460038813037e-06,
+     "var_binomial": 2.1785917724721196e-06
+    },
+    "dd-fineweb-pro-1b-large-aux-3-dpo-seed2": {
+     "level": 0.40302679826382065,
+     "reliability": 0.9374170453075045,
+     "var_sampling": 2.1283762911122284e-06,
+     "var_binomial": 2.163369203567278e-06
+    }
+   },
+   "mean_var_sampling": 2.2570607505385076e-06,
+   "mean_var_binomial": 2.2521407415444748e-06
+  },
+  "layout": {
+   "recipes": [
+    "c4",
+    "dclm-baseline",
+    "dclm-baseline-25p-dolma1.7-75p",
+    "dclm-baseline-50p-dolma1.7-50p",
+    "dclm-baseline-75p-dolma1.7-25p",
+    "dclm-baseline-qc-10p",
+    "dclm-baseline-qc-20p",
+    "dclm-baseline-qc-7p-fw2",
+    "dclm-baseline-qc-7p-fw3",
+    "dclm-baseline-qc-fw-10p",
+    "dclm-baseline-qc-fw-3p",
+    "dolma1_6plus",
+    "dolma1_7",
+    "dolma1_7-no-code",
+    "dolma1_7-no-flan",
+    "dolma1_7-no-math-code",
+    "dolma1_7-no-reddit",
+    "falcon",
+    "falcon-and-cc",
+    "falcon-and-cc-qc-10p",
+    "falcon-and-cc-qc-20p",
+    "falcon-and-cc-qc-orig-10p",
+    "falcon-and-cc-qc-tulu-10p",
+    "fineweb-edu",
+    "fineweb-pro"
+   ],
+   "bases": [
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ],
+    [
+     "default",
+     "large-aux-2",
+     "large-aux-3"
+    ]
+   ],
+   "model_ids": [
+    [
+     [
+      "dd-c4-1b-default-dpo-seed1",
+      "dd-c4-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-c4-1b-large-aux-2-dpo-seed1",
+      "dd-c4-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-c4-1b-large-aux-3-dpo-seed1",
+      "dd-c4-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-1b-default-dpo-seed1",
+      "dd-dclm-baseline-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-10p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-20p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-20p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed1",
+      "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_6plus-1b-default-dpo-seed1",
+      "dd-dolma1_6plus-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_6plus-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_6plus-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_6plus-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_6plus-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-1b-default-dpo-seed1",
+      "dd-dolma1_7-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-no-code-1b-default-dpo-seed1",
+      "dd-dolma1_7-no-code-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-no-flan-1b-default-dpo-seed1",
+      "dd-dolma1_7-no-flan-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-no-math-code-1b-default-dpo-seed1",
+      "dd-dolma1_7-no-math-code-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-dolma1_7-no-reddit-1b-default-dpo-seed1",
+      "dd-dolma1_7-no-reddit-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed1",
+      "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed1",
+      "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-1b-default-dpo-seed1",
+      "dd-falcon-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed1",
+      "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed1",
+      "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed1",
+      "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-fineweb-edu-1b-default-dpo-seed1",
+      "dd-fineweb-edu-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-fineweb-edu-1b-large-aux-2-dpo-seed1",
+      "dd-fineweb-edu-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-fineweb-edu-1b-large-aux-3-dpo-seed1",
+      "dd-fineweb-edu-1b-large-aux-3-dpo-seed2"
+     ]
+    ],
+    [
+     [
+      "dd-fineweb-pro-1b-default-dpo-seed1",
+      "dd-fineweb-pro-1b-default-dpo-seed2"
+     ],
+     [
+      "dd-fineweb-pro-1b-large-aux-2-dpo-seed1",
+      "dd-fineweb-pro-1b-large-aux-2-dpo-seed2"
+     ],
+     [
+      "dd-fineweb-pro-1b-large-aux-3-dpo-seed1",
+      "dd-fineweb-pro-1b-large-aux-3-dpo-seed2"
+     ]
+    ]
+   ]
+  }
+ }
+}

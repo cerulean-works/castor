@@ -1,0 +1,14 @@
+449835|006-train-default-s1|COMPLETED|29596|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn176
+449836|006-train-default-s2|COMPLETED|29655|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn177
+449837|006-train-default-s3|COMPLETED|29679|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn006
+449838|006-train-default-s4|COMPLETED|30080|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn007
+449839|006-train-large-aux-2-s1|COMPLETED|29624|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn008
+449840|006-train-large-aux-2-s2|COMPLETED|29632|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn009
+449841|006-train-large-aux-2-s3|COMPLETED|29632|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn010
+449842|006-train-large-aux-2-s4|COMPLETED|29663|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn011
+449843|006-train-large-aux-3-s1|FAILED|4|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn111
+449844|006-train-large-aux-3-s2|COMPLETED|29927|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn112
+449845|006-train-large-aux-3-s3|COMPLETED|29552|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn113
+449847|006-train-large-aux-3-s4|FAILED|3|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn111
+450797|006-train-large-aux-3-s1|COMPLETED|29629|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn118
+453363|006-train-large-aux-3-s4|COMPLETED|29602|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn033

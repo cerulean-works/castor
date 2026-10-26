@@ -1,0 +1,33 @@
+# olmes pinned at 38af8b61741b01faeb60e90899addd7e6fa503a0 (git clone at $CASTOR_WORK/third_party/olmes-src)
+# CASTOR: locked uv project that runs OLMES / oe-eval unmodified for OLMES-10.
+# olmes checkout at ../olmes-src pinned to 38af8b6 (2024-12-08 merge; the DataDecide evals ran with
+# oe-eval on 2024-12-29 per the released metrics.json). ai2-olmo (hf_olmo loader for the released
+# "OLMoForCausalLM" checkpoints) comes from the same OLMo checkout the training env uses (../OLMo @
+# ccabb54e), so evaluation and training share one model implementation.
+[project]
+name = "castor-olmes-env"
+version = "0.1.0"
+requires-python = "==3.11.*"
+dependencies = [
+    "ai2-olmes",
+    "ai2-olmo",
+    "torch==2.3.1",
+    "numpy<2",
+]
+
+[tool.uv]
+package = false
+exclude-newer = "2024-12-29T00:00:00Z"
+# olmes asks ai2-olmo>=0.5.1; the ccabb54e checkout reports an older version string but is the
+# DataDecide training code itself. Override the floor so both envs share one model implementation.
+override-dependencies = ["ai2-olmo"]
+
+[tool.uv.sources]
+ai2-olmes = { path = "../olmes-src", editable = true }
+ai2-olmo = { path = "../OLMo", editable = true }
+torch = { index = "pytorch-cu121" }
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true

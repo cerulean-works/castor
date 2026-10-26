@@ -1,0 +1,4 @@
+489015|011-gj-dclm-baseline-1B-replicate-i6198-d6198-s1|COMPLETED|6821|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn002
+489017|011-gj-dclm-baseline-1B-replicate-i6198-d6198-s2|COMPLETED|6668|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn035
+489019|011-gj-dclm-baseline-1B-replicate-i6198-d6198-s3|COMPLETED|6774|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn001
+489021|011-gj-dclm-baseline-1B-replicate-i6198-d6198-s4|COMPLETED|6811|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn047

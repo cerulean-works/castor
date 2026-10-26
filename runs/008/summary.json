@@ -1,0 +1,56 @@
+{
+ "grid": "runs/008/grid.json",
+ "tsv": "runs/008/per_recipe.tsv",
+ "gap_per_recipe": {
+  "min": 0.14520628343113884,
+  "max": 0.2092755138048047,
+  "n_gap_lo_gt_0": 25
+ },
+ "D042_non_main": {
+  "template_residual": {
+   "mean_non_main": 0.5241591561542586,
+   "n_non_main": 24,
+   "min_non_main": 0.47222707810682363,
+   "max_non_main": 0.5981591833340765,
+   "main": 0.5533614219132591
+  },
+  "source_wildjailbreak": {
+   "mean_non_main": 0.1392822466581461,
+   "n_non_main": 24,
+   "min_non_main": 0.1214463285635291,
+   "max_non_main": 0.17678748922285514,
+   "main": 0.13391511625136587
+  },
+  "source_harmbench_humanjb": {
+   "mean_non_main": 0.21019850583190777,
+   "n_non_main": 24,
+   "min_non_main": 0.1688239953881171,
+   "max_non_main": 0.2908385012300585,
+   "main": 0.2144635274274238
+  }
+ },
+ "reference": {
+  "main_recipe": {
+   "n": 6,
+   "r": 0.6343446826877385,
+   "r_corrected": 0.6705180501403146
+  },
+  "all": {
+   "n": 150,
+   "r": 0.5991340450997193,
+   "r_corrected": 0.6358038711302862
+  },
+  "min_r_corrected": 0.4433552414896898,
+  "max_r_corrected": 0.7036495621806235
+ },
+ "recipe_vulnerability": {
+  "min": 0.46351323168239905,
+  "max": 0.664081170381533,
+  "argmin": "falcon-and-cc-qc-10p",
+  "argmax": "dclm-baseline-qc-fw-3p",
+  "sd": 0.03930524487146861
+ },
+ "git_commit": "4460317dfd643e08ee1efe6afa5ffad2266c3dd4",
+ "command": "uv run --frozen python scripts/summary_008.py --grid runs/008/grid.json --out runs/008/summary.json --tsv runs/008/per_recipe.tsv",
+ "script": "scripts/summary_008.py"
+}

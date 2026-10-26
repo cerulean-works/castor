@@ -1,0 +1,12 @@
+476670|009-train-dclm-baseline-1B-init-aux2-data-default-s1|FAILED|3|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn088
+476672|009-train-dclm-baseline-1B-init-aux2-data-default-s2|FAILED|3|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn088
+476674|009-train-dclm-baseline-1B-init-default-data-aux2-s1|FAILED|3|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn088
+476676|009-train-dclm-baseline-1B-init-default-data-aux2-s2|FAILED|3|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn088
+476692|009-train-dclm-baseline-1B-init-aux2-data-default-s1|COMPLETED|29388|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn088
+476694|009-train-dclm-baseline-1B-init-aux2-data-default-s2|COMPLETED|29230|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn175
+476696|009-train-dclm-baseline-1B-init-default-data-aux2-s1|COMPLETED|29673|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn052
+476698|009-train-dclm-baseline-1B-init-default-data-aux2-s2|COMPLETED|29553|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn053
+476705|009-train-dclm-baseline-1B-init-aux2-data-default-s3|COMPLETED|29450|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn043
+477761|009-train-dclm-baseline-1B-init-default-data-aux2-s3|COMPLETED|29869|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn004
+480022|009-train-dclm-baseline-1B-init-aux2-data-default-s4|COMPLETED|29562|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn079
+480555|009-train-dclm-baseline-1B-init-default-data-aux2-s4|COMPLETED|29761|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn081

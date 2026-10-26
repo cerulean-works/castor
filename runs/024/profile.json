@@ -1,0 +1,144 @@
+{
+ "deepspeed_breakdown": {
+  "log": "/home/harrychang08/castor/logs/nchc/024-profile-484576.out",
+  "n_breakdown_lines": 400,
+  "dmon_sm_util_pct_steps_10_50": {
+   "0": 68.26760563380282,
+   "1": 83.64788732394366,
+   "2": 76.16901408450704,
+   "3": 54.014084507042256,
+   "4": 85.95774647887323,
+   "5": 87.69014084507042,
+   "6": 88.56338028169014,
+   "7": 86.49295774647888
+  },
+  "breakdown_ms_median": {
+   "fwd": 88.33,
+   "bwd": 126.5,
+   "bwd_inner": 124.16499999999999,
+   "bwd_allreduce": 2.2,
+   "step": 0.06
+  },
+  "s_per_step_10_50_with_timers": 1.75,
+  "micro_steps_per_step": 8
+ },
+ "padding": {
+  "cache": "/work/harrychang08/castor/cache/open_instruct_datasets/6edaf45195",
+  "rows": 853840,
+  "len_mean": 576.4896198350979,
+  "len_median": 426.0,
+  "micro_batch": 2,
+  "tokens_real_per_microbatch": 1152.9792396701957,
+  "tokens_padded_per_microbatch": 1665.1510493769324,
+  "padding_fraction": 0.30758279250304743
+ },
+ "nsys": {
+  "db": "/work/harrychang08/castor/models/posttrain/smoke/024/profile-nsys/nsys.sqlite",
+  "trim": 0.2,
+  "per_gpu": {
+   "0": {
+    "window_s": 93.3242377216,
+    "gemm_frac": 0.08203899552696756,
+    "attention_frac": 0.00789065569650575,
+    "optimizer_frac": 0.0006136693039041533,
+    "other_frac": 0.06425765864693513,
+    "nccl_frac": 0.5908878747716448,
+    "compute_frac": 0.1531726297475181,
+    "nccl_exposed_frac": 0.5086498383046868,
+    "idle_frac": 0.3381775319477951
+   },
+   "1": {
+    "window_s": 93.3212351392,
+    "gemm_frac": 0.08976475252073918,
+    "attention_frac": 0.008324797960948418,
+    "optimizer_frac": 0.0006139964705196164,
+    "other_frac": 0.06697919481751925,
+    "nccl_frac": 0.6820887899978311,
+    "compute_frac": 0.1640841110210285,
+    "nccl_exposed_frac": 0.5781011946051541,
+    "idle_frac": 0.25781469437381743
+   },
+   "2": {
+    "window_s": 93.334805912,
+    "gemm_frac": 0.08370523813341468,
+    "attention_frac": 0.008498313991758355,
+    "optimizer_frac": 0.000613308469875334,
+    "other_frac": 0.06802273095190234,
+    "nccl_frac": 0.5176228277857117,
+    "compute_frac": 0.158572294605234,
+    "nccl_exposed_frac": 0.44316041199033634,
+    "idle_frac": 0.3982672934044297
+   },
+   "3": {
+    "window_s": 93.316090764,
+    "gemm_frac": 0.09483359217630245,
+    "attention_frac": 0.008498192825132093,
+    "optimizer_frac": 0.0006146963029673878,
+    "other_frac": 0.06725929929783701,
+    "nccl_frac": 0.7997034759817577,
+    "compute_frac": 0.16981663065029937,
+    "nccl_exposed_frac": 0.6725045395087442,
+    "idle_frac": 0.15767882984095638
+   },
+   "4": {
+    "window_s": 93.32583561439999,
+    "gemm_frac": 0.0951132587194362,
+    "attention_frac": 0.008386564897568767,
+    "optimizer_frac": 0.0006162024976407143,
+    "other_frac": 0.06669229396151939,
+    "nccl_frac": 0.8051217867628313,
+    "compute_frac": 0.1694210332745238,
+    "nccl_exposed_frac": 0.6780307578755433,
+    "idle_frac": 0.15254820884993292
+   },
+   "5": {
+    "window_s": 93.31156215360001,
+    "gemm_frac": 0.09885534090422599,
+    "attention_frac": 0.008817129009647137,
+    "optimizer_frac": 0.0006142757733028543,
+    "other_frac": 0.06842301759443513,
+    "nccl_frac": 0.8332174635295228,
+    "compute_frac": 0.17522245604125486,
+    "nccl_exposed_frac": 0.6971109132855773,
+    "idle_frac": 0.12766663067316786
+   },
+   "6": {
+    "window_s": 93.3301745816,
+    "gemm_frac": 0.09760615328149137,
+    "attention_frac": 0.00859190061086729,
+    "optimizer_frac": 0.0006140993548650173,
+    "other_frac": 0.06737153404232071,
+    "nccl_frac": 0.842580400209639,
+    "compute_frac": 0.17275418309544957,
+    "nccl_exposed_frac": 0.7062737484324328,
+    "idle_frac": 0.1209720684721175
+   },
+   "7": {
+    "window_s": 93.3221287736,
+    "gemm_frac": 0.10237518266624351,
+    "attention_frac": 0.009023174032418898,
+    "optimizer_frac": 0.0006146306535629119,
+    "other_frac": 0.06956856578733135,
+    "nccl_frac": 0.8699872039306465,
+    "compute_frac": 0.1801425348834923,
+    "nccl_exposed_frac": 0.7233944994479982,
+    "idle_frac": 0.09646296566850954
+   }
+  },
+  "mean": {
+   "window_s": 93.3232588325,
+   "gemm_frac": 0.09303656424110261,
+   "attention_frac": 0.008503841128105838,
+   "optimizer_frac": 0.0006143598533297486,
+   "other_frac": 0.06732178688747503,
+   "nccl_frac": 0.7426512278711981,
+   "compute_frac": 0.16789823416485006,
+   "nccl_exposed_frac": 0.6259032379313091,
+   "idle_frac": 0.2061985279038408
+  }
+ },
+ "_meta": {
+  "git_commit": "93d92b7ae4933d198f4bf25dba59ddec56d4f613",
+  "command": "uv run --frozen python scripts/smokes_024.py --out /home/harrychang08/castor/runs/024 --names cur1 cur2 zero2 zero1 zero3t env zero1-chain"
+ }
+}

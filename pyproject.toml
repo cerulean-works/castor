@@ -1,0 +1,42 @@
+[project]
+name = "castor"
+version = "0.1.0"
+description = "CASTOR: seed-twinned language models and the heritability of jailbreak vulnerability"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "accelerate>=1.15.0",
+    "datasets>=4.0",
+    "huggingface-hub>=0.36.2",
+    "numpy>=2.3.5",
+    "pandas>=3.0.6",
+    "pyarrow>=25.0.1",
+    "pyyaml>=6.0.3",
+    "torch==2.11.0",
+    "tqdm>=4.70.1",
+    "transformers>=4.57.6",
+    "vllm==0.23.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["castor"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+# scratch analysis scripts kept beside their notes and run artifacts are not linted (087 open item)
+extend-exclude = ["notes", "runs"]
+
+[dependency-groups]
+dev = [
+    "boto3>=1.43.103",
+    "cached-path>=1.8.10",
+    "importlib-resources>=7.1.0",
+    "omegaconf>=2.3.1",
+    "pypdf>=6.19.0",
+    "pytest>=9.1.1",
+    "ruff>=0.16.9",
+]

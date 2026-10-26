@@ -1,0 +1,294 @@
+{
+ "pooled": {
+  "n_prompts": 3212,
+  "point": {
+   "r_MZ_corrected": 0.9842619554607795,
+   "r_U_corrected": 0.8112322780724336,
+   "MZ_minus_U_corrected": 0.17302967738834596,
+   "MZ_minus_U": 0.16354545180896607,
+   "ratio_unshared_U_over_MZ": 11.994356824772119
+  },
+  "ci_prompts": {
+   "r_MZ_corrected": {
+    "estimate": 0.9842619554607795,
+    "lo": 0.9824001953741944,
+    "hi": 0.986176639010587,
+    "n_draws": 1000
+   },
+   "r_U_corrected": {
+    "estimate": 0.8112322780724336,
+    "lo": 0.7985305828533351,
+    "hi": 0.8227177354434132,
+    "n_draws": 1000
+   },
+   "MZ_minus_U_corrected": {
+    "estimate": 0.17302967738834596,
+    "lo": 0.16189915237916053,
+    "hi": 0.18478990905483525,
+    "n_draws": 1000
+   },
+   "MZ_minus_U": {
+    "estimate": 0.16354545180896607,
+    "lo": 0.15311216184028673,
+    "hi": 0.17441573043678543,
+    "n_draws": 1000
+   },
+   "ratio_unshared_U_over_MZ": {
+    "estimate": 11.994356824772119,
+    "lo": 10.657275429847461,
+    "hi": 13.491130241373057,
+    "n_draws": 1000
+   }
+  },
+  "ci_template_clusters": {
+   "r_MZ_corrected": {
+    "estimate": 0.9842619554607795,
+    "lo": 0.9823907909723021,
+    "hi": 0.9863880910355198,
+    "n_draws": 1000
+   },
+   "r_U_corrected": {
+    "estimate": 0.8112322780724336,
+    "lo": 0.7965829342883657,
+    "hi": 0.8260466554724141,
+    "n_draws": 1000
+   },
+   "MZ_minus_U_corrected": {
+    "estimate": 0.17302967738834596,
+    "lo": 0.15891965853481843,
+    "hi": 0.18658187724568448,
+    "n_draws": 1000
+   },
+   "MZ_minus_U": {
+    "estimate": 0.16354545180896607,
+    "lo": 0.15028144703174012,
+    "hi": 0.17619972616425128,
+    "n_draws": 1000
+   },
+   "ratio_unshared_U_over_MZ": {
+    "estimate": 11.994356824772119,
+    "lo": 10.719661041719943,
+    "hi": 13.74439420446362,
+    "n_draws": 1000
+   }
+  },
+  "n_template_clusters_humanjb": 91,
+  "ci_behaviour_clusters": {
+   "r_MZ_corrected": {
+    "estimate": 0.9842619554607795,
+    "lo": 0.9824273214308843,
+    "hi": 0.9863148629512081,
+    "n_draws": 1000
+   },
+   "r_U_corrected": {
+    "estimate": 0.8112322780724336,
+    "lo": 0.7972636709674427,
+    "hi": 0.8249244624146874,
+    "n_draws": 1000
+   },
+   "MZ_minus_U_corrected": {
+    "estimate": 0.17302967738834596,
+    "lo": 0.16008747145324384,
+    "hi": 0.18675807390867522,
+    "n_draws": 1000
+   },
+   "MZ_minus_U": {
+    "estimate": 0.16354545180896607,
+    "lo": 0.15151587766911373,
+    "hi": 0.17622188105360542,
+    "n_draws": 1000
+   },
+   "ratio_unshared_U_over_MZ": {
+    "estimate": 11.994356824772119,
+    "lo": 10.773854311023278,
+    "hi": 13.626241324324534,
+    "n_draws": 1000
+   }
+  },
+  "n_behaviour_clusters_humanjb": 300,
+  "ci_bases_from_signal_json": {
+   "MZ_minus_U_corrected": {
+    "estimate": 0.17302967738834596,
+    "lo": 0.15479924957805924,
+    "hi": 0.195049233965219,
+    "n_draws": 883
+   },
+   "r_MZ_corrected": {
+    "estimate": 0.9842619554607795,
+    "lo": 0.9825152813847063,
+    "hi": 0.9859180318033359,
+    "n_draws": 1000
+   },
+   "r_U_corrected": {
+    "estimate": 0.8112322780724336,
+    "lo": 0.7897345476985737,
+    "hi": 0.8300751298192508,
+    "n_draws": 883
+   }
+  },
+  "jackknife_bases_from_signal_json": {
+   "estimate": 0.17302967738834596,
+   "se": 0.02302521785434385,
+   "n_reps": 3,
+   "n_bases": 3
+  }
+ },
+ "by_source": {
+  "harmbench_humanjb": {
+   "n_prompts": 1212,
+   "point": {
+    "r_MZ_corrected": 0.9823015061842655,
+    "r_U_corrected": 0.7696499887560035,
+    "MZ_minus_U_corrected": 0.21265151742826194,
+    "MZ_minus_U": 0.202118506162968,
+    "ratio_unshared_U_over_MZ": 13.01523246227925
+   },
+   "ci_prompts": {
+    "r_MZ_corrected": {
+     "estimate": 0.9823015061842655,
+     "lo": 0.9791642729924278,
+     "hi": 0.9853671074570868,
+     "n_draws": 1000
+    },
+    "r_U_corrected": {
+     "estimate": 0.7696499887560035,
+     "lo": 0.748414651995546,
+     "hi": 0.7899859849142971,
+     "n_draws": 1000
+    },
+    "MZ_minus_U_corrected": {
+     "estimate": 0.21265151742826194,
+     "lo": 0.19358090173298476,
+     "hi": 0.23338773755376482,
+     "n_draws": 1000
+    },
+    "MZ_minus_U": {
+     "estimate": 0.202118506162968,
+     "lo": 0.1844286609041024,
+     "hi": 0.22127356516346325,
+     "n_draws": 1000
+    },
+    "ratio_unshared_U_over_MZ": {
+     "estimate": 13.01523246227925,
+     "lo": 11.101367782164658,
+     "hi": 15.567541205047748,
+     "n_draws": 1000
+    }
+   },
+   "ci_template_clusters": {
+    "r_MZ_corrected": {
+     "estimate": 0.9823015061842655,
+     "lo": 0.9792921874852516,
+     "hi": 0.9855793121032561,
+     "n_draws": 1000
+    },
+    "r_U_corrected": {
+     "estimate": 0.7696499887560035,
+     "lo": 0.7422579094799117,
+     "hi": 0.7929317923947333,
+     "n_draws": 1000
+    },
+    "MZ_minus_U_corrected": {
+     "estimate": 0.21265151742826194,
+     "lo": 0.19060198886776458,
+     "hi": 0.23869356310879372,
+     "n_draws": 1000
+    },
+    "MZ_minus_U": {
+     "estimate": 0.202118506162968,
+     "lo": 0.18165399860798206,
+     "hi": 0.22661942678475594,
+     "n_draws": 1000
+    },
+    "ratio_unshared_U_over_MZ": {
+     "estimate": 13.01523246227925,
+     "lo": 11.316999677142777,
+     "hi": 15.737509847973719,
+     "n_draws": 1000
+    }
+   },
+   "n_template_clusters_humanjb": 91,
+   "ci_behaviour_clusters": {
+    "r_MZ_corrected": {
+     "estimate": 0.9823015061842655,
+     "lo": 0.9788240535740782,
+     "hi": 0.9853126701345913,
+     "n_draws": 1000
+    },
+    "r_U_corrected": {
+     "estimate": 0.7696499887560035,
+     "lo": 0.7409996705505628,
+     "hi": 0.7960362770946623,
+     "n_draws": 1000
+    },
+    "MZ_minus_U_corrected": {
+     "estimate": 0.21265151742826194,
+     "lo": 0.1869487561657868,
+     "hi": 0.2399879324839904,
+     "n_draws": 1000
+    },
+    "MZ_minus_U": {
+     "estimate": 0.202118506162968,
+     "lo": 0.17832763299957602,
+     "hi": 0.2270111966144262,
+     "n_draws": 1000
+    },
+    "ratio_unshared_U_over_MZ": {
+     "estimate": 13.01523246227925,
+     "lo": 10.983230609326762,
+     "hi": 15.610348384988336,
+     "n_draws": 1000
+    }
+   },
+   "n_behaviour_clusters_humanjb": 300
+  },
+  "wildjailbreak": {
+   "n_prompts": 2000,
+   "point": {
+    "r_MZ_corrected": 0.9871975579133605,
+    "r_U_corrected": 0.8533068818005588,
+    "MZ_minus_U_corrected": 0.1338906761128017,
+    "MZ_minus_U": 0.12592480164927955,
+    "ratio_unshared_U_over_MZ": 11.45821376942831
+   },
+   "ci_prompts": {
+    "r_MZ_corrected": {
+     "estimate": 0.9871975579133605,
+     "lo": 0.9849225359125535,
+     "hi": 0.9895991513896193,
+     "n_draws": 1000
+    },
+    "r_U_corrected": {
+     "estimate": 0.8533068818005588,
+     "lo": 0.8409728577457558,
+     "hi": 0.865316670061747,
+     "n_draws": 1000
+    },
+    "MZ_minus_U_corrected": {
+     "estimate": 0.1338906761128017,
+     "lo": 0.12218001394554882,
+     "hi": 0.1461303137569727,
+     "n_draws": 1000
+    },
+    "MZ_minus_U": {
+     "estimate": 0.12592480164927955,
+     "lo": 0.11528536727632772,
+     "hi": 0.1372280606191004,
+     "n_draws": 1000
+    },
+    "ratio_unshared_U_over_MZ": {
+     "estimate": 11.45821376942831,
+     "lo": 9.679216532559176,
+     "hi": 13.99553973424908,
+     "n_draws": 1000
+    }
+   }
+  }
+ },
+ "script": "scripts/cluster_ci_pitch.py",
+ "git_commit": "ba95c35cc555222eedf713221e3911fde60f0731",
+ "command": "uv run --frozen python scripts/cluster_ci_pitch.py --out /home/harrychang08/castor/runs/006/cluster_ci.json --n-boot 1000",
+ "n_boot": 1000,
+ "seed": 0,
+ "seconds": 88.36918592453003
+}

@@ -1,0 +1,79 @@
+{
+ "method": "notes/016 \u00a7 Measured cost: steady s/step over steps 10-50, DPO caching from 'Num examples' to step 1, x 13,342 SFT + 2,898 DPO steps + 0.03 h, x 8 GPUs, + 1.83 H200-h gen + judge; SU at 60",
+ "sizes": {
+  "150M": {
+   "sft_s_per_step": 0.375,
+   "dpo_s_per_step": 0.425,
+   "dpo_caching_min": 5.3,
+   "sft_h": 1.3897916666666668,
+   "dpo_h_incl_caching": 0.4304583333333333,
+   "start_h": 0.03,
+   "train_h200h": 14.802000000000001,
+   "gen_judge_h200h": 1.83,
+   "all_in_h200h": 16.632,
+   "su_at_60": 997.9200000000001,
+   "projection_d067c_h200h": 17.37,
+   "measured_over_projection": 0.9575129533678757,
+   "ds_sha_prefix": {
+    "sft": "b615b6daa5ea",
+    "dpo": "bbe8f49732e8"
+   },
+   "loss_step1_step50": {
+    "sft": [
+     1459.58203125,
+     1573.32421875
+    ],
+    "dpo": [
+     0.6931471824645996,
+     0.6866656541824341
+    ]
+   },
+   "steps_logged": {
+    "sft": 50,
+    "dpo": 50
+   }
+  },
+  "300M": {
+   "sft_s_per_step": 0.45,
+   "dpo_s_per_step": 0.675,
+   "dpo_caching_min": 8.2,
+   "sft_h": 1.66775,
+   "dpo_h_incl_caching": 0.6800416666666667,
+   "start_h": 0.03,
+   "train_h200h": 19.022333333333332,
+   "gen_judge_h200h": 1.83,
+   "all_in_h200h": 20.852333333333334,
+   "su_at_60": 1251.14,
+   "projection_d067c_h200h": 22.69,
+   "measured_over_projection": 0.9190098428088732,
+   "ds_sha_prefix": {
+    "sft": "b615b6daa5ea",
+    "dpo": "bbe8f49732e8"
+   },
+   "loss_step1_step50": {
+    "sft": [
+     1283.51171875,
+     1363.884765625
+    ],
+    "dpo": [
+     0.6931471824645996,
+     0.6814771890640259
+    ]
+   },
+   "steps_logged": {
+    "sft": 50,
+    "dpo": 50
+   }
+  }
+ },
+ "logs": {
+  "150M": "logs/nchc/016-smoke-train-150M-default-s1-514593.out",
+  "300M": "logs/nchc/016-smoke-train-300M-default-s1-514594.out"
+ },
+ "total_24_h200h": 449.812,
+ "total_24_su_at_60": 26988.72,
+ "script": "scripts/smoke_cost_016.py",
+ "git_commit": "2bab6fcf69b84af642d54799716d0eeae7d1f1b2",
+ "command": "uv run --frozen python scripts/smoke_cost_016.py --log 150M=logs/nchc/016-smoke-train-150M-default-s1-514593.out --log 300M=logs/nchc/016-smoke-train-300M-default-s1-514594.out --out /home/harrychang08/castor/runs/016/smoke_cost_zero1.json",
+ "seconds": 0.6018054485321045
+}

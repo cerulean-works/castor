@@ -1,0 +1,30 @@
+# open-instruct @ fc7748ea4 open_instruct/dpo_tune_cache.py — Ai2's OLMo-2-0425-1B DPO run.
+# Source: open-instruct docs/olmo2.md @ 89b4f62a5 L77-120 (command as run on 8x H100).
+# Launch: accelerate bf16, 8 processes, DeepSpeed configs/ds_configs/stage2_accelerate.conf
+# model_name_or_path = our SFT of the same post-training seed (Ai2: allenai/OLMo-2-0425-1B-SFT).
+tokenizer_name_or_path: allenai/OLMo-2-1124-13B
+tokenizer_revision: 3fefddc1bf18a30e1d9b91000271630718f2aa8b  # Ai2: main (= this sha then); files identical to OLMo-2-0425-1B's
+use_slow_tokenizer: false
+add_bos: true
+dataset_mixer_list: [/work/harrychang08/castor/data/tulu3/jsonl/olmo-2-0425-1b-preference-mix@c6454f3d3646.jsonl, "1.0"]   # = allenai/olmo-2-0425-1b-preference-mix@c6454f3d
+use_flash_attn: true
+max_seq_length: 2048
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 2    # 8 x 2 x 8 GPUs = 128
+learning_rate: 2.5e-06
+lr_scheduler_type: linear
+warmup_ratio: 0.1
+weight_decay: 0.0
+num_train_epochs: 1
+gradient_checkpointing: true
+use_lora: false
+dpo_loss_type: dpo_norm
+dpo_beta: 5.0
+logging_steps: 1
+# --- castor I/O and logging (no effect on training; see notes/004 "config diff") ---
+with_tracking: false          # Ai2: true + wandb. Loss is logged to stdout every step regardless (finetune.py:838-840); curves parsed from the Slurm log
+push_to_hub: false            # Ai2 default true (uploads to their HF org)
+try_launch_beaker_eval_jobs: false
+try_auto_save_to_beaker: false
+dataset_local_cache_dir: /work/harrychang08/castor/cache/open_instruct_datasets
+# model_name_or_path, seed, output_dir, exp_name: filled per run by shell/posttrain/train.sh

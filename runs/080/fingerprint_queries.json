@@ -1,0 +1,270 @@
+{
+ "subset": "adv_harmful",
+ "field": "wg_vulnerable",
+ "queries_manifest": "data/manifests/grid_080.json",
+ "n_prompts_subset": 3212,
+ "n_prompts_kept": 3211,
+ "dropped_undefined": [
+  "wildjailbreak-00924"
+ ],
+ "counts": [
+  3211,
+  1000,
+  300,
+  100,
+  50,
+  20,
+  10
+ ],
+ "references": "75 runs at post-training seed 1 (runs/008/grid.json)",
+ "identification": {
+  "n_queries": 12,
+  "n_correct": 12,
+  "accuracy": 1.0,
+  "ci_boot_queries": [
+   1.0,
+   1.0
+  ],
+  "ci_exact": [
+   0.7353515306029486,
+   1.0
+  ],
+  "chance": 0.013333333333333334,
+  "c_true": {
+   "mean": 0.5296309514585819,
+   "min": 0.4537235286892076
+  },
+  "c_best_impostor": {
+   "mean": 0.5006158986347531,
+   "max": 0.5336140962808541
+  },
+  "margin_true_minus_impostor": {
+   "mean": 0.029015052823828866,
+   "min": 0.0010721434084361992,
+   "n_negative": 0
+  },
+  "rank_of_truth": {
+   "1": 12
+  },
+  "failures": []
+ },
+ "curve": [
+  {
+   "n_prompts": 3211,
+   "n_subsets": 1,
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "min": 1.0
+  },
+  {
+   "n_prompts": 1000,
+   "n_subsets": 200,
+   "mean": 0.8716666666666667,
+   "lo": 0.6666666666666666,
+   "hi": 1.0,
+   "min": 0.5833333333333334
+  },
+  {
+   "n_prompts": 300,
+   "n_subsets": 200,
+   "mean": 0.5554166666666667,
+   "lo": 0.2479166666666667,
+   "hi": 0.9166666666666666,
+   "min": 0.0
+  },
+  {
+   "n_prompts": 100,
+   "n_subsets": 200,
+   "mean": 0.23125,
+   "lo": 0.0,
+   "hi": 0.5854166666666671,
+   "min": 0.0
+  },
+  {
+   "n_prompts": 50,
+   "n_subsets": 200,
+   "mean": 0.13625,
+   "lo": 0.0,
+   "hi": 0.4166666666666667,
+   "min": 0.0
+  },
+  {
+   "n_prompts": 20,
+   "n_subsets": 200,
+   "mean": 0.06833333333333333,
+   "lo": 0.0,
+   "hi": 0.25,
+   "min": 0.0
+  },
+  {
+   "n_prompts": 10,
+   "n_subsets": 200,
+   "mean": 0.04833333333333333,
+   "lo": 0.0,
+   "hi": 0.25,
+   "min": 0.0
+  }
+ ],
+ "queries": [
+  {
+   "query": "dd-dclm-baseline-1b-default-dpo-seed1-swap080",
+   "truth": "dclm-baseline/default",
+   "assigned": "dclm-baseline/default",
+   "correct": true,
+   "rank_of_truth": 1,
+   "c_truth": 0.5266497724637291,
+   "c_best_impostor": 0.5057419160271452,
+   "best_impostor": "falcon-and-cc-qc-orig-10p/large-aux-2",
+   "best_impostor_recipe": "falcon-and-cc-qc-orig-10p",
+   "impostor_same_recipe": false
+  },
+  {
+   "query": "dd-dclm-baseline-1b-default-dpo-seed2-swap080",
+   "truth": "dclm-baseline/default",
+   "assigned": "dclm-baseline/default",
+   "correct": true,
+   "rank_of_truth": 1,
+   "c_truth": 0.5294675507209631,
+   "c_best_impostor": 0.5057374742181516,
+   "best_impostor": "falcon-and-cc-qc-orig-10p/large-aux-2",
+   "best_impostor_recipe": "falcon-and-cc-qc-orig-10p",
+   "impostor_same_recipe": false
+  },
+  {
+   "query": "dd-dclm-baseline-1b-large-aux-2-dpo-seed1-swap080",
+   "truth": "dclm-baseline/large-aux-2",
+   "assigned": "dclm-baseline/large-aux-2",
+   "correct": true,
+   "rank_of_truth": 1,
+   "c_truth": 0.5137800714102705,
+   "c_best_impostor": 0.4989308326267253,
+   "best_impostor": "falcon-and-cc-qc-orig-10p/large-aux-2",
+   "best_impostor_recipe": "falcon-and-cc-qc-orig-10p",
+   "impostor_same_recipe": false
+  },
+  {
+   "query": "dd-dclm-baseline-1b-large-aux-2-dpo-seed2-swap080",
+   "truth": "dclm-baseline/large-aux-2",
+   "assigned": "dclm-baseline/large-aux-2",
+   "correct": true,
+   "rank_of_truth": 1,
+   "c_truth": 0.5104028422035222,
+   "c_best_impostor": 0.509330698795086,
+   "best_impostor": "falcon-and-cc-qc-orig-10p/large-aux-2",
+   "best_impostor_recipe": "falcon-and-cc-qc-orig-10p",
+   "impostor_same_recipe": false
+  },
+  {
+   "query": "dd-dclm-baseline-1b-large-aux-3-dpo-seed1-swap080",
+   "truth": "dclm-baseline/large-aux-3",
+   "assigned": "dclm-baseline/large-aux-3",
+   "correct": true,
+   "rank_of_truth": 1,
+   "c_truth": 0.5329572562219888,
+   "c_best_impostor": 0.49543665439341794,
+   "best_impostor": "dolma1_6plus/default",
+   "best_impostor_recipe": "dolma1_6plus",
+   "impostor_same_recipe": false
+  },
+  {
+   "query": "dd-dclm-baseline-1b-large-aux-3-dpo-seed2-swap080",
+   "truth": "dclm-baseline/large-aux-3",
+   "assigned": "dclm-baseline/large-aux-3",
+   "correct": true,
+   "rank_of_truth": 1,
+   "c_truth": 0.5355184474597451,
+   "c_best_impostor": 0.4942032519636636,
+   "best_impostor": "dolma1_7-no-flan/large-aux-3",
+   "best_impostor_recipe": "dolma1_7-no-flan",
+   "impostor_same_recipe": false
+  },
+  {
+   "query": "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed1-swap080",
+   "truth": "dclm-baseline-25p-dolma1.7-75p/default",
+   "assigned": "dclm-baseline-25p-dolma1.7-75p/default",
+   "correct": true,
+   "rank_of_truth": 1,
+   "c_truth": 0.4537235286892076,
+   "c_best_impostor": 0.43128514181292793,
+   "best_impostor": "dolma1_7-no-flan/large-aux-3",
+   "best_impostor_recipe": "dolma1_7-no-flan",
+   "impostor_same_recipe": false
+  },
+  {
+   "query": "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed1-swap080",
+   "truth": "dclm-baseline-25p-dolma1.7-75p/large-aux-2",
+   "assigned": "dclm-baseline-25p-dolma1.7-75p/large-aux-2",
+   "correct": true,
+   "rank_of_truth": 1,
+   "c_truth": 0.5393047219287765,
+   "c_best_impostor": 0.5066800356904834,
+   "best_impostor": "dolma1_7-no-flan/default",
+   "best_impostor_recipe": "dolma1_7-no-flan",
+   "impostor_same_recipe": false
+  },
+  {
+   "query": "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed1-swap080",
+   "truth": "dclm-baseline-25p-dolma1.7-75p/large-aux-3",
+   "assigned": "dclm-baseline-25p-dolma1.7-75p/large-aux-3",
+   "correct": true,
+   "rank_of_truth": 1,
+   "c_truth": 0.5657866983940789,
+   "c_best_impostor": 0.5333378673482034,
+   "best_impostor": "dolma1_6plus/default",
+   "best_impostor_recipe": "dolma1_6plus",
+   "impostor_same_recipe": false
+  },
+  {
+   "query": "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed1-swap080",
+   "truth": "dclm-baseline-50p-dolma1.7-50p/default",
+   "assigned": "dclm-baseline-50p-dolma1.7-50p/default",
+   "correct": true,
+   "rank_of_truth": 1,
+   "c_truth": 0.554542316256678,
+   "c_best_impostor": 0.5336140962808541,
+   "best_impostor": "dolma1_7-no-flan/default",
+   "best_impostor_recipe": "dolma1_7-no-flan",
+   "impostor_same_recipe": false
+  },
+  {
+   "query": "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed1-swap080",
+   "truth": "dclm-baseline-50p-dolma1.7-50p/large-aux-2",
+   "assigned": "dclm-baseline-50p-dolma1.7-50p/large-aux-2",
+   "correct": true,
+   "rank_of_truth": 1,
+   "c_truth": 0.574598632497139,
+   "c_best_impostor": 0.5057840314669831,
+   "best_impostor": "falcon-and-cc-qc-orig-10p/large-aux-2",
+   "best_impostor_recipe": "falcon-and-cc-qc-orig-10p",
+   "impostor_same_recipe": false
+  },
+  {
+   "query": "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed1-swap080",
+   "truth": "dclm-baseline-50p-dolma1.7-50p/large-aux-3",
+   "assigned": "dclm-baseline-50p-dolma1.7-50p/large-aux-3",
+   "correct": true,
+   "rank_of_truth": 1,
+   "c_truth": 0.5188395792568842,
+   "c_best_impostor": 0.48730878299339503,
+   "best_impostor": "dolma1_6plus/default",
+   "best_impostor_recipe": "dolma1_6plus",
+   "impostor_same_recipe": false
+  }
+ ],
+ "prediction": {
+  "run accuracy all prompts >= 0.80": true,
+  "values": {
+   "all": 1.0,
+   "50_mean": 0.13625
+  }
+ },
+ "script": "scripts/fingerprint_076.py",
+ "git_commit": "56504967717b01d05aa8fadf185672e15c20bedf",
+ "command": "uv run --frozen python scripts/fingerprint_076.py --queries data/manifests/grid_080.json --out /home/harrychang08/castor/runs/080 --workers 8",
+ "n_boot": 1000,
+ "n_sub": 200,
+ "seed": 0,
+ "grid_json": "runs/008/grid.json",
+ "seconds": 11.755812883377075
+}

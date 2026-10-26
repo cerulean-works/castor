@@ -1,0 +1,11 @@
+463830|009-eval-rel1B-dclm|COMPLETED|4622|billing=36,cpu=36,gres/gpu=3,mem=600G,node=1|25a-hgpn007
+463834|009-eval-rel1B-a|COMPLETED|23104|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn017
+463835|009-eval-rel1B-b|CANCELLED by 44970|0||None assigned
+464063|009-eval-rel1B-b|COMPLETED|22956|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn029
+464091|009-smoke-convert|FAILED|20|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn004
+464110|009-smoke-convert|COMPLETED|70|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn009
+464210|009-stage2-after|COMPLETED|4092|billing=24,cpu=24,gres/gpu=2,mem=400G,node=1|25a-hgpn014
+476650|009-eval-redo7|CANCELLED by 44970|7587|billing=84,cpu=84,gres/gpu=7,mem=1400G,node=1|25a-hgpn039
+477443|009-eval-redo7b|COMPLETED|3779|billing=72,cpu=72,gres/gpu=6,mem=1200G,node=1|25a-hgpn011
+488163|011-after|CANCELLED by 44970|7|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn019
+488164|011-after|COMPLETED|3962|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn019

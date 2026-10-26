@@ -1,0 +1,424 @@
+{
+ "per_recipe": {
+  "c4": {
+   "mean_vulnerability": 0.5149687069970407,
+   "olmes10": 0.5482748117894194
+  },
+  "dclm-baseline": {
+   "mean_vulnerability": 0.48654178918857927,
+   "olmes10": 0.5788817814143085
+  },
+  "dclm-baseline-25p-dolma1.7-75p": {
+   "mean_vulnerability": 0.5233840354373985,
+   "olmes10": 0.5608623122879667
+  },
+  "dclm-baseline-50p-dolma1.7-50p": {
+   "mean_vulnerability": 0.5210766706144009,
+   "olmes10": 0.5629054380158962
+  },
+  "dclm-baseline-75p-dolma1.7-25p": {
+   "mean_vulnerability": 0.5298269297777445,
+   "olmes10": 0.565503506274285
+  },
+  "dclm-baseline-qc-10p": {
+   "mean_vulnerability": 0.5004914101024698,
+   "olmes10": 0.5860844738807355
+  },
+  "dclm-baseline-qc-20p": {
+   "mean_vulnerability": 0.5093144994271744,
+   "olmes10": 0.5909559349233335
+  },
+  "dclm-baseline-qc-7p-fw2": {
+   "mean_vulnerability": 0.535311371584036,
+   "olmes10": 0.5895519379663924
+  },
+  "dclm-baseline-qc-7p-fw3": {
+   "mean_vulnerability": 0.5581405621777821,
+   "olmes10": 0.5713183758349997
+  },
+  "dclm-baseline-qc-fw-10p": {
+   "mean_vulnerability": 0.5234752461312522,
+   "olmes10": 0.5847325644580171
+  },
+  "dclm-baseline-qc-fw-3p": {
+   "mean_vulnerability": 0.664081170381533,
+   "olmes10": 0.5441215762253317
+  },
+  "dolma1_6plus": {
+   "mean_vulnerability": 0.5280093449245736,
+   "olmes10": 0.5153103220270429
+  },
+  "dolma1_7": {
+   "mean_vulnerability": 0.5454224618969273,
+   "olmes10": 0.532066032420686
+  },
+  "dolma1_7-no-code": {
+   "mean_vulnerability": 0.535850729926629,
+   "olmes10": 0.543066878760141
+  },
+  "dolma1_7-no-flan": {
+   "mean_vulnerability": 0.5080581020473245,
+   "olmes10": 0.5467405582609145
+  },
+  "dolma1_7-no-math-code": {
+   "mean_vulnerability": 0.5185826433080768,
+   "olmes10": 0.5454969675145936
+  },
+  "dolma1_7-no-reddit": {
+   "mean_vulnerability": 0.538310578878698,
+   "olmes10": 0.5380314785516306
+  },
+  "falcon": {
+   "mean_vulnerability": 0.5760396872528563,
+   "olmes10": 0.5559697106851715
+  },
+  "falcon-and-cc": {
+   "mean_vulnerability": 0.548954954905954,
+   "olmes10": 0.5550410863662035
+  },
+  "falcon-and-cc-qc-10p": {
+   "mean_vulnerability": 0.46351323168239905,
+   "olmes10": 0.5857912538886954
+  },
+  "falcon-and-cc-qc-20p": {
+   "mean_vulnerability": 0.5004478277586343,
+   "olmes10": 0.5794669911182208
+  },
+  "falcon-and-cc-qc-orig-10p": {
+   "mean_vulnerability": 0.4957254546198893,
+   "olmes10": 0.5904807971023576
+  },
+  "falcon-and-cc-qc-tulu-10p": {
+   "mean_vulnerability": 0.5579756404363853,
+   "olmes10": 0.5712025443281572
+  },
+  "fineweb-edu": {
+   "mean_vulnerability": 0.5468386333389356,
+   "olmes10": 0.5714210093817587
+  },
+  "fineweb-pro": {
+   "mean_vulnerability": 0.4680606440266784,
+   "olmes10": 0.5749897711469019
+  }
+ },
+ "per_base": {
+  "c4|default": {
+   "mean_vulnerability": 0.5518790011669847,
+   "olmes10": 0.5481698531176218
+  },
+  "c4|large-aux-2": {
+   "mean_vulnerability": 0.5025424416779012,
+   "olmes10": 0.5509569397364624
+  },
+  "c4|large-aux-3": {
+   "mean_vulnerability": 0.4904846781462361,
+   "olmes10": 0.5456976425141741
+  },
+  "dclm-baseline|default": {
+   "mean_vulnerability": 0.480293646934315,
+   "olmes10": 0.5732884424567344
+  },
+  "dclm-baseline|large-aux-2": {
+   "mean_vulnerability": 0.4990399308936255,
+   "olmes10": 0.5801890748031419
+  },
+  "dclm-baseline|large-aux-3": {
+   "mean_vulnerability": 0.4802917897377974,
+   "olmes10": 0.5831678269830493
+  },
+  "dclm-baseline-25p-dolma1.7-75p|default": {
+   "mean_vulnerability": 0.51434599257523,
+   "olmes10": 0.558275684079377
+  },
+  "dclm-baseline-25p-dolma1.7-75p|large-aux-2": {
+   "mean_vulnerability": 0.5307632559851828,
+   "olmes10": 0.5599450197559854
+  },
+  "dclm-baseline-25p-dolma1.7-75p|large-aux-3": {
+   "mean_vulnerability": 0.525042857751783,
+   "olmes10": 0.5643662330285375
+  },
+  "dclm-baseline-50p-dolma1.7-50p|default": {
+   "mean_vulnerability": 0.5506820094830324,
+   "olmes10": 0.5656450842496362
+  },
+  "dclm-baseline-50p-dolma1.7-50p|large-aux-2": {
+   "mean_vulnerability": 0.5210178433822161,
+   "olmes10": 0.5587528723552566
+  },
+  "dclm-baseline-50p-dolma1.7-50p|large-aux-3": {
+   "mean_vulnerability": 0.49153015897795416,
+   "olmes10": 0.5643183574427958
+  },
+  "dclm-baseline-75p-dolma1.7-25p|default": {
+   "mean_vulnerability": 0.5170970626361177,
+   "olmes10": 0.5490240039794051
+  },
+  "dclm-baseline-75p-dolma1.7-25p|large-aux-2": {
+   "mean_vulnerability": 0.5073043793340456,
+   "olmes10": 0.5751562383472107
+  },
+  "dclm-baseline-75p-dolma1.7-25p|large-aux-3": {
+   "mean_vulnerability": 0.5650793473630701,
+   "olmes10": 0.5723302764962392
+  },
+  "dclm-baseline-qc-10p|default": {
+   "mean_vulnerability": 0.5548065486651476,
+   "olmes10": 0.5889710329026716
+  },
+  "dclm-baseline-qc-10p|large-aux-2": {
+   "mean_vulnerability": 0.4719967355344704,
+   "olmes10": 0.5780022655314292
+  },
+  "dclm-baseline-qc-10p|large-aux-3": {
+   "mean_vulnerability": 0.4746709461077914,
+   "olmes10": 0.5912801232081056
+  },
+  "dclm-baseline-qc-20p|default": {
+   "mean_vulnerability": 0.49043848260140976,
+   "olmes10": 0.5898611660379176
+  },
+  "dclm-baseline-qc-20p|large-aux-2": {
+   "mean_vulnerability": 0.5066201660279017,
+   "olmes10": 0.593026043092937
+  },
+  "dclm-baseline-qc-20p|large-aux-3": {
+   "mean_vulnerability": 0.5308848496522116,
+   "olmes10": 0.589980595639146
+  },
+  "dclm-baseline-qc-7p-fw2|default": {
+   "mean_vulnerability": 0.5346697132843572,
+   "olmes10": 0.5897881022932947
+  },
+  "dclm-baseline-qc-7p-fw2|large-aux-2": {
+   "mean_vulnerability": 0.5532319816548801,
+   "olmes10": 0.5887425688652491
+  },
+  "dclm-baseline-qc-7p-fw2|large-aux-3": {
+   "mean_vulnerability": 0.5180324198128706,
+   "olmes10": 0.5901251427406334
+  },
+  "dclm-baseline-qc-7p-fw3|default": {
+   "mean_vulnerability": 0.5979347946124347,
+   "olmes10": 0.5708120780165744
+  },
+  "dclm-baseline-qc-7p-fw3|large-aux-2": {
+   "mean_vulnerability": 0.5439894754191904,
+   "olmes10": 0.569655531963465
+  },
+  "dclm-baseline-qc-7p-fw3|large-aux-3": {
+   "mean_vulnerability": 0.5324974165017211,
+   "olmes10": 0.5734875175249596
+  },
+  "dclm-baseline-qc-fw-10p|default": {
+   "mean_vulnerability": 0.5467329123758043,
+   "olmes10": 0.5846360249760288
+  },
+  "dclm-baseline-qc-fw-10p|large-aux-2": {
+   "mean_vulnerability": 0.5118233653696522,
+   "olmes10": 0.58544878216817
+  },
+  "dclm-baseline-qc-fw-10p|large-aux-3": {
+   "mean_vulnerability": 0.5118694606482999,
+   "olmes10": 0.5841128862298529
+  },
+  "dclm-baseline-qc-fw-3p|default": {
+   "mean_vulnerability": 0.6572113220671658,
+   "olmes10": 0.5449019781409236
+  },
+  "dclm-baseline-qc-fw-3p|large-aux-2": {
+   "mean_vulnerability": 0.6462077815998413,
+   "olmes10": 0.5402421907494889
+  },
+  "dclm-baseline-qc-fw-3p|large-aux-3": {
+   "mean_vulnerability": 0.688824407477592,
+   "olmes10": 0.5472205597855828
+  },
+  "dolma1_6plus|default": {
+   "mean_vulnerability": 0.503713165546855,
+   "olmes10": 0.5173429448709485
+  },
+  "dolma1_6plus|large-aux-2": {
+   "mean_vulnerability": 0.5649570757418312,
+   "olmes10": 0.5093534002084525
+  },
+  "dolma1_6plus|large-aux-3": {
+   "mean_vulnerability": 0.5153577934850345,
+   "olmes10": 0.5192346210017279
+  },
+  "dolma1_7|default": {
+   "mean_vulnerability": 0.5082204111159961,
+   "olmes10": 0.5370442703707607
+  },
+  "dolma1_7|large-aux-2": {
+   "mean_vulnerability": 0.5700455327399409,
+   "olmes10": 0.541378249911842
+  },
+  "dolma1_7|large-aux-3": {
+   "mean_vulnerability": 0.558001441834845,
+   "olmes10": 0.517775576979455
+  },
+  "dolma1_7-no-code|default": {
+   "mean_vulnerability": 0.5171036398580638,
+   "olmes10": 0.5405065876718541
+  },
+  "dolma1_7-no-code|large-aux-2": {
+   "mean_vulnerability": 0.5424874976865758,
+   "olmes10": 0.5511976370939256
+  },
+  "dolma1_7-no-code|large-aux-3": {
+   "mean_vulnerability": 0.5479610522352475,
+   "olmes10": 0.5374964115146432
+  },
+  "dolma1_7-no-flan|default": {
+   "mean_vulnerability": 0.49076069076115464,
+   "olmes10": 0.5446534366117761
+  },
+  "dolma1_7-no-flan|large-aux-2": {
+   "mean_vulnerability": 0.49909228864383615,
+   "olmes10": 0.5469564710983045
+  },
+  "dolma1_7-no-flan|large-aux-3": {
+   "mean_vulnerability": 0.5343213267369826,
+   "olmes10": 0.5486117670726631
+  },
+  "dolma1_7-no-math-code|default": {
+   "mean_vulnerability": 0.5370097229952663,
+   "olmes10": 0.5364983494205329
+  },
+  "dolma1_7-no-math-code|large-aux-2": {
+   "mean_vulnerability": 0.4633678561084834,
+   "olmes10": 0.5477442494217286
+  },
+  "dolma1_7-no-math-code|large-aux-3": {
+   "mean_vulnerability": 0.5553703508204806,
+   "olmes10": 0.5522483037015193
+  },
+  "dolma1_7-no-reddit|default": {
+   "mean_vulnerability": 0.5380919117087231,
+   "olmes10": 0.5468939803157808
+  },
+  "dolma1_7-no-reddit|large-aux-2": {
+   "mean_vulnerability": 0.49150940982562874,
+   "olmes10": 0.5389616273084468
+  },
+  "dolma1_7-no-reddit|large-aux-3": {
+   "mean_vulnerability": 0.5853304151017423,
+   "olmes10": 0.5282388280306642
+  },
+  "falcon|default": {
+   "mean_vulnerability": 0.5755437610302505,
+   "olmes10": 0.5522561122643201
+  },
+  "falcon|large-aux-2": {
+   "mean_vulnerability": 0.5390293829592967,
+   "olmes10": 0.5603621408506834
+  },
+  "falcon|large-aux-3": {
+   "mean_vulnerability": 0.6135459177690215,
+   "olmes10": 0.5552908789405111
+  },
+  "falcon-and-cc|default": {
+   "mean_vulnerability": 0.5689310605089078,
+   "olmes10": 0.5555241654149367
+  },
+  "falcon-and-cc|large-aux-2": {
+   "mean_vulnerability": 0.5424387462923655,
+   "olmes10": 0.5556970430431444
+  },
+  "falcon-and-cc|large-aux-3": {
+   "mean_vulnerability": 0.5354950579165886,
+   "olmes10": 0.5539020506405297
+  },
+  "falcon-and-cc-qc-10p|default": {
+   "mean_vulnerability": 0.5004601222309993,
+   "olmes10": 0.5865637621251181
+  },
+  "falcon-and-cc-qc-10p|large-aux-2": {
+   "mean_vulnerability": 0.4861335973323203,
+   "olmes10": 0.5820345929403071
+  },
+  "falcon-and-cc-qc-10p|large-aux-3": {
+   "mean_vulnerability": 0.40394597548387734,
+   "olmes10": 0.5887754066006606
+  },
+  "falcon-and-cc-qc-20p|default": {
+   "mean_vulnerability": 0.5143467085552131,
+   "olmes10": 0.5764565730559278
+  },
+  "falcon-and-cc-qc-20p|large-aux-2": {
+   "mean_vulnerability": 0.5085648702000249,
+   "olmes10": 0.58052003288952
+  },
+  "falcon-and-cc-qc-20p|large-aux-3": {
+   "mean_vulnerability": 0.47843190452066464,
+   "olmes10": 0.5814243674092145
+  },
+  "falcon-and-cc-qc-orig-10p|default": {
+   "mean_vulnerability": 0.4986123124202162,
+   "olmes10": 0.5951077443495374
+  },
+  "falcon-and-cc-qc-orig-10p|large-aux-2": {
+   "mean_vulnerability": 0.479946329332038,
+   "olmes10": 0.5925293451155552
+  },
+  "falcon-and-cc-qc-orig-10p|large-aux-3": {
+   "mean_vulnerability": 0.5086177221074136,
+   "olmes10": 0.58380530184198
+  },
+  "falcon-and-cc-qc-tulu-10p|default": {
+   "mean_vulnerability": 0.5668146604585376,
+   "olmes10": 0.5747775070473461
+  },
+  "falcon-and-cc-qc-tulu-10p|large-aux-2": {
+   "mean_vulnerability": 0.5489267467541001,
+   "olmes10": 0.5716196341303844
+  },
+  "falcon-and-cc-qc-tulu-10p|large-aux-3": {
+   "mean_vulnerability": 0.5581855140965183,
+   "olmes10": 0.5672104918067411
+  },
+  "fineweb-edu|default": {
+   "mean_vulnerability": 0.5591242148689322,
+   "olmes10": 0.5742025685072247
+  },
+  "fineweb-edu|large-aux-2": {
+   "mean_vulnerability": 0.5208222780001428,
+   "olmes10": 0.568304308803753
+  },
+  "fineweb-edu|large-aux-3": {
+   "mean_vulnerability": 0.5605694071477316,
+   "olmes10": 0.5717561508342983
+  },
+  "fineweb-pro|default": {
+   "mean_vulnerability": 0.5017395301995741,
+   "olmes10": 0.5712411004721252
+  },
+  "fineweb-pro|large-aux-2": {
+   "mean_vulnerability": 0.4056607280018472,
+   "olmes10": 0.5774180796268934
+  },
+  "fineweb-pro|large-aux-3": {
+   "mean_vulnerability": 0.49678167387861394,
+   "olmes10": 0.5763101333416869
+  }
+ },
+ "recipes": {
+  "n": 25,
+  "pearson": -0.40838325105012013,
+  "spearman": -0.48
+ },
+ "bases": {
+  "n": 75,
+  "pearson": -0.3446959091752049,
+  "spearman": -0.35513513513513506
+ },
+ "vulnerability_sd_recipe_means": 0.03930524487146861,
+ "olmes10_sd_recipe_means": 0.020568389865682858,
+ "grid": "runs/008/grid.json",
+ "olmes": "/work/harrychang08/castor/data/datadecide_evals/datadecide_1B_final_table.csv",
+ "outcome": "adv_harmful / primary (raw)",
+ "git_commit": "4460317dfd643e08ee1efe6afa5ffad2266c3dd4",
+ "command": "uv run --frozen python scripts/olmes_panel_008.py --grid runs/008/grid.json --olmes /work/harrychang08/castor/data/datadecide_evals/datadecide_1B_final_table.csv --out runs/008/olmes_panel.json",
+ "script": "scripts/olmes_panel_008.py"
+}

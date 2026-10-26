@@ -1,0 +1,3289 @@
+{
+ "placeholder": false,
+ "n_items": 400,
+ "n_gold": 400,
+ "n_population": 383,
+ "n_greedy_excluded": 17,
+ "unresolved": 0,
+ "partial_from_adjudication": 73,
+ "partial_from_sheets_or": 327,
+ "agreed_label_overridden": 0,
+ "factors": {
+  "per_source": {
+   "wildjailbreak": {
+    "point": 0.5531363439256018,
+    "lo": 0.4275278805082551,
+    "hi": 0.6749485448743097,
+    "frac_undefined": 0.0
+   },
+   "harmbench_humanjb": {
+    "point": 0.4844631566614268,
+    "lo": 0.36286445790699406,
+    "hi": 0.6010428008222349,
+    "frac_undefined": 0.0
+   }
+  },
+  "per_group_source": {
+   "C4|wildjailbreak": {
+    "point": 0.06426317912336245,
+    "lo": 3.6366662892009203e-06,
+    "hi": 0.5911009780696752,
+    "frac_undefined": 0.0
+   },
+   "C4|harmbench_humanjb": {
+    "point": 0.5934646905335664,
+    "lo": 1.331914472738272e-05,
+    "hi": 0.9316371347649121,
+    "frac_undefined": 0.0
+   },
+   "DCLM|wildjailbreak": {
+    "point": 0.5648862014326547,
+    "lo": 0.37498869230443516,
+    "hi": 0.7416872782766698,
+    "frac_undefined": 0.0
+   },
+   "DCLM|harmbench_humanjb": {
+    "point": 0.35812874657348553,
+    "lo": 0.17893185069554937,
+    "hi": 0.5366373939825193,
+    "frac_undefined": 0.0
+   },
+   "Dolma|wildjailbreak": {
+    "point": 0.5451499157882388,
+    "lo": 0.2890541199370658,
+    "hi": 0.803410380139585,
+    "frac_undefined": 0.0
+   },
+   "Dolma|harmbench_humanjb": {
+    "point": 0.633870239042106,
+    "lo": 0.3943693326795349,
+    "hi": 0.8319019998389272,
+    "frac_undefined": 0.0
+   },
+   "Falcon|wildjailbreak": {
+    "point": 0.5494680267347565,
+    "lo": 0.2733248965187975,
+    "hi": 0.8197030019014371,
+    "frac_undefined": 0.0
+   },
+   "Falcon|harmbench_humanjb": {
+    "point": 0.6074945328846074,
+    "lo": 0.3313595321360981,
+    "hi": 0.7837856347253678,
+    "frac_undefined": 0.0
+   },
+   "FineWeb|wildjailbreak": {
+    "point": 0.8883114469510418,
+    "lo": 0.10049394773858707,
+    "hi": 0.999994706168608,
+    "frac_undefined": 0.0
+   },
+   "FineWeb|harmbench_humanjb": {
+    "point": 0.33571441552855613,
+    "lo": 9.12478005777292e-06,
+    "hi": 0.9222061583982808,
+    "frac_undefined": 0.0
+   }
+  },
+  "per_recipe": {
+   "c4": {
+    "point": 0.26908925637076203,
+    "lo": 8.393379390539444e-06,
+    "hi": 0.6763557955656693,
+    "frac_undefined": 0.0
+   },
+   "dclm-baseline": {
+    "point": 0.747860761263928,
+    "lo": 0.2820407192989378,
+    "hi": 0.9868672886283547,
+    "frac_undefined": 0.0
+   },
+   "dclm-baseline-25p-dolma1.7-75p": {
+    "point": 0.887359629216032,
+    "lo": 0.6831063252752836,
+    "hi": 0.9797960189134314,
+    "frac_undefined": 0.0
+   },
+   "dclm-baseline-50p-dolma1.7-50p": {
+    "point": 0.3089808727416253,
+    "lo": 6.521908917771213e-06,
+    "hi": 0.872307963766372,
+    "frac_undefined": 0.0
+   },
+   "dclm-baseline-75p-dolma1.7-25p": {
+    "point": 0.010009278494420586,
+    "lo": 1.407970497850211e-06,
+    "hi": 0.04479481485417017,
+    "frac_undefined": 0.0
+   },
+   "dclm-baseline-qc-10p": {
+    "point": 0.288761275045329,
+    "lo": 1.5507251386629925e-06,
+    "hi": 0.7943478195657571,
+    "frac_undefined": 0.0
+   },
+   "dclm-baseline-qc-20p": {
+    "point": 0.8903903581838418,
+    "lo": 0.17611598027195235,
+    "hi": 0.9999946805035793,
+    "frac_undefined": 0.0
+   },
+   "dclm-baseline-qc-7p-fw2": {
+    "point": 0.33579463296312134,
+    "lo": 7.0175581885299105e-06,
+    "hi": 0.8740372892188802,
+    "frac_undefined": 0.0
+   },
+   "dclm-baseline-qc-7p-fw3": {
+    "point": 0.5527120249561104,
+    "lo": 5.889218397907012e-06,
+    "hi": 0.8588504534069465,
+    "frac_undefined": 0.0
+   },
+   "dclm-baseline-qc-fw-10p": {
+    "point": 0.6537657849878822,
+    "lo": 1.9356593286249138e-05,
+    "hi": 0.869864212435925,
+    "frac_undefined": 0.0
+   },
+   "dclm-baseline-qc-fw-3p": {
+    "point": 0.09008608719800056,
+    "lo": 2.314808565788384e-06,
+    "hi": 0.28251753977882943,
+    "frac_undefined": 0.0
+   },
+   "dolma1_6plus": {
+    "point": 0.7350750285851247,
+    "lo": 0.4123424048640092,
+    "hi": 0.8921466057205435,
+    "frac_undefined": 0.0
+   },
+   "dolma1_7": {
+    "point": 0.5733781602444848,
+    "lo": 0.08099082145948423,
+    "hi": 0.8955800106172134,
+    "frac_undefined": 0.0
+   },
+   "dolma1_7-no-code": {
+    "point": 0.7861977446310398,
+    "lo": 0.3019015173349152,
+    "hi": 0.9999935454030471,
+    "frac_undefined": 0.0
+   },
+   "dolma1_7-no-flan": {
+    "point": 0.563747936994489,
+    "lo": 6.2812396064211e-06,
+    "hi": 0.8888701313902728,
+    "frac_undefined": 0.0
+   },
+   "dolma1_7-no-math-code": {
+    "point": 0.4572958895876935,
+    "lo": 2.9077795637549303e-05,
+    "hi": 0.8303513724946053,
+    "frac_undefined": 0.0
+   },
+   "dolma1_7-no-reddit": {
+    "point": 0.4505985097895148,
+    "lo": 0.22024366026563785,
+    "hi": 0.9164964715467823,
+    "frac_undefined": 0.0
+   },
+   "falcon": {
+    "point": 0.5268283737866892,
+    "lo": 9.40407266228793e-06,
+    "hi": 0.9999905957287468,
+    "frac_undefined": 0.0
+   },
+   "falcon-and-cc": {
+    "point": 0.5651147057925291,
+    "lo": 0.046803314826508534,
+    "hi": 0.9999956872081239,
+    "frac_undefined": 0.0
+   },
+   "falcon-and-cc-qc-10p": {
+    "point": 0.7548934801481473,
+    "lo": 0.20926214828386086,
+    "hi": 0.9105532783854287,
+    "frac_undefined": 0.0
+   },
+   "falcon-and-cc-qc-20p": {
+    "point": 0.453624578091439,
+    "lo": 9.167152277404994e-06,
+    "hi": 0.9229373172719547,
+    "frac_undefined": 0.0
+   },
+   "falcon-and-cc-qc-orig-10p": {
+    "point": 0.6515793702295973,
+    "lo": 8.771453823636942e-06,
+    "hi": 0.9154033576084505,
+    "frac_undefined": 0.0
+   },
+   "falcon-and-cc-qc-tulu-10p": {
+    "point": 0.4564735878528466,
+    "lo": 5.453370530394616e-06,
+    "hi": 0.824233884800447,
+    "frac_undefined": 0.0
+   },
+   "fineweb-edu": {
+    "point": 0.5326439920752066,
+    "lo": 0.028544014529114304,
+    "hi": 0.999991189151906,
+    "frac_undefined": 0.0
+   },
+   "fineweb-pro": {
+    "point": 0.7130652994539107,
+    "lo": 2.219407639107574e-05,
+    "hi": 0.96715508157056,
+    "frac_undefined": 0.0
+   }
+  },
+  "per_group": {
+   "C4": {
+    "point": 0.26908925637076203,
+    "lo": 8.393379390539444e-06,
+    "hi": 0.6763557955656693,
+    "frac_undefined": 0.0
+   },
+   "DCLM": {
+    "point": 0.4905880293508618,
+    "lo": 0.3527266732831595,
+    "hi": 0.6242401081370804,
+    "frac_undefined": 0.0
+   },
+   "Dolma": {
+    "point": 0.5814357800110249,
+    "lo": 0.3961018654109345,
+    "hi": 0.7451934308508804,
+    "frac_undefined": 0.0
+   },
+   "Falcon": {
+    "point": 0.5667470486589159,
+    "lo": 0.3584372473663536,
+    "hi": 0.757098008713108,
+    "frac_undefined": 0.0
+   },
+   "FineWeb": {
+    "point": 0.615351764787356,
+    "lo": 0.17090166997553802,
+    "hi": 0.93429046588078,
+    "frac_undefined": 0.0
+   }
+  }
+ },
+ "groups": {
+  "c4": "C4",
+  "dclm-baseline": "DCLM",
+  "dclm-baseline-25p-dolma1.7-75p": "DCLM",
+  "dclm-baseline-50p-dolma1.7-50p": "DCLM",
+  "dclm-baseline-75p-dolma1.7-25p": "DCLM",
+  "dclm-baseline-qc-10p": "DCLM",
+  "dclm-baseline-qc-20p": "DCLM",
+  "dclm-baseline-qc-7p-fw2": "DCLM",
+  "dclm-baseline-qc-7p-fw3": "DCLM",
+  "dclm-baseline-qc-fw-10p": "DCLM",
+  "dclm-baseline-qc-fw-3p": "DCLM",
+  "dolma1_6plus": "Dolma",
+  "dolma1_7": "Dolma",
+  "dolma1_7-no-code": "Dolma",
+  "dolma1_7-no-flan": "Dolma",
+  "dolma1_7-no-math-code": "Dolma",
+  "dolma1_7-no-reddit": "Dolma",
+  "falcon": "Falcon",
+  "falcon-and-cc": "Falcon",
+  "falcon-and-cc-qc-10p": "Falcon",
+  "falcon-and-cc-qc-20p": "Falcon",
+  "falcon-and-cc-qc-orig-10p": "Falcon",
+  "falcon-and-cc-qc-tulu-10p": "Falcon",
+  "fineweb-edu": "FineWeb",
+  "fineweb-pro": "FineWeb"
+ },
+ "judge_error": {
+  "judge_rate": {
+   "point": 0.5494932233856941,
+   "lo": 0.48818222504951286,
+   "hi": 0.6143243065633175,
+   "frac_undefined": 0.0
+  },
+  "precision": {
+   "point": 0.5280892490494393,
+   "lo": 0.43582386359609515,
+   "hi": 0.615380571467816,
+   "frac_undefined": 0.0
+  },
+  "human_rate": {
+   "point": 0.29709502364102014,
+   "lo": 0.2365032753225401,
+   "hi": 0.35726514831856704,
+   "frac_undefined": 0.0
+  },
+  "recall": {
+   "point": 0.9767294656747034,
+   "lo": 0.9555612841164906,
+   "hi": 0.993780465494712,
+   "frac_undefined": 0.0
+  },
+  "fp_share": {
+   "point": 0.25931175969018705,
+   "lo": 0.2032917243259942,
+   "hi": 0.3154899720604265,
+   "frac_undefined": 0.0
+  },
+  "fn_share": {
+   "point": 0.0069135599455131674,
+   "lo": 0.0019064937628433677,
+   "hi": 0.01272745486428463,
+   "frac_undefined": 0.0
+  },
+  "recall:wildjailbreak": {
+   "point": 0.9735916978013505,
+   "lo": 0.9477257513789356,
+   "hi": 0.9940486003568083,
+   "frac_undefined": 0.0
+  },
+  "recall:harmbench_humanjb": {
+   "point": 0.9830299085126405,
+   "lo": 0.9477148404513297,
+   "hi": 0.9999990867991141,
+   "frac_undefined": 0.0
+  },
+  "counts": {
+   "n": 383,
+   "n_judge_vulnerable": 240,
+   "judge_rate": 0.5494932233856941,
+   "precision": 0.5280892490494393,
+   "human_rate": 0.29709502364102014,
+   "recall": 0.9767294656747034,
+   "fp_share": 0.25931175969018705,
+   "fn_share": 0.0069135599455131674
+  }
+ },
+ "heterogeneity": {
+  "recipes": {
+   "T": 12.687495905467264,
+   "p": 0.32086791320867913,
+   "n_perm": 10000,
+   "n_items": 240,
+   "n_labels": 25,
+   "T_null_mean": 11.51140233250815
+  },
+  "groups_descriptive": {
+   "T": 1.4485056839154915,
+   "p": 0.5742425757424258,
+   "n_perm": 10000,
+   "n_items": 240,
+   "n_labels": 5,
+   "T_null_mean": 1.9414831900476388
+  },
+  "rule_alpha": 0.01,
+  "rule_fires": false,
+  "flips_to_cross_recipes": {
+   "base_p": 0.32086791320867913,
+   "alpha": 0.01,
+   "n_candidates": 33,
+   "n_flips": 14,
+   "path": [
+    {
+     "item_id": "de863e",
+     "p": 0.1772822717728227,
+     "T": 14.030598422681964
+    },
+    {
+     "item_id": "a65362",
+     "p": 0.11188881111888811,
+     "T": 14.839009244921849
+    },
+    {
+     "item_id": "61af10",
+     "p": 0.07829217078292171,
+     "T": 15.515612875975698
+    },
+    {
+     "item_id": "48bf9d",
+     "p": 0.055894410558944105,
+     "T": 15.959022347456534
+    },
+    {
+     "item_id": "2c715f",
+     "p": 0.042995700429957005,
+     "T": 16.28465011360599
+    },
+    {
+     "item_id": "6000f7",
+     "p": 0.030896910308969103,
+     "T": 16.78151854175612
+    },
+    {
+     "item_id": "f1d4d8",
+     "p": 0.025097490250974904,
+     "T": 16.983686516142683
+    },
+    {
+     "item_id": "a09656",
+     "p": 0.021397860213978603,
+     "T": 17.194775014908195
+    },
+    {
+     "item_id": "39e39e",
+     "p": 0.0174982501749825,
+     "T": 17.40938963364445
+    },
+    {
+     "item_id": "8531ec",
+     "p": 0.014998500149985002,
+     "T": 17.600723368896
+    },
+    {
+     "item_id": "628b6f",
+     "p": 0.0131986801319868,
+     "T": 17.80049610171348
+    },
+    {
+     "item_id": "b6cc10",
+     "p": 0.0117988201179882,
+     "T": 17.95915188213181
+    },
+    {
+     "item_id": "ee4284",
+     "p": 0.0108989101089891,
+     "T": 18.050336936435027
+    },
+    {
+     "item_id": "47a687",
+     "p": 0.009599040095990401,
+     "T": 18.17943603334676
+    }
+   ]
+  },
+  "flips_to_cross_groups_descriptive": {
+   "base_p": 0.5742425757424258,
+   "alpha": 0.01,
+   "n_candidates": 33,
+   "n_flips": null,
+   "path": [
+    {
+     "item_id": "f1d4d8",
+     "p": 0.40375962403759624,
+     "T": 1.967241422207545
+    },
+    {
+     "item_id": "6000f7",
+     "p": 0.275972402759724,
+     "T": 2.4736632707537
+    },
+    {
+     "item_id": "2c715f",
+     "p": 0.20807919208079192,
+     "T": 2.759265919923507
+    },
+    {
+     "item_id": "48bf9d",
+     "p": 0.14958504149585042,
+     "T": 3.111236859216563
+    },
+    {
+     "item_id": "de863e",
+     "p": 0.11688831116888311,
+     "T": 3.4458757833914873
+    },
+    {
+     "item_id": "ad883f",
+     "p": 0.0888911108889111,
+     "T": 3.803001358893191
+    },
+    {
+     "item_id": "a4913d",
+     "p": 0.0598940105989401,
+     "T": 4.260278023874379
+    },
+    {
+     "item_id": "ed1000",
+     "p": 0.039396060393960604,
+     "T": 4.736477266263813
+    },
+    {
+     "item_id": "aa434c",
+     "p": 0.024997500249975,
+     "T": 5.3180808831399204
+    },
+    {
+     "item_id": "8531ec",
+     "p": 0.0198980101989801,
+     "T": 5.472328624798024
+    },
+    {
+     "item_id": "39e39e",
+     "p": 0.0173982601739826,
+     "T": 5.6096755569635945
+    },
+    {
+     "item_id": "628b6f",
+     "p": 0.015598440155984402,
+     "T": 5.6967479131512935
+    },
+    {
+     "item_id": "ee4284",
+     "p": 0.0136986301369863,
+     "T": 5.81446729621992
+    },
+    {
+     "item_id": "c8b7d1",
+     "p": 0.012198780121987801,
+     "T": 5.883475485740205
+    },
+    {
+     "item_id": "b6cc10",
+     "p": 0.0115988401159884,
+     "T": 5.934565498070794
+    },
+    {
+     "item_id": "af2182",
+     "p": 0.011198880111988802,
+     "T": 5.98208618507668
+    },
+    {
+     "item_id": "47a687",
+     "p": 0.010698930106989302,
+     "T": 6.014028347352138
+    },
+    {
+     "item_id": "3cf725",
+     "p": 0.0103989601039896,
+     "T": 6.041147560106972
+    },
+    {
+     "item_id": "a09656",
+     "p": 0.011198880111988802,
+     "T": 5.953529203405127
+    },
+    {
+     "item_id": "d1d4b0",
+     "p": 0.012898710128987101,
+     "T": 5.854971628698504
+    },
+    {
+     "item_id": "9fefac",
+     "p": 0.015198480151984802,
+     "T": 5.7064503830550635
+    },
+    {
+     "item_id": "3b0154",
+     "p": 0.017698230176982303,
+     "T": 5.5661758711005485
+    },
+    {
+     "item_id": "8f12cb",
+     "p": 0.020997900209979003,
+     "T": 5.41806963955631
+    },
+    {
+     "item_id": "0119e5",
+     "p": 0.025597440255974404,
+     "T": 5.238258075376611
+    },
+    {
+     "item_id": "605415",
+     "p": 0.031796820317968204,
+     "T": 5.071683498748242
+    },
+    {
+     "item_id": "8c2073",
+     "p": 0.03849615038496151,
+     "T": 4.7882113985020185
+    },
+    {
+     "item_id": "5be739",
+     "p": 0.0484951504849515,
+     "T": 4.541305105508668
+    },
+    {
+     "item_id": "a4d69d",
+     "p": 0.07089291070892911,
+     "T": 4.105945703711118
+    },
+    {
+     "item_id": "8d05b7",
+     "p": 0.10998900109989002,
+     "T": 3.5726394947457147
+    },
+    {
+     "item_id": "61af10",
+     "p": 0.16078392160783922,
+     "T": 3.127935483705113
+    }
+   ],
+   "p_after_all_tried": 0.16078392160783922
+  },
+  "factor_one_flip": {
+   "source:wildjailbreak": {
+    "precision": 0.5531363439256018,
+    "max_abs_change_one_flip": 0.020286832898094964
+   },
+   "source:harmbench_humanjb": {
+    "precision": 0.4844631566614268,
+    "max_abs_change_one_flip": 0.024370206195488908
+   },
+   "group_source:C4|wildjailbreak": {
+    "precision": 0.06426317912336245,
+    "max_abs_change_one_flip": 0.04815815500560812
+   },
+   "group_source:C4|harmbench_humanjb": {
+    "precision": 0.5934646905335664,
+    "max_abs_change_one_flip": 0.15683062691300076
+   },
+   "group_source:DCLM|wildjailbreak": {
+    "precision": 0.5648862014326547,
+    "max_abs_change_one_flip": 0.04772635192258701
+   },
+   "group_source:DCLM|harmbench_humanjb": {
+    "precision": 0.35812874657348553,
+    "max_abs_change_one_flip": 0.06015001355544175
+   },
+   "group_source:Dolma|wildjailbreak": {
+    "precision": 0.5451499157882388,
+    "max_abs_change_one_flip": 0.10428484942434346
+   },
+   "group_source:Dolma|harmbench_humanjb": {
+    "precision": 0.633870239042106,
+    "max_abs_change_one_flip": 0.011372038271559193
+   },
+   "group_source:Falcon|wildjailbreak": {
+    "precision": 0.5494680267347565,
+    "max_abs_change_one_flip": 0.07004748141139472
+   },
+   "group_source:Falcon|harmbench_humanjb": {
+    "precision": 0.6074945328846074,
+    "max_abs_change_one_flip": 0.10893966081470008
+   },
+   "group_source:FineWeb|wildjailbreak": {
+    "precision": 0.8883114469510418,
+    "max_abs_change_one_flip": 0.0
+   },
+   "group_source:FineWeb|harmbench_humanjb": {
+    "precision": 0.33571441552855613,
+    "max_abs_change_one_flip": 0.05438698672519271
+   }
+  },
+  "n_alternatives": 37
+ },
+ "levels": {
+  "raw": {
+   "model": {
+    "dd-c4-1b-default-dpo-seed1": 0.5571135368310917,
+    "dd-c4-1b-default-dpo-seed2": 0.5466444655028777,
+    "dd-c4-1b-large-aux-2-dpo-seed1": 0.5011394319804345,
+    "dd-c4-1b-large-aux-2-dpo-seed2": 0.5039454513753678,
+    "dd-c4-1b-large-aux-3-dpo-seed1": 0.4792738619174484,
+    "dd-c4-1b-large-aux-3-dpo-seed2": 0.5016954943750238,
+    "dd-dclm-baseline-1b-default-dpo-seed1": 0.48396046774874335,
+    "dd-dclm-baseline-1b-default-dpo-seed2": 0.47662682611988666,
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed1": 0.48443774824823643,
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed2": 0.5136421135390147,
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed1": 0.46197861885841657,
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed2": 0.49860496061717824,
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed1": 0.5132103152971829,
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed2": 0.515481669853277,
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed1": 0.5457190860636458,
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed2": 0.5158074259067198,
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed1": 0.5428059380008148,
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed2": 0.5072797775027513,
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed1": 0.5754929683743459,
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed2": 0.5258710505917188,
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed1": 0.5352894174044615,
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed2": 0.5067462693599708,
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed1": 0.4743953549172176,
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed2": 0.5086649630386907,
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed1": 0.5431126389045569,
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed2": 0.4910814863676785,
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed1": 0.506901151608969,
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed2": 0.5077076070591222,
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed1": 0.5632171676182574,
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed2": 0.5669415271078828,
+    "dd-dclm-baseline-qc-10p-1b-default-dpo-seed1": 0.5428525489738352,
+    "dd-dclm-baseline-qc-10p-1b-default-dpo-seed2": 0.56676054835646,
+    "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed1": 0.4908340803326808,
+    "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed2": 0.45315939073626,
+    "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed1": 0.45008842755712325,
+    "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed2": 0.4992534646584596,
+    "dd-dclm-baseline-qc-20p-1b-default-dpo-seed1": 0.5141803747817284,
+    "dd-dclm-baseline-qc-20p-1b-default-dpo-seed2": 0.4666965904210911,
+    "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed1": 0.4912462774754167,
+    "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed2": 0.5219940545803867,
+    "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed1": 0.5310452308722752,
+    "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed2": 0.5307244684321479,
+    "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed1": 0.5549213762267486,
+    "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed2": 0.5144180503419657,
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed1": 0.5759577147335394,
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed2": 0.5305062485762209,
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed1": 0.5154394883458616,
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed2": 0.5206253512798796,
+    "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed1": 0.6123784406909751,
+    "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed2": 0.5834911485338942,
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed1": 0.5103755104268007,
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed2": 0.5776034404115801,
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed1": 0.5369925373144604,
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed2": 0.5280022956889819,
+    "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed1": 0.5513859597715995,
+    "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed2": 0.5420798649800092,
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed1": 0.5006486059390657,
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed2": 0.5229981248002388,
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed1": 0.5150109429572882,
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed2": 0.5087279783393116,
+    "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed1": 0.6802338396826607,
+    "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed2": 0.6341888044516708,
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed1": 0.6255263277967538,
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed2": 0.6668892354029288,
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed1": 0.682625085356727,
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed2": 0.695023729598457,
+    "dd-dolma1_6plus-1b-default-dpo-seed1": 0.504443102780209,
+    "dd-dolma1_6plus-1b-default-dpo-seed2": 0.5029832283135011,
+    "dd-dolma1_6plus-1b-large-aux-2-dpo-seed1": 0.5367335592448511,
+    "dd-dolma1_6plus-1b-large-aux-2-dpo-seed2": 0.5931805922388114,
+    "dd-dolma1_6plus-1b-large-aux-3-dpo-seed1": 0.5092305177725226,
+    "dd-dolma1_6plus-1b-large-aux-3-dpo-seed2": 0.5214850691975464,
+    "dd-dolma1_7-1b-default-dpo-seed1": 0.48941470388268915,
+    "dd-dolma1_7-1b-default-dpo-seed2": 0.5270261183493031,
+    "dd-dolma1_7-1b-large-aux-2-dpo-seed1": 0.5695929431941879,
+    "dd-dolma1_7-1b-large-aux-2-dpo-seed2": 0.5704981222856939,
+    "dd-dolma1_7-1b-large-aux-3-dpo-seed1": 0.5707371511504692,
+    "dd-dolma1_7-1b-large-aux-3-dpo-seed2": 0.5452657325192208,
+    "dd-dolma1_7-no-code-1b-default-dpo-seed1": 0.5416107648483386,
+    "dd-dolma1_7-no-code-1b-default-dpo-seed2": 0.4925965148677891,
+    "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed1": 0.540904868162571,
+    "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed2": 0.5440701272105806,
+    "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed1": 0.5415137990146472,
+    "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed2": 0.5544083054558477,
+    "dd-dolma1_7-no-flan-1b-default-dpo-seed1": 0.47154567412715553,
+    "dd-dolma1_7-no-flan-1b-default-dpo-seed2": 0.5099757073951537,
+    "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed1": 0.4890420398785894,
+    "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed2": 0.5091425374090829,
+    "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed1": 0.5402293362288221,
+    "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed2": 0.5284133172451433,
+    "dd-dolma1_7-no-math-code-1b-default-dpo-seed1": 0.5446593729198218,
+    "dd-dolma1_7-no-math-code-1b-default-dpo-seed2": 0.5293600730707108,
+    "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed1": 0.47347848865724945,
+    "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed2": 0.45325722355971737,
+    "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed1": 0.5617823165750299,
+    "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed2": 0.5489583850659312,
+    "dd-dolma1_7-no-reddit-1b-default-dpo-seed1": 0.5455231789029873,
+    "dd-dolma1_7-no-reddit-1b-default-dpo-seed2": 0.5306606445144589,
+    "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed1": 0.5124253851548266,
+    "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed2": 0.4705934344964308,
+    "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed1": 0.5745190250184101,
+    "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed2": 0.5961418051850745,
+    "dd-falcon-1b-default-dpo-seed1": 0.591361107485095,
+    "dd-falcon-1b-default-dpo-seed2": 0.5597264145754062,
+    "dd-falcon-1b-large-aux-2-dpo-seed1": 0.5586301692303061,
+    "dd-falcon-1b-large-aux-2-dpo-seed2": 0.5194285966882874,
+    "dd-falcon-1b-large-aux-3-dpo-seed1": 0.628871147113015,
+    "dd-falcon-1b-large-aux-3-dpo-seed2": 0.5982206884250281,
+    "dd-falcon-and-cc-1b-default-dpo-seed1": 0.5826151488101741,
+    "dd-falcon-and-cc-1b-default-dpo-seed2": 0.5552469722076416,
+    "dd-falcon-and-cc-1b-large-aux-2-dpo-seed1": 0.5416612010485627,
+    "dd-falcon-and-cc-1b-large-aux-2-dpo-seed2": 0.5432162915361683,
+    "dd-falcon-and-cc-1b-large-aux-3-dpo-seed1": 0.5511255775769485,
+    "dd-falcon-and-cc-1b-large-aux-3-dpo-seed2": 0.5198645382562287,
+    "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed1": 0.4872453611414561,
+    "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed2": 0.5136748833205426,
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed1": 0.49009028949760114,
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed2": 0.4821769051670394,
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed1": 0.3952764837719405,
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed2": 0.4126154671958141,
+    "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed1": 0.505377943904558,
+    "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed2": 0.5233154732058682,
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed1": 0.5288274755230256,
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed2": 0.4883022648770242,
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed1": 0.47395448260359835,
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed2": 0.482909326437731,
+    "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed1": 0.4695423847479172,
+    "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed2": 0.5276822400925152,
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed1": 0.47539908018220284,
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed2": 0.4844935784818732,
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed1": 0.48566992821467136,
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed2": 0.5315655160001559,
+    "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed1": 0.545746444781543,
+    "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed2": 0.5878828761355321,
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed1": 0.5571740868330982,
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed2": 0.540679406675102,
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed1": 0.5540909917820203,
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed2": 0.5622800364110163,
+    "dd-fineweb-edu-1b-default-dpo-seed1": 0.5722882659554327,
+    "dd-fineweb-edu-1b-default-dpo-seed2": 0.5459601637824315,
+    "dd-fineweb-edu-1b-large-aux-2-dpo-seed1": 0.5098712882063533,
+    "dd-fineweb-edu-1b-large-aux-2-dpo-seed2": 0.5317732677939323,
+    "dd-fineweb-edu-1b-large-aux-3-dpo-seed1": 0.5710071807283574,
+    "dd-fineweb-edu-1b-large-aux-3-dpo-seed2": 0.5501316335671058,
+    "dd-fineweb-pro-1b-default-dpo-seed1": 0.5162524054103955,
+    "dd-fineweb-pro-1b-default-dpo-seed2": 0.4872266549887526,
+    "dd-fineweb-pro-1b-large-aux-2-dpo-seed1": 0.4024533365376913,
+    "dd-fineweb-pro-1b-large-aux-2-dpo-seed2": 0.40886811946600315,
+    "dd-fineweb-pro-1b-large-aux-3-dpo-seed1": 0.5056677656479122,
+    "dd-fineweb-pro-1b-large-aux-3-dpo-seed2": 0.4878955821093157
+   },
+   "recipe": {
+    "c4": 0.5149687069970407,
+    "dclm-baseline": 0.4865417891885793,
+    "dclm-baseline-25p-dolma1.7-75p": 0.5233840354373985,
+    "dclm-baseline-50p-dolma1.7-50p": 0.5210766706144009,
+    "dclm-baseline-75p-dolma1.7-25p": 0.5298269297777445,
+    "dclm-baseline-qc-10p": 0.5004914101024698,
+    "dclm-baseline-qc-20p": 0.5093144994271743,
+    "dclm-baseline-qc-7p-fw2": 0.535311371584036,
+    "dclm-baseline-qc-7p-fw3": 0.5581405621777821,
+    "dclm-baseline-qc-fw-10p": 0.5234752461312523,
+    "dclm-baseline-qc-fw-3p": 0.664081170381533,
+    "dolma1_6plus": 0.5280093449245736,
+    "dolma1_7": 0.5454224618969273,
+    "dolma1_7-no-code": 0.535850729926629,
+    "dolma1_7-no-flan": 0.5080581020473245,
+    "dolma1_7-no-math-code": 0.5185826433080768,
+    "dolma1_7-no-reddit": 0.538310578878698,
+    "falcon": 0.5760396872528563,
+    "falcon-and-cc": 0.5489549549059539,
+    "falcon-and-cc-qc-10p": 0.46351323168239905,
+    "falcon-and-cc-qc-20p": 0.5004478277586343,
+    "falcon-and-cc-qc-orig-10p": 0.49572545461988926,
+    "falcon-and-cc-qc-tulu-10p": 0.5579756404363854,
+    "fineweb-edu": 0.5468386333389356,
+    "fineweb-pro": 0.4680606440266784
+   },
+   "overall": 0.5279360930729349
+  },
+  "per_source": {
+   "model": {
+    "dd-c4-1b-default-dpo-seed1": {
+     "point": 0.29258398434175203,
+     "lo": 0.24229134207010905,
+     "hi": 0.34085443596461323,
+     "frac_undefined": 0.0
+    },
+    "dd-c4-1b-default-dpo-seed2": {
+     "point": 0.2860609068334472,
+     "lo": 0.23792909613615665,
+     "hi": 0.3330681128328816,
+     "frac_undefined": 0.0
+    },
+    "dd-c4-1b-large-aux-2-dpo-seed1": {
+     "point": 0.26578781856471423,
+     "lo": 0.21817156237887214,
+     "hi": 0.31103269921941984,
+     "frac_undefined": 0.0
+    },
+    "dd-c4-1b-large-aux-2-dpo-seed2": {
+     "point": 0.26711751626951996,
+     "lo": 0.21955702338580652,
+     "hi": 0.31224430122570196,
+     "frac_undefined": 0.0
+    },
+    "dd-c4-1b-large-aux-3-dpo-seed1": {
+     "point": 0.25222443038583464,
+     "lo": 0.2084774521958521,
+     "hi": 0.2938115015275557,
+     "frac_undefined": 0.0
+    },
+    "dd-c4-1b-large-aux-3-dpo-seed2": {
+     "point": 0.26395496077601455,
+     "lo": 0.21820365654183765,
+     "hi": 0.3074951520516828,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-1b-default-dpo-seed1": {
+     "point": 0.2554968697986818,
+     "lo": 0.21036907840255142,
+     "hi": 0.29751231373087256,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-1b-default-dpo-seed2": {
+     "point": 0.25082185535979523,
+     "lo": 0.20732232031535042,
+     "hi": 0.2921802847278585,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed1": {
+     "point": 0.256593948396862,
+     "lo": 0.21136507497955465,
+     "hi": 0.29958700130460686,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed2": {
+     "point": 0.27238441066262675,
+     "lo": 0.2235692096573232,
+     "hi": 0.31864233429375366,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed1": {
+     "point": 0.24304083378795932,
+     "lo": 0.20092247822699358,
+     "hi": 0.2831361293298419,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2617920848784327,
+     "lo": 0.21685089443747818,
+     "hi": 0.30492263881504056,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed1": {
+     "point": 0.2712704280365722,
+     "lo": 0.22305665030646474,
+     "hi": 0.31624180372204386,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed2": {
+     "point": 0.271873988658077,
+     "lo": 0.224092122502737,
+     "hi": 0.31652414207912594,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2875285691674256,
+     "lo": 0.2372607491079291,
+     "hi": 0.33475269687642084,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.271623168667194,
+     "lo": 0.22441957950148805,
+     "hi": 0.3163614112354618,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2876773879676217,
+     "lo": 0.23655159364073336,
+     "hi": 0.3362249737908756,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2689344042836981,
+     "lo": 0.22092681897141458,
+     "hi": 0.31443625297138506,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed1": {
+     "point": 0.30329169609633255,
+     "lo": 0.2501993223521839,
+     "hi": 0.3530498872767553,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed2": {
+     "point": 0.2769167278527007,
+     "lo": 0.2288090153849867,
+     "hi": 0.32252848159726594,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.28196298867158365,
+     "lo": 0.23274736309670663,
+     "hi": 0.32833443952549884,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2672104175632988,
+     "lo": 0.220299194290082,
+     "hi": 0.31108216967531155,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2505744023593025,
+     "lo": 0.20620100478964626,
+     "hi": 0.29180854914157883,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.26802786151889746,
+     "lo": 0.22114902327724434,
+     "hi": 0.31202964006577205,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed1": {
+     "point": 0.28446719157984973,
+     "lo": 0.23624052737622298,
+     "hi": 0.33102729928522406,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed2": {
+     "point": 0.25765150425406697,
+     "lo": 0.21359421491392222,
+     "hi": 0.29992306133222923,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2684619513671479,
+     "lo": 0.2211553216786231,
+     "hi": 0.31338032811554445,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.268821652633774,
+     "lo": 0.22148095701296078,
+     "hi": 0.31380183628281544,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2974456412160562,
+     "lo": 0.24488581903149867,
+     "hi": 0.3463830601052383,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.30033635142663295,
+     "lo": 0.24729146922138948,
+     "hi": 0.3507772394906903,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-10p-1b-default-dpo-seed1": {
+     "point": 0.28669724435927096,
+     "lo": 0.23601814362767082,
+     "hi": 0.333867725831165,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-10p-1b-default-dpo-seed2": {
+     "point": 0.3003103634201394,
+     "lo": 0.2470955498588854,
+     "hi": 0.3509038164793056,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2573305336843162,
+     "lo": 0.2135020635446595,
+     "hi": 0.29958672167374795,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.23677116504070475,
+     "lo": 0.1972847957850205,
+     "hi": 0.27560634698176767,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.23614903343317997,
+     "lo": 0.19576401932147247,
+     "hi": 0.2748974429279916,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2620567544776497,
+     "lo": 0.2171390698259378,
+     "hi": 0.30516048519237526,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-20p-1b-default-dpo-seed1": {
+     "point": 0.2716925947241073,
+     "lo": 0.22348559159065842,
+     "hi": 0.3165437900039554,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-20p-1b-default-dpo-seed2": {
+     "point": 0.24616688719906868,
+     "lo": 0.20288223056348959,
+     "hi": 0.28660114366585365,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.25911244741165684,
+     "lo": 0.2135547542148238,
+     "hi": 0.3016740631817457,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.27545589818047683,
+     "lo": 0.22691131155633504,
+     "hi": 0.32072694155609044,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2804756073202094,
+     "lo": 0.2308560908682354,
+     "hi": 0.3266255771098105,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2799095017556564,
+     "lo": 0.23071883655439526,
+     "hi": 0.3258784926610453,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed1": {
+     "point": 0.2928419873556204,
+     "lo": 0.24122401152520936,
+     "hi": 0.3409727228437217,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed2": {
+     "point": 0.2711408773641786,
+     "lo": 0.22364366048473655,
+     "hi": 0.3156324645131057,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed1": {
+     "point": 0.30352663037324806,
+     "lo": 0.2504021818333191,
+     "hi": 0.35332114773515755,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed2": {
+     "point": 0.27941769296118185,
+     "lo": 0.2307150671179752,
+     "hi": 0.32539303533872443,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed1": {
+     "point": 0.27119793945706655,
+     "lo": 0.22418599629713465,
+     "hi": 0.3159296143524891,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2734165975608715,
+     "lo": 0.22642282601001995,
+     "hi": 0.3185205638237246,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed1": {
+     "point": 0.321437678464346,
+     "lo": 0.2663400780156655,
+     "hi": 0.3743103289108741,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed2": {
+     "point": 0.30619281657069725,
+     "lo": 0.2537828302099384,
+     "hi": 0.3564817692332006,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed1": {
+     "point": 0.26830847136625335,
+     "lo": 0.22200809624313256,
+     "hi": 0.31262531924800496,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed2": {
+     "point": 0.30363948150290804,
+     "lo": 0.251259131306257,
+     "hi": 0.35379508628424416,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed1": {
+     "point": 0.28159571312720394,
+     "lo": 0.23357467646712213,
+     "hi": 0.3277686304267405,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed2": {
+     "point": 0.27687157534559675,
+     "lo": 0.22966499223675307,
+     "hi": 0.3222842377969235,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed1": {
+     "point": 0.28945585861685125,
+     "lo": 0.23981010439275913,
+     "hi": 0.3370986872139299,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed2": {
+     "point": 0.2841802871534338,
+     "lo": 0.23579422871739836,
+     "hi": 0.33088823488238744,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2595584360714696,
+     "lo": 0.21658665055522108,
+     "hi": 0.3019698074095607,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2718766411153224,
+     "lo": 0.22698128671959245,
+     "hi": 0.31619733880862544,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.27009517007878564,
+     "lo": 0.22401124128531996,
+     "hi": 0.3143432055515525,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.26673959821342325,
+     "lo": 0.22128326937179232,
+     "hi": 0.3104724082168291,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed1": {
+     "point": 0.3553356045985968,
+     "lo": 0.29621110725194744,
+     "hi": 0.4136020390921832,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed2": {
+     "point": 0.33077052821430497,
+     "lo": 0.275872672665353,
+     "hi": 0.3855277553812488,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.3270402663113513,
+     "lo": 0.27244306998494217,
+     "hi": 0.38072253436759984,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.3492147426306834,
+     "lo": 0.29011587830645824,
+     "hi": 0.4064676999663359,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.3571585375904528,
+     "lo": 0.29717141237121303,
+     "hi": 0.4158368408418868,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.3628528822117222,
+     "lo": 0.30249885769088247,
+     "hi": 0.42257673859516454,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_6plus-1b-default-dpo-seed1": {
+     "point": 0.2647469618187495,
+     "lo": 0.21939892075932976,
+     "hi": 0.30826176399957367,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_6plus-1b-default-dpo-seed2": {
+     "point": 0.26427912710438684,
+     "lo": 0.21888896896545376,
+     "hi": 0.30791654462437806,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_6plus-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2830822077832944,
+     "lo": 0.2333308555335024,
+     "hi": 0.32957301098816205,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_6plus-1b-large-aux-2-dpo-seed2": {
+     "point": 0.31227760574414304,
+     "lo": 0.25806736654213214,
+     "hi": 0.3637366302678988,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_6plus-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2680854222489924,
+     "lo": 0.2215454679490807,
+     "hi": 0.3122613626816513,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_6plus-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2750600444178869,
+     "lo": 0.22670034513826506,
+     "hi": 0.3202417854213847,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-1b-default-dpo-seed1": {
+     "point": 0.2569713462300605,
+     "lo": 0.21285354002814105,
+     "hi": 0.29931194782429016,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-1b-default-dpo-seed2": {
+     "point": 0.2772141130976816,
+     "lo": 0.22919434715070386,
+     "hi": 0.3229600896679652,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-1b-large-aux-2-dpo-seed1": {
+     "point": 0.30048162918094823,
+     "lo": 0.24761004616060295,
+     "hi": 0.3498452145835673,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-1b-large-aux-2-dpo-seed2": {
+     "point": 0.3009192492870918,
+     "lo": 0.24800676605224126,
+     "hi": 0.350346739237534,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-1b-large-aux-3-dpo-seed1": {
+     "point": 0.3014136913698329,
+     "lo": 0.24816233122371567,
+     "hi": 0.3510032042155367,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2870348529614538,
+     "lo": 0.23721460922726495,
+     "hi": 0.3343392029275281,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-code-1b-default-dpo-seed1": {
+     "point": 0.28477661256992026,
+     "lo": 0.23556310000703856,
+     "hi": 0.3318004721712231,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-code-1b-default-dpo-seed2": {
+     "point": 0.2582489306621374,
+     "lo": 0.21426913656068064,
+     "hi": 0.30067003376433565,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed1": {
+     "point": 0.28514575482173166,
+     "lo": 0.2351552573714683,
+     "hi": 0.3319451977641123,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed2": {
+     "point": 0.28600530914648853,
+     "lo": 0.23667615130829972,
+     "hi": 0.33324975035301196,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2849283099536074,
+     "lo": 0.23553122746719762,
+     "hi": 0.3319284998794172,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2919012960035248,
+     "lo": 0.24121290315549304,
+     "hi": 0.3399929296806776,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-flan-1b-default-dpo-seed1": {
+     "point": 0.2486971078495207,
+     "lo": 0.2049924473831921,
+     "hi": 0.2895399500867374,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-flan-1b-default-dpo-seed2": {
+     "point": 0.26878450700805123,
+     "lo": 0.22171355211764704,
+     "hi": 0.31288613359110273,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed1": {
+     "point": 0.25775524723905363,
+     "lo": 0.21261225827546604,
+     "hi": 0.30004808103529623,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed2": {
+     "point": 0.26864461451916277,
+     "lo": 0.2213271339004822,
+     "hi": 0.3127896790993113,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2836516131686589,
+     "lo": 0.2349535905982622,
+     "hi": 0.3303879037687871,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2770744367158843,
+     "lo": 0.2298447984726627,
+     "hi": 0.322518400985934,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-math-code-1b-default-dpo-seed1": {
+     "point": 0.2862494970465425,
+     "lo": 0.23697664631291795,
+     "hi": 0.33352887029452105,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-math-code-1b-default-dpo-seed2": {
+     "point": 0.27768558325969506,
+     "lo": 0.23024733505210182,
+     "hi": 0.3231982810795419,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed1": {
+     "point": 0.25008846554763275,
+     "lo": 0.20580261253018384,
+     "hi": 0.2912422819107354,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed2": {
+     "point": 0.24003039309414526,
+     "lo": 0.19774291476894232,
+     "hi": 0.2801921782719301,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2969399784703864,
+     "lo": 0.24416786160757536,
+     "hi": 0.3461575839707942,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed2": {
+     "point": 0.28926037027313545,
+     "lo": 0.23866706223092699,
+     "hi": 0.3367470493961403,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-reddit-1b-default-dpo-seed1": {
+     "point": 0.2890795288181346,
+     "lo": 0.23779927122489958,
+     "hi": 0.3378115284959634,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-reddit-1b-default-dpo-seed2": {
+     "point": 0.28139544734492566,
+     "lo": 0.23099955321496843,
+     "hi": 0.3291393232351209,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed1": {
+     "point": 0.26944838258962767,
+     "lo": 0.2228578195338644,
+     "hi": 0.31393640601715933,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed2": {
+     "point": 0.24736522089572438,
+     "lo": 0.20472317220853253,
+     "hi": 0.2882302773185901,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed1": {
+     "point": 0.3026893129375423,
+     "lo": 0.2497830987139142,
+     "hi": 0.35241513285289877,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed2": {
+     "point": 0.31402930445247373,
+     "lo": 0.25918822880457265,
+     "hi": 0.3656635373678877,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-1b-default-dpo-seed1": {
+     "point": 0.3117739036252664,
+     "lo": 0.25708843634997824,
+     "hi": 0.3629502076404858,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-1b-default-dpo-seed2": {
+     "point": 0.29516629676974887,
+     "lo": 0.24332985173676203,
+     "hi": 0.3436322059347676,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-1b-large-aux-2-dpo-seed1": {
+     "point": 0.29358885055923634,
+     "lo": 0.24305730551209656,
+     "hi": 0.34207984758140675,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2723216568875972,
+     "lo": 0.22594006572636888,
+     "hi": 0.3170399854519176,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-1b-large-aux-3-dpo-seed1": {
+     "point": 0.3319460979143025,
+     "lo": 0.27336350848488333,
+     "hi": 0.3865214954084879,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-1b-large-aux-3-dpo-seed2": {
+     "point": 0.3154929674511403,
+     "lo": 0.26006227625315625,
+     "hi": 0.3673024955596418,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-1b-default-dpo-seed1": {
+     "point": 0.3068471560010341,
+     "lo": 0.25340704124618374,
+     "hi": 0.3573499649729709,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-1b-default-dpo-seed2": {
+     "point": 0.29228550995438607,
+     "lo": 0.24155549009928218,
+     "hi": 0.3404561727535058,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2848477236444537,
+     "lo": 0.235554997563437,
+     "hi": 0.33187107965098367,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2856810901128826,
+     "lo": 0.23622077351905138,
+     "hi": 0.3328377427725933,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-1b-large-aux-3-dpo-seed1": {
+     "point": 0.29059218975769935,
+     "lo": 0.23959392619357353,
+     "hi": 0.3382984906289057,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-1b-large-aux-3-dpo-seed2": {
+     "point": 0.273794996964126,
+     "lo": 0.22611963922377865,
+     "hi": 0.31886063649044855,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed1": {
+     "point": 0.2558025103310802,
+     "lo": 0.2119124713190874,
+     "hi": 0.2979228439428141,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed2": {
+     "point": 0.2703883011878744,
+     "lo": 0.22346469491832938,
+     "hi": 0.31495382866511923,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2601930401497764,
+     "lo": 0.21371135168009633,
+     "hi": 0.3053326597128994,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.25606927323407264,
+     "lo": 0.21040586472758163,
+     "hi": 0.3007407224897465,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.21092406526499302,
+     "lo": 0.1733323943465709,
+     "hi": 0.24849270093843567,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.22037258043285404,
+     "lo": 0.18097138253705153,
+     "hi": 0.25989226930679266,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed1": {
+     "point": 0.2680892952813293,
+     "lo": 0.22008739945974215,
+     "hi": 0.3138968037632425,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed2": {
+     "point": 0.27732694744848374,
+     "lo": 0.22809265647752713,
+     "hi": 0.32409914635969,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2785924963050486,
+     "lo": 0.22991975966781888,
+     "hi": 0.32438055172293756,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2571455304543867,
+     "lo": 0.21244050545558701,
+     "hi": 0.29949402642587053,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.25008418629936413,
+     "lo": 0.20603018324433625,
+     "hi": 0.29118068917378587,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.25477106411328954,
+     "lo": 0.20992598238292987,
+     "hi": 0.2966293021917303,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed1": {
+     "point": 0.2473347114789933,
+     "lo": 0.20415296565924426,
+     "hi": 0.28800782773540773,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed2": {
+     "point": 0.277832820684777,
+     "lo": 0.22958606927257802,
+     "hi": 0.32360579216363716,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2511568023608655,
+     "lo": 0.20663306115472993,
+     "hi": 0.2925259940112273,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.25620838516379213,
+     "lo": 0.21069416914665273,
+     "hi": 0.29883493638848535,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.25409997197358863,
+     "lo": 0.21142092724794254,
+     "hi": 0.2958448041557764,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.27858795490353316,
+     "lo": 0.2312271822536176,
+     "hi": 0.3244287035012656,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed1": {
+     "point": 0.28842462904934957,
+     "lo": 0.2372013569823871,
+     "hi": 0.3361483023159533,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed2": {
+     "point": 0.3099176654818033,
+     "lo": 0.25557812590585716,
+     "hi": 0.36078429327303674,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.29260281997959764,
+     "lo": 0.2423187237732164,
+     "hi": 0.34086434120718107,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2837944760524169,
+     "lo": 0.23515688883178204,
+     "hi": 0.3304675108249487,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2934307539763068,
+     "lo": 0.2417345467710078,
+     "hi": 0.3425274158376358,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2976633858705955,
+     "lo": 0.24519645658112438,
+     "hi": 0.34743540408704515,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-edu-1b-default-dpo-seed1": {
+     "point": 0.3013633839704993,
+     "lo": 0.2489980649831246,
+     "hi": 0.35100072965542234,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-edu-1b-default-dpo-seed2": {
+     "point": 0.28747388182877287,
+     "lo": 0.23754528704052003,
+     "hi": 0.3348304322292783,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-edu-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2688988739391762,
+     "lo": 0.22165445832631828,
+     "hi": 0.3130568510094526,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-edu-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2809350791155376,
+     "lo": 0.2311365760915081,
+     "hi": 0.32719948815311717,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-edu-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2996183574505342,
+     "lo": 0.2483549603726477,
+     "hi": 0.34880580432421054,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-edu-1b-large-aux-3-dpo-seed2": {
+     "point": 0.28838158915402035,
+     "lo": 0.239298189808182,
+     "hi": 0.33582125201381563,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-pro-1b-default-dpo-seed1": {
+     "point": 0.27243817175013696,
+     "lo": 0.22441442978294557,
+     "hi": 0.31721594299476363,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-pro-1b-default-dpo-seed2": {
+     "point": 0.25740385341725674,
+     "lo": 0.21177406247738464,
+     "hi": 0.2997987845884296,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-pro-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2121610902559744,
+     "lo": 0.17496409085282003,
+     "hi": 0.24698240538575864,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-pro-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2151607627803525,
+     "lo": 0.17784739264676985,
+     "hi": 0.25063993651436794,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-pro-1b-large-aux-3-dpo-seed1": {
+     "point": 0.26705195118241515,
+     "lo": 0.21986497636114355,
+     "hi": 0.3109886616070675,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-pro-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2584673320351093,
+     "lo": 0.21280369452466527,
+     "hi": 0.30189165862296174,
+     "frac_undefined": 0.0
+    }
+   },
+   "recipe": {
+    "c4": {
+     "point": 0.2712882695285471,
+     "lo": 0.22389460922449367,
+     "hi": 0.31587868879218645,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline": {
+     "point": 0.25668833381405964,
+     "lo": 0.21150498329989556,
+     "hi": 0.2988617676748841,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-25p-dolma1.7-75p": {
+     "point": 0.27648465779676473,
+     "lo": 0.22749166322380532,
+     "hi": 0.32199020870137063,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-50p-dolma1.7-50p": {
+     "point": 0.2746640156770193,
+     "lo": 0.22653740987873813,
+     "hi": 0.31973670951443484,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-75p-dolma1.7-25p": {
+     "point": 0.27953071541292135,
+     "lo": 0.23032100687365875,
+     "hi": 0.3254584704572548,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-qc-10p": {
+     "point": 0.2632191824025435,
+     "lo": 0.21764018980085412,
+     "hi": 0.3066660748619599,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-qc-20p": {
+     "point": 0.26880215609852925,
+     "lo": 0.22139648494929412,
+     "hi": 0.3129879148666624,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-qc-7p-fw2": {
+     "point": 0.28192362084536116,
+     "lo": 0.23285071185440773,
+     "hi": 0.32833304889551407,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-qc-7p-fw3": {
+     "point": 0.2930076227295009,
+     "lo": 0.2427473580888931,
+     "hi": 0.34124049988945787,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-qc-fw-10p": {
+     "point": 0.2736509985415477,
+     "lo": 0.22802999895737805,
+     "hi": 0.3185648446765464,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-qc-fw-3p": {
+     "point": 0.3470620935928519,
+     "lo": 0.28926173105821834,
+     "hi": 0.4040041951363564,
+     "frac_undefined": 0.0
+    },
+    "dolma1_6plus": {
+     "point": 0.2779218948529088,
+     "lo": 0.2296960535252319,
+     "hi": 0.3237323451804938,
+     "frac_undefined": 0.0
+    },
+    "dolma1_7": {
+     "point": 0.28733914702117813,
+     "lo": 0.2371344659789892,
+     "hi": 0.334561076996499,
+     "frac_undefined": 0.0
+    },
+    "dolma1_7-no-code": {
+     "point": 0.2818343688595683,
+     "lo": 0.23302366894826274,
+     "hi": 0.3283486736008158,
+     "frac_undefined": 0.0
+    },
+    "dolma1_7-no-flan": {
+     "point": 0.26743458775005524,
+     "lo": 0.22102232669915467,
+     "hi": 0.3115125012165343,
+     "frac_undefined": 0.0
+    },
+    "dolma1_7-no-math-code": {
+     "point": 0.2733757146152562,
+     "lo": 0.22545100639751944,
+     "hi": 0.3182428362657143,
+     "frac_undefined": 0.0
+    },
+    "dolma1_7-no-reddit": {
+     "point": 0.28400119950640473,
+     "lo": 0.234009369152126,
+     "hi": 0.33066227335789905,
+     "frac_undefined": 0.0
+    },
+    "falcon": {
+     "point": 0.30338162886788195,
+     "lo": 0.25055150772722606,
+     "hi": 0.3533161677731938,
+     "frac_undefined": 0.0
+    },
+    "falcon-and-cc": {
+     "point": 0.2890081110724303,
+     "lo": 0.2388317173579904,
+     "hi": 0.3366291016162218,
+     "frac_undefined": 0.0
+    },
+    "falcon-and-cc-qc-10p": {
+     "point": 0.24562496176677515,
+     "lo": 0.20204437413298718,
+     "hi": 0.2870363960916183,
+     "frac_undefined": 0.0
+    },
+    "falcon-and-cc-qc-20p": {
+     "point": 0.2643349199836504,
+     "lo": 0.21752501698685064,
+     "hi": 0.3078334035018172,
+     "frac_undefined": 0.0
+    },
+    "falcon-and-cc-qc-orig-10p": {
+     "point": 0.26087010776092495,
+     "lo": 0.21562892237349893,
+     "hi": 0.3038860356828192,
+     "frac_undefined": 0.0
+    },
+    "falcon-and-cc-qc-tulu-10p": {
+     "point": 0.2943056217350116,
+     "lo": 0.24256367783303592,
+     "hi": 0.3426490965738383,
+     "frac_undefined": 0.0
+    },
+    "fineweb-edu": {
+     "point": 0.28777852757642347,
+     "lo": 0.23786610201167824,
+     "hi": 0.33522856668004336,
+     "frac_undefined": 0.0
+    },
+    "fineweb-pro": {
+     "point": 0.24711386023687418,
+     "lo": 0.20345681834938611,
+     "hi": 0.2877662462011333,
+     "frac_undefined": 0.0
+    }
+   },
+   "overall": {
+    "point": 0.2780258527217996,
+    "lo": 0.2296675582973066,
+    "hi": 0.3238054713046807,
+    "frac_undefined": 0.0
+   }
+  },
+  "per_group_source": {
+   "model": {
+    "dd-c4-1b-default-dpo-seed1": {
+     "point": 0.15583004304360626,
+     "lo": 6.421022339015085e-06,
+     "hi": 0.30272180250916225,
+     "frac_undefined": 0.0
+    },
+    "dd-c4-1b-default-dpo-seed2": {
+     "point": 0.16080007724952056,
+     "lo": 6.462944850453446e-06,
+     "hi": 0.30372975781152856,
+     "frac_undefined": 0.0
+    },
+    "dd-c4-1b-large-aux-2-dpo-seed1": {
+     "point": 0.12013599485958462,
+     "lo": 5.3634270012621205e-06,
+     "hi": 0.26495524139546817,
+     "frac_undefined": 0.0
+    },
+    "dd-c4-1b-large-aux-2-dpo-seed2": {
+     "point": 0.1220302570280422,
+     "lo": 5.418604197579446e-06,
+     "hi": 0.26600439714232804,
+     "frac_undefined": 0.0
+    },
+    "dd-c4-1b-large-aux-3-dpo-seed1": {
+     "point": 0.13004913269169482,
+     "lo": 5.441368444663299e-06,
+     "hi": 0.25620784968007276,
+     "frac_undefined": 0.0
+    },
+    "dd-c4-1b-large-aux-3-dpo-seed2": {
+     "point": 0.1366661146898451,
+     "lo": 5.706900012770217e-06,
+     "hi": 0.2688125287350896,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-1b-default-dpo-seed1": {
+     "point": 0.2366537475361777,
+     "lo": 0.17039633122336925,
+     "hi": 0.30061910110360834,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-1b-default-dpo-seed2": {
+     "point": 0.23064889651714737,
+     "lo": 0.1661249163311488,
+     "hi": 0.2932716534551255,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed1": {
+     "point": 0.239431540340281,
+     "lo": 0.171352605363422,
+     "hi": 0.30412607768285693,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed2": {
+     "point": 0.25483417641456374,
+     "lo": 0.18219052441126726,
+     "hi": 0.3234913879151284,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2233420828822703,
+     "lo": 0.16064254425847763,
+     "hi": 0.2838650911697323,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed2": {
+     "point": 0.23949126427547066,
+     "lo": 0.1718957279263981,
+     "hi": 0.3041028301363117,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed1": {
+     "point": 0.25195543820234956,
+     "lo": 0.1811263309670627,
+     "hi": 0.3203078786402038,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed2": {
+     "point": 0.25127305622916113,
+     "lo": 0.18103841929311376,
+     "hi": 0.31915530340130094,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2651297492852228,
+     "lo": 0.191146029518837,
+     "hi": 0.33683060047002744,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.25015941764534744,
+     "lo": 0.18047210140524647,
+     "hi": 0.3180541794271122,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.26878362594818833,
+     "lo": 0.19219989881698163,
+     "hi": 0.3413277750994316,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.25144862323112777,
+     "lo": 0.1797861009264473,
+     "hi": 0.31927273553568836,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed1": {
+     "point": 0.27982335135587055,
+     "lo": 0.20170721025919897,
+     "hi": 0.355371528830673,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed2": {
+     "point": 0.25502229487259354,
+     "lo": 0.1839833763184115,
+     "hi": 0.32424675881909704,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.25985070430904594,
+     "lo": 0.1874220636711421,
+     "hi": 0.3302411708335768,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.24684524656092333,
+     "lo": 0.17787210681488103,
+     "hi": 0.31349251509809883,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.23235953744256033,
+     "lo": 0.1671151729240307,
+     "hi": 0.2953868902019882,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.24719490416842546,
+     "lo": 0.17820635166873727,
+     "hi": 0.31400823982876175,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed1": {
+     "point": 0.25878102923822843,
+     "lo": 0.18575976266307498,
+     "hi": 0.3285640449326879,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-default-dpo-seed2": {
+     "point": 0.23530436158619228,
+     "lo": 0.1685831203422989,
+     "hi": 0.2988709069983535,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.25044285300513336,
+     "lo": 0.17927655932201259,
+     "hi": 0.3181273670108229,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2506383447660313,
+     "lo": 0.17951351348010372,
+     "hi": 0.31840846874879614,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2757314756472979,
+     "lo": 0.1982542512465386,
+     "hi": 0.35049315437065526,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-75p-dolma1.7-25p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2803361349219728,
+     "lo": 0.20056568090648513,
+     "hi": 0.35606254740280824,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-10p-1b-default-dpo-seed1": {
+     "point": 0.265781369680802,
+     "lo": 0.1911080645402722,
+     "hi": 0.33784966579668696,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-10p-1b-default-dpo-seed2": {
+     "point": 0.280457052674408,
+     "lo": 0.2005604606802529,
+     "hi": 0.356182175531071,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.23461026304812654,
+     "lo": 0.16831264142849217,
+     "hi": 0.29807295796216376,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.21417097222374654,
+     "lo": 0.1535701957126246,
+     "hi": 0.2723947389691097,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.21567738401873437,
+     "lo": 0.15453311393925542,
+     "hi": 0.2739451825290722,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-10p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2395744601183107,
+     "lo": 0.17184946366457857,
+     "hi": 0.3042765905948225,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-20p-1b-default-dpo-seed1": {
+     "point": 0.25215895669387756,
+     "lo": 0.18140383267950433,
+     "hi": 0.3206109343218279,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-20p-1b-default-dpo-seed2": {
+     "point": 0.22756186394059655,
+     "lo": 0.16394513246742726,
+     "hi": 0.28902079713901185,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.23952154182922883,
+     "lo": 0.17256290226834772,
+     "hi": 0.3042202863233373,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.25489061261736323,
+     "lo": 0.18358252915896273,
+     "hi": 0.3233982734565521,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2600431625043901,
+     "lo": 0.1869995057618935,
+     "hi": 0.3305652183139056,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-20p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2586917512576766,
+     "lo": 0.18638508618677585,
+     "hi": 0.32857556585590336,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed1": {
+     "point": 0.2710002865005849,
+     "lo": 0.19518098894435942,
+     "hi": 0.34386303982266264,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-default-dpo-seed2": {
+     "point": 0.2502363224746402,
+     "lo": 0.1803643231901189,
+     "hi": 0.3177358604295278,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2800192408583167,
+     "lo": 0.2018526545887911,
+     "hi": 0.35563693772695504,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-2-dpo-seed2": {
+     "point": 0.25745118398369504,
+     "lo": 0.18570464826858324,
+     "hi": 0.32723460810211424,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed1": {
+     "point": 0.24928406380717155,
+     "lo": 0.17939894691260913,
+     "hi": 0.31688832478183027,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw2-1b-large-aux-3-dpo-seed2": {
+     "point": 0.2502570103095856,
+     "lo": 0.1796541014065292,
+     "hi": 0.3177166809947197,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed1": {
+     "point": 0.2938650585317273,
+     "lo": 0.21079229991714388,
+     "hi": 0.37322776552722864,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-default-dpo-seed2": {
+     "point": 0.2797561577559672,
+     "lo": 0.20056477640201464,
+     "hi": 0.35527057283481617,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed1": {
+     "point": 0.24615734914493392,
+     "lo": 0.1765322328586293,
+     "hi": 0.312553644432135,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2785479412211172,
+     "lo": 0.19976850551464598,
+     "hi": 0.3536629441761946,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed1": {
+     "point": 0.25687070527412115,
+     "lo": 0.18431514747437472,
+     "hi": 0.32631546102275955,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-7p-fw3-1b-large-aux-3-dpo-seed2": {
+     "point": 0.25254098882876397,
+     "lo": 0.1812105232124515,
+     "hi": 0.3208210435250698,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed1": {
+     "point": 0.26469612293378453,
+     "lo": 0.18986190794789615,
+     "hi": 0.33615150299510066,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-default-dpo-seed2": {
+     "point": 0.25905376604874975,
+     "lo": 0.1857931799457297,
+     "hi": 0.32913870024422387,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.23051735454858924,
+     "lo": 0.16549860490066434,
+     "hi": 0.29446892618839665,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.24300943690457358,
+     "lo": 0.1739867266526634,
+     "hi": 0.31013726808304165,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.24643550616925453,
+     "lo": 0.1768216797194971,
+     "hi": 0.3130432064043921,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-10p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.24324692565567346,
+     "lo": 0.17454704373904875,
+     "hi": 0.30902914486125704,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed1": {
+     "point": 0.3212504916375895,
+     "lo": 0.23010191196434399,
+     "hi": 0.40892651405849695,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-default-dpo-seed2": {
+     "point": 0.29796231938428897,
+     "lo": 0.213603050139527,
+     "hi": 0.3801888753110411,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2962642154693118,
+     "lo": 0.2127963289418158,
+     "hi": 0.37633734271623076,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.31750742410052524,
+     "lo": 0.22791251761735845,
+     "hi": 0.4031845764409166,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.32410739279338163,
+     "lo": 0.23273644793386694,
+     "hi": 0.41154622295494747,
+     "frac_undefined": 0.0
+    },
+    "dd-dclm-baseline-qc-fw-3p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.32760732248554725,
+     "lo": 0.23400234360309619,
+     "hi": 0.41763485991698124,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_6plus-1b-default-dpo-seed1": {
+     "point": 0.2934442614828908,
+     "lo": 0.19689224863911953,
+     "hi": 0.37700215722645714,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_6plus-1b-default-dpo-seed2": {
+     "point": 0.2922095779369795,
+     "lo": 0.19595091524528377,
+     "hi": 0.37616818290378035,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_6plus-1b-large-aux-2-dpo-seed1": {
+     "point": 0.3104347451903276,
+     "lo": 0.20782072407556962,
+     "hi": 0.40101132568974995,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_6plus-1b-large-aux-2-dpo-seed2": {
+     "point": 0.34382621970300875,
+     "lo": 0.22998019036154277,
+     "hi": 0.4437282392808575,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_6plus-1b-large-aux-3-dpo-seed1": {
+     "point": 0.29516222056913755,
+     "lo": 0.19743078410839776,
+     "hi": 0.3809259235189959,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_6plus-1b-large-aux-3-dpo-seed2": {
+     "point": 0.30158933353105294,
+     "lo": 0.20190486363073523,
+     "hi": 0.38961118532827094,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-1b-default-dpo-seed1": {
+     "point": 0.28455759125971924,
+     "lo": 0.19080921385431343,
+     "hi": 0.36585985541802635,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-1b-default-dpo-seed2": {
+     "point": 0.3057868299137624,
+     "lo": 0.20451148144497855,
+     "hi": 0.3943716577006468,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-1b-large-aux-2-dpo-seed1": {
+     "point": 0.32935095129813136,
+     "lo": 0.22050368668216383,
+     "hi": 0.42553605567234287,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-1b-large-aux-2-dpo-seed2": {
+     "point": 0.32992588762507724,
+     "lo": 0.2208773089284674,
+     "hi": 0.42622714042324406,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-1b-large-aux-3-dpo-seed1": {
+     "point": 0.3295882261793768,
+     "lo": 0.21968912387523262,
+     "hi": 0.4269025374476931,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-1b-large-aux-3-dpo-seed2": {
+     "point": 0.31607671650688335,
+     "lo": 0.21141164440670634,
+     "hi": 0.4079069245589759,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-code-1b-default-dpo-seed1": {
+     "point": 0.31438980852755605,
+     "lo": 0.2103828659954029,
+     "hi": 0.4051981338442332,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-code-1b-default-dpo-seed2": {
+     "point": 0.28691536606998475,
+     "lo": 0.19312240933440428,
+     "hi": 0.3679240485387341,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed1": {
+     "point": 0.31302364674430566,
+     "lo": 0.20951521139870616,
+     "hi": 0.4041785982504136,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-2-dpo-seed2": {
+     "point": 0.3159006319308689,
+     "lo": 0.21146341261730045,
+     "hi": 0.40698654327492556,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed1": {
+     "point": 0.314071673999339,
+     "lo": 0.21006425776257093,
+     "hi": 0.4052227339320734,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-code-1b-large-aux-3-dpo-seed2": {
+     "point": 0.3213070893393225,
+     "lo": 0.2149316739023837,
+     "hi": 0.4146832629873814,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-flan-1b-default-dpo-seed1": {
+     "point": 0.27273659392907934,
+     "lo": 0.1825825626766116,
+     "hi": 0.3523087685782321,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-flan-1b-default-dpo-seed2": {
+     "point": 0.29519781719545996,
+     "lo": 0.19756790703923474,
+     "hi": 0.3811226377344581,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2830753866213863,
+     "lo": 0.18945579733883705,
+     "hi": 0.3654735872296389,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2943289544168178,
+     "lo": 0.19707108757560876,
+     "hi": 0.38039186310056833,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed1": {
+     "point": 0.31410295255703047,
+     "lo": 0.2106211819234143,
+     "hi": 0.4038458053825863,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-flan-1b-large-aux-3-dpo-seed2": {
+     "point": 0.30771481606496365,
+     "lo": 0.20701158100537748,
+     "hi": 0.3947144125699479,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-math-code-1b-default-dpo-seed1": {
+     "point": 0.31632746766030095,
+     "lo": 0.21189716006208364,
+     "hi": 0.40737488517889225,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-math-code-1b-default-dpo-seed2": {
+     "point": 0.3081179466027897,
+     "lo": 0.20701858661987388,
+     "hi": 0.39551336635489565,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2733739490353884,
+     "lo": 0.18206833803370637,
+     "hi": 0.35414805131449784,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-2-dpo-seed2": {
+     "point": 0.26089427616668953,
+     "lo": 0.17219386378671586,
+     "hi": 0.3399148111281799,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed1": {
+     "point": 0.3240869820410487,
+     "lo": 0.21519122281690514,
+     "hi": 0.4204844573832377,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-math-code-1b-large-aux-3-dpo-seed2": {
+     "point": 0.31785337395074953,
+     "lo": 0.21271081987664223,
+     "hi": 0.4103381730323885,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-reddit-1b-default-dpo-seed1": {
+     "point": 0.31375947733076603,
+     "lo": 0.20654952864574933,
+     "hi": 0.4091454705686648,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-reddit-1b-default-dpo-seed2": {
+     "point": 0.3049635014657728,
+     "lo": 0.2007233548458921,
+     "hi": 0.3980162983989959,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed1": {
+     "point": 0.29742614436678194,
+     "lo": 0.19901245756312022,
+     "hi": 0.383377370956955,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2732576946936061,
+     "lo": 0.18293454394647884,
+     "hi": 0.352010949682875,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed1": {
+     "point": 0.33270447105091117,
+     "lo": 0.22263614824235034,
+     "hi": 0.4294909545622173,
+     "frac_undefined": 0.0
+    },
+    "dd-dolma1_7-no-reddit-1b-large-aux-3-dpo-seed2": {
+     "point": 0.3452935761791392,
+     "lo": 0.23103938454443745,
+     "hi": 0.44571669589143204,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-1b-default-dpo-seed1": {
+     "point": 0.3378868567521992,
+     "lo": 0.21996670469746427,
+     "hi": 0.4424181764244468,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-1b-default-dpo-seed2": {
+     "point": 0.31975200043891394,
+     "lo": 0.20845660005781722,
+     "hi": 0.41882373849944665,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-1b-large-aux-2-dpo-seed1": {
+     "point": 0.31997017236742614,
+     "lo": 0.21024771091445232,
+     "hi": 0.41731694972746347,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-1b-large-aux-2-dpo-seed2": {
+     "point": 0.298078131226192,
+     "lo": 0.19660809989592187,
+     "hi": 0.38744917036634324,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-1b-large-aux-3-dpo-seed1": {
+     "point": 0.35898410085591015,
+     "lo": 0.23294581235804832,
+     "hi": 0.4706608383006886,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-1b-large-aux-3-dpo-seed2": {
+     "point": 0.3417195352388188,
+     "lo": 0.2229233835375689,
+     "hi": 0.4476263647744291,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-1b-default-dpo-seed1": {
+     "point": 0.333156467882743,
+     "lo": 0.2176504725408972,
+     "hi": 0.4354174989891392,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-1b-default-dpo-seed2": {
+     "point": 0.3176312489166444,
+     "lo": 0.20829642225731732,
+     "hi": 0.41475003651680964,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-1b-large-aux-2-dpo-seed1": {
+     "point": 0.31010124179731946,
+     "lo": 0.20367735404409368,
+     "hi": 0.40436650388608875,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-1b-large-aux-2-dpo-seed2": {
+     "point": 0.31097836834213205,
+     "lo": 0.20434160580513844,
+     "hi": 0.40550330049799543,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-1b-large-aux-3-dpo-seed1": {
+     "point": 0.31487120914476585,
+     "lo": 0.20506773532041356,
+     "hi": 0.4123615049877182,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-1b-large-aux-3-dpo-seed2": {
+     "point": 0.29727649592974914,
+     "lo": 0.19422705001169283,
+     "hi": 0.3885162414568467,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed1": {
+     "point": 0.2793107437121536,
+     "lo": 0.18409486938919972,
+     "hi": 0.36431689873367956,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-10p-1b-default-dpo-seed2": {
+     "point": 0.29386109093588875,
+     "lo": 0.19277997208501918,
+     "hi": 0.3836777281176802,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.27849375916298547,
+     "lo": 0.17860581884921906,
+     "hi": 0.36949841013138407,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2739314816552282,
+     "lo": 0.17546669066930815,
+     "hi": 0.3638085130924834,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.22371300352105306,
+     "lo": 0.14034382937377327,
+     "hi": 0.30094506137315763,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-10p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.23336046487293066,
+     "lo": 0.1459812367635242,
+     "hi": 0.3150368364489642,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed1": {
+     "point": 0.28736693471226077,
+     "lo": 0.18404089072206786,
+     "hi": 0.38047745733308064,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-20p-1b-default-dpo-seed2": {
+     "point": 0.2978011991477609,
+     "lo": 0.19180787891419712,
+     "hi": 0.39357945060662536,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.30233672975380144,
+     "lo": 0.19726889512323503,
+     "hi": 0.39532622028634234,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.27925064935677435,
+     "lo": 0.18259236776309623,
+     "hi": 0.36488977963942415,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.2706277108733235,
+     "lo": 0.17607233430520586,
+     "hi": 0.3546364770559023,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-20p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.275773186320759,
+     "lo": 0.17961560964982914,
+     "hi": 0.36133876536976395,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed1": {
+     "point": 0.2684644844116808,
+     "lo": 0.17522170062503495,
+     "hi": 0.3509702646997781,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-default-dpo-seed2": {
+     "point": 0.3018140978243663,
+     "lo": 0.1976164322938609,
+     "hi": 0.39424354888531377,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.27119032500448254,
+     "lo": 0.17598574501297354,
+     "hi": 0.35633499219762316,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2761696447091695,
+     "lo": 0.17836377510337664,
+     "hi": 0.36359198131273013,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.27914735263657176,
+     "lo": 0.18581426468713358,
+     "hi": 0.3624049625448471,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-orig-10p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.30512474193545813,
+     "lo": 0.20156168981312628,
+     "hi": 0.3965275888840989,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed1": {
+     "point": 0.3112329561513821,
+     "lo": 0.2018441243342337,
+     "hi": 0.4092818511982046,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-default-dpo-seed2": {
+     "point": 0.33591847730579516,
+     "lo": 0.2187323164322565,
+     "hi": 0.43978343670651465,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed1": {
+     "point": 0.31932271811971824,
+     "lo": 0.2102834429312574,
+     "hi": 0.41657111921342843,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-2-dpo-seed2": {
+     "point": 0.3099928631360944,
+     "lo": 0.20429065590201323,
+     "hi": 0.40408843180395626,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed1": {
+     "point": 0.31548809867587924,
+     "lo": 0.20379949533162128,
+     "hi": 0.4164276854533968,
+     "frac_undefined": 0.0
+    },
+    "dd-falcon-and-cc-qc-tulu-10p-1b-large-aux-3-dpo-seed2": {
+     "point": 0.32023869399427823,
+     "lo": 0.2067747433556838,
+     "hi": 0.42243140356243186,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-edu-1b-default-dpo-seed1": {
+     "point": 0.38613940660954615,
+     "lo": 0.10550055997518151,
+     "hi": 0.5315194040976146,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-edu-1b-default-dpo-seed2": {
+     "point": 0.36817157421635893,
+     "lo": 0.10082260420495837,
+     "hi": 0.5070314904892703,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-edu-1b-large-aux-2-dpo-seed1": {
+     "point": 0.34727476589692696,
+     "lo": 0.09118987031167891,
+     "hi": 0.4741139449679589,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-edu-1b-large-aux-2-dpo-seed2": {
+     "point": 0.3660982645452592,
+     "lo": 0.0930576592672833,
+     "hi": 0.49515904520226156,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-edu-1b-large-aux-3-dpo-seed1": {
+     "point": 0.37666164189552986,
+     "lo": 0.11092236612573532,
+     "hi": 0.5298040109747776,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-edu-1b-large-aux-3-dpo-seed2": {
+     "point": 0.360614207935949,
+     "lo": 0.10780080470238915,
+     "hi": 0.5103952067587906,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-pro-1b-default-dpo-seed1": {
+     "point": 0.3530209973387002,
+     "lo": 0.09112309143218046,
+     "hi": 0.4802909680488455,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-pro-1b-default-dpo-seed2": {
+     "point": 0.33545186594725956,
+     "lo": 0.0852619035475834,
+     "hi": 0.45368336410741517,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-pro-1b-large-aux-2-dpo-seed1": {
+     "point": 0.2734113689948633,
+     "lo": 0.0725829287244461,
+     "hi": 0.37410739806368276,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-pro-1b-large-aux-2-dpo-seed2": {
+     "point": 0.2746954232273701,
+     "lo": 0.07639219103843672,
+     "hi": 0.3795359308124212,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-pro-1b-large-aux-3-dpo-seed1": {
+     "point": 0.3473886785996259,
+     "lo": 0.08850028707540435,
+     "hi": 0.47072279699260533,
+     "frac_undefined": 0.0
+    },
+    "dd-fineweb-pro-1b-large-aux-3-dpo-seed2": {
+     "point": 0.341626277772098,
+     "lo": 0.08529402587528062,
+     "hi": 0.4550824835897423,
+     "frac_undefined": 0.0
+    }
+   },
+   "recipe": {
+    "c4": {
+     "point": 0.13758526992704892,
+     "lo": 5.8023778076239365e-06,
+     "hi": 0.2727943521745387,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline": {
+     "point": 0.23740028466098517,
+     "lo": 0.17101039579886293,
+     "hi": 0.3013693048397372,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-25p-dolma1.7-75p": {
+     "point": 0.25645831842356615,
+     "lo": 0.1845144014969886,
+     "hi": 0.32604611717793314,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-50p-dolma1.7-50p": {
+     "point": 0.25351600645156985,
+     "lo": 0.18272251742842197,
+     "hi": 0.32189348657481737,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-75p-dolma1.7-25p": {
+     "point": 0.2585390331941427,
+     "lo": 0.18623502130650268,
+     "hi": 0.3281872714159932,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-qc-10p": {
+     "point": 0.24171191696068806,
+     "lo": 0.17360449194679348,
+     "hi": 0.30708055253739563,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-qc-20p": {
+     "point": 0.2488113148071888,
+     "lo": 0.17918823491801858,
+     "hi": 0.31579970434918564,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-qc-7p-fw2": {
+     "point": 0.259708017988999,
+     "lo": 0.18734540227586835,
+     "hi": 0.3301447443981054,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-qc-7p-fw3": {
+     "point": 0.2679563667927718,
+     "lo": 0.1921991461253657,
+     "hi": 0.34028658646481663,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-qc-fw-10p": {
+     "point": 0.2478265187101042,
+     "lo": 0.1780128272878433,
+     "hi": 0.3148288265133251,
+     "frac_undefined": 0.0
+    },
+    "dclm-baseline-qc-fw-3p": {
+     "point": 0.3141165276451074,
+     "lo": 0.22550601639939694,
+     "hi": 0.3990961774077646,
+     "frac_undefined": 0.0
+    },
+    "dolma1_6plus": {
+     "point": 0.3061110597355661,
+     "lo": 0.20473778677883492,
+     "hi": 0.39503169233470475,
+     "frac_undefined": 0.0
+    },
+    "dolma1_7": {
+     "point": 0.31588103379715843,
+     "lo": 0.21137014729275153,
+     "hi": 0.4077633849256834,
+     "frac_undefined": 0.0
+    },
+    "dolma1_7-no-code": {
+     "point": 0.3109347027685628,
+     "lo": 0.20797757550668958,
+     "hi": 0.40095791580060997,
+     "frac_undefined": 0.0
+    },
+    "dolma1_7-no-flan": {
+     "point": 0.29452608679745623,
+     "lo": 0.19699173263513345,
+     "hi": 0.38008843130631415,
+     "frac_undefined": 0.0
+    },
+    "dolma1_7-no-math-code": {
+     "point": 0.3001089992428278,
+     "lo": 0.20087036324616672,
+     "hi": 0.38749978602269897,
+     "frac_undefined": 0.0
+    },
+    "dolma1_7-no-reddit": {
+     "point": 0.31123414418116285,
+     "lo": 0.20838059382896934,
+     "hi": 0.4021571245258279,
+     "frac_undefined": 0.0
+    },
+    "falcon": {
+     "point": 0.32939846614657675,
+     "lo": 0.2152082793572789,
+     "hi": 0.43049982801322795,
+     "frac_undefined": 0.0
+    },
+    "falcon-and-cc": {
+     "point": 0.314002505335559,
+     "lo": 0.20573112671401828,
+     "hi": 0.4101004839995745,
+     "frac_undefined": 0.0
+    },
+    "falcon-and-cc-qc-10p": {
+     "point": 0.2637784239767066,
+     "lo": 0.1699411830860205,
+     "hi": 0.3485880248301119,
+     "frac_undefined": 0.0
+    },
+    "falcon-and-cc-qc-20p": {
+     "point": 0.2855260683607799,
+     "lo": 0.1852100902241863,
+     "hi": 0.37494786639975786,
+     "frac_undefined": 0.0
+    },
+    "falcon-and-cc-qc-orig-10p": {
+     "point": 0.28365177442028816,
+     "lo": 0.18645608307057926,
+     "hi": 0.37016942973604855,
+     "frac_undefined": 0.0
+    },
+    "falcon-and-cc-qc-tulu-10p": {
+     "point": 0.31869896789719127,
+     "lo": 0.20792511705756067,
+     "hi": 0.41751070325842843,
+     "frac_undefined": 0.0
+    },
+    "fineweb-edu": {
+     "point": 0.36749331018326165,
+     "lo": 0.10208123789690947,
+     "hi": 0.5076264004613674,
+     "frac_undefined": 0.0
+    },
+    "fineweb-pro": {
+     "point": 0.3209324353133195,
+     "lo": 0.08192763809294779,
+     "hi": 0.4356066878049003,
+     "frac_undefined": 0.0
+    }
+   },
+   "overall": {
+    "point": 0.28183630214874356,
+    "lo": 0.2326030038320882,
+    "hi": 0.3257538145619324,
+    "frac_undefined": 0.0
+   }
+  },
+  "of_record": "per_source",
+  "skipped": {}
+ },
+ "contrast": {
+  "none": {
+   "MZ_minus_U_corrected": 0.17283425123161208,
+   "ci_recipes": {
+    "estimate": 0.17283425123161208,
+    "lo": 0.16693736992877514,
+    "hi": 0.17887003356857925,
+    "n_draws": 1000
+   },
+   "ci_prompts": {
+    "estimate": 0.17283425123161208,
+    "lo": 0.1659322660251302,
+    "hi": 0.18032615131831795,
+    "n_draws": 1000
+   },
+   "MZ_r_corrected": 0.9837749383366133,
+   "U_r_corrected": 0.8109406871050012,
+   "R_r_corrected": 0.778878638470938,
+   "U_minus_R_corrected": 0.03206204863406325
+  },
+  "per_source": {
+   "MZ_minus_U_corrected": 0.1678693398747436,
+   "ci_recipes": {
+    "estimate": 0.1678693398747436,
+    "lo": 0.1618018778869046,
+    "hi": 0.17429029282445843,
+    "n_draws": 1000
+   },
+   "ci_prompts": {
+    "estimate": 0.1678693398747436,
+    "lo": 0.16098410213046352,
+    "hi": 0.17501812770167516,
+    "n_draws": 1000
+   },
+   "ci_audit": {
+    "point": 0.16786933987474356,
+    "lo": 0.14439333387354472,
+    "hi": 0.17412817088791613,
+    "frac_undefined": 0.0
+   },
+   "MZ_r_corrected": 0.983913599406595,
+   "U_r_corrected": 0.8160442595318513,
+   "R_r_corrected": 0.7863656156793539,
+   "U_minus_R_corrected": 0.0296786438524976
+  },
+  "per_group_source": {
+   "MZ_minus_U_corrected": 0.15721306237137278,
+   "ci_recipes": {
+    "estimate": 0.15721306237137278,
+    "lo": 0.1463585713284539,
+    "hi": 0.16692443798556011,
+    "n_draws": 1000
+   },
+   "ci_prompts": {
+    "estimate": 0.15721306237137278,
+    "lo": 0.15115726266753848,
+    "hi": 0.16403094511856367,
+    "n_draws": 1000
+   },
+   "ci_audit": {
+    "point": 0.1572130623713727,
+    "lo": 0.1308501536876176,
+    "hi": 0.16711791471839327,
+    "frac_undefined": 0.0
+   },
+   "MZ_r_corrected": 0.9850776225693215,
+   "U_r_corrected": 0.8278645601979487,
+   "R_r_corrected": 0.6928331830366171,
+   "U_minus_R_corrected": 0.13503137716133146
+  }
+ },
+ "contrast_intervals": "ci_recipes, ci_prompts: grid resampled, factors at their point values; ci_audit: audit resampled (Rao-Wu), grid fixed",
+ "gold_join_vs_audit_score": {
+  "score_file:dolma1_7-no-reddit:precision": 0.602535741277239,
+  "score_file:dclm-baseline-qc-20p:precision": 0.9058875733188494,
+  "score_file:dclm-baseline-qc-fw-3p:precision": 0.5,
+  "score_file:dolma1_7:precision": 0.6368534837593001,
+  "score_file:falcon-and-cc-qc-10p:precision": 0.8093042019732635,
+  "score_file:dolma1_7-no-code:precision": 0.8370980977707576,
+  "score_file:falcon:precision": 0.6240068783361875,
+  "score_file:dolma1_6plus:precision": 0.8451665541758488,
+  "score_file:dolma1_7-no-math-code:precision": 0.5528335075330767,
+  "score_file:falcon-and-cc-qc-orig-10p:precision": 0.6568232394594339,
+  "score_file:dclm-baseline:precision": 0.7548753934069278,
+  "score_file:dclm-baseline-qc-7p-fw3:precision": 0.5828860915843772,
+  "score_file:falcon-and-cc-qc-tulu-10p:precision": 0.49780158092601834,
+  "score_file:fineweb-edu:precision": 0.8830098218047729,
+  "score_file:dclm-baseline-qc-fw-10p:precision": 0.6537657849878822,
+  "score_file:dclm-baseline-qc-10p:precision": 0.4554586214347451,
+  "score_file:falcon-and-cc:precision": 0.5651147057925291,
+  "score_file:dclm-baseline-75p-dolma1.7-25p:precision": 0.01793253600482516,
+  "score_file:falcon-and-cc-qc-20p:precision": 0.9393048434134533,
+  "score_file:c4:precision": 0.3112555333568378,
+  "score_file:dclm-baseline-qc-7p-fw2:precision": 0.33579463296312134,
+  "score_file:dolma1_7-no-flan:precision": 0.60373287370776,
+  "score_file:dclm-baseline-50p-dolma1.7-50p:precision": 0.31320006746535534,
+  "score_file:dclm-baseline-25p-dolma1.7-75p:precision": 0.887359629216032,
+  "score_file:fineweb-pro:precision": 0.8643641710824059
+ },
+ "grid": "/work/harrychang08/castor/tmp/jobs/051-phase2-20261011-221332-2408426/runs/008/grid.json",
+ "grid_git_commit": "804c3d6a3b2c0ec90b3e14f78607e9919e20d153",
+ "n_prompts": 3212,
+ "field": "wg_vulnerable",
+ "subset": "adv_harmful",
+ "n_boot_audit": 2000,
+ "n_boot_grid": 1000,
+ "seed": 0,
+ "sheets": [
+  "/work/harrychang08/castor/runs/008/audit/sheet_harry.csv",
+  "/work/harrychang08/castor/runs/008/audit/sheet_coauthor.csv"
+ ],
+ "adjudicated": "/work/harrychang08/castor/runs/008/audit/sheet_adjudicate.csv",
+ "score": "/work/harrychang08/castor/runs/008/audit/051/score.json",
+ "script": "scripts/audit_correct_008.py",
+ "git_commit": "782fe5fe754cbc52359a622ca62357aa6b9090c2",
+ "command": "uv run --frozen python scripts/audit_correct_008.py --audit /work/harrychang08/castor/runs/008/audit --sheets /work/harrychang08/castor/runs/008/audit/sheet_harry.csv /work/harrychang08/castor/runs/008/audit/sheet_coauthor.csv --adjudicated /work/harrychang08/castor/runs/008/audit/sheet_adjudicate.csv --score /work/harrychang08/castor/runs/008/audit/051/score.json --out /home/harrychang08/castor/runs/008/audit_correct.json",
+ "seconds": 261.9189760684967,
+ "counts_per_recipe": {
+  "c4": {
+   "n": 18,
+   "n_judge_vulnerable": 14,
+   "w_judge_vulnerable": 246059.0,
+   "w_human_vulnerable_among_judge": 66211.83333333333
+  },
+  "dclm-baseline": {
+   "n": 18,
+   "n_judge_vulnerable": 10,
+   "w_judge_vulnerable": 230007.83333333334,
+   "w_human_vulnerable_among_judge": 172013.83333333334
+  },
+  "dclm-baseline-25p-dolma1.7-75p": {
+   "n": 18,
+   "n_judge_vulnerable": 12,
+   "w_judge_vulnerable": 275883.9166666667,
+   "w_human_vulnerable_among_judge": 244808.25
+  },
+  "dclm-baseline-50p-dolma1.7-50p": {
+   "n": 17,
+   "n_judge_vulnerable": 11,
+   "w_judge_vulnerable": 193820.25,
+   "w_human_vulnerable_among_judge": 59886.75
+  },
+  "dclm-baseline-75p-dolma1.7-25p": {
+   "n": 18,
+   "n_judge_vulnerable": 12,
+   "w_judge_vulnerable": 243574.0,
+   "w_human_vulnerable_among_judge": 2438.0
+  },
+  "dclm-baseline-qc-10p": {
+   "n": 15,
+   "n_judge_vulnerable": 10,
+   "w_judge_vulnerable": 233110.66666666666,
+   "w_human_vulnerable_among_judge": 67313.33333333333
+  },
+  "dclm-baseline-qc-20p": {
+   "n": 14,
+   "n_judge_vulnerable": 8,
+   "w_judge_vulnerable": 209794.5,
+   "w_human_vulnerable_among_judge": 186799.0
+  },
+  "dclm-baseline-qc-7p-fw2": {
+   "n": 16,
+   "n_judge_vulnerable": 9,
+   "w_judge_vulnerable": 206203.16666666666,
+   "w_human_vulnerable_among_judge": 69241.91666666666
+  },
+  "dclm-baseline-qc-7p-fw3": {
+   "n": 15,
+   "n_judge_vulnerable": 10,
+   "w_judge_vulnerable": 266387.6666666666,
+   "w_human_vulnerable_among_judge": 147235.6666666667
+  },
+  "dclm-baseline-qc-fw-10p": {
+   "n": 16,
+   "n_judge_vulnerable": 9,
+   "w_judge_vulnerable": 143728.3333333333,
+   "w_human_vulnerable_among_judge": 93964.66666666666
+  },
+  "dclm-baseline-qc-fw-3p": {
+   "n": 15,
+   "n_judge_vulnerable": 9,
+   "w_judge_vulnerable": 153042.5,
+   "w_human_vulnerable_among_judge": 13787.0
+  },
+  "dolma1_6plus": {
+   "n": 16,
+   "n_judge_vulnerable": 10,
+   "w_judge_vulnerable": 212085.83333333334,
+   "w_human_vulnerable_among_judge": 155899.0
+  },
+  "dolma1_7": {
+   "n": 14,
+   "n_judge_vulnerable": 10,
+   "w_judge_vulnerable": 236960.83333333337,
+   "w_human_vulnerable_among_judge": 135868.1666666667
+  },
+  "dolma1_7-no-code": {
+   "n": 14,
+   "n_judge_vulnerable": 6,
+   "w_judge_vulnerable": 86283.0,
+   "w_human_vulnerable_among_judge": 67835.5
+  },
+  "dolma1_7-no-flan": {
+   "n": 15,
+   "n_judge_vulnerable": 8,
+   "w_judge_vulnerable": 195305.6666666667,
+   "w_human_vulnerable_among_judge": 110103.16666666667
+  },
+  "dolma1_7-no-math-code": {
+   "n": 16,
+   "n_judge_vulnerable": 7,
+   "w_judge_vulnerable": 63229.666666666664,
+   "w_human_vulnerable_among_judge": 28914.666666666664
+  },
+  "dolma1_7-no-reddit": {
+   "n": 16,
+   "n_judge_vulnerable": 11,
+   "w_judge_vulnerable": 283092.0,
+   "w_human_vulnerable_among_judge": 127560.83333333333
+  },
+  "falcon": {
+   "n": 13,
+   "n_judge_vulnerable": 8,
+   "w_judge_vulnerable": 229949.33333333334,
+   "w_human_vulnerable_among_judge": 121143.83333333333
+  },
+  "falcon-and-cc": {
+   "n": 16,
+   "n_judge_vulnerable": 7,
+   "w_judge_vulnerable": 180091.16666666666,
+   "w_human_vulnerable_among_judge": 101772.16666666667
+  },
+  "falcon-and-cc-qc-10p": {
+   "n": 16,
+   "n_judge_vulnerable": 11,
+   "w_judge_vulnerable": 213481.33333333334,
+   "w_human_vulnerable_among_judge": 161155.66666666666
+  },
+  "falcon-and-cc-qc-20p": {
+   "n": 13,
+   "n_judge_vulnerable": 10,
+   "w_judge_vulnerable": 217266.6666666667,
+   "w_human_vulnerable_among_judge": 98557.5
+  },
+  "falcon-and-cc-qc-orig-10p": {
+   "n": 14,
+   "n_judge_vulnerable": 10,
+   "w_judge_vulnerable": 269675.0,
+   "w_human_vulnerable_among_judge": 175714.66666666666
+  },
+  "falcon-and-cc-qc-tulu-10p": {
+   "n": 14,
+   "n_judge_vulnerable": 10,
+   "w_judge_vulnerable": 262909.3333333334,
+   "w_human_vulnerable_among_judge": 120011.16666666667
+  },
+  "fineweb-edu": {
+   "n": 13,
+   "n_judge_vulnerable": 8,
+   "w_judge_vulnerable": 211151.6666666667,
+   "w_human_vulnerable_among_judge": 112468.66666666666
+  },
+  "fineweb-pro": {
+   "n": 13,
+   "n_judge_vulnerable": 10,
+   "w_judge_vulnerable": 178725.3333333333,
+   "w_human_vulnerable_among_judge": 127442.83333333333
+  }
+ },
+ "counts_per_group": {
+  "C4": {
+   "n": 18,
+   "n_judge_vulnerable": 14,
+   "w_judge_vulnerable": 246059.0,
+   "w_human_vulnerable_among_judge": 66211.83333333333
+  },
+  "DCLM": {
+   "n": 162,
+   "n_judge_vulnerable": 100,
+   "w_judge_vulnerable": 2155552.833333333,
+   "w_human_vulnerable_among_judge": 1057488.4166666667
+  },
+  "Dolma": {
+   "n": 91,
+   "n_judge_vulnerable": 52,
+   "w_judge_vulnerable": 1076957.0,
+   "w_human_vulnerable_among_judge": 626181.3333333334
+  },
+  "Falcon": {
+   "n": 86,
+   "n_judge_vulnerable": 56,
+   "w_judge_vulnerable": 1373372.8333333335,
+   "w_human_vulnerable_among_judge": 778355.0000000001
+  },
+  "FineWeb": {
+   "n": 26,
+   "n_judge_vulnerable": 18,
+   "w_judge_vulnerable": 389877.0,
+   "w_human_vulnerable_among_judge": 239911.5
+  }
+ },
+ "counts_provenance": {
+  "keys": [
+   "counts_per_group",
+   "counts_per_recipe"
+  ],
+  "script": "scripts/audit_correct_008.py --amend",
+  "git_commit": "4744f2cac8a9ffebecb6e3eae957739305973a77",
+  "command": "uv run --frozen python scripts/audit_correct_008.py --audit /work/harrychang08/castor/runs/008/audit --sheets /work/harrychang08/castor/runs/008/audit/sheet_harry.csv /work/harrychang08/castor/runs/008/audit/sheet_coauthor.csv --adjudicated /work/harrychang08/castor/runs/008/audit/sheet_adjudicate.csv --amend /home/harrychang08/castor/runs/008/audit_correct.json --out /home/harrychang08/castor/runs/008/audit_correct.json",
+  "amended_sha256": "7bc7f13c2161e5e6d31a474844c13df1ec628ef0eab81f287e72908a04ff9da4"
+ }
+}

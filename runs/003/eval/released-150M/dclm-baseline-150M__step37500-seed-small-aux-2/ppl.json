@@ -1,0 +1,42 @@
+{
+ "source": {
+  "repo": "allenai/DataDecide-dclm-baseline-150M",
+  "revision": "step37500-seed-small-aux-2",
+  "snapshot": "dc0eea2cf08656af90a545d6d8b2b21eb8987caf"
+ },
+ "config": "/work/harrychang08/castor/runs/003/eval/config-150M.yaml",
+ "sampler_seed": 6198,
+ "world_size": 1,
+ "n_sequences_total": 3378,
+ "ce": {
+  "c4_en-validation": 3.314392566680908,
+  "dolma_books-validation": 3.3506009578704834,
+  "dolma_common-crawl-validation": 3.3678982257843018,
+  "dolma_pes2o-validation": 2.981137275695801,
+  "dolma_reddit-validation": 3.439657688140869,
+  "dolma_stack-validation": 2.020056962966919,
+  "dolma_wiki-validation": 3.0612151622772217,
+  "ice-validation": 3.4960107803344727,
+  "m2d2_s2orc-validation": 3.8664968013763428,
+  "pile-validation": 2.827018976211548,
+  "wikitext_103-validation": 3.283461570739746
+ },
+ "ppl": {
+  "c4_en-validation": 27.505681041954038,
+  "dolma_books-validation": 28.519867733798257,
+  "dolma_common-crawl-validation": 29.01747474096383,
+  "dolma_pes2o-validation": 19.710219857035597,
+  "dolma_reddit-validation": 31.176284329673233,
+  "dolma_stack-validation": 7.538754351246077,
+  "dolma_wiki-validation": 21.353489357677446,
+  "ice-validation": 32.98361029402916,
+  "m2d2_s2orc-validation": 47.774728220742084,
+  "pile-validation": 16.895021220898577,
+  "wikitext_103-validation": 26.66792602264212
+ },
+ "mean_ce_11": 3.182540633461692,
+ "seconds": 12.921987533569336,
+ "git_commit": "38f39ef139d1f15dfe99ef8371981e0146db0145",
+ "gpu": "NVIDIA H200",
+ "torch": "2.3.1+cu121"
+}

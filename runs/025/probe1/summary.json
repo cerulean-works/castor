@@ -1,0 +1,83 @@
+{
+ "step0_all_exact": true,
+ "step0": {
+  "P1-s10": {
+   "tensors_equal": 99,
+   "tensors": 99,
+   "exact": true,
+   "max_abs_diff": 0.0
+  },
+  "P1-l100": {
+   "tensors_equal": 99,
+   "tensors": 99,
+   "exact": true,
+   "max_abs_diff": 0.0
+  },
+  "P2-s10": {
+   "tensors_equal": 99,
+   "tensors": 99,
+   "exact": true,
+   "max_abs_diff": 0.0
+  },
+  "P2-l100": {
+   "tensors_equal": 99,
+   "tensors": 99,
+   "exact": true,
+   "max_abs_diff": 0.0
+  },
+  "P3-s10": {
+   "tensors_equal": 99,
+   "tensors": 99,
+   "exact": true,
+   "max_abs_diff": 0.0
+  },
+  "P3-l100": {
+   "tensors_equal": 99,
+   "tensors": 99,
+   "exact": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "first_divergence_step": {
+  "P1~P2": 1,
+  "P1~P3": 1,
+  "P2~P3": 1,
+  "P1:s10~l100": 10,
+  "P2:s10~l100": 10,
+  "P3:s10~l100": 10
+ },
+ "rel_l2_step100": {
+  "P1~P2": 0.018599243157387396,
+  "P1~P3": 0.019891568695465593,
+  "P2~P3": 0.01904018329717904
+ },
+ "rel_l2_step1": {
+  "P1~P2": 2.460293920130414e-06,
+  "P1~P3": 2.4592109674338505e-06,
+  "P2~P3": 2.4610156744378255e-06
+ },
+ "first_loss_difference": {
+  "P1~P2:s10": 7,
+  "P1~P2:l100": 26,
+  "P1~P3:s10": 7,
+  "P1~P3:l100": 26,
+  "P2~P3:s10": null,
+  "P2~P3:l100": 26
+ },
+ "first_gradnorm_difference": {
+  "P1~P2:s10": 4,
+  "P1~P2:l100": 6,
+  "P1~P3:s10": 6,
+  "P1~P3:l100": 6,
+  "P2~P3:s10": 4,
+  "P2~P3:l100": 6
+ },
+ "cross_over_same_node_step100": 1.0694826949216425,
+ "cross_over_same_node_step100_P2P3": 1.0237074237946349,
+ "_meta": {
+  "script": "scripts/divergence_025.py",
+  "git_commit": "3b79929db8a09f7e46a1668bde5b32beadba9847",
+  "command": "uv run --frozen python scripts/divergence_025.py --out /home/harrychang08/castor/runs/025/probe1",
+  "pairs_json_commit": "44c8d373e0287b4c1cfd3475f4cc6977a394613a"
+ }
+}

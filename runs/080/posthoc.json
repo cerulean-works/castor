@@ -1,0 +1,899 @@
+{
+ "added_after_data": true,
+ "note": "093 (D129): two exploratory reads added after 080's data; no prediction, no rule; none moves a registered number. Corrected Pearson over prompts of per-prompt P (wg_vulnerable, K = 20), split-half reliabilities recomputed on every draw; percentile 95 % intervals.",
+ "A_source_split": {
+  "what": "080's main-recipe levels (castor.adopted.LEVELS, the same 18 models and pairs as summary.json main) on each adversarial-harmful source separately; reliabilities within the source; prompts resampled within each source (stratified, one draw for both sources); '<b>_minus_<a>.' = b - a",
+  "sources": [
+   "wildjailbreak",
+   "harmbench_humanjb"
+  ],
+  "n_boot": 1000,
+  "seed": 0,
+  "n_prompts": {
+   "wildjailbreak": 2000,
+   "harmbench_humanjb": 1212
+  },
+  "ci_prompts": {
+   "wildjailbreak.r_adopted": {
+    "estimate": 0.3679268286882413,
+    "lo": 0.34067425017308506,
+    "hi": 0.39494671077962334,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.r_adopted_corrected": {
+    "estimate": 0.3898727373816359,
+    "lo": 0.3617019409174264,
+    "hi": 0.41771919278620373,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.r_swapMZ": {
+    "estimate": 0.9096474446918567,
+    "lo": 0.8998411084271525,
+    "hi": 0.9172580601697004,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.r_swapMZ_corrected": {
+    "estimate": 0.9599169692214792,
+    "lo": 0.9528588048925933,
+    "hi": 0.9661101001529622,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.r_swapU": {
+    "estimate": 0.7368942821775023,
+    "lo": 0.7111822099750565,
+    "hi": 0.7608982223339485,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.r_swapU_corrected": {
+    "estimate": 0.777622719124667,
+    "lo": 0.753362863416832,
+    "hi": 0.8011422408068881,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.r_cross": {
+    "estimate": 0.3201993915294852,
+    "lo": 0.29149048306601844,
+    "hi": 0.3485481087821657,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.r_cross_corrected": {
+    "estimate": 0.3392907341586498,
+    "lo": 0.3093190133884369,
+    "hi": 0.36890505984860095,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.r_MZ": {
+    "estimate": 0.9278801575594051,
+    "lo": 0.9239821592515584,
+    "hi": 0.931660684397479,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.r_MZ_corrected": {
+    "estimate": 0.9872459260205423,
+    "lo": 0.9849552004861486,
+    "hi": 0.9897298192942172,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.r_U": {
+    "estimate": 0.8026956480150823,
+    "lo": 0.7896425740844584,
+    "hi": 0.8161436372862751,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.r_U_corrected": {
+    "estimate": 0.8540519206472542,
+    "lo": 0.8420587744923062,
+    "hi": 0.866576892247115,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.swapMZ_minus_swapU_corrected": {
+    "estimate": 0.18229425009681222,
+    "lo": 0.16145707396066233,
+    "hi": 0.20407787402644842,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.MZ_minus_U_corrected": {
+    "estimate": 0.13319400537328807,
+    "lo": 0.1211696671995278,
+    "hi": 0.14416441685232914,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.adopted_minus_U_corrected": {
+    "estimate": -0.4641791832656183,
+    "lo": -0.4940609015556092,
+    "hi": -0.4359934959725747,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.MZ_minus_adopted_corrected": {
+    "estimate": 0.5973731886389064,
+    "lo": 0.568949754508043,
+    "hi": 0.6254258718540818,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "wildjailbreak.adopted_minus_cross_corrected": {
+    "estimate": 0.050582003222986116,
+    "lo": 0.0433538830936979,
+    "hi": 0.05775467406435619,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.r_adopted": {
+    "estimate": 0.7830052041738149,
+    "lo": 0.7673001951761769,
+    "hi": 0.7987893814090086,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.r_adopted_corrected": {
+    "estimate": 0.8212702129453161,
+    "lo": 0.8063199293101713,
+    "hi": 0.836741912995398,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.r_swapMZ": {
+    "estimate": 0.928598865845126,
+    "lo": 0.9224459184492417,
+    "hi": 0.9347761135405998,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.r_swapMZ_corrected": {
+    "estimate": 0.9701683619804898,
+    "lo": 0.9651865260180378,
+    "hi": 0.9755730928667048,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.r_swapU": {
+    "estimate": 0.7391658953944265,
+    "lo": 0.7163423450548533,
+    "hi": 0.7603244197855172,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.r_swapU_corrected": {
+    "estimate": 0.772234404010529,
+    "lo": 0.7497207306445547,
+    "hi": 0.7934146734623414,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.r_cross": {
+    "estimate": 0.6521249341768073,
+    "lo": 0.6263870380719782,
+    "hi": 0.6751214737887371,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.r_cross_corrected": {
+    "estimate": 0.6840303575300933,
+    "lo": 0.6593163084960512,
+    "hi": 0.7068111188473815,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.r_MZ": {
+    "estimate": 0.9331290706814096,
+    "lo": 0.9282479672633173,
+    "hi": 0.9375983185846057,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.r_MZ_corrected": {
+    "estimate": 0.9830945511881407,
+    "lo": 0.9801297899977388,
+    "hi": 0.9860756730630282,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.r_U": {
+    "estimate": 0.7337442960846289,
+    "lo": 0.7114383555934669,
+    "hi": 0.7543334111097423,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.r_U_corrected": {
+    "estimate": 0.772973282805547,
+    "lo": 0.7515331343121919,
+    "hi": 0.7928786081785202,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.swapMZ_minus_swapU_corrected": {
+    "estimate": 0.19793395796996083,
+    "lo": 0.17742871063271862,
+    "hi": 0.21993958684182913,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.MZ_minus_U_corrected": {
+    "estimate": 0.2101212683825937,
+    "lo": 0.19097991418576074,
+    "hi": 0.2318333159013126,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.adopted_minus_U_corrected": {
+    "estimate": 0.0482969301397691,
+    "lo": 0.028871969843468792,
+    "hi": 0.06863405401878761,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.MZ_minus_adopted_corrected": {
+    "estimate": 0.1618243382428246,
+    "lo": 0.14680068108251496,
+    "hi": 0.17698232235559616,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb.adopted_minus_cross_corrected": {
+    "estimate": 0.13723985541522277,
+    "lo": 0.12431575371761276,
+    "hi": 0.15300364666209892,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.r_adopted": {
+    "estimate": 0.41507837548557364,
+    "lo": 0.3836648223472122,
+    "hi": 0.4466916692972832,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.r_adopted_corrected": {
+    "estimate": 0.4313974755636802,
+    "lo": 0.39982916694737114,
+    "hi": 0.4632669737888304,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.r_swapMZ": {
+    "estimate": 0.01895142115326931,
+    "lo": 0.009865896702014057,
+    "hi": 0.029560990850964582,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.r_swapMZ_corrected": {
+    "estimate": 0.010251392759010658,
+    "lo": 0.002032880774351728,
+    "hi": 0.018522099930496902,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.r_swapU": {
+    "estimate": 0.002271613216924151,
+    "lo": -0.03126331358997605,
+    "hi": 0.03539280255443424,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.r_swapU_corrected": {
+    "estimate": -0.005388315114137954,
+    "lo": -0.03788863977236357,
+    "hi": 0.027793428886034435,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.r_cross": {
+    "estimate": 0.3319255426473221,
+    "lo": 0.2950596811689092,
+    "hi": 0.3706254453059919,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.r_cross_corrected": {
+    "estimate": 0.34473962337144354,
+    "lo": 0.3074269046183769,
+    "hi": 0.3846002678563171,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.r_MZ": {
+    "estimate": 0.005248913122004484,
+    "lo": -0.0005140984822748606,
+    "hi": 0.011239780322971413,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.r_MZ_corrected": {
+    "estimate": -0.0041513748324015776,
+    "lo": -0.007954143071161037,
+    "hi": -0.0003615333706516872,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.r_U": {
+    "estimate": -0.06895135193045343,
+    "lo": -0.09424608384699994,
+    "hi": -0.044499905310234976,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.r_U_corrected": {
+    "estimate": -0.08107863784170721,
+    "lo": -0.10568862817508025,
+    "hi": -0.05786562911481595,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.swapMZ_minus_swapU_corrected": {
+    "estimate": 0.01563970787314861,
+    "lo": -0.01584367731658947,
+    "hi": 0.047007817081091904,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.MZ_minus_U_corrected": {
+    "estimate": 0.07692726300930564,
+    "lo": 0.05506725524983505,
+    "hi": 0.10093815754071343,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.adopted_minus_U_corrected": {
+    "estimate": 0.5124761134053875,
+    "lo": 0.47689039524150506,
+    "hi": 0.5477744837530006,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.MZ_minus_adopted_corrected": {
+    "estimate": -0.4355488503960818,
+    "lo": -0.46677289310273057,
+    "hi": -0.40410273948791486,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "harmbench_humanjb_minus_wildjailbreak.adopted_minus_cross_corrected": {
+    "estimate": 0.08665785219223665,
+    "lo": 0.07009336655149973,
+    "hi": 0.10350421354315593,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   }
+  },
+  "where": "posthoc.json A_source_split.ci_prompts.<source>.<key> (estimate, lo, hi); scripts/adopted_080.py --posthoc @ 34d58ed9090ede3ae4bf4d738a3caa198e91ecf1 (uv run --frozen python scripts/adopted_080.py --posthoc --out /home/harrychang08/castor/runs/080)"
+ },
+ "B_ladder": {
+  "what": "008's per-recipe MZ / U / R and their means over recipes (castor.gridstats.levels) on the three recipes the swap arm covers, each arm on its own models; MZ exists on the main recipe only in swap and tulu_matched; seed_over_recipe = (MZ - U) / (U - R), means over recipes, NaN on a draw with U - R <= 0; one prompt bootstrap, the same rows for every arm; '<arm>_minus_tulu_matched.' = arm - tulu_matched",
+  "n_boot": 1000,
+  "seed": 0,
+  "models": {
+   "tulu_matched": [
+    "dd-dclm-baseline-1b-default-dpo-seed1",
+    "dd-dclm-baseline-1b-default-dpo-seed2",
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed1",
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed2",
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed1",
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed2",
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed1",
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed1",
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed1",
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed1",
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed1",
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed1"
+   ],
+   "swap": [
+    "dd-dclm-baseline-1b-default-dpo-seed1-swap080",
+    "dd-dclm-baseline-1b-default-dpo-seed2-swap080",
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed1-swap080",
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed2-swap080",
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed1-swap080",
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed2-swap080",
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed1-swap080",
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed1-swap080",
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed1-swap080",
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed1-swap080",
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed1-swap080",
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed1-swap080"
+   ],
+   "tulu_grid008": [
+    "dd-dclm-baseline-1b-default-dpo-seed1",
+    "dd-dclm-baseline-1b-default-dpo-seed2",
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed1",
+    "dd-dclm-baseline-1b-large-aux-2-dpo-seed2",
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed1",
+    "dd-dclm-baseline-1b-large-aux-3-dpo-seed2",
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed1",
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-default-dpo-seed2",
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed1",
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-2-dpo-seed2",
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed1",
+    "dd-dclm-baseline-25p-dolma1.7-75p-1b-large-aux-3-dpo-seed2",
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed1",
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-default-dpo-seed2",
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed1",
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-2-dpo-seed2",
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed1",
+    "dd-dclm-baseline-50p-dolma1.7-50p-1b-large-aux-3-dpo-seed2"
+   ]
+  },
+  "pairs": {
+   "tulu_matched": {
+    "dclm-baseline": {
+     "MZ": 3,
+     "U": 12,
+     "R": 36
+    },
+    "dclm-baseline-25p-dolma1.7-75p": {
+     "MZ": 0,
+     "U": 3,
+     "R": 27
+    },
+    "dclm-baseline-50p-dolma1.7-50p": {
+     "MZ": 0,
+     "U": 3,
+     "R": 27
+    }
+   },
+   "swap": {
+    "dclm-baseline": {
+     "MZ": 3,
+     "U": 12,
+     "R": 36
+    },
+    "dclm-baseline-25p-dolma1.7-75p": {
+     "MZ": 0,
+     "U": 3,
+     "R": 27
+    },
+    "dclm-baseline-50p-dolma1.7-50p": {
+     "MZ": 0,
+     "U": 3,
+     "R": 27
+    }
+   },
+   "tulu_grid008": {
+    "dclm-baseline": {
+     "MZ": 3,
+     "U": 12,
+     "R": 72
+    },
+    "dclm-baseline-25p-dolma1.7-75p": {
+     "MZ": 3,
+     "U": 12,
+     "R": 72
+    },
+    "dclm-baseline-50p-dolma1.7-50p": {
+     "MZ": 3,
+     "U": 12,
+     "R": 72
+    }
+   }
+  },
+  "ci_prompts": {
+   "tulu_matched.MZ_r_corrected": {
+    "estimate": 0.9837318034433524,
+    "lo": 0.9806162267464915,
+    "hi": 0.9868194762163274,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.U_r_corrected": {
+    "estimate": 0.8280869310334622,
+    "lo": 0.8183357310643042,
+    "hi": 0.8366276351136904,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.R_r_corrected": {
+    "estimate": 0.818628812722127,
+    "lo": 0.8083855797502915,
+    "hi": 0.8277865470894057,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.MZ_minus_U_corrected": {
+    "estimate": 0.17453179331269553,
+    "lo": 0.16194942913079396,
+    "hi": 0.18715234977661863,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.U_minus_R_corrected": {
+    "estimate": 0.00945811831133525,
+    "lo": 0.005676322160524172,
+    "hi": 0.013064241196197854,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.seed_over_recipe": {
+    "estimate": 18.45312012047098,
+    "lo": 13.332055705822809,
+    "hi": 30.87114098441123,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.dclm-baseline.MZ_r_corrected": {
+    "estimate": 0.9837318034433524,
+    "lo": 0.9806162267464915,
+    "hi": 0.9868194762163274,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.dclm-baseline.U_r_corrected": {
+    "estimate": 0.8092000101306569,
+    "lo": 0.7958461239338603,
+    "hi": 0.8220309472042732,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.dclm-baseline.R_r_corrected": {
+    "estimate": 0.8136436463168129,
+    "lo": 0.80323693801418,
+    "hi": 0.8231711504138012,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.dclm-baseline.U_minus_R_corrected": {
+    "estimate": -0.004443636186155953,
+    "lo": -0.012045011399761926,
+    "hi": 0.0035200941511076464,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.dclm-baseline-25p-dolma1.7-75p.MZ_r_corrected": {
+    "estimate": NaN,
+    "lo": NaN,
+    "hi": NaN,
+    "n_draws": 0,
+    "n_draws_undefined": 1000
+   },
+   "tulu_matched.dclm-baseline-25p-dolma1.7-75p.U_r_corrected": {
+    "estimate": 0.8374981988062449,
+    "lo": 0.8251627026888807,
+    "hi": 0.8482761217817701,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.dclm-baseline-25p-dolma1.7-75p.R_r_corrected": {
+    "estimate": 0.8235321335392406,
+    "lo": 0.8134831602785422,
+    "hi": 0.8326035546081239,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.dclm-baseline-25p-dolma1.7-75p.U_minus_R_corrected": {
+    "estimate": 0.01396606526700428,
+    "lo": 0.005790274309056894,
+    "hi": 0.020782435839363827,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.dclm-baseline-50p-dolma1.7-50p.MZ_r_corrected": {
+    "estimate": NaN,
+    "lo": NaN,
+    "hi": NaN,
+    "n_draws": 0,
+    "n_draws_undefined": 1000
+   },
+   "tulu_matched.dclm-baseline-50p-dolma1.7-50p.U_r_corrected": {
+    "estimate": 0.8375625841634848,
+    "lo": 0.825313177188392,
+    "hi": 0.8485504896687762,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.dclm-baseline-50p-dolma1.7-50p.R_r_corrected": {
+    "estimate": 0.8187106583103274,
+    "lo": 0.8087248773424033,
+    "hi": 0.8278151901552223,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_matched.dclm-baseline-50p-dolma1.7-50p.U_minus_R_corrected": {
+    "estimate": 0.018851925853157425,
+    "lo": 0.01147940419960392,
+    "hi": 0.026317671537007113,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.MZ_r_corrected": {
+    "estimate": 0.9662374946723333,
+    "lo": 0.9621379025327506,
+    "hi": 0.9698252317237253,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.U_r_corrected": {
+    "estimate": 0.7779597034781967,
+    "lo": 0.7662309348869322,
+    "hi": 0.7890023113428145,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.R_r_corrected": {
+    "estimate": 0.7438849042178175,
+    "lo": 0.73153140335721,
+    "hi": 0.7559859541378988,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.MZ_minus_U_corrected": {
+    "estimate": 0.17844219505567516,
+    "lo": 0.16468470326172896,
+    "hi": 0.19389987562100902,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.U_minus_R_corrected": {
+    "estimate": 0.03407479926037923,
+    "lo": 0.02910299198611632,
+    "hi": 0.039712903214511,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.seed_over_recipe": {
+    "estimate": 5.236779054577157,
+    "lo": 4.3874080240665085,
+    "hi": 6.348016522988002,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.dclm-baseline.MZ_r_corrected": {
+    "estimate": 0.9662374946723333,
+    "lo": 0.9621379025327506,
+    "hi": 0.9698252317237253,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.dclm-baseline.U_r_corrected": {
+    "estimate": 0.7877952996166582,
+    "lo": 0.771299840994729,
+    "hi": 0.8023392462902309,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.dclm-baseline.R_r_corrected": {
+    "estimate": 0.7339617647277508,
+    "lo": 0.7211748925299484,
+    "hi": 0.7467690387247995,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.dclm-baseline.U_minus_R_corrected": {
+    "estimate": 0.05383353488890741,
+    "lo": 0.04287466786548236,
+    "hi": 0.06483561299001538,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.dclm-baseline-25p-dolma1.7-75p.MZ_r_corrected": {
+    "estimate": NaN,
+    "lo": NaN,
+    "hi": NaN,
+    "n_draws": 0,
+    "n_draws_undefined": 1000
+   },
+   "swap.dclm-baseline-25p-dolma1.7-75p.U_r_corrected": {
+    "estimate": 0.7693244535078558,
+    "lo": 0.7537592287591137,
+    "hi": 0.7833392908529764,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.dclm-baseline-25p-dolma1.7-75p.R_r_corrected": {
+    "estimate": 0.7569562065154879,
+    "lo": 0.7440894884754496,
+    "hi": 0.7680477897077302,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.dclm-baseline-25p-dolma1.7-75p.U_minus_R_corrected": {
+    "estimate": 0.012368246992367937,
+    "lo": 0.0031005924041038633,
+    "hi": 0.02218920719764286,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.dclm-baseline-50p-dolma1.7-50p.MZ_r_corrected": {
+    "estimate": NaN,
+    "lo": NaN,
+    "hi": NaN,
+    "n_draws": 0,
+    "n_draws_undefined": 1000
+   },
+   "swap.dclm-baseline-50p-dolma1.7-50p.U_r_corrected": {
+    "estimate": 0.7767593573100761,
+    "lo": 0.7624666843730775,
+    "hi": 0.7922460623715066,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.dclm-baseline-50p-dolma1.7-50p.R_r_corrected": {
+    "estimate": 0.7407367414102137,
+    "lo": 0.7282012985877051,
+    "hi": 0.7528876842900963,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap.dclm-baseline-50p-dolma1.7-50p.U_minus_R_corrected": {
+    "estimate": 0.03602261589986233,
+    "lo": 0.02635833524554804,
+    "hi": 0.04699497836504752,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.MZ_r_corrected": {
+    "estimate": 0.984986827270789,
+    "lo": 0.9832284231771448,
+    "hi": 0.9867096536748723,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.U_r_corrected": {
+    "estimate": 0.8276289301216448,
+    "lo": 0.8181911108112765,
+    "hi": 0.8362080424479474,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.R_r_corrected": {
+    "estimate": 0.8206200047351232,
+    "lo": 0.8105414887195157,
+    "hi": 0.8295022105691962,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.MZ_minus_U_corrected": {
+    "estimate": 0.15735789714914417,
+    "lo": 0.1495084900457664,
+    "hi": 0.16611103953854797,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.U_minus_R_corrected": {
+    "estimate": 0.007008925386521758,
+    "lo": 0.003802100210226193,
+    "hi": 0.010538362614683614,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.seed_over_recipe": {
+    "estimate": 22.45107323467092,
+    "lo": 14.833519425868616,
+    "hi": 41.79120014439662,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.dclm-baseline.MZ_r_corrected": {
+    "estimate": 0.9837318034433524,
+    "lo": 0.9806162267464874,
+    "hi": 0.986819476216326,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.dclm-baseline.U_r_corrected": {
+    "estimate": 0.8092000101306569,
+    "lo": 0.7958461239338573,
+    "hi": 0.8220309472042763,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.dclm-baseline.R_r_corrected": {
+    "estimate": 0.8133564391971281,
+    "lo": 0.802761103185093,
+    "hi": 0.8229043375626593,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.dclm-baseline.U_minus_R_corrected": {
+    "estimate": -0.004156429066471179,
+    "lo": -0.01134595893911287,
+    "hi": 0.003730052402532302,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.dclm-baseline-25p-dolma1.7-75p.MZ_r_corrected": {
+    "estimate": 0.9874706325709678,
+    "lo": 0.9846236876839749,
+    "hi": 0.9904856016101719,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.dclm-baseline-25p-dolma1.7-75p.U_r_corrected": {
+    "estimate": 0.8351350178673697,
+    "lo": 0.8245821347279539,
+    "hi": 0.8452440448449179,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.dclm-baseline-25p-dolma1.7-75p.R_r_corrected": {
+    "estimate": 0.8258060982081664,
+    "lo": 0.8159230643992386,
+    "hi": 0.8347566919097742,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.dclm-baseline-25p-dolma1.7-75p.U_minus_R_corrected": {
+    "estimate": 0.009328919659203239,
+    "lo": 0.002025205116241988,
+    "hi": 0.015947232520900714,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.dclm-baseline-50p-dolma1.7-50p.MZ_r_corrected": {
+    "estimate": 0.983758045798047,
+    "lo": 0.9805082966992945,
+    "hi": 0.9866613405860674,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.dclm-baseline-50p-dolma1.7-50p.U_r_corrected": {
+    "estimate": 0.8385517623669082,
+    "lo": 0.827294544341075,
+    "hi": 0.8493714669246286,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.dclm-baseline-50p-dolma1.7-50p.R_r_corrected": {
+    "estimate": 0.822697476800075,
+    "lo": 0.8128616201915048,
+    "hi": 0.8314762589008028,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008.dclm-baseline-50p-dolma1.7-50p.U_minus_R_corrected": {
+    "estimate": 0.015854285566833215,
+    "lo": 0.009120107852190789,
+    "hi": 0.02249259706675529,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap_minus_tulu_matched.U_minus_R_corrected": {
+    "estimate": 0.024616680949043977,
+    "lo": 0.018752178336663154,
+    "hi": 0.030954542746314567,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "swap_minus_tulu_matched.MZ_minus_U_corrected": {
+    "estimate": 0.00391040174297963,
+    "lo": -0.011048317501313257,
+    "hi": 0.019238103868627746,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008_minus_tulu_matched.U_minus_R_corrected": {
+    "estimate": -0.0024491929248134925,
+    "lo": -0.004130612393545623,
+    "hi": -0.0006458602482136614,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   },
+   "tulu_grid008_minus_tulu_matched.MZ_minus_U_corrected": {
+    "estimate": -0.01717389616355136,
+    "lo": -0.024619399127759584,
+    "hi": -0.009393214728948083,
+    "n_draws": 1000,
+    "n_draws_undefined": 0
+   }
+  },
+  "checks": "tulu_grid008 per-recipe U and MZ equal runs/008/grid.json per_recipe to 1e-12; swap main-recipe U and MZ equal summary.json main.point to 1e-12",
+  "where": "posthoc.json B_ladder.ci_prompts.<arm>.<key> (estimate, lo, hi); scripts/adopted_080.py --posthoc @ 34d58ed9090ede3ae4bf4d738a3caa198e91ecf1 (uv run --frozen python scripts/adopted_080.py --posthoc --out /home/harrychang08/castor/runs/080)"
+ },
+ "script": "scripts/adopted_080.py --posthoc",
+ "git_commit": "34d58ed9090ede3ae4bf4d738a3caa198e91ecf1",
+ "command": "uv run --frozen python scripts/adopted_080.py --posthoc --out /home/harrychang08/castor/runs/080",
+ "seconds": 44.68055820465088
+}

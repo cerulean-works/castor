@@ -1,0 +1,9 @@
+444667|003-s2-i6198-d4-seg1|TIMEOUT|172808|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn014
+444668|003-s2-i6198-d4-seg2|COMPLETED|162077|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn013
+444670|003-s2-i6198-d4-seg3|COMPLETED|1|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn022
+444672|003-s2-i4-d6198-seg1|TIMEOUT|172803|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn173
+444673|003-s2-i4-d6198-seg2|COMPLETED|160785|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn173
+444674|003-s2-i4-d6198-seg3|COMPLETED|1|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn004
+449825|011-i6198-d6198-seg1|TIMEOUT|172801|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn005
+449826|011-i6198-d6198-seg2|COMPLETED|162397|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn177
+449827|011-i6198-d6198-seg3|COMPLETED|1|billing=96,cpu=96,gres/gpu=8,mem=1600G,node=1|25a-hgpn034

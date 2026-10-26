@@ -1,0 +1,24 @@
+{
+ "prompt_id": "009",
+ "sft_config": "configs/posttrain/sft_datadecide_eosbos.yaml",
+ "dpo_config": "configs/posttrain/dpo_datadecide_eosbos.yaml",
+ "posttrain_seeds": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "bases": [
+  {
+   "repo": "castor/DataDecide-dclm-baseline-1B",
+   "revision": "init-aux2-data-default"
+  },
+  {
+   "repo": "castor/DataDecide-dclm-baseline-1B",
+   "revision": "init-default-data-aux2"
+  }
+ ],
+ "source": "data/manifests/castor_twins_1B.json",
+ "dropped_recipes": [],
+ "command": "uv run --frozen python scripts/grid.py manifest --prompt-id 009 --source data/manifests/castor_twins_1B.json --seeds 1 2 3 4 --out data/manifests/grid_009.json"
+}

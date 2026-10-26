@@ -1,0 +1,12 @@
+453371|006-genjudge-default-s1|COMPLETED|6475|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn013
+453372|006-genjudge-large-aux-2-s1|COMPLETED|6740|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn034
+453373|006-genjudge-large-aux-2-s2|COMPLETED|6799|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn034
+453451|006-genjudge-default-s2|COMPLETED|6308|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn034
+453452|006-genjudge-default-s3|COMPLETED|6548|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn034
+453742|006-genjudge-default-s4|COMPLETED|6332|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn004
+453768|006-genjudge-large-aux-2-s3|COMPLETED|6693|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn002
+453769|006-genjudge-large-aux-2-s4|COMPLETED|6644|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn002
+453770|006-genjudge-large-aux-3-s1|COMPLETED|6598|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn002
+453771|006-genjudge-large-aux-3-s2|COMPLETED|6598|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn002
+453772|006-genjudge-large-aux-3-s3|COMPLETED|6538|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn001
+454519|006-genjudge-large-aux-3-s4|COMPLETED|6623|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn008

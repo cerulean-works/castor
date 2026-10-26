@@ -1,0 +1,13 @@
+476671|009-gj-dclm-baseline-1B-init-aux2-data-default-s1|FAILED|5|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn030
+476673|009-gj-dclm-baseline-1B-init-aux2-data-default-s2|FAILED|8|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn040
+476675|009-gj-dclm-baseline-1B-init-default-data-aux2-s1|FAILED|5|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn030
+476677|009-gj-dclm-baseline-1B-init-default-data-aux2-s2|FAILED|7|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn002
+476693|009-gj-dclm-baseline-1B-init-aux2-data-default-s1|COMPLETED|6498|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn030
+476695|009-gj-dclm-baseline-1B-init-aux2-data-default-s2|COMPLETED|6527|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn009
+476697|009-gj-dclm-baseline-1B-init-default-data-aux2-s1|CANCELLED by 44970|21915|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn037
+476699|009-gj-dclm-baseline-1B-init-default-data-aux2-s2|COMPLETED|6634|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn035
+476706|009-gj-dclm-baseline-1B-init-aux2-data-default-s3|COMPLETED|6533|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn035
+477762|009-gj-dclm-baseline-1B-init-default-data-aux2-s3|COMPLETED|6856|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn009
+480023|009-gj-dclm-baseline-1B-init-aux2-data-default-s4|COMPLETED|6403|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn004
+480557|009-gj-dclm-baseline-1B-init-default-data-aux2-s4|COMPLETED|6691|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn004
+484377|009-gj-dclm-baseline-1B-init-default-data-aux2-s1|COMPLETED|5870|billing=12,cpu=12,gres/gpu=1,mem=200G,node=1|25a-hgpn004

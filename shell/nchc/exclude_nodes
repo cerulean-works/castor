@@ -1,0 +1,13 @@
+# Default Slurm --exclude for shell/nchc/submit.sh and castor.grid.read_exclude(): the one place
+# this list lives. Both refuse anything but exactly one node list line. Lines starting with # are comments; the one other line is the node list.
+# Nodes 125-172 share GPUs/network with k8s (OOM, NCCL bootstrap failures); hgpn003 fails CUDA
+#   init; hgpn036 runs about 5x slow; hgpn111 has a bad GPU1.
+# hgpn038: 2x slower CPU, about 10x slower vLLM, a judge stalled an hour.
+# hgpn037: vLLM about 9x slower; hgpn039: OLMES about 7x slower (one observation each).
+# hgpn001, hgpn007, hgpn062: hand jobs a GPU that is not visible ("No CUDA GPUs are available",
+#   "device >= 0 && device < num_gpus INTERNAL ASSERT") within seconds, repeatedly.
+# hgpn083: runs the 1B SFT 8x slow (4.6 s/step vs 0.57, steady over 280 steps).
+# hgpn071: GPU7 "Unable to determine the device handle" (job 570908, 2026-10-19, 080; P080-1, D129).
+# hgpn173: a job's snapshot worktree under /work/.../tmp/jobs is not visible ("cd: No such file",
+#   jobs 567402 and 567405, 2026-10-18, 080).
+25a-hgpn[001,003,007,036-039,062,071,083,111,125-173]

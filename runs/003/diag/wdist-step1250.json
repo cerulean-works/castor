@@ -1,0 +1,21 @@
+{
+ "ckpts": {
+  "ours1a": "/work/harrychang08/castor/runs/003/castor-dclm-150M-s6198/ckpt/step1250-unsharded/model.pt",
+  "default": "allenai/DataDecide-dclm-baseline-150M@step1250-seed-default",
+  "aux2": "allenai/DataDecide-dclm-baseline-150M@step1250-seed-small-aux-2",
+  "aux3": "allenai/DataDecide-dclm-baseline-150M@step1250-seed-small-aux-3",
+  "ours1b": "/work/harrychang08/castor/runs/003/castor-dclm-150M-s1001/ckpt/step1250-unsharded/model.pt"
+ },
+ "rel_l2": {
+  "ours1a~default": 1.1464684302668826,
+  "ours1a~aux2": 1.408713461863011,
+  "ours1a~aux3": 1.405271265382981,
+  "ours1a~ours1b": 1.4059954555798042,
+  "default~aux2": 1.4072438846604751,
+  "default~aux3": 1.404494046306476,
+  "default~ours1b": 1.4055599811070267,
+  "aux2~aux3": 1.409003368817009,
+  "aux2~ours1b": 1.411995720139687,
+  "aux3~ours1b": 1.4139756836217747
+ }
+}

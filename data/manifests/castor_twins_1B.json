@@ -1,0 +1,48 @@
+{
+ "entries": [
+  {
+   "repo": "castor/DataDecide-dclm-baseline-1B",
+   "revision": "init-aux2-data-default",
+   "sha": "bb69f2769684a33f8469e1292cd2e7b1f6431b819e02923982f49c1273e89bbc",
+   "run": "castor-init-aux2-data-default",
+   "step": 69369,
+   "init_seed": 4,
+   "data_seed": 6198,
+   "source_checkpoint": "/work/harrychang08/castor/runs/003/castor-init-aux2-data-default/ckpt/step69369-unsharded",
+   "local_path": "/work/harrychang08/castor/models/datadecide-llama/DataDecide-dclm-baseline-1B/init-aux2-data-default"
+  },
+  {
+   "repo": "castor/DataDecide-dclm-baseline-1B",
+   "revision": "init-default-data-aux2",
+   "sha": "b80d1e2a502ad6ee9af3a1ddc0070795b2cc33bbc2be9ac43f4cfbb82dea9738",
+   "run": "castor-init-default-data-aux2",
+   "step": 69369,
+   "init_seed": 6198,
+   "data_seed": 4,
+   "source_checkpoint": "/work/harrychang08/castor/runs/003/castor-init-default-data-aux2/ckpt/step69369-unsharded",
+   "local_path": "/work/harrychang08/castor/models/datadecide-llama/DataDecide-dclm-baseline-1B/init-default-data-aux2"
+  },
+  {
+   "repo": "castor/DataDecide-dclm-baseline-1B",
+   "revision": "replicate-i6198-d6198",
+   "sha": "24a40469c49b2e7b7476dd3c0e2088347e1acf464541dbcf8187ffbce9a10fb8",
+   "run": "castor-dclm-1B-i6198-d6198",
+   "step": 69369,
+   "init_seed": 6198,
+   "data_seed": 6198,
+   "source_checkpoint": "/work/harrychang08/castor/runs/003/castor-dclm-1B-i6198-d6198/ckpt/step69369-unsharded",
+   "local_path": "/work/harrychang08/castor/models/datadecide-llama/DataDecide-dclm-baseline-1B/replicate-i6198-d6198"
+  },
+  {
+   "repo": "castor/DataDecide-dclm-baseline-1B",
+   "revision": "replicate2-i6198-d6198",
+   "sha": "19945a0a9d427ee97958e806eff46c2870ddee709dc149ec74a5b0b66c3c7c8d",
+   "run": "castor-dclm-1B-i6198-d6198-r2",
+   "step": 69369,
+   "init_seed": 6198,
+   "data_seed": 6198,
+   "source_checkpoint": "/work/harrychang08/castor/runs/003/castor-dclm-1B-i6198-d6198-r2/ckpt/step69369-unsharded",
+   "local_path": "/work/harrychang08/castor/models/datadecide-llama/DataDecide-dclm-baseline-1B/replicate2-i6198-d6198"
+  }
+ ]
+}
