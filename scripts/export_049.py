@@ -152,7 +152,7 @@ README = """![Cerulean Labs Castor banner](assets/banner.png)
 
 ---
 
-# CASTOR: Common Ancestry, Seed-Twinned Outcomes of Refusal
+# {title}
 
 {paper}
 
@@ -228,7 +228,7 @@ def readme_counts(inv: dict) -> dict:
 
 
 def readme(cfg: dict, inv: dict) -> str:
-    return (README.format(paper=release.paper_line(cfg), org=release.ORG,
+    return (README.format(title=cfg["title"].strip(), paper=release.paper_line(cfg), org=release.ORG,
                           labels=release.LABELS_REPO, **readme_counts(inv))
             + "\n".join(release.citation(cfg)))
 

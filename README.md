@@ -2,7 +2,7 @@
 
 ---
 
-# CASTOR: Common Ancestry, Seed-Twinned Outcomes of Refusal
+# Identically Trained Language Models Break on Different Jailbreaks
 
 **Paper:** [arXiv:2610.34074](https://arxiv.org/abs/2610.34074)
 

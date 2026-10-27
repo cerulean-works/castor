@@ -27,6 +27,7 @@ def test_readme_has_paper_and_citation():
     assert "208 post-trained" in text and "25 DataDecide" in text and "\u2014" not in text
     assert "12 1B models whose SFT" in text and "16\n  models built on our own" in text
     assert "**Paper:** [arXiv:2610.34074](https://arxiv.org/abs/2610.34074)" in text and "```bibtex" in text and "## Citation" in text
+    assert "\n# Identically Trained Language Models Break on Different Jailbreaks\n" in text
     assert text.startswith("![Cerulean Labs Castor banner](assets/banner.png)\n") and (ROOT / "configs/release/banner.png").is_file()
     assert "paper/" not in text and "runs/numbers.json" in text and "LaTeX source is on arXiv" in text
 
