@@ -186,12 +186,14 @@ def test_labels_readme_counts():
 
 
 def test_paper_and_citation_placeholders():
-    cfg = release.card_config()
-    assert release.unfilled(cfg) == [] and release.arxiv_pending(cfg)
+    live = release.card_config()
+    assert release.unfilled(live) == [] and live["arxiv_id"] == "2610.34074"
+    cfg = live | {"arxiv_id": "TBD"}
+    assert release.arxiv_pending(cfg)
     assert release.unfilled(cfg | {"authors": "TBD"}) == ["authors"]
     cite = "\n".join(release.citation(cfg))
     assert "ARXIV_ID" not in cite and "eprint" not in cite and "archivePrefix" not in cite
-    assert "  year          = {2026}\n}" in cite
+    assert "  year          = {2026}\n}" in cite and "primaryClass" not in cite
     assert release.paper_line(cfg).endswith("(arXiv link to follow)")
     filled = cfg | {"arxiv_id": "2611.01234"}
     cite = "\n".join(release.citation(filled))

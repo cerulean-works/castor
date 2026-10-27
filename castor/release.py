@@ -256,7 +256,7 @@ def paper_line(cfg: dict) -> str:
 def citation(cfg: dict) -> list[str]:
     bib = cfg["bibtex"].strip().splitlines()
     if arxiv_pending(cfg):
-        bib = [x for x in bib if "ARXIV_ID" not in x and "archivePrefix" not in x]
+        bib = [x for x in bib if not any(k in x for k in ("ARXIV_ID", "archivePrefix", "primaryClass"))]
         bib[-2] = bib[-2].rstrip(",")  # the last field before the closing brace
     bib = "\n".join(bib).replace("ARXIV_ID", str(cfg["arxiv_id"]))
     return ["## Citation", "", cfg["authors"].strip(), "", "```bibtex", bib, "```", ""]

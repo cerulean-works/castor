@@ -4,7 +4,7 @@
 
 # CASTOR: Common Ancestry, Seed-Twinned Outcomes of Refusal
 
-**Paper:** *Identically Trained Language Models Break on Different Jailbreaks* (arXiv link to follow)
+**Paper:** [arXiv:2610.34074](https://arxiv.org/abs/2610.34074)
 
 Train the same language model twice, on the same data with the same recipe, changing only the
 random seed. Do the two copies fail on the same jailbreaks?
@@ -69,9 +69,13 @@ ODC-BY 1.0.
 Chi-Wei Chang, Mu-Tien Kuo, Kuan-Wei Lee, Meng-Hsun Tsai
 
 ```bibtex
-@misc{castor2026,
+@misc{chang2026identicallytrainedlanguagemodels,
   title         = {Identically Trained Language Models Break on Different Jailbreaks},
   author        = {Chang, Chi-Wei and Kuo, Mu-Tien and Lee, Kuan-Wei and Tsai, Meng-Hsun},
-  year          = {2026}
+  year          = {2026},
+  eprint        = {2610.34074},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2610.34074}
 }
 ```
